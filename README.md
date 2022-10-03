@@ -37,3 +37,9 @@ Pour lancer le site
 
 Pour lancer Netlify CMS en localhost
 ```yarn cms```
+
+## Netlify
+
+Générer et copier la deploy key du site sur Netlify : `Site settings > Build & deploy > Deploy key`.
+
+L’ajouter dans la section “Deploy keys” du repository contenant le thème (ici : https://github.com/sebousan/hugo-theme/settings/keys).
