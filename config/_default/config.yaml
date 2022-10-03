@@ -1,0 +1,18 @@
+## THEME
+theme: hugo-theme
+
+## LANGUAGE
+defaultContentLanguage: fr
+languageCode: fr
+
+## ADVANCED
+paginate: 18
+enableRobotsTXT: true
+
+## MODULE
+module:
+  _merge: deep
+
+## PARAMS
+params:
+  _merge: deep

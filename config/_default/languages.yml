@@ -1,0 +1,9 @@
+en:
+  languageName: English
+  title: Hugo template
+  weight: 2
+
+fr:
+  languageName: Français
+  title: Hugo template
+  weight: 1

@@ -1,0 +1,2 @@
+posts:          /news/:year-:month-:day-:slug/
+categories:     /news/:slug/
