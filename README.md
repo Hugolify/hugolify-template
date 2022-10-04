@@ -8,10 +8,14 @@
 
 ### Install
 Pour cloner avec le thème
-```git clone git@github.com:sebousan/hugo-template.git --recurse-submodules```
+```
+git clone git@github.com:sebousan/hugo-template.git --recurse-submodules
+```
 
 ### Mettre à jour les submodules
-```git pull --recurse-submodules```
+```
+git pull --recurse-submodules
+```
 
 ### Mettre à jour son repo via le template
 
