@@ -1,3 +1,5 @@
 item:
   - title: Accueil
     link: /
+  - title: Actualités
+    link: /actualites

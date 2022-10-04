@@ -1,2 +1,3 @@
-posts:          /news/:year-:month-:day-:slug/
-categories:     /news/:slug/
+posts:          /actualites/:year-:month-:day-:slug/
+categories:     /actualites/:slug/
+pages:          /:slug/
