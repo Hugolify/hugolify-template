@@ -6,7 +6,7 @@
 * Theme: [Hugo theme](https://github.com/sebousan/hugo-theme)
 * Admin: [Netlify CMS template](https://github.com/sebousan/netlify-cms-template)
 
-### Install
+### Installation
 Pour cloner avec le thème
 ```
 git clone git@github.com:sebousan/hugo-template.git --recurse-submodules
@@ -46,8 +46,13 @@ Pour lancer le site
 Pour lancer Netlify CMS en localhost
 ```yarn cms```
 
+
 ## Netlify CMS
 
 Générer et copier la deploy key du site sur Netlify : `Site settings > Build & deploy > Deploy key`.
 
 L’ajouter dans la section “Deploy keys” du repository contenant le thème (ici : https://github.com/sebousan/hugo-theme/settings/keys).
+
+
+## License
+Ce repository est sous licence MIT
