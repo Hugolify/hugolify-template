@@ -1,21 +1,25 @@
 # Hugo template
 
-## Submodules
+## Git
+
+### Submodules
 * Theme: [Hugo theme](https://github.com/sebousan/hugo-theme)
 * Admin: [Netlify CMS template](https://github.com/sebousan/netlify-cms-template)
 
-## Template
+### Install
+Pour cloner avec le thème
+```git clone git@github.com:sebousan/hugo-template.git --recurse-submodules```
 
-### Update
+### Mettre à jour les submodules
+```git pull --recurse-submodules```
+
+### Mettre à jour son repo via le template
+
 ```
 git remote add template git@github.com:sebousan/hugo-template.git
 git fetch --all
 git merge template/main --allow-unrelated-histories
 ```
-
-### Install
-Pour cloner avec le thème
-```git clone git@github.com:sebousan/hugo-template.git --recurse-submodules```
 
 ## Hugo
 
@@ -38,7 +42,7 @@ Pour lancer le site
 Pour lancer Netlify CMS en localhost
 ```yarn cms```
 
-## Netlify
+## Netlify CMS
 
 Générer et copier la deploy key du site sur Netlify : `Site settings > Build & deploy > Deploy key`.
 
