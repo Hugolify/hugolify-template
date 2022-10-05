@@ -3,6 +3,7 @@
 ## Table des matières
 
 - [Live Demo](#live-demo)
+- [Fonctionnalités](#fonctionnalités)
 - [Git](#git)
 - [Hugo](#hugo)
 - [Netlify](#netlify)
@@ -13,12 +14,19 @@ https://sebousan-hugo-theme.netlify.app
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5a4fa061-e7a5-4e66-9612-4fae713bda09/deploy-status)](https://app.netlify.com/sites/sebousan-hugo-theme/deploys)
 
+## Fonctionnalités
+Types supportés par le theme et l’admin
+* posts
+* authors (taxonomy)
+* categories (taxonomy)
+* pages
+
 ## Git
 
 ### Submodules
 Ce template est composé de deux submodules
 * Theme: [Hugo theme](https://github.com/sebousan/hugo-theme)
-* Admin: [Netlify CMS template](https://github.com/sebousan/netlify-cms-template)
+* Admin: [Hugo Netlify CMS template](https://github.com/sebousan/hugo-netlify-cms-template)
 
 ### Installation
 Pour cloner avec le template avec ses submodules
