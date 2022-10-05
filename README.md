@@ -1,5 +1,8 @@
 # Hugo template
 
+## Live demo
+https://sebousan-hugo-theme.netlify.app
+
 ## Git
 
 ### Submodules
@@ -29,29 +32,20 @@ git merge template/main --allow-unrelated-histories
 
 ### Install
 
-Pour installer Hugo
-```brew install hugo```
-
-Mise à jour
-```brew upgrade hugo```
+* Pour installer Hugo : `brew install hugo`
+* Mise à jour : `brew upgrade hugo`
 
 ### Commands
 
-Pour installer les packages
-```yarn```
-
-Pour lancer le site
-```yarn watch```
-
-Pour lancer Netlify CMS en localhost
-```yarn cms```
-
+* Pour installer les packages : `yarn`
+* Pour lancer Hugo en livereload : `yarn watch`
+* Pour lancer Netlify CMS en localhost : `yarn cms`
 
 ## Netlify CMS
 
 Générer et copier la deploy key du site sur Netlify : `Site settings > Build & deploy > Deploy key`.
 
-L’ajouter dans la section “Deploy keys” du repository contenant le thème (ici : https://github.com/sebousan/hugo-theme/settings/keys).
+L’ajouter dans la section “Deploy keys” du repository contenant le thème : https://github.com/sebousan/hugo-theme/settings/keys
 
 
 ## License
