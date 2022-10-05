@@ -26,7 +26,7 @@ Types supportés par le theme et l’admin
 ### Submodules
 Ce template est composé de deux submodules
 * Theme: [Hugo theme](https://github.com/sebousan/hugo-theme)
-* Admin: [Netlify CMS template](https://github.com/sebousan/netlify-cms-template)
+* Admin: [Hugo Netlify CMS template](https://github.com/sebousan/hugo-netlify-cms-template)
 
 ### Installation
 Pour cloner avec le template avec ses submodules
