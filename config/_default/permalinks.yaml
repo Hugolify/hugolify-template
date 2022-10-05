@@ -1,3 +1,4 @@
 posts:          /actualites/:year-:month-:day-:slug/
 categories:     /actualites/:slug/
+authors:        /actualites/auteurs/:slug/
 pages:          /:slug/
