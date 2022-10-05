@@ -71,5 +71,8 @@ Puis modifier le path :
 * Recovery template : `/admin/emails/recovery.html`
 * Email change template : `/admin/emails/email-change.html`
 
+### Git Gateway
+Pour connecter Netlify CMS à l’API de Github, il faut l’activer : `Site settings > Identity > Services > Enable Git Gateway`.
+
 ## License
 Ce repository est sous licence MIT
