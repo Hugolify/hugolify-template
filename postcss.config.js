@@ -7,6 +7,7 @@ module.exports = {
         },
         '@fullhuman/postcss-purgecss': {
             content: [
+                './themes/**/*.html',
                 'layouts/**/*.html'
             ],
             safelist: {
