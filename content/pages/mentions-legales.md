@@ -1,7 +1,6 @@
 ---
 draft: false
 title: Mentions légales
-date: 2022-10-04T15:05:54.072Z
 ---
 Donec maximus a nulla ut feugiat. Duis a enim et ex commodo cursus. Pellentesque in vehicula turpis. Nulla tincidunt eleifend ligula mollis volutpat. Vivamus sed placerat purus. Pellentesque feugiat sed massa sed ullamcorper. Donec diam orci, mattis et elit non, pulvinar venenatis neque. Pellentesque vulputate nulla fermentum libero aliquam, ut gravida nisi pellentesque. Phasellus elementum sem id libero hendrerit feugiat. Sed ornare sed nunc non suscipit. Proin eros ipsum, ornare non suscipit non, viverra nec nunc. Quisque felis erat, faucibus a velit nec, hendrerit vestibulum nibh. Donec neque diam, cursus id facilisis nec, hendrerit quis justo. Morbi molestie dignissim vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus.
 

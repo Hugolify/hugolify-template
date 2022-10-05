@@ -3,6 +3,7 @@ index: false
 draft: false
 title: Curabitur scelerisque
 date: 2022-10-04T12:47:22.395Z
+categories: lorem-ipsum
 image: /images/uploads/julia-verea-wz7z51xjz_e-unsplash.jpg
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
   lacinia ligula non facilisis eleifend. Cras at gravida ipsum. Donec quam erat,

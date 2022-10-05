@@ -3,6 +3,7 @@ index: false
 draft: false
 title: Lorem ipsum
 date: 2022-10-04T12:42:14.430Z
+categories: donec-maximus-a-nulla-ut-feugiat
 image: /images/uploads/giorgio-trovato-p0olraayxly-unsplash.jpg
 description: Curabitur scelerisque sollicitudin lobortis. Sed pharetra, massa eu
   varius egestas, metus nulla rutrum diam, et accumsan purus lacus vel ante.
