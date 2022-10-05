@@ -3,3 +3,6 @@ item:
     link: /
   - title: Actualités
     link: /actualites
+  - blank: false
+    title: Auteurs
+    link: /actualites/auteurs
