@@ -1,5 +1,13 @@
 # Hugo template
 
+## Table des matières
+
+- [Live Demo](#live-demo)
+- [Git](#git)
+- [Hugo](#hugo)
+- [Netlify](#netlify)
+- [License](#license)
+
 ## Live demo
 https://sebousan-hugo-theme.netlify.app
 
@@ -8,11 +16,12 @@ https://sebousan-hugo-theme.netlify.app
 ## Git
 
 ### Submodules
+Ce template est composé de deux submodules
 * Theme: [Hugo theme](https://github.com/sebousan/hugo-theme)
 * Admin: [Netlify CMS template](https://github.com/sebousan/netlify-cms-template)
 
 ### Installation
-Pour cloner avec le template
+Pour cloner avec le template avec ses submodules
 ```
 git clone git@github.com:sebousan/hugo-template.git --recurse-submodules
 ```
@@ -45,10 +54,25 @@ git merge template/main --allow-unrelated-histories
 
 ## Netlify
 
+### Deploy key
 Générer et copier la deploy key du site sur Netlify : `Site settings > Build & deploy > Deploy key`.
 
 L’ajouter dans la section “Deploy keys” du repository contenant le thème : https://github.com/sebousan/hugo-theme/settings/keys
 
+### Identity
+Pour créer des comptes utilisateur pour Netlify CMS il faut activer l’Identify Netlify : `Site settings > Identity > Enable`.
+
+### Emails notifications
+Pour rediriger chaque template email vers ceux du repo : `Site settings > Identity > Email`.
+
+Puis modifier le path :
+* Invitation template : `/admin/emails/invitation.html` 
+* Confirmation template : `/admin/emails/confirmation.html`
+* Recovery template : `/admin/emails/recovery.html`
+* Email change template : `/admin/emails/email-change.html`
+
+### Git Gateway
+Pour connecter Netlify CMS à l’API de Github, il faut l’activer : `Site settings > Identity > Services > Enable Git Gateway`.
 
 ## License
 Ce repository est sous licence MIT
