@@ -12,7 +12,7 @@ https://sebousan-hugo-theme.netlify.app
 * Admin: [Netlify CMS template](https://github.com/sebousan/netlify-cms-template)
 
 ### Installation
-Pour cloner avec le thème
+Pour cloner avec le template
 ```
 git clone git@github.com:sebousan/hugo-template.git --recurse-submodules
 ```
