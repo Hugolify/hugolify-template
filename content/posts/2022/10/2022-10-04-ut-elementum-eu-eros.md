@@ -3,7 +3,8 @@ index: false
 draft: false
 title: Ut elementum eu eros
 date: 2022-10-04T19:34:08.410Z
-categories: lorem-ipsum
+categories: lorem-ipsum/_index
+authors: jane-doe/_index
 description: Phasellus ut facilisis tellus. Nullam tempus enim id tempus
   convallis. Nullam vehicula tincidunt nunc id ultricies. In sit amet magna id
   ligula aliquet facilisis sit amet vel sapien.

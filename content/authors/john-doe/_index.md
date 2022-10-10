@@ -1,8 +1,12 @@
 ---
 index: false
 title: John Doe
-description: Duis a enim et ex commodo cursus. Pellentesque in vehicula turpis.
-  Nulla tincidunt eleifend ligula mollis volutpat.
-email: john.doe@gmail.com
-website: https://www.sebousan.com
+description: Vivamus vestibulum ac purus at pulvinar. Pellentesque rutrum massa
+  consectetur fermentum luctus. Aenean tempor ipsum sed mauris mattis, ac
+  finibus urna pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing
+  elit. Suspendisse efficitur leo non risus sagittis, sit amet vulputate libero
+  commodo. Suspendisse id ipsum vehicula, tempus eros non, facilisis metus.
+  Suspendisse cursus ut tortor sed mattis.
+email: johndoe@email.com
+twitter: johndoe
 ---
