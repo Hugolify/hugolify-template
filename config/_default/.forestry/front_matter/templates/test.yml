@@ -2,6 +2,11 @@
 label: test
 hide_body: true
 fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
 - name: blocks
   type: blocks
   label: Blocks
