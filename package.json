@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "repository": "https://github.com/sebousan/hugo-template",
   "author": {
-    "name" : "Sébastien Moulène",
-    "url" : "https://www.sebousan.com/"
+    "name": "Sébastien Moulène",
+    "url": "https://www.sebousan.com/"
   },
-  "license" : "MIT",
+  "license": "MIT",
   "dependencies": {
     "hugo-theme": "./themes/hugo-theme"
   },
