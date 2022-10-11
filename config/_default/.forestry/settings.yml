@@ -14,6 +14,7 @@ sections:
   label: Categories
   create: all
   match: "**/*"
+  exclude: _index.md
 - type: directory
   path: content/authors
   label: Authors
