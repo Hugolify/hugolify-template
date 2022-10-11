@@ -20,6 +20,8 @@ sections:
   create: documents
   match: "**/*"
   exclude: _index.md
+  templates:
+  - author
 - type: directory
   path: content/pages
   label: Pages
