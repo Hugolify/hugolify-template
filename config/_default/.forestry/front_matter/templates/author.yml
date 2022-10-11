@@ -17,3 +17,5 @@ fields:
 - type: text
   name: twitter
   label: twitter
+pages:
+- content/authors/person-3.md
