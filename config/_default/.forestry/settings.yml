@@ -17,7 +17,7 @@ sections:
 - type: directory
   path: content/authors
   label: Authors
-  create: all
+  create: documents
   match: "**/*"
   exclude: _index.md
 - type: directory
