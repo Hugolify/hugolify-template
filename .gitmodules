@@ -5,3 +5,7 @@
 [submodule "static/admin"]
 	path = static/admin
 	url = git@github.com:sebousan/hugo-netlify-cms-template
+
+[submodule "static/admin-manual"]
+	path = static/admin-manual
+	url = git@github.com:sebousan/hugo-netlify-cms-manual
