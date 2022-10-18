@@ -1,11 +1,14 @@
 # Hugo template
 
+Template Hugo avec Bootstrap 5 pour site web avec actualités et pages.
+
 ## Table des matières
 
 - [Live Demo](#live-demo)
 - [Fonctionnalités](#fonctionnalités)
 - [Git](#git)
 - [Hugo](#hugo)
+- [Framework HTML](#framework-html)
 - [Netlify](#netlify)
 - [License](#license)
 
@@ -15,7 +18,7 @@ https://sebousan-hugo-template.netlify.app/
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5a4fa061-e7a5-4e66-9612-4fae713bda09/deploy-status)](https://app.netlify.com/sites/sebousan-hugo-theme/deploys)
 
 ## Fonctionnalités
-Types supportés par le theme et l’admin
+Types supportés par le thème et l’admin
 * posts
 * authors (taxonomy)
 * categories (taxonomy)
@@ -59,6 +62,31 @@ git merge template/main --allow-unrelated-histories
 * Pour installer les packages : `yarn`
 * Pour lancer Hugo en livereload : `yarn watch`
 * Pour lancer Netlify CMS en localhost : `yarn cms`
+
+## Framework HTML
+Le framework [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/) en version 5.2 est utilisé pour souternir le thème.
+Pour alléger et rendre plus lisible le code source, ainsi que faciliter les personnalisations de site, les `@extend` de class sont préférés.
+
+### Personnalisation du thème
+Un fichier `_variables` dans le dossier abstracts permet d'ajouter des variables de bootstrap.
+[liste disponible sur github](https://github.com/twbs/bootstrap/blob/v5.2.2/scss/_variables.scss)
+
+### Override de fichier
+L'override de fichier sass et html est possible en gardant la même arborescence. 
+Pour merge des fichiers sass il est nécessaire de reproduire la même arborescence dans un dossier theme.
+example :
+```
+abstract
+  _variables.sass
+components
+  sections
+    _author.sass
+themes
+  components
+    sections
+      _author.sass
+main.sass
+```
 
 ## Netlify
 
