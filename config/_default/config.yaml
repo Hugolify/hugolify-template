@@ -6,7 +6,7 @@ defaultContentLanguage: fr
 languageCode: fr
 
 ## ADVANCED
-paginate: 18
+paginate: 9
 enableRobotsTXT: true
 
 ## MODULE
