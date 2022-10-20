@@ -1,8 +1,9 @@
 item:
   - title: Accueil
     link: /
+  - title: Projets
+    link: /projets
   - title: Actualités
     link: /actualites
-  - blank: false
-    title: Auteurs
+  - title: Auteurs
     link: /actualites/auteurs
