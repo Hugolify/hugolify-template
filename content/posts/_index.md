@@ -1,5 +1,5 @@
 ---
-url: /actualites
 index: true
 title: Actualités
+url: actualites
 ---

@@ -1,4 +1,5 @@
 posts:          /actualites/:year-:month-:day-:slug/
 categories:     /actualites/:slug/
 authors:        /actualites/auteurs/:slug/
-# pages:          /:slug/
+projects:       /projets/:year-:slug/
+types:          /projets/:slug/
