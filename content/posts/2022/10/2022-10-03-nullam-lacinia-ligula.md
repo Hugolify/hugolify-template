@@ -5,7 +5,8 @@ title: Nullam lacinia ligula
 date: 2022-10-03T12:47:22.395Z
 categories: lorem-ipsum/_index
 authors: jane-doe/_index
-image: /images/uploads/eniko-kis-KsLPTsYaqIQ-unsplash.jpg
+image:
+  src: /images/uploads/eniko-kis-KsLPTsYaqIQ-unsplash.jpg
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
   lacinia ligula non facilisis eleifend. Cras at gravida ipsum. Donec quam erat,
   fermentum nec commodo sed, tincidunt vitae nisl.

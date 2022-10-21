@@ -5,7 +5,8 @@ title: Aliquam a scelerisque dolor. Proin maximus, eros et pellentesque
 date: 2022-09-05T14:42:58.943Z
 categories: donec-maximus-a-nulla-ut-feugiat/_index
 authors: john-doe/_index
-image: /images/uploads/laura-nyhuis-ajgspa-xsdk-unsplash.jpg
+image:
+  src: /images/uploads/laura-nyhuis-ajgspa-xsdk-unsplash.jpg
 description: Pellentesque vulputate nulla fermentum libero aliquam, ut gravida
   nisi pellentesque.
 ---

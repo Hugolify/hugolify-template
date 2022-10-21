@@ -12,7 +12,3 @@ enableRobotsTXT: true
 ## MODULE
 module:
   _merge: deep
-
-## PARAMS
-params:
-  _merge: deep
