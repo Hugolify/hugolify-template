@@ -9,6 +9,7 @@ languageCode: fr
 paginate: 9
 enableRobotsTXT: true
 
-## MODULE
-module:
-  _merge: deep
+## STATIC
+staticDir:
+  - static1
+  - static2

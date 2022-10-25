@@ -1,9 +1,7 @@
 [submodule "themes/hugo-theme"]
 	path = themes/hugo-theme
-	# url = https://github.com/sebousan/hugo-theme
 	url = git@github.com:sebousan/hugo-theme.git
 
-[submodule "static/admin"]
-	path = static/admin
-	#url = https://github.com/sebousan/hugo-netlify-cms-template
+[submodule "static1/admin"]
+	path = static1/admin
 	url = git@github.com:sebousan/hugo-netlify-cms-template
