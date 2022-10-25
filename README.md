@@ -22,6 +22,8 @@ Types supportés par le thème et l’admin
 * posts
 * authors (taxonomy)
 * categories (taxonomy)
+* projects
+* types (taxonomy)
 * pages
 
 ## Git
@@ -86,6 +88,14 @@ themes
     sections
       _author.sass
 main.sass
+```
+
+### Override de l'admin
+Il est possible d'overrider un ou plusieurs fichiers du dossier admin (netlify cms), il est nécessaire de reproduire la même arborescence dans un dossier static2/admin 
+```
+static2
+  admin
+    …
 ```
 
 ## Netlify
