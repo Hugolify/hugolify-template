@@ -90,14 +90,6 @@ themes
 main.sass
 ```
 
-### Override de l'admin
-Il est possible d'overrider un ou plusieurs fichiers du dossier admin (netlify cms), il est nécessaire de reproduire la même arborescence dans un dossier static2/admin 
-```
-static2
-  admin
-    …
-```
-
 ## Netlify
 
 ### Deploy key
@@ -119,6 +111,14 @@ Puis modifier le path :
 
 ### Git Gateway
 Pour connecter Netlify CMS à l’API de Github, il faut l’activer : `Site settings > Identity > Services > Enable Git Gateway`.
+
+### Override de l'admin
+Il est possible d'overrider un ou plusieurs fichiers du dossier admin (netlify cms), il est nécessaire de reproduire la même arborescence dans un dossier static2/admin 
+```
+static2
+  admin
+    …
+```
 
 ## License
 Ce repository est sous licence MIT
