@@ -24,6 +24,7 @@ Types supportés par le thème et l’admin
 * categories (taxonomy)
 * projects
 * types (taxonomy)
+* publications
 * pages
 
 ## Git
