@@ -8,7 +8,7 @@
 ## Design System
 - [Framework](/docs/design-system/framework.md)
 - [SASS](/docs/design-system/sass.md)
-- [HTML)(/docs/design-system/html.md)
+- [HTML](/docs/design-system/html.md)
 - [Sections](/docs/design-system/sections.md)
 - [Blocks](/docs/design-system/blocks.md)
 
