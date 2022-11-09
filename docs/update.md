@@ -1,4 +1,4 @@
-# Update
+# Mise à jour
 
 ## Mettre à jour les submodules
 
