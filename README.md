@@ -3,12 +3,10 @@
 Template Hugo avec Bootstrap 5 pour site web avec actualités et pages.
 
 ## Table des matières
-- [Hugo template](#hugo-template)
-  - [Table des matières](#table-des-matières)
-  - [Live demo](#live-demo)
-  - [Fonctionnalités](#fonctionnalités)
-  - [Documentations](#documentations)
-  - [License](#license)
+- [Live demo](#live-demo)
+- [Fonctionnalités](#fonctionnalités)
+- [Documentations](#documentations)
+- [License](#license)
 
 ## Live demo
 https://sebousan-hugo-template.netlify.app/
