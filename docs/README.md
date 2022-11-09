@@ -5,7 +5,7 @@ Ce template est composé de deux submodules
 * Admin: [Hugo Netlify CMS template](https://github.com/sebousan/hugo-netlify-cms-template)
 
 
-## Repo et Hugo
+## Settings
 - [Installation](/docs/install.md)
 - [Update](/docs/update.md)
 - [Commands](/docs/commands.md)
