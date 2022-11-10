@@ -12,9 +12,12 @@ module.exports = {
             ],
             safelist: {
                 standard: [
+                    'show',
+                    'fade',
                     /^is-/,
                     /^has-/,
                     /^js-/,
+                    /-backdrop$/
                 ],
                 deep: [
                     /-page$/
