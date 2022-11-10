@@ -7,6 +7,7 @@ hero:
   cta:
     url: https://github.com/sebousan/hugo-template
     text: Découvir le template sur Github
+    blank: true
 blocks:
   - type: latest-posts
     title: Exemple de dernières news
