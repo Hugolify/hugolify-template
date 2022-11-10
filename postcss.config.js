@@ -20,6 +20,9 @@ module.exports = {
                     /-backdrop$/
                 ],
                 deep: [
+                    /^page-/,
+                    /^term-/,
+                    /^section-/,
                     /-page$/
                 ]
             }
