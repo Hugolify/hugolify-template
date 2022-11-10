@@ -1,7 +1,7 @@
-item:
+links:
   - title: Mentions légales
-    link: /mentions-legales
+    url: /mentions-legales
   - title: Politique de confidentialité
-    link: /politique-de-confidentialite
+    url: /politique-de-confidentialite
   - title: Plan du site
-    link: /plan-du-site
+    url: /plan-du-site

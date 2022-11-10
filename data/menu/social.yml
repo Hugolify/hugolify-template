@@ -1,7 +1,7 @@
-item:
+links:
   - title: Github
-    link: https://www.github.com/sebousan
+    url: https://www.github.com/sebousan
     blank: true
   - title: Twitter
-    link: https://twitter.com/sebousan
+    url: https://twitter.com/sebousan
     blank: true

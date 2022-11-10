@@ -1,9 +1,9 @@
-item:
+links:
   - title: Accueil
-    link: /
+    url: /
   - title: Projets
-    link: /projets
+    url: /projets
   - title: Actualités
-    link: /actualites
+    url: /actualites
   - title: Auteurs
-    link: /actualites/auteurs
+    url: /actualites/auteurs
