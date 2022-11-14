@@ -11,6 +11,21 @@ hero:
 blocks:
   - type: latest-posts
     title: Exemple de dernières news
+    count: 3
+  - type: infos
+    column: 4
+    title: Lorem ipsum
+    text: Lorem ipsum
+    items:
+      - icon: local_shipping
+        title: Livraison
+        text: Lorem ipsum
+      - title: Sécurité
+        icon: security
+      - title: Paiement
+        icon: payments
+    background: true
   - type: latest-projects
     title: Exemple de derniers projets
+    count: 3
 ---

@@ -10,12 +10,9 @@ description: Phasellus ut facilisis tellus. Nullam tempus enim id tempus
 image:
   src: /images/uploads/laura-nyhuis-ajgspa-xsdk-unsplash.jpg
 images: 
-  - image:
-      src: /images/uploads/laura-nyhuis-ajgspa-xsdk-unsplash.jpg
-  - image:
-      src: /images/uploads/laura-nyhuis-ajgspa-xsdk-unsplash.jpg
-  - image:
-      src: /images/uploads/laura-nyhuis-ajgspa-xsdk-unsplash.jpg
+  - src: /images/uploads/laura-nyhuis-ajgspa-xsdk-unsplash.jpg
+  - src: /images/uploads/laura-nyhuis-ajgspa-xsdk-unsplash.jpg
+  - src: /images/uploads/laura-nyhuis-ajgspa-xsdk-unsplash.jpg
 datas:
   - title: Lieu
     value: Paris
