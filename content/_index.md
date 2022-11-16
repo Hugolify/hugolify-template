@@ -9,7 +9,8 @@ hero:
     text: Découvir le template sur Github
     blank: true
 blocks:
-  - type: latest-posts
+  - type: latest
+    section: posts
     title: Exemple de dernières news
     count: 3
   - type: infos
@@ -25,7 +26,8 @@ blocks:
       - title: Paiement
         icon: payments
     background: true
-  - type: latest-projects
+  - type: latest
+    section: projects
     title: Exemple de derniers projets
     count: 3
 ---
