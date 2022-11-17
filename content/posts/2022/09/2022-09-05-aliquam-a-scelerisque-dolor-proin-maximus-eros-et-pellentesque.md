@@ -1,14 +1,18 @@
 ---
 index: false
 draft: false
-title: Aliquam a scelerisque dolor. Proin maximus, eros et pellentesque
 date: 2022-09-05T14:42:58.943Z
+title: Aliquam a scelerisque dolor. Proin maximus, eros et pellentesque
+description: Pellentesque vulputate nulla fermentum libero aliquam, ut gravida
+  nisi pellentesque.
 categories: donec-maximus-a-nulla-ut-feugiat/_index
 authors: john-doe/_index
 image:
-  src: /images/uploads/laura-nyhuis-ajgspa-xsdk-unsplash.jpg
-description: Pellentesque vulputate nulla fermentum libero aliquam, ut gravida
-  nisi pellentesque.
+  src: /images/uploads/sebastien-jermer-ty9wjiijyj0-unsplash.jpg
+  credit: Photo by [Sébastien
+    Jermer](https://unsplash.com/es/@seb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+    on
+    [Unsplash](https://unsplash.com/s/photos/cap-ferret?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
 ## Lorem ipsum
 

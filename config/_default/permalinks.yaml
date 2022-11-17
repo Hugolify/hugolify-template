@@ -3,3 +3,5 @@ categories:     /actualites/:slug/
 authors:        /actualites/auteurs/:slug/
 projects:       /projets/:year-:slug/
 types:          /projets/:slug/
+casestudies:    /etudes-de-cas/:slug/
+publications:   /parutions/:slug/

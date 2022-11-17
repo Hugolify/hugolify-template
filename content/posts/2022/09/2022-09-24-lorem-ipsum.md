@@ -1,14 +1,18 @@
 ---
 index: false
 draft: false
-title: Lorem ipsum
 date: 2022-10-04T12:42:14.430Z
+title: Quisque vestibulum, mi eget semper laoreet
+description: Curabitur scelerisque sollicitudin lobortis. Sed pharetra, massa eu
+  varius egestas, metus nulla rutrum diam, et accumsan purus lacus vel ante.
 categories: donec-maximus-a-nulla-ut-feugiat/_index
 authors: jane-doe/_index
 image:
-  src: /images/uploads/giorgio-trovato-K62u25Jk6vo-unsplash.jpg
-description: Curabitur scelerisque sollicitudin lobortis. Sed pharetra, massa eu
-  varius egestas, metus nulla rutrum diam, et accumsan purus lacus vel ante.
+  src: /images/uploads/balthazar-lelievre-zsozkbm7yy8-unsplash.jpg
+  credit: Photo by [Balthazar
+    LELIEVRE](https://unsplash.com/@balthazar_lvr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+    on
+    [Unsplash](https://unsplash.com/s/photos/cap-ferret?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia ligula non facilisis eleifend. Cras at gravida ipsum. Donec quam erat, fermentum nec commodo sed, tincidunt vitae nisl. 
 

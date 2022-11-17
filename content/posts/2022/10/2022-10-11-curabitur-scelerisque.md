@@ -1,15 +1,19 @@
 ---
 index: false
 draft: false
-title: Curabitur scelerisque
 date: 2022-10-11T12:47:22.395Z
-categories: lorem-ipsum/_index
-authors: jane-doe/_index
-image:
-  src: /images/uploads/julia-verea-wz7z51xjz_e-unsplash.jpg
+title: Curabitur scelerisque
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
   lacinia ligula non facilisis eleifend. Cras at gravida ipsum. Donec quam erat,
   fermentum nec commodo sed, tincidunt vitae nisl.
+categories: lorem-ipsum/_index
+authors: jane-doe/_index
+image:
+  src: /images/uploads/bertrand-borie-tmlculvqha0-unsplash.jpg
+  credit: Photo by [Bertrand
+    Borie](https://unsplash.com/@bertrand1212?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+    on
+    [Unsplash](https://unsplash.com/s/photos/cap-ferret?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia ligula non facilisis eleifend. Cras at gravida ipsum. Donec quam erat, fermentum nec commodo sed, tincidunt vitae nisl. 
 

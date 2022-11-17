@@ -1,15 +1,19 @@
 ---
 index: false
 draft: false
-title: Nullam lacinia ligula
 date: 2022-10-03T12:47:22.395Z
-categories: lorem-ipsum/_index
-authors: jane-doe/_index
-image:
-  src: /images/uploads/eniko-kis-KsLPTsYaqIQ-unsplash.jpg
+title: Nullam lacinia ligula
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
   lacinia ligula non facilisis eleifend. Cras at gravida ipsum. Donec quam erat,
   fermentum nec commodo sed, tincidunt vitae nisl.
+categories: lorem-ipsum/_index
+authors: jane-doe/_index
+image:
+  src: /images/uploads/bertrand-bouchez-lrd26nd-awu-unsplash.jpg
+  credit: Photo by [Bertrand
+    Bouchez](https://unsplash.com/@dollyfilms?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+    on
+    [Unsplash](https://unsplash.com/s/photos/cap-ferret?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia ligula non facilisis eleifend. Cras at gravida ipsum. Donec quam erat, fermentum nec commodo sed, tincidunt vitae nisl. 
 
