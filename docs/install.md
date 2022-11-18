@@ -8,7 +8,7 @@
 
 Avec ses submodules
 ```
-git clone git@github.com:sebousan/hugo-template.git --recurse-submodules
+git clone git@github.com:sebousan/hugolify-template.git --recurse-submodules
 ```
 
 ## Installer Hugo
