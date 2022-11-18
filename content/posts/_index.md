@@ -1,5 +1,5 @@
 ---
 index: true
-title: Actualités
-url: actualites
+title: News
+url: news
 ---

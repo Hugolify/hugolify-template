@@ -1,5 +1,5 @@
 ---
 index: true
-title: Études de cas
-url: etudes-de-cas
+title: Case studies
+url: case-studies
 ---

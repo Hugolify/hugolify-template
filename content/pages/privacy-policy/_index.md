@@ -1,7 +1,7 @@
 ---
 draft: false
-title: Politique de confidentialité
-url: politique-de-confidentialite
+title: Privacy policy
+url: privacy-policy
 ---
 ## Données personnelles
 

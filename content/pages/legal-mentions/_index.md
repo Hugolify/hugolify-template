@@ -1,7 +1,7 @@
 ---
 draft: false
-title: Mentions légales
-url: mentions-legales
+title: Legal mentions
+url: legal-mentions
 description: Page des mentions légales
 ---
 ## Publication

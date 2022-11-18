@@ -1,7 +1,7 @@
-posts:          /actualites/:year-:month-:day-:slug/
-categories:     /actualites/:slug/
-authors:        /actualites/auteurs/:slug/
-projects:       /projets/:year-:slug/
-types:          /projets/:slug/
-casestudies:    /etudes-de-cas/:slug/
-publications:   /parutions/:slug/
+posts:          /news/:year-:month-:day-:slug/
+categories:     /news/:slug/
+authors:        /news/auteurs/:slug/
+projects:       /projects/:year-:slug/
+types:          /projects/:slug/
+casestudies:    /case-studies/:slug/
+publications:   /publications/:slug/

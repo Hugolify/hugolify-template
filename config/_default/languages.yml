@@ -1,9 +1,9 @@
-# en:
-#   languageName: English
-#   title: Hugo template
+# fr:
+#   languageName: Français
+#   title: Demo Hugolify
 #   weight: 2
 
-fr:
-  languageName: Français
-  title: Hugo template
+en:
+  languageName: English
+  title: Hugolify demo
   weight: 1

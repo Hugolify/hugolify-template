@@ -1,5 +1,5 @@
 ---
 index: true
-title: Projets
-url: projets
+title: Projects
+url: projects
 ---

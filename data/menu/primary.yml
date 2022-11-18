@@ -1,10 +1,11 @@
 links:
-  - title: Accueil
-    url: /
-  - title: Actualités
-    url: /actualites
-  - title: Projets
-    url: /projets
+  - title: News
+    url: /news
+  - title: Projects
+    url: /projects
   - blank: false
-    title: Études de cas
-    url: /etudes-de-cas
+    title: Case studies
+    url: /case-studies
+  - blank: false
+    title: Publications
+    url: /publication

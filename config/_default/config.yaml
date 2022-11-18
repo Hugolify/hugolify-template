@@ -2,8 +2,8 @@
 theme: hugo-theme
 
 ## LANGUAGE
-defaultContentLanguage: fr
-languageCode: fr
+defaultContentLanguage: en
+languageCode: en
 
 ## ADVANCED
 paginate: 9
