@@ -1,5 +1,5 @@
 ---
-url: /actualites/auteurs
 index: true
-title: Auteurs
+title: Authors
+url: /news/authors
 ---
