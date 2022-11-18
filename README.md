@@ -1,4 +1,4 @@
-# Hugo template
+# Hugolify template
 
 Template Hugo avec Bootstrap 5 pour site web avec actualités et pages.
 
@@ -9,9 +9,9 @@ Template Hugo avec Bootstrap 5 pour site web avec actualités et pages.
 - [License](#license)
 
 ## Live demo
-https://sebousan-hugo-template.netlify.app/
+https://hugolify-demo.netlify.app/
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5a4fa061-e7a5-4e66-9612-4fae713bda09/deploy-status)](https://app.netlify.com/sites/sebousan-hugo-theme/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5a4fa061-e7a5-4e66-9612-4fae713bda09/deploy-status)](https://app.netlify.com/sites/hugolify-demo/deploys)
 
 ## Fonctionnalités
 Types supportés par le thème et l’admin
