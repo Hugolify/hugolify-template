@@ -2,7 +2,7 @@
 index: true
 title: Home
 hero:
-  title: Hugolify
+  title: Hugolify demo
   text: A Github template of Hugo with Bootstrap 5 and Netlify CMS
   cta:
     url: https://github.com/sebousan/hugo-template
