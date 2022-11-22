@@ -17,7 +17,8 @@ module.exports = {
                     /^is-/,
                     /^has-/,
                     /^js-/,
-                    /-backdrop$/
+                    /-backdrop$/,
+                    /^items-/
                 ],
                 deep: [
                     /^page-/,
