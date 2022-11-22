@@ -24,8 +24,8 @@ Hugo sections available in theme and admin
 * publications
 * pages
 
-## Documentations
-[https://github.com/sebousan/hugolify-template/wiki)](https://github.com/sebousan/hugolify-template/wiki)
+## Documentation
+[https://github.com/sebousan/hugolify-template/wiki](https://github.com/sebousan/hugolify-template/wiki)
 
 ## License
 Hugolify is free for personal or commercial projects (MIT license)
