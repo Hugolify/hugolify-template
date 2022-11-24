@@ -6,29 +6,28 @@ module.exports = {
             preset: 'default'
         },
         '@fullhuman/postcss-purgecss': {
-            content: [
-                './themes/**/*.html',
-                'layouts/**/*.html'
-            ],
+            mode: 'all',
+            content: ['./hugo_stats.json'],
             safelist: {
                 standard: [
+                    /[target=_blank]/,
                     'show',
                     'fade',
-                    'alert-light',
-                    'alert-warning',
-                    'alert-danger',
                     /-backdrop$/,
                     /^is-/,
                     /^has-/,
                     /^js-/
                 ],
                 deep: [
-                    /^page-/,
-                    /^term-/,
-                    /^section-/,
-                    /-page$/,
-                    /^block-/
+                    /class*=block-/
                 ]
+            },
+            options: {
+                defaultExtractor: (content) => {
+                    let els = JSON.parse(content).htmlElements;
+                    els = els.tags.concat(els.classes, els.ids);
+                    return els;
+                }
             }
         }
     }
