@@ -12,6 +12,7 @@ module.exports = {
                 standard: [
                     'show',
                     'fade',
+                    /itemprop/,
                     /-backdrop$/,
                     /^is-/,
                     /^has-/,
