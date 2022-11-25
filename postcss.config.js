@@ -18,6 +18,7 @@ module.exports = {
                     /^js-/
                 ],
                 greedy: [
+                    /^aria-current$/,
                     /^role$/
                 ]
             },
