@@ -12,16 +12,19 @@ module.exports = {
                 standard: [
                     'show',
                     'fade',
-                    /itemprop/,
                     /-backdrop$/,
                     /^is-/,
                     /^has-/,
                     /^js-/
+                ],
+                greedy: [
+                    /^itemprop$/,
+                    /^role$/
                 ]
             },
             defaultExtractor: (content) => {
                 let els = JSON.parse(content).htmlElements;
-                els = els.tags.concat(els.classes, els.ids);
+                els = els.tags.concat(els.classes);
                 return els;
             }
         }
