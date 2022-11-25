@@ -18,7 +18,6 @@ module.exports = {
                     /^js-/
                 ],
                 greedy: [
-                    /^itemprop$/,
                     /^role$/
                 ]
             },

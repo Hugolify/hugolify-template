@@ -7,6 +7,8 @@ description: Vivamus vestibulum ac purus at pulvinar. Pellentesque rutrum massa
   elit. Suspendisse efficitur leo non risus sagittis, sit amet vulputate libero
   commodo. Suspendisse id ipsum vehicula, tempus eros non, facilisis metus.
   Suspendisse cursus ut tortor sed mattis.
+image:
+  src: /images/uploads/sebastien-jermer-ty9wjiijyj0-unsplash.jpg
 email: johndoe@email.com
 twitter: johndoe
 ---
