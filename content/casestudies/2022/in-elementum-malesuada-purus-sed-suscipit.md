@@ -24,4 +24,22 @@ hero:
     blank: false
   cta_second:
     blank: false
+blocks:
+  - type: infos
+    column: 4
+    background: false
+    title: Bloc informations
+    items:
+      - title: Lorem ipsum
+        text: Nam eleifend nisl tellus, porta lacinia lectus sollicitudin non.
+        icon: 1-square
+      - text: Phasellus tellus purus, pellentesque eu velit vel, faucibus maximus nunc
+        title: Faucibus maximus nunc
+        icon: 2-square
+      - title: Aliquam velit magna
+        text: Donec ut eros sit amet ipsum pulvinar sagittis.
+        icon: 3-square
+      - title: Curabitur non ante purus
+        text: Curabitur in tortor et odio congue suscipit sit amet quis purus.
+        icon: 4-square
 ---
