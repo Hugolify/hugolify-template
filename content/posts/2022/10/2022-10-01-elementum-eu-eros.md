@@ -6,8 +6,8 @@ title: Ut elementum eu eros
 description: Phasellus ut facilisis tellus. Nullam tempus enim id tempus
   convallis. Nullam vehicula tincidunt nunc id ultricies. In sit amet magna id
   ligula aliquet facilisis sit amet vel sapien.
-categories: lorem-ipsum/_index
-authors: john-doe/_index
+categories: Donec maximus a nulla ut feugiat
+authors: John Doe
 image:
   credit: Photo by [yann
     behr](https://unsplash.com/@yannbehr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

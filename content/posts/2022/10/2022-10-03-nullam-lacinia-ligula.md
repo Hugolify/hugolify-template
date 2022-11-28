@@ -6,8 +6,8 @@ title: Nullam lacinia ligula
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
   lacinia ligula non facilisis eleifend. Cras at gravida ipsum. Donec quam erat,
   fermentum nec commodo sed, tincidunt vitae nisl.
-categories: lorem-ipsum/_index
-authors: jane-doe/_index
+categories: Donec maximus a nulla ut feugiat
+authors: Jane Doe
 image:
   src: /images/uploads/bertrand-bouchez-lrd26nd-awu-unsplash.jpg
   credit: Photo by [Bertrand

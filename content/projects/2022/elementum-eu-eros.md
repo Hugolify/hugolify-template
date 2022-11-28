@@ -6,7 +6,7 @@ title: Ut elementum eu eros
 description: Phasellus ut facilisis tellus. Nullam tempus enim id tempus
   convallis. Nullam vehicula tincidunt nunc id ultricies. In sit amet magna id
   ligula aliquet facilisis sit amet vel sapien.
-types: nulla-ut-feugiat/_index
+types: Phasellus ut
 image:
   src: /images/uploads/lopez-robin-nbpp7pzpsh8-unsplash.jpg
 datas:

@@ -6,8 +6,8 @@ title: Sed pharetra, massa eu varius egestas
 description: Phasellus ut facilisis tellus. Nullam tempus enim id tempus
   convallis. Nullam vehicula tincidunt nunc id ultricies. In sit amet magna id
   ligula aliquet facilisis sit amet vel sapien.
-categories: lorem-ipsum/_index
-authors: jane-doe/_index
+categories: Donec maximus a nulla ut feugiat
+authors: John Doe
 image:
   alt: ""
   credit: Photo by [Robin

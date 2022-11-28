@@ -5,8 +5,11 @@ date: 2022-09-05T14:42:58.943Z
 title: Aliquam a scelerisque dolor. Proin maximus, eros et pellentesque
 description: Pellentesque vulputate nulla fermentum libero aliquam, ut gravida
   nisi pellentesque.
-categories: donec-maximus-a-nulla-ut-feugiat/_index
-authors: john-doe/_index
+categories: Donec maximus a nulla ut feugiat
+tags:
+  - Lorem
+  - Ipsum
+authors: John Doe
 image:
   src: /images/uploads/sebastien-jermer-ty9wjiijyj0-unsplash.jpg
   credit: Photo by [Sébastien

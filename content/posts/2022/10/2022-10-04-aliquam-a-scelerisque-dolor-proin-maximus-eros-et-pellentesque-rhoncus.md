@@ -5,8 +5,8 @@ date: 2022-10-01T14:42:58.943Z
 title: Proin maximus, eros et pellentesque rhoncus
 description: Pellentesque vulputate nulla fermentum libero aliquam, ut gravida
   nisi pellentesque.
-categories: donec-maximus-a-nulla-ut-feugiat/_index
-authors: john-doe/_index
+categories: Lorem ipsum
+authors: Jane Doe
 image:
   src: /images/uploads/louis-mornaud-yugpd0evcgi-unsplash.jpg
   credit: Photo by [Louis

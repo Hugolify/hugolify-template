@@ -5,7 +5,7 @@ date: 2022-11-17T10:34:08.410Z
 title: Aliquet facilisis
 description: Sed eros nisl, tempus eget tempor quis, laoreet ac odio. Aenean
   tristique metus vitae mollis imperdiet.
-types: nulla-ut-feugiat/_index
+types: Facilisis tellus
 image:
   src: /images/uploads/ludovic-digidi-ivooorgbrkk-unsplash.jpg
   credit: Photo by [Ludovic
