@@ -18,6 +18,7 @@ Hugo sections available in theme and admin
 * posts
   * authors (taxonomy)
   * categories (taxonomy)
+  * tags (taxonomy)
 * projects
   * types (taxonomy)
 * casestudies
