@@ -27,17 +27,14 @@ blocks:
       href="https://vimeo.com/198063817">Landes - IMANOL YEREGI</a> from <a
       href="https://vimeo.com/unaiborda">Unai Borda</a> on <a
       href="https://vimeo.com">Vimeo</a>.</p>
-    title: Bloc embed
-    text: vidéo provenant de Vimeo
-  - type: figure
-    src: /images/uploads/arpad-czapp-znu1h8md9ye-unsplash.jpg
-    legend: Lorem ipsum
-    credit: C﻿rédit photo
-  - type: latest
-    count: 3
-    show_more: true
+    title: "Block: Embed"
+    text: Embed from vimeo
+  - type: embed
     background: false
-    section: posts
-    title: Bloc derniers items
-    text: dernières actualités
+    embed: <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/2ZwhZWL56t0" title="YouTube video
+      player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    title: "Block: Embed"
+    text: Embed from youtube
 ---
