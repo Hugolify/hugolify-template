@@ -65,18 +65,4 @@ blocks:
       text: Lorem ipsum
       image:
         src: /images/uploads/yann-behr-whwcf5sbdqo-unsplash.jpg
-  - type: latest
-    count: 3
-    show_more: true
-    background: false
-    section: posts
-    title: "Block: latest"
-    text: latest news
-  - type: latest
-    count: 3
-    show_more: true
-    background: false
-    section: projects
-    title: "Block: latest"
-    text: latest projects
 ---
