@@ -33,8 +33,13 @@ blocks:
       nec iaculis lorem.
   - type: cta
     blank: true
-    text: "Block: bouton"
+    text: With background
     url: https://www.sebousan.com/
+    title: "Block: Call to action"
+    cta:
+      text: Button
+      url: "#"
+    background: true
   - type: editorial
     direction: ltr
     cta:
