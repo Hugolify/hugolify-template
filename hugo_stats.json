@@ -55,13 +55,13 @@
       "average",
       "block-bg",
       "block-cta",
+      "block-datas",
       "block-editorial",
       "block-editorial-ltr",
       "block-editorial-rtl",
       "block-embed",
       "block-figure",
       "block-gallery",
-      "block-gauges",
       "block-images",
       "block-infos",
       "block-latest",
@@ -173,6 +173,7 @@
       "toc",
       "top",
       "top-warning",
+      "value",
       "youtube"
     ],
     "ids": [

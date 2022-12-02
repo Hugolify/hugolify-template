@@ -74,11 +74,11 @@ blocks:
           blank: false
         title: Curabitur non ante purus
         text: Curabitur in tortor et odio congue suscipit sit amet quis purus.
-  - type: gauges
+  - type: datas
     column: 3
     background: false
-    title: "Block: Statistics"
-    text: With percent and automatic color
+    title: "Block: Datas"
+    text: With gauge and automatic color
     items:
       - text: Maecenas semper urna enim, viverra faucibus tellus bibendum sed
         title: Faucibus
@@ -99,11 +99,12 @@ blocks:
         limit: 100
         suffix: "%"
     show_color: true
-  - type: gauges
+    show_gauge: true
+  - type: datas
     column: 3
     background: false
-    title: "Block: Statistics"
-    text: Suspendisse sollicitudin dignissim velit quis consequat
+    title: "Block: Datas"
+    text: With gauge
     items:
       - text: Maecenas semper urna enim, viverra faucibus tellus bibendum sed
         title: Faucibus
@@ -124,4 +125,31 @@ blocks:
           porta sapien eu tellus ornare tincidunt.
         limit: 100
     show_color: false
+    show_gauge: true
+  - type: datas
+    column: 3
+    background: false
+    title: "Block: Datas"
+    text: Without gauges
+    items:
+      - text: Maecenas semper urna enim, viverra faucibus tellus bibendum sed
+        title: Faucibus
+        value: 900
+        prefix: "+"
+        suffix: "€"
+        limit: 1000
+      - value: 200000
+        title: Quisque consectetur
+        text: Mauris convallis ante eu nisl iaculis efficitur. Pellentesque vel
+          fringilla nunc.
+        limit: 250000
+      - value: 3.5
+        suffix: "K"
+        prefix: "$"
+        title: Morbi placerat erat
+        text: Proin sagittis faucibus tortor, rutrum facilisis erat volutpat ut. Etiam
+          porta sapien eu tellus ornare tincidunt.
+        limit: 100
+    show_color: false
+    show_gauge: false
 ---
