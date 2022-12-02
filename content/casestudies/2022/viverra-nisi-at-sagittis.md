@@ -64,7 +64,7 @@ blocks:
       src: /images/uploads/sebastien-jermer-ty9wjiijyj0-unsplash.jpg
   - type: quote
     background: false
-    text: "Block: quote. "
+    text: "Block: quote. Curabitur scelerisque sollicitudin lobortis. Sed pharetra, massa eu varius egestas, metus nulla rutrum diam, et accumsan purus lacus vel ante. Suspendisse egestas augue a egestas consectetur. Aliquam interdum hendrerit porta. Maecenas at quam vel lorem malesuada euismod nec vel nibh. Cras ac facilisis nunc."
     author:
       title: John Doe
       text: Lorem ipsum

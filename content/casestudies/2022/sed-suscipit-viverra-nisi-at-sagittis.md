@@ -50,8 +50,24 @@ blocks:
         src: /images/uploads/olga-serjantu-jbjd2kbi55s-unsplash.jpg
         legend: Lorem
       - src: /images/uploads/louis-mornaud-yugpd0evcgi-unsplash.jpg
+  - type: title
+    title: "Block: Figure"
   - type: figure
-    src: /images/uploads/arpad-czapp-znu1h8md9ye-unsplash.jpg
-    legend: "Block: Figure"
-    credit: Crédit photo
+    figure:
+      src: /images/uploads/arpad-czapp-znu1h8md9ye-unsplash.jpg
+      legend: "Block: Figure (petit)"
+      credit: Crédit photo
+    grid: small
+  - type: figure
+    figure:
+      src: /images/uploads/sebastien-jermer-ty9wjiijyj0-unsplash.jpg
+      legend: "Block: Figure (moyen)"
+      credit: Crédit photo
+    grid: medium
+  - type: figure
+    figure:
+      src: /images/uploads/olga-serjantu-jbjd2kbi55s-unsplash.jpg
+      legend: "Block: Figure (large)"
+      credit: Crédit photo
+    grid: large
 ---
