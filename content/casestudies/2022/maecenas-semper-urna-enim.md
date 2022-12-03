@@ -18,33 +18,4 @@ hero:
   cta_second:
     blank: false
   title: ""
-blocks:
-  - type: latest
-    count: 3
-    show_more: true
-    background: false
-    section: posts
-    title: "Block: latest"
-    text: latest news
-  - type: latest
-    count: 3
-    show_more: true
-    background: false
-    section: projects
-    title: "Block: latest"
-    text: latest projects
-  - type: latest
-    count: 3
-    show_more: true
-    background: false
-    section: casestudies
-    title: "Block: latest"
-    text: latest case studies
-  - type: latest
-    count: 3
-    show_more: true
-    background: false
-    section: publications
-    title: "Block: latest"
-    text: latest publications
 ---

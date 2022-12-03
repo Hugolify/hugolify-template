@@ -1,4 +1,7 @@
 links:
+  - blank: false
+    title: Blocks
+    url: /pages/blocks
   - title: News
     url: /news
   - title: Projects
