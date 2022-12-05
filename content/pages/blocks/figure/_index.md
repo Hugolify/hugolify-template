@@ -11,7 +11,9 @@ hero:
     text: See examples
     url: "#main"
   cta_second:
-    blank: false
+    text: Documentation
+    url: https://github.com/sebousan/hugolify-template/wiki/block-figure
+    blank: true
 blocks:
   - type: figure
     figure:
