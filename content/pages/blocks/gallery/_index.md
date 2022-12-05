@@ -2,14 +2,16 @@
 index: false
 draft: false
 title: Gallery
+description: Add image gallery in grid
 hero:
   cta:
     blank: false
-    text: Discover
+    text: See examples
     url: "#main"
   cta_second:
     blank: false
   title: Block gallery
+  text: Add image gallery in grid
 blocks:
   - type: gallery
     column: 4

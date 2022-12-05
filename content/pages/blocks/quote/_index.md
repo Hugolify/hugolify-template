@@ -2,16 +2,18 @@
 index: false
 draft: false
 title: Quote
+description: Add quote and author
 hero:
   cta:
     blank: false
-    text: Discover
+    text: See examples
     url: "#main"
   cta_second:
     blank: true
     url: https://github.com/sebousan/hugolify-template/wiki/block-quote
     text: Documentation
   title: Block quote
+  text: Add quote and author
 blocks:
   - type: quote
     background: false

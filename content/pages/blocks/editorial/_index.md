@@ -2,14 +2,18 @@
 index: false
 draft: false
 title: Editorial
+description: Add section with content and media
 hero:
   cta:
     blank: false
-    text: Discover
+    text: See examples
     url: "#main"
   cta_second:
-    blank: false
+    blank: true
+    text: Documentation
+    url: https://github.com/sebousan/hugolify-template/wiki/block-editorial
   title: Block editorial
+  text: Add section with content (title, text and button) and media
 blocks:
   - type: editorial
     direction: ltr

@@ -2,12 +2,13 @@
 index: false
 draft: false
 title: Figure
+description: Add image block with legend and credits, 3 widths available
 hero:
   title: Block figure
-  text: Image with legend and credits, 3 widths available
+  text: Add image block with legend and credits, 3 widths available
   cta:
     blank: false
-    text: Discover
+    text: See examples
     url: "#main"
   cta_second:
     blank: false

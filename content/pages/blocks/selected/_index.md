@@ -2,10 +2,12 @@
 index: false
 draft: false
 title: Selected
+description: Add selected items from posts, projects, publications or casestudies.
 hero:
   title: Selected sections
+  text: Add selected items from posts, projects, publications or casestudies.
   cta:
-    text: Discover
+    text: See examples
     blank: false
     url: "#main"
   cta_second:

@@ -2,12 +2,14 @@
 index: false
 draft: false
 title: Latest
+description: Add latest items from posts, projects, publications or casestudies.
 hero:
   title: Block latest
+  text: Add latest items from posts, projects, publications or casestudies.
   cta:
     blank: false
     url: "#main"
-    text: Discover
+    text: See examples
   cta_second:
     blank: false
 blocks:

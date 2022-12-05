@@ -2,14 +2,16 @@
 index: false
 draft: false
 title: Datas
+description: Add some datas in columns (with gauge or not)
 hero:
   cta:
     blank: false
-    text: Discover
+    text: See examples
     url: "#main"
   cta_second:
     blank: false
   title: Blocks datas
+  text: Add some datas in columns (with gauge or not)
 blocks:
   - type: datas
     column: 3

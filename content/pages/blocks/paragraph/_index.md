@@ -2,11 +2,13 @@
 index: false
 draft: false
 title: Paragraph
+description: Add title and some text
 hero:
   title: Block paragraph
+  description: Add title and some text
   cta:
     blank: false
-    text: Discover
+    text: See examples
     url: "#main"
   cta_second:
     blank: false

@@ -2,14 +2,16 @@
 index: false
 draft: false
 title: Alert
+description: Add alert section with state
 hero:
   cta:
     blank: false
-    text: Discover
+    text: See examples
     url: "#main"
   cta_second:
     blank: false
   title: Block alert
+  text: Add alert section with state
 blocks:
   - type: alert
     state: light

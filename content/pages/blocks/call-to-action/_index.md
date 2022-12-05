@@ -2,6 +2,7 @@
 index: false
 draft: false
 title: Call to action
+description: Add button with link
 hero:
   cta:
     blank: false
@@ -12,6 +13,7 @@ hero:
     text: Documentation
     url: https://github.com/sebousan/hugolify-template/wiki/block-cta
   title: Block call to action
+  text: Add button with link
 blocks:
   - type: cta
     cta:

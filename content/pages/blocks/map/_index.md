@@ -1,8 +1,7 @@
 ---
 index: false
-draft: false
+draft: true
 title: Map
-description: TODO
 hero:
   cta:
     blank: false

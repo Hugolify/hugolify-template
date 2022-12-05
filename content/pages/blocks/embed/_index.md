@@ -2,11 +2,13 @@
 index: false
 draft: false
 title: Embed
+description: Add embed like video youtube
 hero:
   title: Block embed
+  text: Add embed like video youtube
   cta:
     blank: false
-    text: Discover
+    text: See examples
     url: "#main"
   cta_second:
     blank: false

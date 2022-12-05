@@ -2,20 +2,22 @@
 index: false
 draft: false
 title: Informations
+description: Add some cards informations with icon in column.
 hero:
   cta:
     blank: false
-    text: Discover
+    text: See examples
     url: "#main"
   cta_second:
     blank: false
   title: Block informations
+  text: Add some cards informations with icon in column.
 blocks:
   - type: infos
     column: 4
     background: false
     title: 4 columns
-    text: In column with bootstrap icons
+    text: Phasellus tellus purus, pellentesque eu velit vel, faucibus maximus nunc
     items:
       - title: Lorem ipsum
         text: Nam eleifend nisl tellus, porta lacinia lectus sollicitudin non.
@@ -33,7 +35,7 @@ blocks:
     column: 3
     background: false
     title: 3 columns
-    text: In column with bootstrap icons
+    text: Phasellus tellus purus, pellentesque eu velit vel, faucibus maximus nunc
     items:
       - title: Lorem ipsum
         text: Nam eleifend nisl tellus, porta lacinia lectus sollicitudin non.
@@ -48,7 +50,7 @@ blocks:
     column: 4
     background: true
     title: 4 columns
-    text: In column with bootstrap icons
+    text: Phasellus tellus purus, pellentesque eu velit vel, faucibus maximus nunc
     items:
       - title: Lorem ipsum
         text: Nam eleifend nisl tellus, porta lacinia lectus sollicitudin non.

@@ -2,10 +2,12 @@
 index: false
 draft: false
 title: Push
+description: Add some cards push with image and button in column.
 hero:
   title: Block push
+  text: Add some cards push with image and button in column.
   cta:
-    text: Discover
+    text: See examples
     url: "#main"
     blank: false
   cta_second:

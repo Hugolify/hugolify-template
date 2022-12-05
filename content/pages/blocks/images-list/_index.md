@@ -2,11 +2,13 @@
 index: false
 draft: false
 title: Images list
+description: Add image list in one or two columns
 hero:
   title: Block Images list
+  text: Add image list in one or two columns
   cta:
     blank: false
-    text: Discover
+    text: See examples
     url: "#main"
   cta_second:
     blank: false
