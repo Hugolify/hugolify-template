@@ -24,4 +24,36 @@ hero:
     blank: false
   cta_second:
     blank: false
+blocks:
+  - type: editorial
+    direction: ltr
+    cta:
+      blank: false
+    background: false
+    text: Curabitur scelerisque sollicitudin lobortis. Sed pharetra, massa eu varius
+      egestas, metus nulla rutrum diam, et accumsan purus lacus vel ante.
+      Suspendisse egestas augue a egestas consectetur. Aliquam interdum
+      hendrerit porta. Maecenas at quam vel lorem malesuada euismod nec vel
+      nibh. Cras ac facilisis nunc.
+    title: Maecenas at quam vel lorem malesuada euismod
+    image:
+      src: /images/uploads/lopez-robin-nbpp7pzpsh8-unsplash.jpg
+  - type: quote
+    background: false
+    text: Vivamus tincidunt malesuada lorem eget sodales. Praesent sit amet risus
+      augue. Aliquam gravida posuere lectus ut volutpat. Quisque sed tortor vel
+      tortor tincidunt tristique id nec urna. Nunc tempus felis ante, eget
+      commodo ex ullamcorper eu. Cras vel tincidunt urna. Aliquam tempor
+      tincidunt augue, in iaculis neque consectetur et.
+    author:
+      title: Mauris tincidunt
+  - type: gallery
+    column: 4
+    background: false
+    title: Quisque sed tortor vel tortor tincidunt tristique id nec urna.
+    gallery:
+      - src: /images/uploads/sebastien-jermer-ty9wjiijyj0-unsplash.jpg
+      - src: /images/uploads/robin-goutard-3evcj31p35q-unsplash.jpg
+      - src: /images/uploads/andrea-villiers-qgift_rbhyg-unsplash.jpg
+      - src: /images/uploads/balthazar-lelievre-zsozkbm7yy8-unsplash.jpg
 ---

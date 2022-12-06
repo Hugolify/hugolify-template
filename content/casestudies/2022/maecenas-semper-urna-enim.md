@@ -18,4 +18,13 @@ hero:
   cta_second:
     blank: false
   title: ""
+blocks:
+  - type: images
+    background: false
+    images:
+      - half: false
+        src: /images/uploads/lea-maruani-um-shmjr_no-unsplash.jpg
+      - half: false
+        src: /images/uploads/olga-serjantu-jbjd2kbi55s-unsplash.jpg
+    title: Quisque sed tortor vel tortor tincidunt tristique id nec urna.
 ---
