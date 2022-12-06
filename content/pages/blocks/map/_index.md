@@ -11,7 +11,9 @@ hero:
     url: "#main"
     text: See example
   cta_second:
-    blank: false
+    text: Documentation
+    url: https://github.com/sebousan/hugolify-template/wiki/Block-map
+    blank: true
 blocks:
   - type: map
     background: false
