@@ -8,6 +8,9 @@ languageCode: en
 ## ADVANCED
 paginate: 9
 enableRobotsTXT: true
+markup:
+  tableOfContents:
+    ordered: true
 build:
   writeStats: true
 
