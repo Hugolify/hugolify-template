@@ -15,6 +15,8 @@ https://hugolify-demo.netlify.app/
 
 ## Features
 Hugo sections available in theme and admin
+
+* pages
 * posts
   * authors (taxonomy)
   * categories (taxonomy)
@@ -23,7 +25,6 @@ Hugo sections available in theme and admin
   * types (taxonomy)
 * casestudies
 * publications
-* pages
 
 ## Documentation
 [https://github.com/sebousan/hugolify-template/wiki](https://github.com/sebousan/hugolify-template/wiki)
