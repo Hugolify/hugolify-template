@@ -9,7 +9,9 @@ hero:
     text: See examples
     url: "#main"
   cta_second:
-    blank: false
+    blank: true
+    text: Documentation
+    url: https://github.com/sebousan/hugolify-template/wiki/block-gallery
   title: Block gallery
   text: Add image gallery in grid
 blocks:

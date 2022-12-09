@@ -11,7 +11,9 @@ hero:
     url: "#main"
     text: See examples
   cta_second:
-    blank: false
+    blank: true
+    text: Documentation
+    url: https://github.com/sebousan/hugolify-template/wiki/block-latest
 blocks:
   - type: latest
     count: 3
