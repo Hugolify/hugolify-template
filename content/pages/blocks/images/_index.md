@@ -1,17 +1,19 @@
 ---
 index: false
 draft: false
-title: Images list
+title: Images
 description: Add image list in one or two columns
 hero:
-  title: Block Images list
+  title: Block Images
   text: Add image list in one or two columns
   cta:
     blank: false
     text: See examples
     url: "#main"
   cta_second:
-    blank: false
+    blank: true
+    text: Documentation
+    url: https://github.com/sebousan/hugolify-template/wiki/block-images
 blocks:
   - type: images
     background: false

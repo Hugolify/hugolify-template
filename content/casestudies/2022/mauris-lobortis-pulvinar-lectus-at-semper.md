@@ -19,7 +19,7 @@ hero:
   title: Mauris lobortis pulvinar lectus at semper.
   text: Suspendisse sollicitudin dignissim velit quis consequat
 blocks:
-  - type: infos
+  - type: informations
     column: 3
     background: false
     title: Vestibulum vulputate odio eget risus lacinia, eget sollicitudin lectus
