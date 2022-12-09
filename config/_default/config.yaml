@@ -6,7 +6,7 @@ defaultContentLanguage: en
 languageCode: en
 
 ## ADVANCED
-paginate: 9
+paginate: 6
 enableRobotsTXT: true
 markup:
   tableOfContents:
