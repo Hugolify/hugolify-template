@@ -8,6 +8,9 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
   fermentum nec commodo sed, tincidunt vitae nisl.
 categories: Donec maximus a nulla ut feugiat
 authors: John Doe
+tags:
+  - Lorem
+  - Ipsum
 image:
   src: /images/uploads/bertrand-borie-tmlculvqha0-unsplash.jpg
   credit: Photo by [Bertrand

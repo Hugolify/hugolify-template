@@ -229,12 +229,10 @@
       "footer",
       "fusce-id-imperdiet-nunc",
       "hosting",
-      "hébergement",
       "lorem-ipsum",
       "lorem-ipsum-1",
       "lorem-ipsum-2",
       "main",
-      "mesure-daudience",
       "navigation",
       "offcanvasNavbarLabel",
       "pages",
@@ -244,13 +242,12 @@
       "projects",
       "projectsFilters",
       "projectsFiltersLabel",
-      "publication",
       "publications",
       "sed-pharetra-massa-eu-varius-egestas",
       "toc",
       "tocLabel",
       "vivamus-tincidunt-malesuada-lorem-eget-sodales",
-      "éditeur"
+      "welcome-to-demohugolifycom"
     ]
   }
 }
