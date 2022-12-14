@@ -13,4 +13,7 @@ image:
     [Unsplash](https://unsplash.com/s/photos/contis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
   src: /images/uploads/clovis-wood-photography-ukia1x8ogfy-unsplash.jpg
 images: []
+press:
+  url: https://lipsum.com/
+  title: Vivamus iaculis libero arcu
 ---

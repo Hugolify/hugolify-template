@@ -12,4 +12,7 @@ image:
     [Unsplash](https://unsplash.com/collections/87604549/les-landes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
   src: /images/uploads/lea-maruani-um-shmjr_no-unsplash.jpg
 images: []
+press:
+  url: https://lipsum.com/
+  title: Cras vel tincidunt
 ---

@@ -100,6 +100,7 @@
       "content-body",
       "credit",
       "cta",
+      "datas",
       "date",
       "description",
       "disabled",
@@ -112,6 +113,7 @@
       "gallery",
       "gallery-4",
       "gauge",
+      "grid",
       "half",
       "header",
       "heading",
@@ -217,10 +219,16 @@
     ],
     "ids": [
       "TableOfContents",
+      "audience-measurement",
       "casestudies",
       "conception",
+      "cookies",
+      "donec-quis-tristique-elit",
       "données-personnelles",
+      "editor",
       "footer",
+      "fusce-id-imperdiet-nunc",
+      "hosting",
       "hébergement",
       "lorem-ipsum",
       "lorem-ipsum-1",
@@ -238,8 +246,10 @@
       "projectsFiltersLabel",
       "publication",
       "publications",
+      "sed-pharetra-massa-eu-varius-egestas",
       "toc",
       "tocLabel",
+      "vivamus-tincidunt-malesuada-lorem-eget-sodales",
       "éditeur"
     ]
   }

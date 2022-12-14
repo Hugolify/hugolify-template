@@ -8,4 +8,7 @@ description: Maecenas ac aliquet ante. Quisque risus mauris, maximus ut luctus
 image:
   src: /images/uploads/andrea-villiers-qgift_rbhyg-unsplash.jpg
 images: []
+press:
+  url: https://lipsum.com/
+  title: Lipsum
 ---

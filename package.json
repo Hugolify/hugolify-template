@@ -1,27 +1,31 @@
 {
-  "name": "hugolify-template",
-  "version": "1.0.0",
-  "repository": "https://github.com/sebousan/hugolify-template",
-  "author": {
-    "name": "Sébastien Moulène",
-    "url": "https://www.sebousan.com/"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "hugolify-theme": "./themes/hugolify-theme"
-  },
-  "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^5.0.0",
-    "autoprefixer": "^10.4.13",
-    "cssnano": "^5.1.14",
-    "postcss": "^8.4.19",
-    "postcss-cli": "^10.0.0",
-    "postcss-sass": "^0.5.0"
-  },
-  "scripts": {
-    "watch": "hugo server",
-    "build": "hugo --minify",
-    "update": "git pull --recurse-submodules --depth 1 && git submodule update --remote",
-    "cms": "npx netlify-cms-proxy-server"
-  }
+    "name": "hugolify-template",
+    "version": "1.0.0",
+    "homepage": "https://www.hugolify.com",
+    "repository": "https://github.com/sebousan/hugolify-template",
+    "bugs": {
+        "url": "https://github.com/sebousan/hugolify-template/issues"
+    },
+    "author": {
+        "name": "Sébastien Moulène",
+        "url": "https://www.sebastienmoulene.com/"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "hugolify-theme": "./themes/hugolify-theme"
+    },
+    "devDependencies": {
+        "@fullhuman/postcss-purgecss": "^5.0.0",
+        "autoprefixer": "^10.4.13",
+        "cssnano": "^5.1.14",
+        "postcss": "^8.4.19",
+        "postcss-cli": "^10.0.0",
+        "postcss-sass": "^0.5.0"
+    },
+    "scripts": {
+        "watch": "hugo server",
+        "build": "hugo --minify",
+        "update": "git pull --recurse-submodules --depth 1 && git submodule update --remote",
+        "cms": "npx netlify-cms-proxy-server"
+    }
 }
