@@ -13,6 +13,8 @@ markup:
     ordered: true
 build:
   writeStats: true
+imaging:
+  quality: 75
 
 ## STATIC
 staticDir:
