@@ -5,7 +5,7 @@ Is a Github template for build easily a fast, accessible friendly and low carbon
 ## Table of content
 - [Live demo](#live-demo)
 - [Features](#features)
-- [Documentations](#documentations)
+- [Documentation](#documentation)
 - [License](#license)
 
 ## Live demo
