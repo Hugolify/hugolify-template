@@ -1,1 +1,0 @@
-export const uploadcarePublicKey = 'f5ff71a7039e221e1cdd';
