@@ -6,15 +6,16 @@ defaultContentLanguage: en
 languageCode: en
 
 ## ADVANCED
-paginate: 6
+build:
+  writeStats: true
 enableRobotsTXT: true
+imaging:
+  quality: 75
 markup:
   tableOfContents:
     ordered: true
-build:
-  writeStats: true
-imaging:
-  quality: 75
+paginate: 6
+removePathAccents: true
 
 ## STATIC
 staticDir:
