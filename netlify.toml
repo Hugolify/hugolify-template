@@ -10,7 +10,7 @@
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.107.0"
+  HUGO_VERSION = "0.109.0"
 
 [context.branch-deploy.environment]
   HUGO_ENV = "staging"

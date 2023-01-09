@@ -6,3 +6,4 @@ projects:       /projects/:year-:slug/
 types:          /projects/:slug/
 casestudies:    /case-studies/:slug/
 publications:   /publications/:slug/
+pages:          /:sections[1:]/:filename/
