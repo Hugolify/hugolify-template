@@ -1,5 +1,5 @@
 ---
-index: true
+isIndex: true
 title: News
 url: news
 ---

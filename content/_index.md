@@ -1,5 +1,5 @@
 ---
-index: true
+isIndex: true
 title: Home
 hero:
   title: Hugolify demo
@@ -22,7 +22,7 @@ blocks:
         cta:
           blank: false
           text: See blocks
-          url: /pages/blocks
+          url: /blocks
         title: Blocks
         text: To compose beautiful pages, more than fifteen blocks are available to
           boost their content.
