@@ -1,6 +1,5 @@
 ---
-layout: blocks
-index: false
+isIndex: false
 draft: false
 date: 2022-11-21T14:04:45.297Z
 title: Mauris lobortis pulvinar lectus at semper.

@@ -1,6 +1,5 @@
 ---
-layout: blocks
-index: false
+isIndex: false
 draft: false
 date: 2022-09-06T14:12:17.766Z
 title: In elementum malesuada purus sed suscipit

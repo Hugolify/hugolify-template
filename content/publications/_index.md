@@ -1,5 +1,5 @@
 ---
-index: isIndex
+isIndex: true
 title: Publications
 url: publications
 ---

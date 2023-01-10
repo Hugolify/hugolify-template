@@ -1,5 +1,5 @@
 ---
-index: false
+isIndex: false
 draft: false
 date: 2022-11-21T15:04:18.252Z
 title: Fusce ut sapien massa

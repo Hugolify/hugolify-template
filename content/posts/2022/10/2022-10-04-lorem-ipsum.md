@@ -1,5 +1,5 @@
 ---
-index: false
+isIndex: false
 draft: false
 date: 2022-10-04T12:42:14.430Z
 title: Lorem ipsum

@@ -1,5 +1,5 @@
 ---
-index: false
+isIndex: false
 title: John Doe
 description: Vivamus vestibulum ac purus at pulvinar. Pellentesque rutrum massa
   consectetur fermentum luctus. Aenean tempor ipsum sed mauris mattis, ac

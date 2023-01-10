@@ -1,5 +1,5 @@
 ---
-index: false
+isIndex: false
 draft: false
 date: 2022-10-01T14:42:58.943Z
 title: Proin maximus, eros et pellentesque rhoncus

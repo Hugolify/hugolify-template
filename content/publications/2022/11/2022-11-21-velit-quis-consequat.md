@@ -1,5 +1,5 @@
 ---
-index: false
+isIndex: false
 draft: false
 date: 2022-11-21T14:23:39.287Z
 title: Velit quis consequat

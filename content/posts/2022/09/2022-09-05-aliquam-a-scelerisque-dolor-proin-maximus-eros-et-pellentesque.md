@@ -1,5 +1,5 @@
 ---
-index: false
+isIndex: false
 draft: false
 date: 2022-09-05T14:42:58.943Z
 title: Aliquam a scelerisque dolor. Proin maximus, eros et pellentesque

@@ -1,5 +1,5 @@
 ---
-index: false
+isIndex: false
 draft: false
 date: 2021-09-15T12:42:14.430Z
 title: Quisque vestibulum, mi eget semper laoreet

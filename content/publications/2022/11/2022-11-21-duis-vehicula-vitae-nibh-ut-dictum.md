@@ -1,5 +1,5 @@
 ---
-index: false
+isIndex: false
 draft: false
 date: 2022-11-21T14:34:22.165Z
 title: Duis vehicula vitae nibh ut dictum

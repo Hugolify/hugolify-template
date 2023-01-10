@@ -1,6 +1,5 @@
 ---
-layout: blocks
-index: false
+isIndex: false
 draft: false
 date: 2022-11-13T15:23:36.814Z
 title: Maecenas semper urna enim

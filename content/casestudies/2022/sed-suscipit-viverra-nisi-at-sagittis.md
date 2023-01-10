@@ -1,6 +1,5 @@
 ---
-layout: blocks
-index: false
+isIndex: false
 draft: false
 date: 2022-11-17T15:23:36.814Z
 title: Sed suscipit viverra nisi at sagittis

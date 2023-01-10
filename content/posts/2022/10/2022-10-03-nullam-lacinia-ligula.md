@@ -1,5 +1,5 @@
 ---
-index: false
+isIndex: false
 draft: false
 date: 2022-10-03T12:47:22.395Z
 title: Nullam lacinia ligula

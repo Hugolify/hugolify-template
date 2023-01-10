@@ -1,5 +1,5 @@
 ---
-index: false
+isIndex: false
 draft: false
 date: 2021-10-02T19:34:08.410Z
 title: Sed pharetra, massa eu varius egestas

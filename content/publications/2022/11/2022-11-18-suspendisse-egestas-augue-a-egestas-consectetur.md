@@ -1,5 +1,5 @@
 ---
-index: false
+isIndex: false
 draft: false
 date: 2022-11-18T10:02:55.191Z
 title: Suspendisse egestas augue a egestas consectetur

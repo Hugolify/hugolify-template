@@ -1,5 +1,5 @@
 ---
-index: false
+isIndex: false
 draft: false
 date: 2021-10-17T12:56:00.000Z
 title: Nullam vehicula tincidunt nunc id ultricies
