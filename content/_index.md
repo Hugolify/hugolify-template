@@ -14,18 +14,16 @@ hero:
     text: Discover on Github
     blank: true
 blocks:
-  - type: pushes
-    column: 2
+  - type: cta
     background: false
-    items:
-      - align: start
-        cta:
-          blank: false
-          text: See blocks
-          url: /blocks
-        title: Blocks
-        text: To compose beautiful pages, more than fifteen blocks are available to
-          boost their content.
+    title: Content blocks
+    text: To compose beautiful pages, more than fifteen blocks are available to
+      boost their content. Available for pages and case studies.
+    cta:
+      blank: false
+      text: See all available blocks
+      url: /blocks
+       
   - type: latest
     count: 3
     show_more: true
