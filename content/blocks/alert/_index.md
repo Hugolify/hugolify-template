@@ -17,6 +17,12 @@ hero:
 blocks:
   - type: alert
     state: light
+    background: true
+    text: Duis nisl odio, blandit vel quam eget, **blandit dapibus erat**. Nullam
+      pretium eleifend lectus, at semper nulla egestas a. Praesent condimentum
+      nibh erat, eget interdum nisi auctor eget.
+  - type: alert
+    state: light
     background: false
     text: Duis nisl odio, blandit vel quam eget, **blandit dapibus erat**. Nullam
       pretium eleifend lectus, at semper nulla egestas a. Praesent condimentum

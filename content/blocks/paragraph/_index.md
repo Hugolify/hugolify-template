@@ -28,7 +28,7 @@ blocks:
   - type: paragraph
     background: false
     grid: small
-    align: center
+    offset: center
     title: Paragraph
     text: Curabitur nec ipsum sit amet tellus sagittis blandit. Nulla massa nibh,
       cursus a arcu et, viverra sodales ipsum. Duis id congue metus. In commodo
@@ -39,7 +39,7 @@ blocks:
   - type: paragraph
     background: false
     grid: small
-    align: end
+    offset: end
     title: Paragraph
     text: Curabitur nec ipsum sit amet tellus sagittis blandit. Nulla massa nibh,
       cursus a arcu et, viverra sodales ipsum. Duis id congue metus. In commodo
@@ -49,17 +49,8 @@ blocks:
       nec iaculis lorem.
   - type: paragraph
     background: false
-    grid: medium
-    title: Paragraph
-    text: Curabitur nec ipsum sit amet tellus sagittis blandit. Nulla massa nibh,
-      cursus a arcu et, viverra sodales ipsum. Duis id congue metus. In commodo
-      lectus ut ligula elementum, ac commodo tortor rhoncus. Vivamus
-      sollicitudin eu magna sed interdum. Mauris lobortis pulvinar lectus at
-      semper. Proin ac nunc urna. In placerat lorem ut tempus interdum. Maecenas
-      nec iaculis lorem.
-  - type: paragraph
-    background: false
-    grid: medium
+    grid: small
+    offset: center
     align: center
     title: Paragraph
     text: Curabitur nec ipsum sit amet tellus sagittis blandit. Nulla massa nibh,
@@ -71,7 +62,28 @@ blocks:
   - type: paragraph
     background: false
     grid: medium
-    align: end
+    title: Paragraph
+    text: Curabitur nec ipsum sit amet tellus sagittis blandit. Nulla massa nibh,
+      cursus a arcu et, viverra sodales ipsum. Duis id congue metus. In commodo
+      lectus ut ligula elementum, ac commodo tortor rhoncus. Vivamus
+      sollicitudin eu magna sed interdum. Mauris lobortis pulvinar lectus at
+      semper. Proin ac nunc urna. In placerat lorem ut tempus interdum. Maecenas
+      nec iaculis lorem.
+  - type: paragraph
+    background: false
+    grid: medium
+    offset: center
+    title: Paragraph
+    text: Curabitur nec ipsum sit amet tellus sagittis blandit. Nulla massa nibh,
+      cursus a arcu et, viverra sodales ipsum. Duis id congue metus. In commodo
+      lectus ut ligula elementum, ac commodo tortor rhoncus. Vivamus
+      sollicitudin eu magna sed interdum. Mauris lobortis pulvinar lectus at
+      semper. Proin ac nunc urna. In placerat lorem ut tempus interdum. Maecenas
+      nec iaculis lorem.
+  - type: paragraph
+    background: false
+    grid: medium
+    offset: end
     title: Paragraph
     text: Curabitur nec ipsum sit amet tellus sagittis blandit. Nulla massa nibh,
       cursus a arcu et, viverra sodales ipsum. Duis id congue metus. In commodo
@@ -92,7 +104,7 @@ blocks:
   - type: paragraph
     background: false
     grid: large
-    align: center
+    offset: center
     title: Paragraph
     text: Curabitur nec ipsum sit amet tellus sagittis blandit. Nulla massa nibh,
       cursus a arcu et, viverra sodales ipsum. Duis id congue metus. In commodo
@@ -103,7 +115,7 @@ blocks:
   - type: paragraph
     background: false
     grid: large
-    align: end
+    offset: end
     title: Paragraph
     text: Curabitur nec ipsum sit amet tellus sagittis blandit. Nulla massa nibh,
       cursus a arcu et, viverra sodales ipsum. Duis id congue metus. In commodo

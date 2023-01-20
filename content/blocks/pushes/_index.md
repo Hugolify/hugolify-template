@@ -28,7 +28,7 @@ blocks:
           blank: false
           url: "#"
           text: Lorem ipsum
-        align: start
+        offset: start
         title: Lorem ipsum
         text: Nam eleifend nisl tellus, porta lacinia lectus sollicitudin non.
         image:
@@ -44,7 +44,7 @@ blocks:
           blank: false
           url: "#"
           text: Lorem ipsum
-        align: center
+        offset: center
         title: Lorem ipsum
         text: Nam eleifend nisl tellus, porta lacinia lectus sollicitudin non.
         image:
@@ -60,7 +60,7 @@ blocks:
           blank: false
           url: "#"
           text: Lorem ipsum
-        align: end
+        offset: end
         title: Lorem ipsum
         text: Nam eleifend nisl tellus, porta lacinia lectus sollicitudin non.
         image:
@@ -78,7 +78,7 @@ blocks:
           text: Lorem ipsum
         image:
           src: /images/uploads/bernd-dittrich-tfwcwynxibw-unsplash.jpg
-        align: start
+        offset: start
         title: Lorem ipsum
         text: Nam eleifend nisl tellus, porta lacinia lectus sollicitudin non.
       - cta:
@@ -86,7 +86,7 @@ blocks:
         image:
           src: /images/uploads/balthazar-lelievre-zsozkbm7yy8-unsplash.jpg
           alt: ""
-        align: start
+        offset: start
         title: Faucibus maximus nunc
         text: Phasellus tellus purus, pellentesque eu velit vel, faucibus maximus nunc.
   - type: pushes
@@ -99,12 +99,12 @@ blocks:
           blank: false
           url: "#"
           text: Lorem ipsum
-        align: start
+        offset: start
         title: Lorem ipsum
         text: Nam eleifend nisl tellus, porta lacinia lectus sollicitudin non.
       - cta:
           blank: false
-        align: center
+        offset: center
         title: Faucibus maximus nunc
         text: Phasellus tellus purus, pellentesque eu velit vel, faucibus maximus nunc.
 ---
