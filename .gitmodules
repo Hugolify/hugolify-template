@@ -3,4 +3,4 @@
 	url = https://github.com/sebousan/hugolify-theme
 [submodule "static1/admin"]
 	path = static1/admin
-	url = https://github.com/sebousan/hugolify-netlify-cms-template
+	url = https://github.com/sebousan/hugolify-netlify-cms
