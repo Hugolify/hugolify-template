@@ -440,7 +440,7 @@ graceful-fs@^4.1.6, graceful-fs@^4.2.0:
   integrity sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==
 
 hugolify-theme@./themes/hugolify-theme:
-  version "1.0.4"
+  version "1.0.5"
   dependencies:
     "@popperjs/core" "^2.11.2"
     bootstrap "^5.2.3"
