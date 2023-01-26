@@ -14,19 +14,3 @@
 
 [context.branch-deploy.environment]
   HUGO_ENV = "staging"
-
-[[plugins]]
-  package = "netlify-plugin-inline-source"
-
-[[plugins]]
-  package = "netlify-plugin-inline-critical-css"
-  [plugins.inputs]
-    # A filter used to target specific files in the publish directory. Be sure to only target HTML files. This option is passed onto the readdirp library, see https://github.com/paulmillr/readdirp#options for more info.
-    fileFilter = ["*.html"]
-
-    # A filter used to target or ignore specific directories in the publish directory. This option is passed onto the readdirp library, see https://github.com/paulmillr/readdirp#options for more info.
-    directoryFilter = ["!node_modules"]
-
-    # You can refer to `critical`’s documentation: https://github.com/addyosmani/critical for all options below.
-    # Whether to remove the inlined styles from any stylesheet referenced in the HTML. Use with caution. Removing the critical CSS per page results in a unique async loaded CSS file for every page, meaning you can’t rely on cache across multiple pages.
-    extract = true
