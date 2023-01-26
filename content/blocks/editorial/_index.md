@@ -22,6 +22,7 @@ blocks:
       text: Button
       url: "#"
     background: false
+    surtitle: Surtitle
     title: Editorial
     text: Text on the left, image on the right
     image:

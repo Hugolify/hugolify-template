@@ -2,7 +2,8 @@
 isIndex: true
 title: Home
 hero:
-  title: Hugolify demo
+  surtitle: Hugolify
+  title: Hugolify demo website
   text: This is a demo of a Github template for build easily a fast, accessible
     friendly and low carbon website!
   cta:
