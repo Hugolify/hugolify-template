@@ -1,6 +1,9 @@
 links:
   - title: News
     url: /news
+    links:
+    - title: "Cat: Lorem ipsum"
+      url: /news/lorem-ipsum/
   - title: Projects
     url: /projects
   - blank: false

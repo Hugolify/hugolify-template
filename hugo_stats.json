@@ -104,7 +104,9 @@
       "date",
       "description",
       "disabled",
+      "dropdown",
       "dropdown-menu",
+      "dropdown-toggle",
       "embed",
       "fail",
       "featured-image",
@@ -225,6 +227,7 @@
       "top",
       "top-warning",
       "value",
+      "visually-hidden",
       "youtube"
     ],
     "ids": [
