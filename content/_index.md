@@ -2,7 +2,7 @@
 isIndex: true
 title: Home
 hero:
-  surtitle: Hugolify
+  surtitle: Hugo + Netlify CMS
   title: Hugolify demo website
   text: This is a demo of a Github template for build easily a fast, accessible
     friendly and low carbon website!
@@ -14,6 +14,8 @@ hero:
     url: https://github.com/sebousan/hugo-template
     text: Discover on Github
     blank: true
+  image:
+    src: /images/uploads/lopez-robin-nbpp7pzpsh8-unsplash.jpg
 blocks:
   - type: cta
     background: false
