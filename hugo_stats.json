@@ -4,6 +4,7 @@
       "a",
       "article",
       "aside",
+      "b",
       "blockquote",
       "body",
       "br",
@@ -95,6 +96,7 @@
       "col-md-10",
       "col-md-6",
       "col-md-8",
+      "contact-list",
       "container",
       "content",
       "content-body",
@@ -226,6 +228,7 @@
       "toc",
       "top",
       "top-warning",
+      "twitter",
       "value",
       "visually-hidden",
       "youtube"

@@ -9,6 +9,7 @@ description: Vivamus vestibulum ac purus at pulvinar. Pellentesque rutrum massa
   Suspendisse cursus ut tortor sed mattis.
 image:
   src: /images/uploads/sebastien-jermer-ty9wjiijyj0-unsplash.jpg
-email: johndoe@email.com
-twitter: johndoe
+contact:
+  email: johndoe@email.com
+  twitter: johndoe
 ---
