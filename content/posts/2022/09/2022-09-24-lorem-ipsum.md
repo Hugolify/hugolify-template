@@ -6,7 +6,8 @@ title: Quisque vestibulum, mi eget semper laoreet
 description: Curabitur scelerisque sollicitudin lobortis. Sed pharetra, massa eu
   varius egestas, metus nulla rutrum diam, et accumsan purus lacus vel ante.
 categories: Lorem ipsum
-authors: John Doe
+authors:
+  - john-doe
 image:
   src: /images/uploads/balthazar-lelievre-zsozkbm7yy8-unsplash.jpg
   credit: Photo by [Balthazar

@@ -7,7 +7,8 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
   lacinia ligula non facilisis eleifend. Cras at gravida ipsum. Donec quam erat,
   fermentum nec commodo sed, tincidunt vitae nisl.
 categories: Donec maximus a nulla ut feugiat
-authors: Jane Doe
+authors:
+  - jane-doe
 image:
   src: /images/uploads/bertrand-bouchez-lrd26nd-awu-unsplash.jpg
   credit: Photo by [Bertrand

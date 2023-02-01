@@ -9,7 +9,8 @@ categories: Donec maximus a nulla ut feugiat
 tags:
   - Lorem
   - Ipsum
-authors: John Doe
+authors:
+  - john-doe
 image:
   src: /images/uploads/sebastien-jermer-ty9wjiijyj0-unsplash.jpg
   credit: Photo by [Sébastien

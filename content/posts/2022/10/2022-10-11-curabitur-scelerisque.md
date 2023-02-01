@@ -7,7 +7,8 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
   lacinia ligula non facilisis eleifend. Cras at gravida ipsum. Donec quam erat,
   fermentum nec commodo sed, tincidunt vitae nisl.
 categories: Donec maximus a nulla ut feugiat
-authors: John Doe
+authors:
+  - john-doe
 tags:
   - Lorem
   - Ipsum

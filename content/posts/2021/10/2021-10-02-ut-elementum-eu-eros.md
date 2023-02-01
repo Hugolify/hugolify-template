@@ -7,7 +7,8 @@ description: Phasellus ut facilisis tellus. Nullam tempus enim id tempus
   convallis. Nullam vehicula tincidunt nunc id ultricies. In sit amet magna id
   ligula aliquet facilisis sit amet vel sapien.
 categories: Donec maximus a nulla ut feugiat
-authors: John Doe
+authors:
+  - john-doe
 image:
   alt: ""
   credit: Photo by [Robin

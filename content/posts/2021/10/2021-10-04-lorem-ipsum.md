@@ -6,7 +6,8 @@ title: Lorem ipsum
 description: Curabitur scelerisque sollicitudin lobortis. Sed pharetra, massa eu
   varius egestas, metus nulla rutrum diam, et accumsan purus lacus vel ante.
 categories: Lorem ipsum
-authors: John Doe
+authors:
+  - john-doe
 image:
   src: /images/uploads/yann-behr-whwcf5sbdqo-unsplash.jpg
   credit: Photo by [yann

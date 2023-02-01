@@ -6,7 +6,8 @@ title: Proin maximus, eros et pellentesque rhoncus
 description: Pellentesque vulputate nulla fermentum libero aliquam, ut gravida
   nisi pellentesque.
 categories: Lorem ipsum
-authors: Jane Doe
+authors:
+  - jane-doe
 image:
   src: /images/uploads/louis-mornaud-yugpd0evcgi-unsplash.jpg
   credit: Photo by [Louis

@@ -1,8 +1,11 @@
 posts:          /news/:year-:month-:day-:slug/
 categories:     /news/:slug/
 tags:           /news/tags/:slug/
-authors:        /news/authors/:slug/
+authors:        /news/:slug/
+
 projects:       /projects/:year-:slug/
 types:          /projects/:slug/
+
 casestudies:    /case-studies/:slug/
+
 publications:   /publications/:slug/
