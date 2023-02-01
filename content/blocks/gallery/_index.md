@@ -39,10 +39,10 @@ blocks:
     title: Lorem ipsum dolor sit amet.
     text: Mauris lobortis pulvinar lectus at semper.
     gallery:
-      - src: /images/uploads/lopez-robin-nbpp7pzpsh8-unsplash.jpg
-      - src: /images/uploads/lea-maruani-um-shmjr_no-unsplash.jpg
+      - src: /images/uploads/bertrand-bouchez-lrd26nd-awu-unsplash.jpg
       - src: /images/uploads/robin-goutard-couufh79uzq-unsplash.jpg
       - src: /images/uploads/sebastien-jermer-ty9wjiijyj0-unsplash.jpg
+      - src: /images/uploads/lea-maruani-um-shmjr_no-unsplash.jpg
       - credit: Photo by [Olga
           Serjantu](https://unsplash.com/@olgaserjantu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
           on

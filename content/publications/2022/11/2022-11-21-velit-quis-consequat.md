@@ -9,10 +9,6 @@ description: In ultricies sapien turpis, ac molestie massa dignissim vitae.
   iaculis libero arcu, sed pellentesque nisl lacinia eget.
 image:
   src: /images/uploads/olga-serjantu-jbjd2kbi55s-unsplash.jpg
-press:
-  url: https://lipsum.com/
-  title: Lipsum
-images: []
 ---
 Nullam vulputate, neque nec tristique placerat, nibh nisi cursus nulla, sit amet aliquet lectus lacus a est. Nunc malesuada iaculis sem, in porttitor urna. Fusce congue ex vel nisl ullamcorper rutrum ac a arcu. Donec eu egestas arcu. Quisque sed dignissim nibh. Phasellus porta urna ligula, in dapibus turpis lobortis quis. Integer convallis tincidunt odio, sed imperdiet ligula iaculis id. Phasellus vitae arcu nisi. Phasellus cursus ut mauris id vulputate. In vitae finibus turpis, sollicitudin suscipit velit. Vestibulum sagittis libero ornare metus semper, ac vestibulum ligula maximus. Fusce a volutpat magna, eget auctor massa. Donec eget nibh semper nisi varius posuere. Aenean in erat et mauris elementum mattis.
 
