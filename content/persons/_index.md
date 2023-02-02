@@ -1,5 +1,5 @@
 ---
 isIndex: true
-title: Authors
-url: /news/authors
+title: Team
+url: /team
 ---
