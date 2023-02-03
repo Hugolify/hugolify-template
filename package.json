@@ -18,6 +18,7 @@
         "@fullhuman/postcss-purgecss": "^5.0.0",
         "autoprefixer": "^10.4.13",
         "cssnano": "^5.1.14",
+        "netlify-plugin-hugo-cache-resources": "^0.2.1",
         "postcss": "^8.4.21",
         "postcss-cli": "^10.1.0",
         "postcss-sass": "^0.5.0"
