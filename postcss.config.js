@@ -12,11 +12,13 @@ module.exports = {
                 standard: [
                     'show',
                     'fade',
-                    /^tobii/,
                     /-backdrop$/,
                     /^is-/,
                     /^has-/,
                     /^js-/
+                ],
+                deep: [
+                    /^tobii/
                 ],
                 greedy: [
                     /^aria-current$/,
