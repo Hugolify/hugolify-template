@@ -11,9 +11,6 @@
         "url": "https://www.sebastienmoulene.com/"
     },
     "license": "MIT",
-    "dependencies": {
-        "hugolify-theme": "./themes/hugolify-theme"
-    },
     "devDependencies": {
         "@fullhuman/postcss-purgecss": "^5.0.0",
         "autoprefixer": "^10.4.13",
@@ -26,7 +23,7 @@
     "scripts": {
         "watch": "hugo server",
         "build": "hugo --minify",
-        "update": "git pull --recurse-submodules --depth 1 && git submodule update --remote",
+        "update": "hugo mod get -u",
         "cms": "npx netlify-cms-proxy-server"
     }
 }

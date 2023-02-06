@@ -1,6 +1,3 @@
-[submodule "themes/hugolify-theme"]
-	path = themes/hugolify-theme
-	url = https://github.com/hugolify/hugolify-theme
 [submodule "static1/admin"]
 	path = static1/admin
 	url = https://github.com/hugolify/hugolify-netlify-cms
