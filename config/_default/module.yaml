@@ -1,0 +1,6 @@
+imports:
+- path: github.com/hugolify/hugolify-theme-casestudies
+- path: github.com/hugolify/hugolify-theme-persons
+- path: github.com/hugolify/hugolify-theme-posts
+- path: github.com/hugolify/hugolify-theme-projects
+- path: github.com/hugolify/hugolify-theme-publications
