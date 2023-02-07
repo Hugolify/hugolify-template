@@ -25,8 +25,10 @@ Hugo sections available in theme and admin
   * tags (taxonomy)
 * projects
   * types (taxonomy)
+  * tags (taxonomy)
 * casestudies
 * publications
+  * concerned (taxonomy)
 
 ## Documentation
 [https://github.com/sebousan/hugolify-template/wiki](https://github.com/sebousan/hugolify-template/wiki)
