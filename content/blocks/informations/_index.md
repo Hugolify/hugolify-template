@@ -11,7 +11,7 @@ hero:
   cta_second:
     blank: true
     text: Documentation
-    url: https://github.com/sebousan/hugolify-template/wiki/Block-informations
+    url: https://github.com/hugolify/hugolify-template/wiki/Block-informations
   title: Block informations
   text: Add some cards informations in column. Icon, images and button are available
 blocks:

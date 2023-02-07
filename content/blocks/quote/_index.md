@@ -10,7 +10,7 @@ hero:
     url: "#main"
   cta_second:
     blank: true
-    url: https://github.com/sebousan/hugolify-template/wiki/block-quote
+    url: https://github.com/hugolify/hugolify-template/wiki/block-quote
     text: Documentation
   title: Block quote
   text: Add quote and author

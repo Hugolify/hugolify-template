@@ -11,7 +11,7 @@ hero:
   cta_second:
     blank: true
     text: Documentation
-    url: https://github.com/sebousan/hugolify-template/wiki/block-editorial
+    url: https://github.com/hugolify/hugolify-template/wiki/block-editorial
   title: Block editorial
   text: Add section with content (title, text and button) and media
 blocks:

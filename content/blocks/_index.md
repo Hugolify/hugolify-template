@@ -13,5 +13,5 @@ hero:
   cta_second:
     blank: true
     text: Documentation
-    url: https://github.com/sebousan/hugolify-template/wiki/blocks
+    url: https://github.com/hugolify/hugolify-template/wiki/blocks
 ---

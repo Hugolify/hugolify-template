@@ -13,7 +13,7 @@ hero:
   cta_second:
     blank: true
     text: Documentation
-    url: https://github.com/sebousan/hugolify-template/wiki/block-latest
+    url: https://github.com/hugolify/hugolify-template/wiki/block-latest
 blocks:
   - type: latest
     count: 3

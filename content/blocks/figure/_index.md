@@ -12,7 +12,7 @@ hero:
     url: "#main"
   cta_second:
     text: Documentation
-    url: https://github.com/sebousan/hugolify-template/wiki/block-figure
+    url: https://github.com/hugolify/hugolify-template/wiki/block-figure
     blank: true
 blocks:
   - type: figure

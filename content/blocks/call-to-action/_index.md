@@ -11,7 +11,7 @@ hero:
   cta_second:
     blank: true
     text: Documentation
-    url: https://github.com/sebousan/hugolify-template/wiki/block-cta
+    url: https://github.com/hugolify/hugolify-template/wiki/block-cta
   title: Block call to action
   text: Add button with link
 blocks:

@@ -26,7 +26,6 @@ blocks:
       blank: false
       text: See all available blocks
       url: /blocks
-       
   - type: latest
     count: 3
     show_more: true

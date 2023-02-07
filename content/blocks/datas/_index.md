@@ -11,7 +11,7 @@ hero:
   cta_second:
     blank: true
     text: Documentation
-    url: https://github.com/sebousan/hugolify-template/wiki/block-datas
+    url: https://github.com/hugolify/hugolify-template/wiki/block-datas
   title: Blocks datas
   text: Add some datas in columns (with gauge or not)
 blocks:

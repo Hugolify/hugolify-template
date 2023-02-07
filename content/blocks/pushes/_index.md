@@ -13,7 +13,7 @@ hero:
   cta_second:
     blank: true
     text: Documentation
-    url: https://github.com/sebousan/hugolify-template/wiki/Block-pushes
+    url: https://github.com/hugolify/hugolify-template/wiki/Block-pushes
 blocks:
   - type: alert
     state: warning

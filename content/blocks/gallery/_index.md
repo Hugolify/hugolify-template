@@ -11,7 +11,7 @@ hero:
   cta_second:
     blank: true
     text: Documentation
-    url: https://github.com/sebousan/hugolify-template/wiki/block-gallery
+    url: https://github.com/hugolify/hugolify-template/wiki/block-gallery
   title: Block gallery
   text: Add image gallery in grid
 blocks:

@@ -12,7 +12,7 @@ hero:
     text: See example
   cta_second:
     text: Documentation
-    url: https://github.com/sebousan/hugolify-template/wiki/Block-map
+    url: https://github.com/hugolify/hugolify-template/wiki/Block-map
     blank: true
 blocks:
   - type: map
