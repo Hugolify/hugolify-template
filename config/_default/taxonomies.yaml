@@ -1,5 +1,1 @@
-author:         authors
-category:       categories
-tag:            tags
-type:           types
-concerned:      concerned
+_merge: deep

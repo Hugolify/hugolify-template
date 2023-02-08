@@ -31,7 +31,7 @@ Hugo sections available in theme and admin
   * concerned (taxonomy)
 
 ## Documentation
-[https://github.com/sebousan/hugolify-template/wiki](https://github.com/sebousan/hugolify-template/wiki)
+[https://github.com/hugolify/hugolify-template/wiki](https://github.com/hugolify/hugolify-template/wiki)
 
 ## License
 Hugolify is free for personal or commercial projects (MIT license)
