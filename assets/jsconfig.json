@@ -3,9 +3,9 @@
   "baseUrl": ".",
   "paths": {
    "*": [
+    "../../../../../var/folders/kr/l20g4gtd17b6djpvs4gcn8d40000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/hugolify/hugolify-theme@v1.2.6/assets/*",
     "../../../../../var/folders/kr/l20g4gtd17b6djpvs4gcn8d40000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/midzer/tobii@v2.5.0+incompatible/src/js/*",
-    "../../../../../var/folders/kr/l20g4gtd17b6djpvs4gcn8d40000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/stevenschobert/instafeed.js@v2.0.0+incompatible/src/*",
-    "../../hugolify-theme/assets/*"
+    "../../../../../var/folders/kr/l20g4gtd17b6djpvs4gcn8d40000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/stevenschobert/instafeed.js@v2.0.0+incompatible/src/*"
    ]
   }
  }
