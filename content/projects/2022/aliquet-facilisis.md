@@ -6,6 +6,8 @@ title: Aliquet facilisis
 description: Sed eros nisl, tempus eget tempor quis, laoreet ac odio. Aenean
   tristique metus vitae mollis imperdiet.
 types: Facilisis tellus
+projects_tags:
+  - tempus-eget
 image:
   src: /images/uploads/ludovic-digidi-ivooorgbrkk-unsplash.jpg
   credit: Photo by [Ludovic
