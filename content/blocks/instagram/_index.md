@@ -5,7 +5,7 @@ title: Instagram
 description: Add instagram feed
 hero:
   title: Block Instagram
-  text: Add instagram feed
+  text: Add instagram feed (You need a valid access_token)
   cta:
     blank: false
     text: See examples
@@ -19,7 +19,7 @@ blocks:
     background: false
     title: Instagram feed
     limit: 4
-    token: "IGQVJWZAFh2YnpSUGR4NGxiX3dsbHZAuLV8tSm1IanpzeTVfc1JORGZABaS0yR3JnU3lSb3NrQ3d6LWYxNWVMaDRUcEs4bzllS1lWUFQyeE5UY0lLNUJkNkQ3NXZAlbnZAySzRCS3FRZAW4tRnR6Wlk4ZA29fSgZDZD"
+    token: ""
     cta:
       blank: true
       text: Discover on instagram
@@ -28,5 +28,5 @@ blocks:
     background: true
     title: Instagram feed
     limit: 6
-    token: "IGQVJWZAFh2YnpSUGR4NGxiX3dsbHZAuLV8tSm1IanpzeTVfc1JORGZABaS0yR3JnU3lSb3NrQ3d6LWYxNWVMaDRUcEs4bzllS1lWUFQyeE5UY0lLNUJkNkQ3NXZAlbnZAySzRCS3FRZAW4tRnR6Wlk4ZA29fSgZDZD"
+    token: ""
 ---
