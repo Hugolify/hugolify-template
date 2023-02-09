@@ -14,7 +14,3 @@ markup:
 paginate: 6
 removePathAccents: true
 
-## STATIC
-staticDir:
-  - static1
-  - static2

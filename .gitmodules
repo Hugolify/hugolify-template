@@ -1,3 +1,0 @@
-[submodule "static1/admin"]
-	path = static1/admin
-	url = https://github.com/hugolify/hugolify-netlify-cms
