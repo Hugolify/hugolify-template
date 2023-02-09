@@ -6,6 +6,8 @@ github.com/hugolify/hugolify-netlify-cms v1.1.2 h1:7dYZIEJZxNKve4Tm4W1BW1I6b99qt
 github.com/hugolify/hugolify-netlify-cms v1.1.2/go.mod h1:Q7HNXBxIatKmA+mlG+3HbWUYApZnftOwFz6kevyg/HU=
 github.com/hugolify/hugolify-theme v1.2.9 h1:csXnvp88VN/kXvTP6fJOgAoQzubvEeLMIwpzF+il37s=
 github.com/hugolify/hugolify-theme v1.2.9/go.mod h1:Ql6rtAl9AiN81qR+9X+h+yKG8Gmw9qFjlCKm1qarplA=
+github.com/hugolify/hugolify-theme v1.2.11 h1:k3u1WTX8lpRQuhcHftZ161yCPAjPgVjWcWhfbKtvkoc=
+github.com/hugolify/hugolify-theme v1.2.11/go.mod h1:Ql6rtAl9AiN81qR+9X+h+yKG8Gmw9qFjlCKm1qarplA=
 github.com/hugolify/hugolify-theme-casestudies v1.0.2 h1:LExt06ixkzt43gafvAZUXtubLHElQ+sAe2Q2rnzOJYQ=
 github.com/hugolify/hugolify-theme-casestudies v1.0.2/go.mod h1:qq89c1Emj7lKoWho23RA9X3rPq+8H96mfO8KI5Twr7A=
 github.com/hugolify/hugolify-theme-persons v1.0.2 h1:sToq/A/dHCLxrq2oM45VpTi7zzRN5dXxbu6ozvsIMbc=
