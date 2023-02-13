@@ -151,6 +151,7 @@
       "items-2",
       "items-3",
       "items-4",
+      "js-gallery",
       "js-map",
       "last",
       "latest",
@@ -246,7 +247,9 @@
       "top",
       "top-warning",
       "twitter",
+      "twitter-tweet",
       "value",
+      "vimeo",
       "visually-hidden",
       "youtube"
     ],
@@ -258,6 +261,7 @@
       "donec-quis-tristique-elit",
       "données-personnelles",
       "editor",
+      "figure",
       "footer",
       "fusce-id-imperdiet-nunc",
       "hosting",
@@ -274,10 +278,14 @@
       "publicationsFilters",
       "publicationsFiltersLabel",
       "sed-pharetra-massa-eu-varius-egestas",
+      "shortcodes",
       "toc",
       "tocLabel",
+      "twitter",
+      "vimeo",
       "vivamus-tincidunt-malesuada-lorem-eget-sodales",
-      "welcome-to-demohugolifycom"
+      "welcome-to-demohugolifycom",
+      "youtube"
     ]
   }
 }
