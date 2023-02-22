@@ -12,6 +12,8 @@ github.com/hugolify/hugolify-theme v1.2.20 h1:XFQpjKTj5BT/nGhtJ9w4Iv0DGoYKmiQKRg
 github.com/hugolify/hugolify-theme v1.2.20/go.mod h1:Ql6rtAl9AiN81qR+9X+h+yKG8Gmw9qFjlCKm1qarplA=
 github.com/hugolify/hugolify-theme v1.3.0 h1:AcJdfQtw/sbH8xXmzZZsxmKp94f7Xl18dzei5HAw2uo=
 github.com/hugolify/hugolify-theme v1.3.0/go.mod h1:Ql6rtAl9AiN81qR+9X+h+yKG8Gmw9qFjlCKm1qarplA=
+github.com/hugolify/hugolify-theme v1.3.1 h1:NCicpO0WjUHffmbvwCzvT3tIqJcqN78YfXR1ijwbgUo=
+github.com/hugolify/hugolify-theme v1.3.1/go.mod h1:Ql6rtAl9AiN81qR+9X+h+yKG8Gmw9qFjlCKm1qarplA=
 github.com/hugolify/hugolify-theme-casestudies v1.0.2 h1:LExt06ixkzt43gafvAZUXtubLHElQ+sAe2Q2rnzOJYQ=
 github.com/hugolify/hugolify-theme-casestudies v1.0.2/go.mod h1:qq89c1Emj7lKoWho23RA9X3rPq+8H96mfO8KI5Twr7A=
 github.com/hugolify/hugolify-theme-persons v1.0.6 h1:+Ma+gQJqnSapARA/adXrM7VxHXGJv+KiLyxqm+EsxgI=
