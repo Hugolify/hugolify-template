@@ -1,6 +1,23 @@
 ---
 isPage: true
 title: Contact
+hero:
+  surtitle: Surtitle
+  title: Contact
+  text: Lorem ipsum
+  align: center
+  image:
+    src: ""
+    darken: true
+    background_image: true
+  cta:
+    text: Lorem
+    url: /contact/
+    blank: false
+  cta_second:
+    url: /contact/
+    blank: false
+    text: Ipsum
 blocks:
   - type: map
     background: false
