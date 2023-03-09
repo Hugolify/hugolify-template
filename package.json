@@ -1,7 +1,7 @@
 {
     "name": "hugolify-template",
-    "version": "1.2.3",
-    "homepage": "https://www.hugolify.com",
+    "version": "1.2.4",
+    "homepage": "https://www.hugolify.io",
     "repository": "https://github.com/hugolify/hugolify-template",
     "bugs": {
         "url": "https://github.com/hugolify/hugolify-template/issues"
