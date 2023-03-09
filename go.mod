@@ -2,10 +2,6 @@ module github.com/hugolify/hugolify-template
 
 go 1.19
 
-replace (
-	github.com/hugolify/hugolify-example-site => /Users/sebastienmoulene/Dev/hugolify-example-site
-	github.com/hugolify/hugolify-theme => /Users/sebastienmoulene/Dev/hugolify-theme
-)
 
 require (
 	github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 // indirect
