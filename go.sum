@@ -38,6 +38,8 @@ github.com/hugolify/hugolify-theme-persons v1.0.7 h1:WUBT1v5rq2XzuIC3zYjf4G8XdZI
 github.com/hugolify/hugolify-theme-persons v1.0.7/go.mod h1:LjjY/5pEDk2r3URTU8xS7Sango4D4K9ExU0+OaJwOUA=
 github.com/hugolify/hugolify-theme-persons v1.0.8 h1:1quHxyZCB4AYBq95tIZbB5oefCGnO/oUyI9CMz98XAY=
 github.com/hugolify/hugolify-theme-persons v1.0.8/go.mod h1:LjjY/5pEDk2r3URTU8xS7Sango4D4K9ExU0+OaJwOUA=
+github.com/hugolify/hugolify-theme-persons v1.0.11 h1:V4tGgtntuZYmCvybPpx2t/z10ui2b5SVF7MIwzolzus=
+github.com/hugolify/hugolify-theme-persons v1.0.11/go.mod h1:LjjY/5pEDk2r3URTU8xS7Sango4D4K9ExU0+OaJwOUA=
 github.com/hugolify/hugolify-theme-persons-statutes v1.0.5 h1:x+VaXVlsleMoPXRKgCoNBb2X8eEgHvI0Mk34PW5FT8w=
 github.com/hugolify/hugolify-theme-persons-statutes v1.0.5/go.mod h1:S+aQocqFtsLpYC+6t8IYGY95YHYvcPFovzVe61XEqMc=
 github.com/hugolify/hugolify-theme-posts v1.1.4 h1:19X2CFOltd9YtYnrWFu8pXayYtluy2D7GclYn/4+d2g=
