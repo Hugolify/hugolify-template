@@ -11,5 +11,5 @@ imaging:
 markup:
   tableOfContents:
     ordered: true
-paginate: 6
+paginate: 9
 removePathAccents: true
