@@ -26,6 +26,8 @@ github.com/hugolify/hugolify-theme v1.3.25 h1:rWIcXrVKZaae2tbPpzqZ4iM2hRuan/D+9T
 github.com/hugolify/hugolify-theme v1.3.25/go.mod h1:Ql6rtAl9AiN81qR+9X+h+yKG8Gmw9qFjlCKm1qarplA=
 github.com/hugolify/hugolify-theme v1.3.26 h1:HONuin8MbHqr8rt05d9w0gHJcq5j2l4JuQe8rQJ0aWE=
 github.com/hugolify/hugolify-theme v1.3.26/go.mod h1:Ql6rtAl9AiN81qR+9X+h+yKG8Gmw9qFjlCKm1qarplA=
+github.com/hugolify/hugolify-theme v1.3.27 h1:WP+f/C64XI/MPdZdENqGRYS8CDKjWAW2L8vlkXoF2/s=
+github.com/hugolify/hugolify-theme v1.3.27/go.mod h1:Ql6rtAl9AiN81qR+9X+h+yKG8Gmw9qFjlCKm1qarplA=
 github.com/hugolify/hugolify-theme-casestudies v1.0.2 h1:LExt06ixkzt43gafvAZUXtubLHElQ+sAe2Q2rnzOJYQ=
 github.com/hugolify/hugolify-theme-casestudies v1.0.2/go.mod h1:qq89c1Emj7lKoWho23RA9X3rPq+8H96mfO8KI5Twr7A=
 github.com/hugolify/hugolify-theme-casestudies v1.0.3 h1:8DrDXxX+a5AaM3Fy34tKMmsR0RY6vPRdFTxR+Wembpw=
@@ -44,6 +46,8 @@ github.com/hugolify/hugolify-theme-persons v1.0.8 h1:1quHxyZCB4AYBq95tIZbB5oefCG
 github.com/hugolify/hugolify-theme-persons v1.0.8/go.mod h1:LjjY/5pEDk2r3URTU8xS7Sango4D4K9ExU0+OaJwOUA=
 github.com/hugolify/hugolify-theme-persons v1.0.11 h1:V4tGgtntuZYmCvybPpx2t/z10ui2b5SVF7MIwzolzus=
 github.com/hugolify/hugolify-theme-persons v1.0.11/go.mod h1:LjjY/5pEDk2r3URTU8xS7Sango4D4K9ExU0+OaJwOUA=
+github.com/hugolify/hugolify-theme-persons v1.0.12 h1:GnT1dK3Uj0vqTvdOwEJIU3VECp0GkOrTERF7qdm0280=
+github.com/hugolify/hugolify-theme-persons v1.0.12/go.mod h1:LjjY/5pEDk2r3URTU8xS7Sango4D4K9ExU0+OaJwOUA=
 github.com/hugolify/hugolify-theme-persons-statutes v1.0.5 h1:x+VaXVlsleMoPXRKgCoNBb2X8eEgHvI0Mk34PW5FT8w=
 github.com/hugolify/hugolify-theme-persons-statutes v1.0.5/go.mod h1:S+aQocqFtsLpYC+6t8IYGY95YHYvcPFovzVe61XEqMc=
 github.com/hugolify/hugolify-theme-posts v1.1.4 h1:19X2CFOltd9YtYnrWFu8pXayYtluy2D7GclYn/4+d2g=
@@ -56,6 +60,8 @@ github.com/hugolify/hugolify-theme-posts-authors v1.0.4 h1:+rceaZJ7filK4zn75Sssp
 github.com/hugolify/hugolify-theme-posts-authors v1.0.4/go.mod h1:2vuilTf8Vy8jwMtA2fcdvu+tq56KT9niZe62TyH6JQo=
 github.com/hugolify/hugolify-theme-posts-authors v1.0.5 h1:BuK75bitm+KVoP84lmEWP22S68F+eG0Ks3iz/YMR7L8=
 github.com/hugolify/hugolify-theme-posts-authors v1.0.5/go.mod h1:2vuilTf8Vy8jwMtA2fcdvu+tq56KT9niZe62TyH6JQo=
+github.com/hugolify/hugolify-theme-posts-authors v1.0.6 h1:XQDfu8hdM6cbckpkY0R7FoOLeHsn7XSDdl8A+V1A/Zw=
+github.com/hugolify/hugolify-theme-posts-authors v1.0.6/go.mod h1:2vuilTf8Vy8jwMtA2fcdvu+tq56KT9niZe62TyH6JQo=
 github.com/hugolify/hugolify-theme-posts-categories v1.0.3 h1:1XU6ABxpoD5oL43HFqqmO8786Oj72ctbE6cYQdxCVjo=
 github.com/hugolify/hugolify-theme-posts-categories v1.0.3/go.mod h1:BgCFC7+DzBoAiM4B1CrWGCDVzU/UUHnwNIeMc7cqt54=
 github.com/hugolify/hugolify-theme-posts-categories v1.0.4 h1:XIe91HZklivRdDyf5D6Ijs8nW/WUKtIqaimgZ/kNNzk=
@@ -92,6 +98,8 @@ github.com/hugolify/hugolify-theme-publications-concerned v1.0.3 h1:DkXCK9O1kf0F
 github.com/hugolify/hugolify-theme-publications-concerned v1.0.3/go.mod h1:SAxYCXVsDJ5lUHU/YRrTIVWATehPwdy9a1VHhmUP5dw=
 github.com/hugolify/hugolify-theme-publications-concerned v1.0.4 h1:1G2/EycpIdg6zHH6bvv4TMWPp2iUFDu+Jar9dKOjM9E=
 github.com/hugolify/hugolify-theme-publications-concerned v1.0.4/go.mod h1:SAxYCXVsDJ5lUHU/YRrTIVWATehPwdy9a1VHhmUP5dw=
+github.com/hugolify/hugolify-theme-publications-concerned v1.0.5 h1:A4dmDaGX1URM4gD1AHQHsKI2QsGyA7L8sBAOmoUoU8Y=
+github.com/hugolify/hugolify-theme-publications-concerned v1.0.5/go.mod h1:SAxYCXVsDJ5lUHU/YRrTIVWATehPwdy9a1VHhmUP5dw=
 github.com/hugolify/lawyerify-example-site v1.0.3 h1:5o0YUKbQbT9ZuC27FGQjo83//+dNxOPFetsFM+ZtmMg=
 github.com/hugolify/lawyerify-example-site v1.0.3/go.mod h1:KWHCO+wV6Vy/+J6B0NCPx9uSP2cHyMTrSHLpbPaLocI=
 github.com/twbs/bootstrap v5.2.3+incompatible h1:lOmsJx587qfF7/gE7Vv4FxEofegyJlEACeVV+Mt7cgc=
