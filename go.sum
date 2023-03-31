@@ -28,6 +28,8 @@ github.com/hugolify/hugolify-theme v1.3.26 h1:HONuin8MbHqr8rt05d9w0gHJcq5j2l4JuQ
 github.com/hugolify/hugolify-theme v1.3.26/go.mod h1:Ql6rtAl9AiN81qR+9X+h+yKG8Gmw9qFjlCKm1qarplA=
 github.com/hugolify/hugolify-theme v1.3.27 h1:WP+f/C64XI/MPdZdENqGRYS8CDKjWAW2L8vlkXoF2/s=
 github.com/hugolify/hugolify-theme v1.3.27/go.mod h1:Ql6rtAl9AiN81qR+9X+h+yKG8Gmw9qFjlCKm1qarplA=
+github.com/hugolify/hugolify-theme v1.3.28 h1:9XHcyjYoOe86mi7m0BGS8gJKq9dZT4kuDB429QHojjg=
+github.com/hugolify/hugolify-theme v1.3.28/go.mod h1:Ql6rtAl9AiN81qR+9X+h+yKG8Gmw9qFjlCKm1qarplA=
 github.com/hugolify/hugolify-theme-casestudies v1.0.2 h1:LExt06ixkzt43gafvAZUXtubLHElQ+sAe2Q2rnzOJYQ=
 github.com/hugolify/hugolify-theme-casestudies v1.0.2/go.mod h1:qq89c1Emj7lKoWho23RA9X3rPq+8H96mfO8KI5Twr7A=
 github.com/hugolify/hugolify-theme-casestudies v1.0.3 h1:8DrDXxX+a5AaM3Fy34tKMmsR0RY6vPRdFTxR+Wembpw=
