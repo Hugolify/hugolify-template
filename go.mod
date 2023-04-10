@@ -15,7 +15,7 @@ require (
 	github.com/hugolify/hugolify-theme-posts-categories v1.0.5 // indirect
 	github.com/hugolify/hugolify-theme-posts-tags v1.0.5 // indirect
 	github.com/hugolify/hugolify-theme-projects v1.1.9 // indirect
-	github.com/hugolify/hugolify-theme-projects-tags v1.0.5 // indirect
+	github.com/hugolify/hugolify-theme-projects-tags v1.0.7 // indirect
 	github.com/hugolify/hugolify-theme-projects-types v1.0.6 // indirect
 	github.com/hugolify/hugolify-theme-publications v1.1.7 // indirect
 	github.com/hugolify/hugolify-theme-publications-concerned v1.0.5 // indirect

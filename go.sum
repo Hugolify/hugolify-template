@@ -90,6 +90,8 @@ github.com/hugolify/hugolify-theme-projects-tags v1.0.4 h1:JuDPo2VPARdohN1f0LS7y
 github.com/hugolify/hugolify-theme-projects-tags v1.0.4/go.mod h1:qqkCPiuJJxLQrnomqNqmSbwLquISdi3c0mhpvXE1CNU=
 github.com/hugolify/hugolify-theme-projects-tags v1.0.5 h1:WjS3eRB7tZW+rLJln1qoAPnhPhOieo2kJbP+7oA6+BE=
 github.com/hugolify/hugolify-theme-projects-tags v1.0.5/go.mod h1:qqkCPiuJJxLQrnomqNqmSbwLquISdi3c0mhpvXE1CNU=
+github.com/hugolify/hugolify-theme-projects-tags v1.0.7 h1:YYOAx5h2V4e3ufmV//AHeXwWMgd3MWeFkaIaxPf+s2A=
+github.com/hugolify/hugolify-theme-projects-tags v1.0.7/go.mod h1:qqkCPiuJJxLQrnomqNqmSbwLquISdi3c0mhpvXE1CNU=
 github.com/hugolify/hugolify-theme-projects-types v1.0.5 h1:xcKFM5uPhGPIZJGaTewqyXH42zHj1VDyEfkl2kdLwns=
 github.com/hugolify/hugolify-theme-projects-types v1.0.5/go.mod h1:IFi4jmAY5oXSLTWyK0mcGUDoFzWtgTQB/bQ+gL23MTg=
 github.com/hugolify/hugolify-theme-projects-types v1.0.6 h1:1O5UXmWwzyycEg5MNdlfJ4Xq4QzVv9JsjHHbgKQ7MoU=
