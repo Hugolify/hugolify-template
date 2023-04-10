@@ -30,6 +30,8 @@ github.com/hugolify/hugolify-theme v1.3.27 h1:WP+f/C64XI/MPdZdENqGRYS8CDKjWAW2L8
 github.com/hugolify/hugolify-theme v1.3.27/go.mod h1:Ql6rtAl9AiN81qR+9X+h+yKG8Gmw9qFjlCKm1qarplA=
 github.com/hugolify/hugolify-theme v1.3.28 h1:9XHcyjYoOe86mi7m0BGS8gJKq9dZT4kuDB429QHojjg=
 github.com/hugolify/hugolify-theme v1.3.28/go.mod h1:Ql6rtAl9AiN81qR+9X+h+yKG8Gmw9qFjlCKm1qarplA=
+github.com/hugolify/hugolify-theme v1.3.30 h1:3Whi0pdZV6gwiGoYN5H65QrEX2Bv4+SHdmrE7/lea+c=
+github.com/hugolify/hugolify-theme v1.3.30/go.mod h1:Ql6rtAl9AiN81qR+9X+h+yKG8Gmw9qFjlCKm1qarplA=
 github.com/hugolify/hugolify-theme-casestudies v1.0.2 h1:LExt06ixkzt43gafvAZUXtubLHElQ+sAe2Q2rnzOJYQ=
 github.com/hugolify/hugolify-theme-casestudies v1.0.2/go.mod h1:qq89c1Emj7lKoWho23RA9X3rPq+8H96mfO8KI5Twr7A=
 github.com/hugolify/hugolify-theme-casestudies v1.0.3 h1:8DrDXxX+a5AaM3Fy34tKMmsR0RY6vPRdFTxR+Wembpw=
@@ -50,6 +52,8 @@ github.com/hugolify/hugolify-theme-persons v1.0.11 h1:V4tGgtntuZYmCvybPpx2t/z10u
 github.com/hugolify/hugolify-theme-persons v1.0.11/go.mod h1:LjjY/5pEDk2r3URTU8xS7Sango4D4K9ExU0+OaJwOUA=
 github.com/hugolify/hugolify-theme-persons v1.0.12 h1:GnT1dK3Uj0vqTvdOwEJIU3VECp0GkOrTERF7qdm0280=
 github.com/hugolify/hugolify-theme-persons v1.0.12/go.mod h1:LjjY/5pEDk2r3URTU8xS7Sango4D4K9ExU0+OaJwOUA=
+github.com/hugolify/hugolify-theme-persons v1.0.13 h1:f6MXsjqOwf6Hx1PemRYogIjJ3Jj8W8Shnt2EEekRJfQ=
+github.com/hugolify/hugolify-theme-persons v1.0.13/go.mod h1:LjjY/5pEDk2r3URTU8xS7Sango4D4K9ExU0+OaJwOUA=
 github.com/hugolify/hugolify-theme-persons-statutes v1.0.5 h1:x+VaXVlsleMoPXRKgCoNBb2X8eEgHvI0Mk34PW5FT8w=
 github.com/hugolify/hugolify-theme-persons-statutes v1.0.5/go.mod h1:S+aQocqFtsLpYC+6t8IYGY95YHYvcPFovzVe61XEqMc=
 github.com/hugolify/hugolify-theme-posts v1.1.4 h1:19X2CFOltd9YtYnrWFu8pXayYtluy2D7GclYn/4+d2g=
