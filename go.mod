@@ -9,7 +9,7 @@ require (
 	github.com/hugolify/hugolify-theme v1.3.32 // indirect
 	github.com/hugolify/hugolify-theme-casestudies v1.0.4 // indirect
 	github.com/hugolify/hugolify-theme-offices v1.0.7 // indirect
-	github.com/hugolify/hugolify-theme-persons v1.0.14 // indirect
+	github.com/hugolify/hugolify-theme-persons v1.0.15 // indirect
 	github.com/hugolify/hugolify-theme-posts v1.1.7 // indirect
 	github.com/hugolify/hugolify-theme-posts-authors v1.0.7 // indirect
 	github.com/hugolify/hugolify-theme-posts-categories v1.0.6 // indirect
