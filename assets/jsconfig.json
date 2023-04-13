@@ -3,7 +3,7 @@
   "baseUrl": ".",
   "paths": {
    "*": [
-    "../../../../../var/folders/kr/l20g4gtd17b6djpvs4gcn8d40000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/hugolify/hugolify-theme@v1.3.30/assets/*",
+    "../../../../../var/folders/kr/l20g4gtd17b6djpvs4gcn8d40000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/hugolify/hugolify-theme@v1.3.32/assets/*",
     "../../../../../var/folders/kr/l20g4gtd17b6djpvs4gcn8d40000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/midzer/tobii@v2.5.0+incompatible/src/js/*"
    ]
   }
