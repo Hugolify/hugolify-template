@@ -17,7 +17,7 @@ require (
 	github.com/hugolify/hugolify-theme-projects v1.1.10 // indirect
 	github.com/hugolify/hugolify-theme-projects-tags v1.0.9 // indirect
 	github.com/hugolify/hugolify-theme-projects-types v1.0.8 // indirect
-	github.com/hugolify/hugolify-theme-publications v1.1.9 // indirect
+	github.com/hugolify/hugolify-theme-publications v1.1.10 // indirect
 	github.com/hugolify/hugolify-theme-publications-concerned v1.0.6 // indirect
 	github.com/twbs/bootstrap v5.2.3+incompatible // indirect
 )

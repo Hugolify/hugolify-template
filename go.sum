@@ -144,6 +144,8 @@ github.com/hugolify/hugolify-theme-publications v1.1.8 h1:mhl+rKJkZEezqh1+90Ve1B
 github.com/hugolify/hugolify-theme-publications v1.1.8/go.mod h1:9hR8/sdinGo6o4DJpZMTdP1I8XYwUUq585WmeU1zwH8=
 github.com/hugolify/hugolify-theme-publications v1.1.9 h1:iTwwk8cTmmCuDoVnFsiAUiGVzaMBtG7wOHys20pCRYY=
 github.com/hugolify/hugolify-theme-publications v1.1.9/go.mod h1:9hR8/sdinGo6o4DJpZMTdP1I8XYwUUq585WmeU1zwH8=
+github.com/hugolify/hugolify-theme-publications v1.1.10 h1:XKtafkyGdgWdRmJ59oDgktx8WZN0ZLIzxQDjeynZGJg=
+github.com/hugolify/hugolify-theme-publications v1.1.10/go.mod h1:9hR8/sdinGo6o4DJpZMTdP1I8XYwUUq585WmeU1zwH8=
 github.com/hugolify/hugolify-theme-publications-concerned v1.0.3 h1:DkXCK9O1kf0FQ47M6rqrsHBQhMjsO2+YzwmACYp+lBk=
 github.com/hugolify/hugolify-theme-publications-concerned v1.0.3/go.mod h1:SAxYCXVsDJ5lUHU/YRrTIVWATehPwdy9a1VHhmUP5dw=
 github.com/hugolify/hugolify-theme-publications-concerned v1.0.4 h1:1G2/EycpIdg6zHH6bvv4TMWPp2iUFDu+Jar9dKOjM9E=
