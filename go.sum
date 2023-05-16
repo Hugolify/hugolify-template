@@ -4,6 +4,8 @@ github.com/hugolify/hugolify-example-site v1.0.9 h1:CstzrDpamIRIoyzOOAC3dSOZX37m
 github.com/hugolify/hugolify-example-site v1.0.9/go.mod h1:tvFPv5uMeKzKQQEQmxo2RiceNGSqM3mkMZNxwfhtK9o=
 github.com/hugolify/hugolify-netlify-cms v1.2.0 h1:d+Gr9f6sOOjVTfqi6gZ4Fp4p/y+53Kz0TEPjnwS2Kh4=
 github.com/hugolify/hugolify-netlify-cms v1.2.0/go.mod h1:Q7HNXBxIatKmA+mlG+3HbWUYApZnftOwFz6kevyg/HU=
+github.com/hugolify/hugolify-theme v1.4.1 h1:QI22ftQE8s28wQp68knr72dv26LBb0KtaEPcs39/zK8=
+github.com/hugolify/hugolify-theme v1.4.1/go.mod h1:W4kYNGzInQ3fbvVmSpbZG87vrvuW0PsIffjePKMZums=
 github.com/hugolify/hugolify-theme-casestudies v1.0.5 h1:PuafM3fKFpZeoQAr05fBkCFJa0HwdLPpspfdGvPHTzs=
 github.com/hugolify/hugolify-theme-casestudies v1.0.5/go.mod h1:qq89c1Emj7lKoWho23RA9X3rPq+8H96mfO8KI5Twr7A=
 github.com/hugolify/hugolify-theme-persons v1.0.16 h1:d26lEx88DmVzK3jDC1f8yQZSK57oV2hsnzuNUQfS5x4=
