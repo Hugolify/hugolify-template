@@ -1,6 +1,6 @@
 {
     "name": "hugolify-template",
-    "version": "1.3.1",
+    "version": "1.3.2",
     "homepage": "https://www.hugolify.io",
     "repository": "https://github.com/hugolify/hugolify-template",
     "bugs": {
@@ -25,7 +25,9 @@
         "watch": "hugo server",
         "build": "hugo --gc --minify",
         "update": "hugo mod get -u",
+        "tidy": "hugo mod tidy",
         "clean": "hugo mod clean",
+        "cleanall": "hugo mod clean --all",
         "cms": "npx netlify-cms-proxy-server"
     }
 }
