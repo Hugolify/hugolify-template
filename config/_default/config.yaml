@@ -13,3 +13,4 @@ markup:
     ordered: true
 paginate: 9
 removePathAccents: true
+disableHugoGeneratorInject: true
