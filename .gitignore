@@ -4,3 +4,4 @@ resources
 .DS_store
 # Local Netlify folder
 .netlify
+jsconfig.json
