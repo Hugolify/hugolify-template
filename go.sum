@@ -2,8 +2,8 @@ github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+y
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
 github.com/hugolify/hugolify-example-site v1.0.12 h1:AvyOUX+Q+wKzpozz1FSz9NXISffV4TNNOHKk9Th7DJg=
 github.com/hugolify/hugolify-example-site v1.0.12/go.mod h1:tvFPv5uMeKzKQQEQmxo2RiceNGSqM3mkMZNxwfhtK9o=
-github.com/hugolify/hugolify-netlify-cms v1.2.2 h1:PMlYBUyMwa5uMBaeng9zMX22znGIJEUEiiheifawnHE=
-github.com/hugolify/hugolify-netlify-cms v1.2.2/go.mod h1:Q7HNXBxIatKmA+mlG+3HbWUYApZnftOwFz6kevyg/HU=
+github.com/hugolify/hugolify-theme v1.6.1 h1:01M2FpwvjnEbgIRqqCrAqSBopcD0buBFjyTJKAeHPsY=
+github.com/hugolify/hugolify-theme v1.6.1/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
 github.com/hugolify/hugolify-theme-casestudies v1.0.8 h1:kMwuXSTwZP5v/6y6LrZKYKHxa86ECvw8Jvy/+TS6AT8=
 github.com/hugolify/hugolify-theme-casestudies v1.0.8/go.mod h1:qq89c1Emj7lKoWho23RA9X3rPq+8H96mfO8KI5Twr7A=
 github.com/hugolify/hugolify-theme-persons v1.1.3 h1:WUToIHVorYHLbsbMF2UJQd7ptRrZ3XUsIPCiGH9APCs=
@@ -22,8 +22,8 @@ github.com/hugolify/hugolify-theme-projects-tags v1.0.10 h1:iLVzysXLfS/H1EvU5W11
 github.com/hugolify/hugolify-theme-projects-tags v1.0.10/go.mod h1:qqkCPiuJJxLQrnomqNqmSbwLquISdi3c0mhpvXE1CNU=
 github.com/hugolify/hugolify-theme-projects-types v1.0.10 h1:PCYBfGpZKF+oJ/J1xa/PBJywYwrsbAL13LKaKtm1ERs=
 github.com/hugolify/hugolify-theme-projects-types v1.0.10/go.mod h1:IFi4jmAY5oXSLTWyK0mcGUDoFzWtgTQB/bQ+gL23MTg=
-github.com/hugolify/hugolify-theme-publications v1.1.15 h1:QKPfGl+xvVBzMeEft1ECgE3/NcSqATxseItbORR1v6M=
-github.com/hugolify/hugolify-theme-publications v1.1.15/go.mod h1:9hR8/sdinGo6o4DJpZMTdP1I8XYwUUq585WmeU1zwH8=
+github.com/hugolify/hugolify-theme-publications v1.1.16 h1:xgFRoRhs0fe3YT0jqHJ8lQQo8TwRLvTlL2R/T3sj8No=
+github.com/hugolify/hugolify-theme-publications v1.1.16/go.mod h1:9hR8/sdinGo6o4DJpZMTdP1I8XYwUUq585WmeU1zwH8=
 github.com/hugolify/hugolify-theme-publications-categories v1.0.3 h1:NM+pvbb5heaf5zOts6AYlniwop8KoDBQpjo9K/Xus8A=
 github.com/hugolify/hugolify-theme-publications-categories v1.0.3/go.mod h1:NX1zBK520EcoOqDbtg3EifmDxxhWZvrpQopo4QoeN5o=
 github.com/hugolify/hugolify-theme-publications-concerned v1.0.9 h1:oqTOMsxzbCXI4V4ssW1GQUW+PItlGXT2InBIbmKo304=
