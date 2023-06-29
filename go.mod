@@ -2,13 +2,11 @@ module github.com/hugolify/hugolify-template
 
 go 1.19
 
-replace github.com/hugolify/hugolify-netlify-cms => /Users/sebastienmoulene/Dev/hugolify-netlify-cms
-
 require (
 	github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 // indirect
 	github.com/hugolify/hugolify-example-site v1.0.12 // indirect
-	github.com/hugolify/hugolify-netlify-cms v1.2.4 // indirect
-	github.com/hugolify/hugolify-theme v1.6.1 // indirect
+	github.com/hugolify/hugolify-netlify-cms v1.2.5 // indirect
+	github.com/hugolify/hugolify-theme v1.6.3 // indirect
 	github.com/hugolify/hugolify-theme-casestudies v1.0.8 // indirect
 	github.com/hugolify/hugolify-theme-persons v1.1.3 // indirect
 	github.com/hugolify/hugolify-theme-posts v1.1.13 // indirect
