@@ -2,10 +2,8 @@ github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+y
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
 github.com/hugolify/hugolify-example-site v1.0.13 h1:h9JAAugom9o04/bk4GWxDv9i+Zi7JoppfCZDZv+GDjY=
 github.com/hugolify/hugolify-example-site v1.0.13/go.mod h1:tvFPv5uMeKzKQQEQmxo2RiceNGSqM3mkMZNxwfhtK9o=
-github.com/hugolify/hugolify-netlify-cms v1.2.6 h1:51CNIh1UJ5iEkc+cTe6xNsDNGAtjysn8dAqoKW0Y3oM=
-github.com/hugolify/hugolify-netlify-cms v1.2.6/go.mod h1:Q7HNXBxIatKmA+mlG+3HbWUYApZnftOwFz6kevyg/HU=
-github.com/hugolify/hugolify-theme v1.6.4 h1:GDDLaccOdM0lyzIwS2KHNv5qldRuf/2HhjPr2+PGL0w=
-github.com/hugolify/hugolify-theme v1.6.4/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
+github.com/hugolify/hugolify-netlify-cms v1.2.7 h1:FPeTf7xYE1Jyir8svE6y52YRsh19wA3iv6BIVbJ2/Ek=
+github.com/hugolify/hugolify-netlify-cms v1.2.7/go.mod h1:Q7HNXBxIatKmA+mlG+3HbWUYApZnftOwFz6kevyg/HU=
 github.com/hugolify/hugolify-theme-casestudies v1.0.8 h1:kMwuXSTwZP5v/6y6LrZKYKHxa86ECvw8Jvy/+TS6AT8=
 github.com/hugolify/hugolify-theme-casestudies v1.0.8/go.mod h1:qq89c1Emj7lKoWho23RA9X3rPq+8H96mfO8KI5Twr7A=
 github.com/hugolify/hugolify-theme-persons v1.1.3 h1:WUToIHVorYHLbsbMF2UJQd7ptRrZ3XUsIPCiGH9APCs=
@@ -28,7 +26,7 @@ github.com/hugolify/hugolify-theme-publications v1.1.17 h1:Hcoo9h28La95FfMulFPxP
 github.com/hugolify/hugolify-theme-publications v1.1.17/go.mod h1:9hR8/sdinGo6o4DJpZMTdP1I8XYwUUq585WmeU1zwH8=
 github.com/hugolify/hugolify-theme-publications-categories v1.0.3 h1:NM+pvbb5heaf5zOts6AYlniwop8KoDBQpjo9K/Xus8A=
 github.com/hugolify/hugolify-theme-publications-categories v1.0.3/go.mod h1:NX1zBK520EcoOqDbtg3EifmDxxhWZvrpQopo4QoeN5o=
-github.com/hugolify/hugolify-theme-publications-concerned v1.0.10 h1:joFB5vTJD1fYqXTa8WKQv57QRgFm+ZRVYGlh2gvKLSA=
-github.com/hugolify/hugolify-theme-publications-concerned v1.0.10/go.mod h1:SAxYCXVsDJ5lUHU/YRrTIVWATehPwdy9a1VHhmUP5dw=
+github.com/hugolify/hugolify-theme-publications-concerned v1.0.11 h1:6zOVAvE7cl+D8FD/UtUI8bRewypqHoTg6u3iIPr9Ros=
+github.com/hugolify/hugolify-theme-publications-concerned v1.0.11/go.mod h1:SAxYCXVsDJ5lUHU/YRrTIVWATehPwdy9a1VHhmUP5dw=
 github.com/twbs/bootstrap v5.3.0+incompatible h1:4+staADO0OrqUv77m+XL+vHYojLH9oxb4Vxi9mnIJWg=
 github.com/twbs/bootstrap v5.3.0+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
