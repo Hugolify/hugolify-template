@@ -8,7 +8,7 @@ require (
 	github.com/hugolify/hugolify-netlify-cms v1.2.7 // indirect
 	github.com/hugolify/hugolify-theme v1.6.14 // indirect
 	github.com/hugolify/hugolify-theme-casestudies v1.0.9 // indirect
-	github.com/hugolify/hugolify-theme-persons v1.1.4 // indirect
+	github.com/hugolify/hugolify-theme-persons v1.1.5 // indirect
 	github.com/hugolify/hugolify-theme-posts v1.1.14 // indirect
 	github.com/hugolify/hugolify-theme-posts-authors v1.0.10 // indirect
 	github.com/hugolify/hugolify-theme-posts-categories v1.0.9 // indirect
