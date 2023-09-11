@@ -36,6 +36,7 @@ Hugo sections available in theme and admin
   * tags (taxonomy)
 * casestudies
 * publications
+  * categories (taxonomy)
   * concerned (taxonomy)
 
 ## Documentation
