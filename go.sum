@@ -4,8 +4,8 @@ github.com/hugolify/hugolify-example-site v1.0.14 h1:w7Wl49Swi/fAkjRMJL3nriccFE1
 github.com/hugolify/hugolify-example-site v1.0.14/go.mod h1:tvFPv5uMeKzKQQEQmxo2RiceNGSqM3mkMZNxwfhtK9o=
 github.com/hugolify/hugolify-netlify-cms v1.4.1 h1:1u8SbJHnHghYabhieZm4Rt/lyKhDQPVz/jbOZ3pnkHU=
 github.com/hugolify/hugolify-netlify-cms v1.4.1/go.mod h1:Q7HNXBxIatKmA+mlG+3HbWUYApZnftOwFz6kevyg/HU=
-github.com/hugolify/hugolify-theme v1.7.5 h1:j3Ox1RD9kGZ6LB/bmEp3QO0G8nr6+R2y3m7sbXzCtDU=
-github.com/hugolify/hugolify-theme v1.7.5/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
+github.com/hugolify/hugolify-theme v1.7.6 h1:LZ+PJ8x9Um2lB0firlYOyz5Q/XBb3lLZAvI9pUDZJcQ=
+github.com/hugolify/hugolify-theme v1.7.6/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
 github.com/hugolify/hugolify-theme-casestudies v1.0.9 h1:cNfkMDOauiWXi9Eqkhw8OMtEbyKXQRegd0++n4fby7s=
 github.com/hugolify/hugolify-theme-casestudies v1.0.9/go.mod h1:qq89c1Emj7lKoWho23RA9X3rPq+8H96mfO8KI5Twr7A=
 github.com/hugolify/hugolify-theme-persons v1.2.1 h1:j+D8NsJLfxDIJEP5yXTsoSBYGptdDniTvto1MGfD/PM=
