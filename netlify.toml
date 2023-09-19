@@ -28,4 +28,4 @@
     X-Frame-Options = "SAMEORIGIN"
     X-XSS-Protection = "0"
     X-Content-Type-Options = "nosniff"
-    Content-Security-Policy = "default-src 'self'; manifest-src 'self'; connect-src 'self'; font-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'"
+    Content-Security-Policy = "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'"
