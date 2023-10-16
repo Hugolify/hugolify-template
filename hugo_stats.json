@@ -1,6 +1,7 @@
 {
   "htmlElements": {
     "tags": [
+      "%!s(<nil",
       "a",
       "article",
       "aside",
@@ -11,6 +12,7 @@
       "button",
       "canvas",
       "cite",
+      "code",
       "dd",
       "details",
       "div",
@@ -29,6 +31,7 @@
       "h6",
       "head",
       "header",
+      "hr",
       "html",
       "i",
       "iframe",
@@ -183,6 +186,7 @@
       "img-fluid",
       "item",
       "items",
+      "items-",
       "items-1",
       "items-2",
       "items-3",
