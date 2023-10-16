@@ -15,7 +15,9 @@ module.exports = {
                     /-backdrop$/,
                     /^is-/,
                     /^has-/,
-                    /^js-/
+                    /^js-/,
+                    /^[href^="#"]/,
+                    /^[href^="mailto"]/
                 ],
                 deep: [
                     /^tobii/
