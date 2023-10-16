@@ -7,7 +7,7 @@ require (
 	github.com/hugolify/hugolify-example-site v1.0.17 // indirect
 	github.com/hugolify/hugolify-netlify-cms v1.5.3 // indirect
 	github.com/hugolify/hugolify-theme v1.7.22 // indirect
-	github.com/hugolify/hugolify-theme-2 v1.0.2 // indirect
+	github.com/hugolify/hugolify-theme-3 v1.0.0 // indirect
 	github.com/hugolify/hugolify-theme-casestudies v1.0.9 // indirect
 	github.com/hugolify/hugolify-theme-persons v1.3.2 // indirect
 	github.com/hugolify/hugolify-theme-posts v1.1.15 // indirect
