@@ -23,6 +23,9 @@ https://theme-1--hugolify-demo.netlify.app/
 ### Theme 2
 https://theme-2--hugolify-demo.netlify.app/
 
+### Theme 3
+https://theme-3--hugolify-demo.netlify.app/
+
 ## Features
 Hugo sections available in theme and admin
 
