@@ -48,4 +48,11 @@ blocks:
           * fusce maximus
 
           * pellentesque
+  - type: selected-pages
+    section: pages
+    show_more: true
+    background: false
+    items:
+      - Legal mentions
+      - Privacy policy
 ---
