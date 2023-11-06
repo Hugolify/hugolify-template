@@ -17,6 +17,6 @@ require (
 	github.com/hugolify/hugolify-theme-projects-tags v1.0.12 // indirect
 	github.com/hugolify/hugolify-theme-projects-types v1.0.10 // indirect
 	github.com/hugolify/hugolify-theme-publications v1.2.0 // indirect
-	github.com/hugolify/hugolify-theme-publications-persons v1.1.0 // indirect
+	github.com/hugolify/hugolify-theme-publications-persons v1.1.1 // indirect
 	github.com/twbs/bootstrap v5.3.1+incompatible // indirect
 )

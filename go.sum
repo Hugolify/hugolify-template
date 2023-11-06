@@ -26,7 +26,7 @@ github.com/hugolify/hugolify-theme-projects-types v1.0.10 h1:PCYBfGpZKF+oJ/J1xa/
 github.com/hugolify/hugolify-theme-projects-types v1.0.10/go.mod h1:IFi4jmAY5oXSLTWyK0mcGUDoFzWtgTQB/bQ+gL23MTg=
 github.com/hugolify/hugolify-theme-publications v1.2.0 h1:1Ss0D1h/2mp7gC8ndTfoUZ8263Wthilq67ytevgKzBw=
 github.com/hugolify/hugolify-theme-publications v1.2.0/go.mod h1:9hR8/sdinGo6o4DJpZMTdP1I8XYwUUq585WmeU1zwH8=
-github.com/hugolify/hugolify-theme-publications-persons v1.1.0 h1:Mw1wJdHOB48sdgPvc3LVMN/b7mtsE1XJ9zN4iHaEn2c=
-github.com/hugolify/hugolify-theme-publications-persons v1.1.0/go.mod h1:To+/GFhBybbw54E7FXfcU2C1hulhkKkB31YrNI3SSeM=
+github.com/hugolify/hugolify-theme-publications-persons v1.1.1 h1:g3H3nngKj8/FE+GxAdRCSukjm0M3WQzE6plf/lduCFo=
+github.com/hugolify/hugolify-theme-publications-persons v1.1.1/go.mod h1:To+/GFhBybbw54E7FXfcU2C1hulhkKkB31YrNI3SSeM=
 github.com/twbs/bootstrap v5.3.1+incompatible h1:VZq/ulwa2CvsK7F9LFzkCVLzaCkTYOVyW5c3FBICUsM=
 github.com/twbs/bootstrap v5.3.1+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
