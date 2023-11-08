@@ -1,11 +1,11 @@
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+yb0/t3/rau1j8XlAxLE4CyXns2fqQbyqWfs=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
-github.com/hugolify/hugolify-example-site v1.0.18 h1:NEJMJA/p7AG4MkgCOqlR7p8wBLonLo223tA/tmM1nLw=
-github.com/hugolify/hugolify-example-site v1.0.18/go.mod h1:tvFPv5uMeKzKQQEQmxo2RiceNGSqM3mkMZNxwfhtK9o=
-github.com/hugolify/hugolify-netlify-cms v1.8.0 h1:ac8URE9yDOZ2MMzWe9VVbKaJHcBmL8KvtoZ3lTCMBOU=
-github.com/hugolify/hugolify-netlify-cms v1.8.0/go.mod h1:Q7HNXBxIatKmA+mlG+3HbWUYApZnftOwFz6kevyg/HU=
-github.com/hugolify/hugolify-theme v1.7.34 h1:saq3jamY1ke/RGTJ8MryV1pWbOA7FJ17KasuuUBqXNo=
-github.com/hugolify/hugolify-theme v1.7.34/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
+github.com/hugolify/hugolify-example-site v1.0.19 h1:GU5uHrF9o1SFtFqUhrqJTuDK63YOzRU9DDzcUdfMaro=
+github.com/hugolify/hugolify-example-site v1.0.19/go.mod h1:tvFPv5uMeKzKQQEQmxo2RiceNGSqM3mkMZNxwfhtK9o=
+github.com/hugolify/hugolify-netlify-cms v1.8.1 h1:jCk6USt2casQn5jmqh8ryaLiiROU4zGDKFWpu678blk=
+github.com/hugolify/hugolify-netlify-cms v1.8.1/go.mod h1:Q7HNXBxIatKmA+mlG+3HbWUYApZnftOwFz6kevyg/HU=
+github.com/hugolify/hugolify-theme v1.7.35 h1:4qYS2UJTqgmC7fv517IjrdpyM5kA0/O6xGWMqjJdGzE=
+github.com/hugolify/hugolify-theme v1.7.35/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
 github.com/hugolify/hugolify-theme-casestudies v1.0.10 h1:JNJUzR6k4DXsfmSH51Z0qjBF1TWq0Pvisw/b5fNUWt0=
 github.com/hugolify/hugolify-theme-casestudies v1.0.10/go.mod h1:qq89c1Emj7lKoWho23RA9X3rPq+8H96mfO8KI5Twr7A=
 github.com/hugolify/hugolify-theme-persons v1.3.4 h1:tjyMVf/7uCgNiCNXdZJ87Q+TlPtQTsL2+xPYTfvACng=
