@@ -23,7 +23,7 @@
     },
     "scripts": {
         "watch": "hugo server",
-        "build": "hugo --gc --minify",
+        "build": "hugo --noChmod --gc --minify",
         "update": "hugo mod get -u",
         "tidy": "hugo mod tidy",
         "clean": "hugo mod clean",

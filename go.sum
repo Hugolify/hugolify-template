@@ -2,8 +2,8 @@ github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+y
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
 github.com/hugolify/hugolify-example-site v1.0.19 h1:GU5uHrF9o1SFtFqUhrqJTuDK63YOzRU9DDzcUdfMaro=
 github.com/hugolify/hugolify-example-site v1.0.19/go.mod h1:tvFPv5uMeKzKQQEQmxo2RiceNGSqM3mkMZNxwfhtK9o=
-github.com/hugolify/hugolify-netlify-cms v1.8.1 h1:jCk6USt2casQn5jmqh8ryaLiiROU4zGDKFWpu678blk=
-github.com/hugolify/hugolify-netlify-cms v1.8.1/go.mod h1:Q7HNXBxIatKmA+mlG+3HbWUYApZnftOwFz6kevyg/HU=
+github.com/hugolify/hugolify-netlify-cms v1.8.2 h1:a0+t8x9Ptj16JNKceyu7GChqDIlNOUuV+kUR9Uyo74U=
+github.com/hugolify/hugolify-netlify-cms v1.8.2/go.mod h1:Q7HNXBxIatKmA+mlG+3HbWUYApZnftOwFz6kevyg/HU=
 github.com/hugolify/hugolify-theme v1.7.37 h1:PwyjOnHbiLWN/EVEz0LYHzj+kks7l9WQ+Ntpo+zwSf0=
 github.com/hugolify/hugolify-theme v1.7.37/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
 github.com/hugolify/hugolify-theme-casestudies v1.0.10 h1:JNJUzR6k4DXsfmSH51Z0qjBF1TWq0Pvisw/b5fNUWt0=
