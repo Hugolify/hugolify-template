@@ -6,7 +6,7 @@ Is a Github template for build easily a fast, accessible friendly and low carbon
 
 ## Table of content
 - [Live demo](#live-demo)
-- [Features](#features)
+- [Content types and taxonomies](#content-types-and-taxonomies)
 - [Documentation](#documentation)
 - [License](#license)
 
@@ -26,21 +26,10 @@ https://theme-2--hugolify-demo.netlify.app/
 ### Theme 3
 https://theme-3--hugolify-demo.netlify.app/
 
-## Features
-Hugo sections available in theme and admin
+## Content types and taxonomies
+Hugolify modules available
 
-* pages
-* posts
-  * authors (taxonomy)
-  * categories (taxonomy)
-  * tags (taxonomy)
-* projects
-  * types (taxonomy)
-  * tags (taxonomy)
-* casestudies
-* publications
-  * categories (taxonomy)
-  * concerned (taxonomy)
+[https://github.com/Hugolify/hugolify-template/wiki/Content-sections](https://github.com/Hugolify/hugolify-template/wiki/Content-sections)
 
 ## Documentation
 [https://github.com/hugolify/hugolify-template/wiki](https://github.com/hugolify/hugolify-template/wiki)
