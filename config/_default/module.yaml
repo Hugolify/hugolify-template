@@ -1,10 +1,9 @@
 imports:
+  # Content
+  # -> Hugolify content types and taxonomies available https://github.com/Hugolify/hugolify-template/wiki/Content-sections
 
-# Content
-# -> Hugolify content types and taxonomies available https://github.com/Hugolify/hugolify-template/wiki/Content-sections
+  # Core theme
+  - path: github.com/hugolify/hugolify-theme
 
-# Core theme
-- path: github.com/hugolify/hugolify-theme
-
-# CMS
-- path: github.com/hugolify/hugolify-decap-cms
+  # CMS
+  - path: github.com/hugolify/hugolify-decap-cms

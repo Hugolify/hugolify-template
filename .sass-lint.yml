@@ -18,8 +18,7 @@ rules:
   extends-before-declarations: 2
   mixins-before-declarations:
     - 2
-    -
-      exclude:
+    - exclude:
         - breakpoint
         - breakpoint-next
         - breakpoint-min
@@ -34,18 +33,14 @@ rules:
   no-debug: 1
   hex-length:
     - 2
-    -
-      style: long
+    - style: long
   hex-notation:
     - 2
-    -
-      style: uppercase
+    - style: uppercase
   indentation:
     - 4
-    -
-      size: 4
+    - size: 4
   property-sort-order:
     - 1
-    -
-      order: alphabetical
+    - order: alphabetical
       ignore-custom-properties: false
