@@ -2,7 +2,7 @@ github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+y
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
 github.com/hugolify/hugolify-decap-cms v1.9.0 h1:4/8VFZ+66gDa2CguRPJjRgOu+dp7d5ui6i2cbuydq6s=
 github.com/hugolify/hugolify-decap-cms v1.9.0/go.mod h1:lxqV0lEahrLATtKBgUbj/c9fQE1XGpaJSIaLk9D/hRA=
-github.com/hugolify/hugolify-theme v1.7.40 h1:A7p96FJVb0JRbm3lcZ/TXql7OYgZou3Gzt3w13f+w+U=
-github.com/hugolify/hugolify-theme v1.7.40/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
+github.com/hugolify/hugolify-theme v1.7.41 h1:EB+oxjtXXDh+RdUy5Cq5iTTiJUTjCbOMfnsrWeN0e9U=
+github.com/hugolify/hugolify-theme v1.7.41/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
 github.com/twbs/bootstrap v5.3.2+incompatible h1:tuiO5acc6xnZUR77Sbi5aKWXxjYxbmsSbJwYrhAKoQQ=
 github.com/twbs/bootstrap v5.3.2+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
