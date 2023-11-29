@@ -7,7 +7,7 @@ require (
 	github.com/hugolify/hugolify-decap-cms v1.9.0 // indirect
 	github.com/hugolify/hugolify-example-site v1.0.21 // indirect
 	github.com/hugolify/hugolify-theme v1.7.41 // indirect
-	github.com/hugolify/hugolify-theme-3 v1.0.5 // indirect
+	github.com/hugolify/hugolify-theme-3 v1.0.7 // indirect
 	github.com/hugolify/hugolify-theme-casestudies v1.0.10 // indirect
 	github.com/hugolify/hugolify-theme-persons v1.3.8 // indirect
 	github.com/hugolify/hugolify-theme-posts v1.1.18 // indirect
