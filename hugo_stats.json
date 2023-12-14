@@ -62,7 +62,8 @@
       "time",
       "title",
       "tr",
-      "ul"
+      "ul",
+      "video"
     ],
     "classes": [
       "404-page",
@@ -114,6 +115,7 @@
       "block-selected-publications",
       "block-testimonials",
       "block-title",
+      "block-video",
       "bottom",
       "breadcrumb-wrapper",
       "btn",
@@ -200,6 +202,7 @@
       "js-map",
       "js-newsletter",
       "js-newsletter-form",
+      "js-video",
       "last",
       "latest",
       "latest-posts",
@@ -279,6 +282,7 @@
       "quote",
       "reading-time",
       "row",
+      "screenshot",
       "section-blocks",
       "section-casestudies",
       "section-contact",
