@@ -4,6 +4,7 @@ languageCode: en
 
 ## ADVANCED
 build:
+  _merge: deep
   writeStats: true
 enableRobotsTXT: true
 imaging:
