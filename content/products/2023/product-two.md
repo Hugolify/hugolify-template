@@ -1,4 +1,5 @@
 ---
+isIndex: false
 title: Product Two
 draft: false
 date: 2022-11-17T10:34:08.410Z

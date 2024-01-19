@@ -1,4 +1,5 @@
 ---
+isIndex: false
 title: Product One
 draft: false
 date: 2022-11-17T10:34:08.410Z
@@ -8,7 +9,7 @@ image:
   credit: Photo by [Tom Crew](https://unsplash.com/fr/@tomcrewceramics) on [Unsplash](https://unsplash.com/)
 offer:
   price: 2990
-  discount: 30%
+  discount: 15%
   cta:
     url: https://buy.stripe.com/test_6oE5kvcF3dFG53i7ss
     blank: true
