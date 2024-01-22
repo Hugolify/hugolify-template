@@ -1,0 +1,4 @@
+---
+isIndex: false
+title: Lorem
+---
