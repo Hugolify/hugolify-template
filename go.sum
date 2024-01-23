@@ -2,8 +2,6 @@ github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20200 h1:SmpwwN3DNzJWbV+
 github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20200/go.mod h1:kx8MBj9T7SFR8ZClWvKZPmmUxBaltkoXvnWlZZcSnYA=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+yb0/t3/rau1j8XlAxLE4CyXns2fqQbyqWfs=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
-github.com/hugolify/hugolify-decap-cms v1.11.1 h1:KzLyc2j5A9GpryLZF8mWAuovI+Gb6Em+VbAWyEKLX/s=
-github.com/hugolify/hugolify-decap-cms v1.11.1/go.mod h1:lxqV0lEahrLATtKBgUbj/c9fQE1XGpaJSIaLk9D/hRA=
 github.com/hugolify/hugolify-theme v1.8.9 h1:0DlKYDGZKeZZN73zZ9XZAmhnZ7FFlYaaotv5WeaXn78=
 github.com/hugolify/hugolify-theme v1.8.9/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
 github.com/hugolify/hugolify-theme-products v0.0.0-20240122151145-5587f7cffb15 h1:ZlSFqUO/dZx9NTKNGigWfpbKPFx8HdmdpK6ziaviLN4=

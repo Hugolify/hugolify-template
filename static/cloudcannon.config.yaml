@@ -1,0 +1,15 @@
+collections_config:
+  products:
+    path: content/products
+    output: true
+    url: /products/[slug]/
+    _enabled_editors:
+      - content
+      - visual
+  pages:
+    path: content
+    output: true
+    url: /[slug]/
+    _enabled_editors:
+      - content
+      - visual
