@@ -46,20 +46,26 @@ collections_config:
       metadata:
       gallery:
     _editables: {}
-    _inputs: {}
+    _inputs:
+      src:
+        type: image
+        options:
+          paths:
+          mime_type:
+          correct_orientation: true
+          empty_type:
+          resize_style: contain
+          width:
+          height:
+          expandable:
+        label: Image src
+        cascade: true
     _select_data: {}
     _structures: {}
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
     schemas: {}
-  data:
-    path: data
-    output: false
-    icon: notes
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
   Catégories:
     path: content/products_categories
     output: false
@@ -87,6 +93,13 @@ collections_config:
     new_preview_url:
     schemas: {}
     schema_key:
+  data:
+    path: data
+    output: false
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
 _inputs: {}
 _select_data: {}
 _structures: {}
