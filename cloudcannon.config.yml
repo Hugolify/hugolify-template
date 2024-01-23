@@ -1,0 +1,68 @@
+paths:
+  data: data
+  collections: content
+  includes: layouts
+  layouts: layouts
+  static: static
+  uploads: static/uploads
+  source: ''
+  archetypes: archetypes
+  assets: assets
+  content: content
+  pages: content
+  publish: public
+  config: ''
+collections_config:
+  pages:
+    path: content
+    output: true
+    filter: strict
+    parse_branch_index: true
+    description: ''
+    icon: notes
+    _editables: {}
+    _inputs: {}
+    _select_data: {}
+    _structures: {}
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas: {}
+  products:
+    path: content/products
+    output: true
+    description: ''
+    icon: production_quantity_limits
+    documentation:
+      url:
+      text:
+      icon:
+    preview:
+      text:
+      subtext:
+      icon:
+      icon_color:
+      image:
+      metadata:
+      gallery:
+    _editables: {}
+    _inputs: {}
+    _select_data: {}
+    _structures: {}
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas: {}
+  data:
+    path: data
+    output: false
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+_inputs: {}
+_select_data: {}
+_structures: {}
+_editables: {}
+data_config: {}
+timezone: Etc/UTC
