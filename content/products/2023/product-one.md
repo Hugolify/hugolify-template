@@ -15,7 +15,6 @@ offer:
     text: S’abonner
 products_tags:
   - Lorem
-  - ''
 image:
   src: /images/uploads/tom-crew-NLcLjLNUJbY-unsplash.jpg
   credit: >-

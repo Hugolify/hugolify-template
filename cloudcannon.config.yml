@@ -34,9 +34,6 @@ collections_config:
     description: ''
     icon: production_quantity_limits
     documentation:
-      url:
-      text:
-      icon:
     preview:
       text:
       subtext:
@@ -45,7 +42,20 @@ collections_config:
       image:
       metadata:
       gallery:
-    _editables: {}
+    _editables:
+      text:
+        bold: true
+        copyformatting:
+        italic: true
+        link: true
+        paths:
+        redo:
+        removeformat:
+        strike:
+        subscript:
+        superscript:
+        underline:
+        undo:
     _inputs:
       src:
         type: image
@@ -60,6 +70,22 @@ collections_config:
           expandable:
         label: Image src
         cascade: true
+      blocks:
+        type: choice
+        options:
+          allow_empty: false
+          preview:
+          values:
+            - title
+            -
+          value_key:
+        cascade: true
+      url:
+        type: url
+        options:
+          paths:
+          empty_type:
+        cascade: true
     _select_data: {}
     _structures: {}
     disable_add: false
@@ -68,7 +94,7 @@ collections_config:
     schemas: {}
   Catégories:
     path: content/products_categories
-    output: false
+    output: true
     url:
     filter:
     parse_branch_index:
