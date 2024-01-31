@@ -1,33 +1,34 @@
 {
-    "name": "hugolify-template",
-    "version": "1.10.0",
-    "homepage": "https://www.hugolify.io",
-    "repository": "https://github.com/hugolify/hugolify-template",
-    "bugs": {
-        "url": "https://github.com/hugolify/hugolify-template/issues"
-    },
-    "author": {
-        "email": "sebousan@gmail.com",
-        "name": "Sébastien Moulène",
-        "url": "https://www.sebastienmoulene.com/"
-    },
-    "license": "MIT",
-    "devDependencies": {
-        "@fullhuman/postcss-purgecss": "^5.0.0",
-        "autoprefixer": "^10.4.13",
-        "cssnano": "^5.1.14",
-        "netlify-plugin-hugo-cache-resources": "^0.2.1",
-        "postcss": "^8.4.21",
-        "postcss-cli": "^10.1.0",
-        "postcss-sass": "^0.5.0"
-    },
-    "scripts": {
-        "watch": "hugo server",
-        "build": "hugo --noChmod --gc --minify",
-        "update": "hugo mod get -u",
-        "tidy": "hugo mod tidy",
-        "clean": "hugo mod clean",
-        "cleanall": "hugo mod clean --all",
-        "cms": "npx netlify-cms-proxy-server"
-    }
+  "name": "hugolify-template",
+  "version": "1.10.0",
+  "homepage": "https://www.hugolify.io",
+  "repository": "https://github.com/hugolify/hugolify-template",
+  "bugs": {
+    "url": "https://github.com/hugolify/hugolify-template/issues"
+  },
+  "author": {
+    "email": "sebousan@gmail.com",
+    "name": "Sébastien Moulène",
+    "url": "https://www.sebastienmoulene.com/"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "autoprefixer": "^10.4.13",
+    "cssnano": "^5.1.14",
+    "netlify-plugin-hugo-cache-resources": "^0.2.1",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "postcss-sass": "^0.5.0"
+  },
+  "scripts": {
+    "watch": "hugo server",
+    "build": "hugo --noChmod --gc --minify",
+    "tidy": "hugo mod tidy",
+    "update": "hugo mod get -u",
+    "updateall": "yarn update && yarn tidy && yarn upgrade",
+    "clean": "hugo mod clean",
+    "cleanall": "hugo mod clean --all",
+    "cms": "npx netlify-cms-proxy-server"
+  }
 }
