@@ -25,8 +25,9 @@
   "scripts": {
     "watch": "hugo server",
     "build": "hugo --noChmod --gc --minify",
-    "update": "hugo mod get -u",
     "tidy": "hugo mod tidy",
+    "update": "hugo mod get -u",
+    "updateall": "yarn update && yarn tidy && yarn upgrade",
     "clean": "hugo mod clean",
     "cleanall": "hugo mod clean --all",
     "cms": "npx netlify-cms-proxy-server"

@@ -2,10 +2,10 @@ github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20200 h1:SmpwwN3DNzJWbV+
 github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20200/go.mod h1:kx8MBj9T7SFR8ZClWvKZPmmUxBaltkoXvnWlZZcSnYA=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+yb0/t3/rau1j8XlAxLE4CyXns2fqQbyqWfs=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
-github.com/hugolify/hugolify-theme v1.8.9 h1:0DlKYDGZKeZZN73zZ9XZAmhnZ7FFlYaaotv5WeaXn78=
-github.com/hugolify/hugolify-theme v1.8.9/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
-github.com/hugolify/hugolify-theme-products v0.0.0-20240122151145-5587f7cffb15 h1:ZlSFqUO/dZx9NTKNGigWfpbKPFx8HdmdpK6ziaviLN4=
-github.com/hugolify/hugolify-theme-products v0.0.0-20240122151145-5587f7cffb15/go.mod h1:F+lk5R6CEuUqCaRWdhD6keNaAsQ/YfahiLobgiJ+Afo=
+github.com/hugolify/hugolify-theme v1.8.10 h1:BLyIVdnvWETr79TDOLBMvJpkI7RyiIHyx93ozkAPTeg=
+github.com/hugolify/hugolify-theme v1.8.10/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
+github.com/hugolify/hugolify-theme-products v0.0.0-20240131093415-7cfdcaa4b116 h1:kRvajUhMhXX4YDm5IUH0RBEFNnA9SBahQipCpTm3t6Y=
+github.com/hugolify/hugolify-theme-products v0.0.0-20240131093415-7cfdcaa4b116/go.mod h1:F+lk5R6CEuUqCaRWdhD6keNaAsQ/YfahiLobgiJ+Afo=
 github.com/hugolify/hugolify-theme-products-categories v0.0.0-20240122151001-f68b13796f53 h1:5hNrjfKBTds1Bs/GZQ7YuCCjXfgmYWUYyKUAy0/9u6o=
 github.com/hugolify/hugolify-theme-products-categories v0.0.0-20240122151001-f68b13796f53/go.mod h1:vWvmDn6kfWBCO0DmxK4wXzIGCzUoF3BtuQd0V3pi670=
 github.com/hugolify/hugolify-theme-products-tags v0.0.0-20240122172843-41d6de25f9a1 h1:KboJyYvqmfPhB9JUonLhVSQTrx1hvKPuOKcziFMrvAo=
