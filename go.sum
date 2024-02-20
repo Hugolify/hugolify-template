@@ -10,6 +10,8 @@ github.com/hugolify/hugolify-theme v1.8.12 h1:z/dgofNiKUwaT0mgp7heZS7S4fUuq1Do1N
 github.com/hugolify/hugolify-theme v1.8.12/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
 github.com/hugolify/hugolify-theme v1.8.13 h1:JmYUTJGF6YjYd7xqP+DlDkikJVCO2lnjl45lV9KODog=
 github.com/hugolify/hugolify-theme v1.8.13/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
+github.com/hugolify/hugolify-theme v1.9.2 h1:JnU6qX17ED22XSiwj0MxRLeUoLofwOrBt5CQoHN32dw=
+github.com/hugolify/hugolify-theme v1.9.2/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
 github.com/midzer/tobii v2.5.0+incompatible h1:Gg3r5Zp0M6shS70NVGHALUgfw0sPtk3YHRjfYHbOUbo=
 github.com/midzer/tobii v2.5.0+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
 github.com/twbs/bootstrap v5.3.2+incompatible h1:tuiO5acc6xnZUR77Sbi5aKWXxjYxbmsSbJwYrhAKoQQ=
