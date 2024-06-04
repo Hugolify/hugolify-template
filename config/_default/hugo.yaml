@@ -5,7 +5,12 @@ languageCode: en
 ## ADVANCED
 build:
   _merge: deep
-  writeStats: true
+  buildStats:
+    _merge: deep
+    disableClasses: false
+    disableIDs: true
+    disableTags: false
+    enable: true
 enableRobotsTXT: true
 imaging:
   quality: 75
