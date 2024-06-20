@@ -4,8 +4,10 @@ github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+y
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
 github.com/hugolify/hugolify-decap-cms v1.13.1 h1:XBSWoEbzVGBASiXVuiCxN/uXaTLJLAzzF3O3p5uPCKc=
 github.com/hugolify/hugolify-decap-cms v1.13.1/go.mod h1:lxqV0lEahrLATtKBgUbj/c9fQE1XGpaJSIaLk9D/hRA=
-github.com/hugolify/hugolify-example-site v1.1.0 h1:sg3G5GcBLtBqNvxZl9BVxwFjebGQ5K4nPNFfeWNgjVo=
-github.com/hugolify/hugolify-example-site v1.1.0/go.mod h1:tvFPv5uMeKzKQQEQmxo2RiceNGSqM3mkMZNxwfhtK9o=
+github.com/hugolify/hugolify-example-site v1.1.1 h1:JfnzabgcDPr8yMJhATVW1BkmTl1JFBhxIMV+2HDlIXY=
+github.com/hugolify/hugolify-example-site v1.1.1/go.mod h1:tvFPv5uMeKzKQQEQmxo2RiceNGSqM3mkMZNxwfhtK9o=
+github.com/hugolify/hugolify-theme v1.15.0 h1:mAqMpYxat47ArR31gdpxzVS1jsL/umQHzS4ytDDPLDw=
+github.com/hugolify/hugolify-theme v1.15.0/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
 github.com/hugolify/hugolify-theme-casestudies v1.0.11 h1:LMUqECCVWQI5J5JxhlMaOr702wFacJWndkS2+P8h1y0=
 github.com/hugolify/hugolify-theme-casestudies v1.0.11/go.mod h1:qq89c1Emj7lKoWho23RA9X3rPq+8H96mfO8KI5Twr7A=
 github.com/hugolify/hugolify-theme-persons v1.3.12 h1:nWbyUGc7qsHNIopjB7pzL905UVBkDuxF4ca6b7eBdTE=
@@ -18,6 +20,8 @@ github.com/hugolify/hugolify-theme-posts-categories v1.0.9 h1:8SEXg7AuTw0wE8af03
 github.com/hugolify/hugolify-theme-posts-categories v1.0.9/go.mod h1:BgCFC7+DzBoAiM4B1CrWGCDVzU/UUHnwNIeMc7cqt54=
 github.com/hugolify/hugolify-theme-posts-tags v1.0.12 h1:/rQvI5Bx2U0WLdmUFh1HjeuHyqENkpK0bO4F+tftLsI=
 github.com/hugolify/hugolify-theme-posts-tags v1.0.12/go.mod h1:8Vb9TbKcVvgMTZpHdIp8vyw9loSTcY3q0BNvqv8WpLg=
+github.com/hugolify/hugolify-theme-projects v1.1.21 h1:dgimVjveRILgczNAdZw78ZtWl7ll7HmhVbFnHmjmv14=
+github.com/hugolify/hugolify-theme-projects v1.1.21/go.mod h1:DseeRICUC354yaV9BDa6M3AwIeZVKXLnJbFczHCSH+U=
 github.com/hugolify/hugolify-theme-projects-tags v1.0.13 h1:h02hGjemqr4M+yt/cJCyGcXM1v1lmj2FjhDKb7ZQNrY=
 github.com/hugolify/hugolify-theme-projects-tags v1.0.13/go.mod h1:qqkCPiuJJxLQrnomqNqmSbwLquISdi3c0mhpvXE1CNU=
 github.com/hugolify/hugolify-theme-projects-types v1.0.10 h1:PCYBfGpZKF+oJ/J1xa/PBJywYwrsbAL13LKaKtm1ERs=
