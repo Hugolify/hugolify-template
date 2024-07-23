@@ -14,6 +14,7 @@
   "license": "MIT",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
+    "@tinacms/cli": "^1.5.46",
     "autoprefixer": "^10.4.13",
     "cssnano": "^5.1.14",
     "netlify-plugin-hugo-cache-resources": "^0.2.1",
@@ -30,5 +31,8 @@
     "clean": "hugo mod clean",
     "cleanall": "hugo mod clean --all",
     "cms": "npx netlify-cms-proxy-server"
+  },
+  "dependencies": {
+    "tinacms": "^1.6.4"
   }
 }
