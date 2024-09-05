@@ -31,6 +31,10 @@ https://theme-2--hugolify-demo.netlify.app/
 
 https://theme-3--hugolify-demo.netlify.app/
 
+### Products
+
+https://demo-products--hugolify-demo.netlify.app
+
 ## Content types and taxonomies
 
 Hugolify modules available
