@@ -2,10 +2,10 @@ github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20200 h1:SmpwwN3DNzJWbV+
 github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20200/go.mod h1:kx8MBj9T7SFR8ZClWvKZPmmUxBaltkoXvnWlZZcSnYA=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+yb0/t3/rau1j8XlAxLE4CyXns2fqQbyqWfs=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
-github.com/hugolify/hugolify-decap-cms v1.13.1 h1:XBSWoEbzVGBASiXVuiCxN/uXaTLJLAzzF3O3p5uPCKc=
-github.com/hugolify/hugolify-decap-cms v1.13.1/go.mod h1:lxqV0lEahrLATtKBgUbj/c9fQE1XGpaJSIaLk9D/hRA=
-github.com/hugolify/hugolify-theme v1.15.1 h1:wmSp0hYtQ1SoGEpblEgtZ+M6MD80R8M+/2W75shAnvc=
-github.com/hugolify/hugolify-theme v1.15.1/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
+github.com/hugolify/hugolify-decap-cms v1.14.1 h1:02RKgjOow/ahWti+ye3pX9h1vdC3517ESbCFI5hj35M=
+github.com/hugolify/hugolify-decap-cms v1.14.1/go.mod h1:lxqV0lEahrLATtKBgUbj/c9fQE1XGpaJSIaLk9D/hRA=
+github.com/hugolify/hugolify-theme v1.16.0 h1:FSn6WwxmiI4kDrlR6tR4g2lBmF/NpfAYQMNz8b6hvF8=
+github.com/hugolify/hugolify-theme v1.16.0/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
 github.com/hugolify/hugolify-theme-products v0.0.0-20240613140635-341307ae5e93 h1:7ymqGF+QILc6pJlevFPB0qxZlDj0ADyI1jCdcPVWO+M=
 github.com/hugolify/hugolify-theme-products v0.0.0-20240613140635-341307ae5e93/go.mod h1:F+lk5R6CEuUqCaRWdhD6keNaAsQ/YfahiLobgiJ+Afo=
 github.com/hugolify/hugolify-theme-products-categories v0.0.0-20240207090523-437b96ebb88b h1:YPfJrsqeniwppaAIzptJ6G0dp949kba+yUmX/x2awTQ=

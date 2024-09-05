@@ -11,7 +11,7 @@ offer:
   cta:
     url: https://buy.stripe.com/test_6oE5kvcF3dFG53i7ss
     blank: true
-    text: S’abonner
+    text: Subscribe on Stripe
 products_tags:
   - Lorem
 image:
