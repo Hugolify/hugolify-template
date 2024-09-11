@@ -17,6 +17,3 @@ imports:
 
   # Core theme
   - path: github.com/hugolify/hugolify-theme
-
-  # CMS
-  - path: github.com/hugolify/hugolify-decap-cms
