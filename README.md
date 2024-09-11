@@ -4,13 +4,6 @@
 
 Is a Github template for build easily a fast, accessible friendly and low carbon website!
 
-## Table of content
-
-- [Live demo](#live-demo)
-- [Content types and taxonomies](#content-types-and-taxonomies)
-- [Documentation](#documentation)
-- [License](#license)
-
 ## Live demos
 
 ### Base
@@ -31,15 +24,13 @@ https://theme-2--hugolify-demo.netlify.app/
 
 https://theme-3--hugolify-demo.netlify.app/
 
+### Theme 4
+
+https://theme-4--hugolify-demo.netlify.app/
+
 ### Products
 
 https://demo-products--hugolify-demo.netlify.app
-
-## Content types and taxonomies
-
-Hugolify modules available
-
-[https://github.com/Hugolify/hugolify-template/wiki/Content-sections](https://github.com/Hugolify/hugolify-template/wiki/Content-sections)
 
 ## Documentation
 
