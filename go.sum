@@ -4,8 +4,6 @@ github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+y
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
 github.com/hugolify/hugolify-example-site v1.2.2 h1:QWuBA+jSOp7nxziA3iaU9zdW937pKstTAUjLVoGyJbg=
 github.com/hugolify/hugolify-example-site v1.2.2/go.mod h1:tvFPv5uMeKzKQQEQmxo2RiceNGSqM3mkMZNxwfhtK9o=
-github.com/hugolify/hugolify-theme v1.16.4 h1:wahby5ukUStepCxqwy7wM3/DY+VOlYqxcEx2F1t0pdA=
-github.com/hugolify/hugolify-theme v1.16.4/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
 github.com/hugolify/hugolify-theme-2 v1.0.4 h1:B3ifIbpDJSJUbHqd5N5Y/75QeKX06/Z1D2oP7tm+NQY=
 github.com/hugolify/hugolify-theme-2 v1.0.4/go.mod h1:6aBnaybY1O1nO9b45zCHNRIHoPRK7EJrNS7NTCBPWOY=
 github.com/hugolify/hugolify-theme-casestudies v1.0.11 h1:LMUqECCVWQI5J5JxhlMaOr702wFacJWndkS2+P8h1y0=
