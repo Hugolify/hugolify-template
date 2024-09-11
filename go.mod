@@ -5,14 +5,13 @@ go 1.21
 require (
 	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20200 // indirect
 	github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 // indirect
-	github.com/hugolify/hugolify-decap-cms v1.15.0 // indirect
-	github.com/hugolify/hugolify-example-site v1.2.1 // indirect
-	github.com/hugolify/hugolify-theme v1.16.2 // indirect
-	github.com/hugolify/hugolify-theme-4 v0.0.0-20240911091701-23a2a0d2cc18 // indirect
+	github.com/hugolify/hugolify-example-site v1.2.2 // indirect
+	github.com/hugolify/hugolify-theme v1.16.4 // indirect
+	github.com/hugolify/hugolify-theme-4 v0.0.0-20240911144918-435bbd6bf509 // indirect
 	github.com/hugolify/hugolify-theme-casestudies v1.0.11 // indirect
 	github.com/hugolify/hugolify-theme-docs v0.0.0-20240906134046-99c247bbff6a // indirect
 	github.com/hugolify/hugolify-theme-persons v1.3.12 // indirect
-	github.com/hugolify/hugolify-theme-posts v1.1.19 // indirect
+	github.com/hugolify/hugolify-theme-posts v1.2.0 // indirect
 	github.com/hugolify/hugolify-theme-posts-authors v1.0.12 // indirect
 	github.com/hugolify/hugolify-theme-posts-categories v1.0.9 // indirect
 	github.com/hugolify/hugolify-theme-posts-tags v1.0.13 // indirect
