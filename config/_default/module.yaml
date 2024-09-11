@@ -1,17 +1,16 @@
 imports:
-- path: github.com/hugolify/hugolify-example-site
-- path: github.com/hugolify/hugolify-theme-2
-- path: github.com/hugolify/hugolify-theme-casestudies
-- path: github.com/hugolify/hugolify-theme-posts-authors
-- path: github.com/hugolify/hugolify-theme-posts-categories
-- path: github.com/hugolify/hugolify-theme-posts-tags
-- path: github.com/hugolify/hugolify-theme-posts
-- path: github.com/hugolify/hugolify-theme-projects-types
-- path: github.com/hugolify/hugolify-theme-projects-tags
-- path: github.com/hugolify/hugolify-theme-projects
-- path: github.com/hugolify/hugolify-theme-publications-categories
-- path: github.com/hugolify/hugolify-theme-publications-persons
-- path: github.com/hugolify/hugolify-theme-publications
-- path: github.com/hugolify/hugolify-theme-persons
-- path: github.com/hugolify/hugolify-theme
-- path: github.com/hugolify/hugolify-decap-cms
+  - path: github.com/hugolify/hugolify-example-site
+  - path: github.com/hugolify/hugolify-theme-2
+  - path: github.com/hugolify/hugolify-theme-casestudies
+  - path: github.com/hugolify/hugolify-theme-posts-authors
+  - path: github.com/hugolify/hugolify-theme-posts-categories
+  - path: github.com/hugolify/hugolify-theme-posts-tags
+  - path: github.com/hugolify/hugolify-theme-posts
+  - path: github.com/hugolify/hugolify-theme-projects-types
+  - path: github.com/hugolify/hugolify-theme-projects-tags
+  - path: github.com/hugolify/hugolify-theme-projects
+  - path: github.com/hugolify/hugolify-theme-publications-categories
+  - path: github.com/hugolify/hugolify-theme-publications-persons
+  - path: github.com/hugolify/hugolify-theme-publications
+  - path: github.com/hugolify/hugolify-theme-persons
+  - path: github.com/hugolify/hugolify-theme
