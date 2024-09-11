@@ -4,6 +4,8 @@ github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+y
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
 github.com/hugolify/hugolify-example-site v1.2.2 h1:QWuBA+jSOp7nxziA3iaU9zdW937pKstTAUjLVoGyJbg=
 github.com/hugolify/hugolify-example-site v1.2.2/go.mod h1:tvFPv5uMeKzKQQEQmxo2RiceNGSqM3mkMZNxwfhtK9o=
+github.com/hugolify/hugolify-theme v1.16.5 h1:PMbxl+Yrj+87JbgHm9yKyRdVC/t14mxQ1oY7QPoTwB8=
+github.com/hugolify/hugolify-theme v1.16.5/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
 github.com/hugolify/hugolify-theme-2 v1.0.4 h1:B3ifIbpDJSJUbHqd5N5Y/75QeKX06/Z1D2oP7tm+NQY=
 github.com/hugolify/hugolify-theme-2 v1.0.4/go.mod h1:6aBnaybY1O1nO9b45zCHNRIHoPRK7EJrNS7NTCBPWOY=
 github.com/hugolify/hugolify-theme-casestudies v1.0.11 h1:LMUqECCVWQI5J5JxhlMaOr702wFacJWndkS2+P8h1y0=
@@ -32,7 +34,6 @@ github.com/hugolify/hugolify-theme-publications-persons v1.1.4 h1:6i0w2BEfPRDrwf
 github.com/hugolify/hugolify-theme-publications-persons v1.1.4/go.mod h1:To+/GFhBybbw54E7FXfcU2C1hulhkKkB31YrNI3SSeM=
 github.com/midzer/tobii v2.5.0+incompatible h1:Gg3r5Zp0M6shS70NVGHALUgfw0sPtk3YHRjfYHbOUbo=
 github.com/midzer/tobii v2.5.0+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
-github.com/twbs/bootstrap v5.3.2+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/bootstrap v5.3.3+incompatible h1:goFoqinzdHfkeegpFP7pvhbd0g+A3O2hbU3XCjuNrEQ=
 github.com/twbs/bootstrap v5.3.3+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/icons v1.11.3 h1:XhvrQ1XDom9ggBbQx3wQCFGEr8qAQwQP/dAcw8OXMtA=
