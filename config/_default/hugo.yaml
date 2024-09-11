@@ -11,7 +11,8 @@ imaging:
 markup:
   tableOfContents:
     ordered: true
-paginate: 9
+pagination:
+  pagerSize: 9
 removePathAccents: true
 disableHugoGeneratorInject: true
 timeout: 100000
