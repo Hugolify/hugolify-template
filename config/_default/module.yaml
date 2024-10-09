@@ -14,6 +14,9 @@ imports:
   - path: github.com/hugolify/hugolify-theme-docs
   - path: github.com/hugolify/hugolify-theme-publications-persons
   - path: github.com/hugolify/hugolify-theme-publications
+  - path: github.com/hugolify/hugolify-theme-services
+  - path: github.com/hugolify/hugolify-theme-services-categories
+  - path: github.com/hugolify/hugolify-theme-services-persons
 
   # Core theme
   - path: github.com/hugolify/hugolify-theme
