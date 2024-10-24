@@ -8,7 +8,11 @@ image:
   src: /images/uploads/tom-crew-oiZAQvxTcYQ-unsplash.jpg
   credit: Photo by [Tom Crew](https://unsplash.com/fr/@tomcrewceramics) on [Unsplash](https://unsplash.com/)
 offer:
-  price: 1000
+  price: 39.99
+  cta:
+    url: https://buy.stripe.com/fZe6pV30rbAwcFy3ch
+    blank: true
+    text: Buy it
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis ipsum erat, sed interdum nunc sagittis sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam posuere hendrerit enim id aliquet. Donec eget urna fermentum, tristique odio sit amet, dapibus eros. Sed imperdiet fringilla commodo. Maecenas vehicula auctor pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam vel tristique massa, at posuere nibh. Aenean a scelerisque est, vel eleifend justo. Mauris eleifend accumsan condimentum.
