@@ -2,7 +2,7 @@ module github.com/hugolify/hugolify-template
 
 go 1.21
 
-// replace github.com/hugolify/hugolify-admin => ../hugolify-admin
+replace github.com/hugolify/hugolify-admin => ../hugolify-admin
 
 require (
 	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20200 // indirect

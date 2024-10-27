@@ -1,7 +1,7 @@
 _merge: deep
 # See https://github.com/Hugolify/hugolify-admin/blob/main/hugo.yaml#L25
 admin:
-  cms: decapcms
+  cms: sveltiacms
   config:
     id: true
   nested:
