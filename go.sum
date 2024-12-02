@@ -2,10 +2,10 @@ github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20200 h1:SmpwwN3DNzJWbV+
 github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20200/go.mod h1:kx8MBj9T7SFR8ZClWvKZPmmUxBaltkoXvnWlZZcSnYA=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+yb0/t3/rau1j8XlAxLE4CyXns2fqQbyqWfs=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
-github.com/hugolify/hugolify-example-site v1.2.5 h1:IwhuxaTHLMQ/oBGReBjjjeetwTM+xIsHug3vHpkinJ4=
-github.com/hugolify/hugolify-example-site v1.2.5/go.mod h1:tvFPv5uMeKzKQQEQmxo2RiceNGSqM3mkMZNxwfhtK9o=
-github.com/hugolify/hugolify-theme v1.18.10 h1:bA6AO0sBmzMVQzSoE3lmrEbaiM7OgL679hxlH+HjFAI=
-github.com/hugolify/hugolify-theme v1.18.10/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
+github.com/hugolify/hugolify-example-site v1.2.6 h1:WZAirqKVcECVQu+wtGHB46LmH9O22I3mAFfJ+oCV3fw=
+github.com/hugolify/hugolify-example-site v1.2.6/go.mod h1:e21yIPVorsgtbEDK2zovJb3Am8k2Sncu0Gu83EfnjNA=
+github.com/hugolify/hugolify-theme v1.18.15 h1:xlQClpdzRYmqrZTo6Hwc8fxd3hfvexIyBg200/mqD74=
+github.com/hugolify/hugolify-theme v1.18.15/go.mod h1:dRIiGMTOC5dQ8U9CEcLyNIW7be6n7jNx0iSUB1YKdJw=
 github.com/hugolify/hugolify-theme-casestudies v1.0.13 h1:hHeZtC0bVg8xrPIz+b/ILA5Ep+H6gMa6ECjo5JO/OTE=
 github.com/hugolify/hugolify-theme-casestudies v1.0.13/go.mod h1:qq89c1Emj7lKoWho23RA9X3rPq+8H96mfO8KI5Twr7A=
 github.com/hugolify/hugolify-theme-docs v0.0.0-20241105130238-7e41f820e05c h1:uPv9jLzNxMxriHVxuIVKInCLrS+DZ++MwKh6050PJJE=
@@ -36,8 +36,8 @@ github.com/hugolify/hugolify-theme-services-categories v0.0.0-20241105130414-6fd
 github.com/hugolify/hugolify-theme-services-categories v0.0.0-20241105130414-6fd307754584/go.mod h1:ZR+uy9dwzO6itKUfi+HzPzGomfuSISY86vzmOcdSC/Y=
 github.com/hugolify/hugolify-theme-services-persons v0.0.0-20241105130418-6490aa30b4b2 h1:bD7z0+ONBpaeyDMGR85U/i7Z0Iu1ijKIpRWmD1qvjv8=
 github.com/hugolify/hugolify-theme-services-persons v0.0.0-20241105130418-6490aa30b4b2/go.mod h1:eY1UFteKdxHcXtebhr9h/repBjkan5gF7xfFBZ14uQc=
-github.com/midzer/tobii v2.5.0+incompatible h1:Gg3r5Zp0M6shS70NVGHALUgfw0sPtk3YHRjfYHbOUbo=
-github.com/midzer/tobii v2.5.0+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
+github.com/midzer/tobii v2.6.0+incompatible h1:roAZ7LkES1ElqXdvFRwquDe4zuhry6fOCwjpW5UsK28=
+github.com/midzer/tobii v2.6.0+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
 github.com/twbs/bootstrap v5.3.3+incompatible h1:goFoqinzdHfkeegpFP7pvhbd0g+A3O2hbU3XCjuNrEQ=
 github.com/twbs/bootstrap v5.3.3+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/icons v1.11.3 h1:XhvrQ1XDom9ggBbQx3wQCFGEr8qAQwQP/dAcw8OXMtA=
