@@ -6,8 +6,11 @@ github.com/hugolify/hugolify-decap-cms v1.15.1 h1:QFSczFiQHSunQ/g3+dHZMDivXS2Hh8
 github.com/hugolify/hugolify-decap-cms v1.15.1/go.mod h1:lxqV0lEahrLATtKBgUbj/c9fQE1XGpaJSIaLk9D/hRA=
 github.com/hugolify/hugolify-theme v1.18.14 h1:PNvTfpLSvI0h2ZKECGAuXXnP0KkzIuhus9+efwUDGAA=
 github.com/hugolify/hugolify-theme v1.18.14/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
+github.com/hugolify/hugolify-theme v1.18.18 h1:1e2jWmooh87re3B2v85p6HCmmB7MowZ7ImSsGvOebnw=
+github.com/hugolify/hugolify-theme v1.18.18/go.mod h1:dRIiGMTOC5dQ8U9CEcLyNIW7be6n7jNx0iSUB1YKdJw=
 github.com/midzer/tobii v2.6.0+incompatible h1:roAZ7LkES1ElqXdvFRwquDe4zuhry6fOCwjpW5UsK28=
 github.com/midzer/tobii v2.6.0+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
+github.com/twbs/bootstrap v5.3.2+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/bootstrap v5.3.3+incompatible h1:goFoqinzdHfkeegpFP7pvhbd0g+A3O2hbU3XCjuNrEQ=
 github.com/twbs/bootstrap v5.3.3+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/icons v1.11.3 h1:XhvrQ1XDom9ggBbQx3wQCFGEr8qAQwQP/dAcw8OXMtA=
