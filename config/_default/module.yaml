@@ -1,7 +1,7 @@
 # Hugolify content available https://github.com/Hugolify/hugolify-template/wiki/Content-sections
 imports:
   # Theme
-  - path: github.com/hugolify/hugolify-theme-4
+  - path: github.com/hugolify/hugolify-theme-5
 
   # For exampleSite
   - path: github.com/hugolify/hugolify-example-site
