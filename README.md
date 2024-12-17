@@ -28,6 +28,10 @@ https://theme-3--hugolify-demo.netlify.app/
 
 https://theme-4--hugolify-demo.netlify.app/
 
+### Theme 5
+
+https://theme-5--hugolify-demo.netlify.app/
+
 ### Products
 
 https://demo-products--hugolify-demo.netlify.app
