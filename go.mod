@@ -2,8 +2,6 @@ module github.com/hugolify/hugolify-template
 
 go 1.21
 
-
-
 require (
 	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20200 // indirect
 	github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 // indirect
@@ -12,7 +10,7 @@ require (
 	github.com/hugolify/hugolify-theme-casestudies v1.0.14 // indirect
 	github.com/hugolify/hugolify-theme-docs v0.0.0-20241219102311-98752b1fe732 // indirect
 	github.com/hugolify/hugolify-theme-jobs v0.0.0-20250131111818-dae686428866 // indirect
-	github.com/hugolify/hugolify-theme-jobs-places v0.0.0-20250201093442-6ec7724480b2 // indirect
+	github.com/hugolify/hugolify-theme-jobs-places v0.0.0-20250203101254-f067c7609bdb // indirect
 	github.com/hugolify/hugolify-theme-jobs-tags v0.0.0-20250201093342-1b5d6e7840ef // indirect
 	github.com/hugolify/hugolify-theme-persons v1.3.22 // indirect
 	github.com/hugolify/hugolify-theme-persons-places v1.1.3 // indirect

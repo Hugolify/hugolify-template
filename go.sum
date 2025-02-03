@@ -12,8 +12,8 @@ github.com/hugolify/hugolify-theme-docs v0.0.0-20241219102311-98752b1fe732 h1:Xy
 github.com/hugolify/hugolify-theme-docs v0.0.0-20241219102311-98752b1fe732/go.mod h1:zl20+CCoKsQ523IRk2eZHgmjtL0YMtKBu2m5mzlGoJE=
 github.com/hugolify/hugolify-theme-jobs v0.0.0-20250131111818-dae686428866 h1:EroWE1WnX15uymhaqQ1B1hpQh2m3BUo+0yaARNDRFx0=
 github.com/hugolify/hugolify-theme-jobs v0.0.0-20250131111818-dae686428866/go.mod h1:1YRv7qcowpF0E8ib/v3r9WXKOmCHobwB+rHlflv6HRA=
-github.com/hugolify/hugolify-theme-jobs-places v0.0.0-20250201093442-6ec7724480b2 h1:AB10I5RZAMnowr3M41BeHN7+ihrNWDbVC+vYrgTqe/0=
-github.com/hugolify/hugolify-theme-jobs-places v0.0.0-20250201093442-6ec7724480b2/go.mod h1:ua3ZvMoJURiA4JIALvAdvYYH38Qy/AF80BwnADVtz+c=
+github.com/hugolify/hugolify-theme-jobs-places v0.0.0-20250203101254-f067c7609bdb h1:ayfewoZXPvucXH5WmMiIKSVS4RpQH6jxjHhWjuuS02U=
+github.com/hugolify/hugolify-theme-jobs-places v0.0.0-20250203101254-f067c7609bdb/go.mod h1:ua3ZvMoJURiA4JIALvAdvYYH38Qy/AF80BwnADVtz+c=
 github.com/hugolify/hugolify-theme-jobs-tags v0.0.0-20250201093342-1b5d6e7840ef h1:eIbXxeTOVqidXAZHFgL20S+L5yNjG1PAwkuR3fNqKVs=
 github.com/hugolify/hugolify-theme-jobs-tags v0.0.0-20250201093342-1b5d6e7840ef/go.mod h1:3KXMd6yWAXsC1G96U+kcqGRC8z0C+dl3Y58dchuaXpc=
 github.com/hugolify/hugolify-theme-persons v1.3.22 h1:9QA1AA1zB26JRaMDgWpcPQEXepXwqUjYSAyt1jX/3jU=
