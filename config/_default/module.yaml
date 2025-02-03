@@ -19,9 +19,11 @@ imports:
   - path: github.com/hugolify/hugolify-theme-services
   - path: github.com/hugolify/hugolify-theme-services-categories
   - path: github.com/hugolify/hugolify-theme-services-persons
+  - path: github.com/hugolify/hugolify-theme-jobs-expertises
   - path: github.com/hugolify/hugolify-theme-jobs-places
   - path: github.com/hugolify/hugolify-theme-jobs-tags
   - path: github.com/hugolify/hugolify-theme-jobs
+  - path: github.com/hugolify/hugolify-theme-expertises
 
   # Core theme
   - path: github.com/hugolify/hugolify-theme

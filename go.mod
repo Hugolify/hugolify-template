@@ -2,16 +2,21 @@ module github.com/hugolify/hugolify-template
 
 go 1.21
 
+replace (
+)
+
 require (
 	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20200 // indirect
 	github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 // indirect
 	github.com/hugolify/hugolify-example-site v1.2.8 // indirect
-	github.com/hugolify/hugolify-theme v1.19.5 // indirect
+	github.com/hugolify/hugolify-theme v1.19.7 // indirect
 	github.com/hugolify/hugolify-theme-casestudies v1.0.14 // indirect
 	github.com/hugolify/hugolify-theme-docs v0.0.0-20241219102311-98752b1fe732 // indirect
-	github.com/hugolify/hugolify-theme-jobs v0.0.0-20250131111818-dae686428866 // indirect
-	github.com/hugolify/hugolify-theme-jobs-places v0.0.0-20250203101254-f067c7609bdb // indirect
-	github.com/hugolify/hugolify-theme-jobs-tags v0.0.0-20250201093342-1b5d6e7840ef // indirect
+	github.com/hugolify/hugolify-theme-expertises v1.0.22 // indirect
+	github.com/hugolify/hugolify-theme-jobs v0.0.0-20250203134333-ca30edd013d2 // indirect
+	github.com/hugolify/hugolify-theme-jobs-expertises v0.0.0-20250203142716-b97561304e77 // indirect
+	github.com/hugolify/hugolify-theme-jobs-places v0.0.0-20250203142556-f6baf07bb780 // indirect
+	github.com/hugolify/hugolify-theme-jobs-tags v0.0.0-20250203142455-1c74f14dbdca // indirect
 	github.com/hugolify/hugolify-theme-persons v1.3.22 // indirect
 	github.com/hugolify/hugolify-theme-persons-places v1.1.3 // indirect
 	github.com/hugolify/hugolify-theme-places v1.1.10 // indirect
