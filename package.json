@@ -30,6 +30,8 @@
     "updateall": "yarn update && yarn tidy && yarn upgrade",
     "clean": "hugo mod clean",
     "cleanall": "hugo mod clean --all",
-    "cms": "npx netlify-cms-proxy-server"
+    "decapcms": "npx decap-server",
+    "netlifycms": "npx netlify-cms-proxy-server",
+    "cms": "yarn decapcms"
   }
 }
