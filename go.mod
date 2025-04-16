@@ -2,13 +2,11 @@ module github.com/hugolify/hugolify-template
 
 go 1.21
 
-replace github.com/hugolify/hugolify-admin => ../hugolify-admin
-
 require (
 	github.com/Splidejs/splide v4.1.3+incompatible // indirect
 	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400 // indirect
 	github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 // indirect
-	github.com/hugolify/hugolify-admin v0.0.0-20250416164716-089a8f2d08b4 // indirect
+	github.com/hugolify/hugolify-admin v0.0.0-20250416201036-53c36a1e8bfd // indirect
 	github.com/hugolify/hugolify-theme v1.22.3 // indirect
 	github.com/midzer/tobii v2.7.3+incompatible // indirect
 	github.com/orestbida/cookieconsent v3.1.0+incompatible // indirect
