@@ -6,7 +6,7 @@ require (
 	github.com/Splidejs/splide v4.1.3+incompatible // indirect
 	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400 // indirect
 	github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 // indirect
-	github.com/hugolify/hugolify-example-site v1.2.11 // indirect
+	github.com/hugolify/hugolify-example-site v1.2.12 // indirect
 	github.com/hugolify/hugolify-theme v1.22.4 // indirect
 	github.com/hugolify/hugolify-theme-casestudies v1.0.14 // indirect
 	github.com/hugolify/hugolify-theme-docs v0.0.0-20250423114638-93adee1018d9 // indirect
