@@ -21,6 +21,7 @@
     "postcss-cli": "^10.1.0",
     "postcss-sass": "^0.5.0"
   },
+  "packageManager": "yarn@1.22.22",
   "scripts": {
     "watch": "hugo server",
     "build": "hugo --noChmod --gc --minify",
