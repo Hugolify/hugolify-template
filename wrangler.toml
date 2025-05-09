@@ -1,0 +1,26 @@
+[build]
+  command = "yarn build"
+  upload = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.146.4"
+  GO_VERSION = "1.24.2"
+
+[env.production]
+vars = { 
+  HUGO_ENV = "production", 
+  HUGO_ENABLEGITINFO = "true" 
+}
+
+[env.deploy-preview]
+build = { 
+  command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL" 
+}
+
+[env.branch-deploy]
+build = { 
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL" 
+}
+vars = { 
+  HUGO_ENV = "staging" 
+}
