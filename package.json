@@ -1,6 +1,6 @@
 {
   "name": "hugolify-template",
-  "version": "1.22.22",
+  "version": "1.15.1",
   "homepage": "https://www.hugolify.io",
   "repository": "https://github.com/hugolify/hugolify-template",
   "bugs": {
@@ -22,6 +22,7 @@
     "postcss-cli": "^10.1.0",
     "postcss-sass": "^0.5.0"
   },
+  "packageManager": "yarn@1.22.22",
   "scripts": {
     "watch": "hugo server",
     "build": "hugo --noChmod --gc --minify",
@@ -33,6 +34,5 @@
     "decapcms": "npx decap-server",
     "netlifycms": "npx netlify-cms-proxy-server",
     "cms": "yarn decapcms"
-  },
-  "packageManager": "yarn@1.22.22"
+  }
 }
