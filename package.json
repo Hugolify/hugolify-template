@@ -1,6 +1,6 @@
 {
   "name": "hugolify-template",
-  "version": "1.15.1",
+  "version": "1.22.22",
   "homepage": "https://www.hugolify.io",
   "repository": "https://github.com/hugolify/hugolify-template",
   "bugs": {
@@ -33,5 +33,6 @@
     "decapcms": "npx decap-server",
     "netlifycms": "npx netlify-cms-proxy-server",
     "cms": "yarn decapcms"
-  }
+  },
+  "packageManager": "yarn@1.22.22"
 }
