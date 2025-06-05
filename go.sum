@@ -104,6 +104,8 @@ github.com/hugolify/hugolify-theme-services-persons v0.0.0-20250519120009-30f16c
 github.com/hugolify/hugolify-theme-services-persons v0.0.0-20250519120009-30f16ce7b1c0/go.mod h1:WMONSlTqzAscFa8q1lIrJHWOysmFWm+s0ed2nuYjQrM=
 github.com/midzer/tobii v2.7.3+incompatible h1:sGqThnLuckyPFKciIhQ66bG0joNTPXKKiovXlDo4pV8=
 github.com/midzer/tobii v2.7.3+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
+github.com/midzer/tobii v2.8.0+incompatible h1:0NqFDmiXHXDr6wZbVxiJrP9hvOy1KcJwHXaxjJS+EMA=
+github.com/midzer/tobii v2.8.0+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
 github.com/orestbida/cookieconsent v3.1.0+incompatible h1:L2uj16SEL1bICkn6pJde9uc1qAPmTcEiFZO93zZKdQI=
 github.com/orestbida/cookieconsent v3.1.0+incompatible/go.mod h1:8N46VI/40AwvzASJDpiwfbu6zylSzKSDZRUVNmVXLxw=
 github.com/twbs/bootstrap v5.3.3+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=

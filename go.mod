@@ -31,7 +31,7 @@ require (
 	github.com/hugolify/hugolify-theme-services v1.0.6 // indirect
 	github.com/hugolify/hugolify-theme-services-categories v0.0.0-20250519115849-88304fa9e6d3 // indirect
 	github.com/hugolify/hugolify-theme-services-persons v0.0.0-20250519120009-30f16ce7b1c0 // indirect
-	github.com/midzer/tobii v2.7.3+incompatible // indirect
+	github.com/midzer/tobii v2.8.0+incompatible // indirect
 	github.com/orestbida/cookieconsent v3.1.0+incompatible // indirect
 	github.com/twbs/bootstrap v5.3.6+incompatible // indirect
 	github.com/twbs/icons v1.13.1 // indirect
