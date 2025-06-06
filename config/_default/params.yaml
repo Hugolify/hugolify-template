@@ -2,3 +2,6 @@ _merge: deep
 # See https://github.com/Hugolify/hugolify-theme/blob/main/hugo.yaml#L30-L71 and more in each mods
 docs:
   sidebarmenu: false
+search:
+  enable: true
+  sort: true
