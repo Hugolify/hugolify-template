@@ -6,10 +6,10 @@ github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+y
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
 github.com/hugolify/hugolify-admin v0.0.0-20250606133259-85d90e8bcdc0 h1:JD9XIFfc2YHMvzopEWhGsW8PMfLApSA7T4IVsQ7aV9o=
 github.com/hugolify/hugolify-admin v0.0.0-20250606133259-85d90e8bcdc0/go.mod h1:qB7ndiuXR6XZu3r9UX3LtTHnrMF98U7vJHg6XXb6NvA=
-github.com/hugolify/hugolify-theme v1.23.1 h1:mjAAlMebo6RKof+46cpWvKJtvwqtS0Zlo8BvwXsT75M=
-github.com/hugolify/hugolify-theme v1.23.1/go.mod h1:dRIiGMTOC5dQ8U9CEcLyNIW7be6n7jNx0iSUB1YKdJw=
-github.com/midzer/tobii v2.8.0+incompatible h1:0NqFDmiXHXDr6wZbVxiJrP9hvOy1KcJwHXaxjJS+EMA=
-github.com/midzer/tobii v2.8.0+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
+github.com/hugolify/hugolify-theme v1.23.2 h1:g86Ns5aCJzNZOTAs5MYfCEAdT5bEytqs/w6ExbqeiXk=
+github.com/hugolify/hugolify-theme v1.23.2/go.mod h1:dRIiGMTOC5dQ8U9CEcLyNIW7be6n7jNx0iSUB1YKdJw=
+github.com/midzer/tobii v2.8.1+incompatible h1:DPKsi3Vx2HZRTtJxRzTltKJb9+ApBlKECxRA35+gDwA=
+github.com/midzer/tobii v2.8.1+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
 github.com/orestbida/cookieconsent v3.1.0+incompatible h1:L2uj16SEL1bICkn6pJde9uc1qAPmTcEiFZO93zZKdQI=
 github.com/orestbida/cookieconsent v3.1.0+incompatible/go.mod h1:8N46VI/40AwvzASJDpiwfbu6zylSzKSDZRUVNmVXLxw=
 github.com/twbs/bootstrap v5.3.3+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
