@@ -4,12 +4,13 @@ go 1.21
 
 require (
 	github.com/Splidejs/splide v4.1.3+incompatible // indirect
+	github.com/dixonandmoe/rellax v0.0.0-20240824005335-9ed6cb0aae03 // indirect
 	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400 // indirect
 	github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 // indirect
-	github.com/hugolify/hugolify-example-site v1.2.12 // indirect
-	github.com/hugolify/hugolify-theme v1.23.0 // indirect
+	github.com/hugolify/hugolify-example-site v1.2.15 // indirect
+	github.com/hugolify/hugolify-theme v1.24.0 // indirect
 	github.com/hugolify/hugolify-theme-casestudies v1.0.17 // indirect
-	github.com/hugolify/hugolify-theme-docs v0.0.0-20250606113931-4482f1b4287b // indirect
+	github.com/hugolify/hugolify-theme-docs v0.0.0-20250606152636-0ff1daefe91d // indirect
 	github.com/hugolify/hugolify-theme-expertises v1.1.2 // indirect
 	github.com/hugolify/hugolify-theme-jobs v0.0.0-20250519131837-46f145033bf6 // indirect
 	github.com/hugolify/hugolify-theme-jobs-expertises v0.0.0-20250519100316-cbe1220bb6e2 // indirect
@@ -31,7 +32,7 @@ require (
 	github.com/hugolify/hugolify-theme-services v1.0.6 // indirect
 	github.com/hugolify/hugolify-theme-services-categories v0.0.0-20250519115849-88304fa9e6d3 // indirect
 	github.com/hugolify/hugolify-theme-services-persons v0.0.0-20250519120009-30f16ce7b1c0 // indirect
-	github.com/midzer/tobii v2.8.0+incompatible // indirect
+	github.com/midzer/tobii v2.8.3+incompatible // indirect
 	github.com/orestbida/cookieconsent v3.1.0+incompatible // indirect
 	github.com/twbs/bootstrap v5.3.6+incompatible // indirect
 	github.com/twbs/icons v1.13.1 // indirect
