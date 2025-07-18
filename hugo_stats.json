@@ -2,18 +2,20 @@
   "htmlElements": {
     "tags": [
       "a",
+      "blockquote",
       "body",
       "br",
       "button",
       "div",
       "figcaption",
-      "figure",
+      "figurezgotmplz",
       "footer",
       "h1",
       "h2",
       "head",
       "header",
       "html",
+      "iframe",
       "img",
       "li",
       "link",
@@ -60,26 +62,16 @@
       "section-legal-mentions",
       "section-privacy-policy",
       "section-sitemap",
+      "section-test",
       "sitemap-pages",
+      "sitemap-test",
       "surtitle",
       "title",
       "toc",
-      "top"
+      "top",
+      "twitter-tweet",
+      "youtube"
     ],
-    "ids": [
-      "TableOfContents",
-      "audience-measurement",
-      "conception",
-      "cookies",
-      "données-personnelles",
-      "editor",
-      "footer",
-      "hosting",
-      "main",
-      "pages",
-      "toc",
-      "tocLabel",
-      "welcome-to-demohugolifyio"
-    ]
+    "ids": null
   }
 }
