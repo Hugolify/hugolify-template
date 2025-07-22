@@ -7,8 +7,8 @@ require (
 	github.com/dixonandmoe/rellax v0.0.0-20240824005335-9ed6cb0aae03 // indirect
 	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400 // indirect
 	github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 // indirect
-	github.com/hugolify/hugolify-admin v0.0.0-20250718101404-8f72cc642563 // indirect
-	github.com/hugolify/hugolify-theme v1.25.1 // indirect
+	github.com/hugolify/hugolify-admin v0.0.0-20250722114928-8b859f8b169e // indirect
+	github.com/hugolify/hugolify-theme v1.25.2 // indirect
 	github.com/midzer/tobii v2.8.4+incompatible // indirect
 	github.com/orestbida/cookieconsent v3.1.0+incompatible // indirect
 	github.com/twbs/bootstrap v5.3.7+incompatible // indirect

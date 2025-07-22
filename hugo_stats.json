@@ -2,20 +2,18 @@
   "htmlElements": {
     "tags": [
       "a",
-      "blockquote",
       "body",
       "br",
       "button",
       "div",
       "figcaption",
-      "figurezgotmplz",
+      "figure",
       "footer",
       "h1",
       "h2",
       "head",
       "header",
       "html",
-      "iframe",
       "img",
       "li",
       "link",
@@ -62,15 +60,11 @@
       "section-legal-mentions",
       "section-privacy-policy",
       "section-sitemap",
-      "section-test",
       "sitemap-pages",
-      "sitemap-test",
       "surtitle",
       "title",
       "toc",
-      "top",
-      "twitter-tweet",
-      "youtube"
+      "top"
     ],
     "ids": null
   }
