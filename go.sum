@@ -6,6 +6,8 @@ github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400 h1:L6+F22i76xmeWWw
 github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400/go.mod h1:uekq1D4ebeXgduLj8VIZy8TgfTjrLdSl6nPtVczso78=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+yb0/t3/rau1j8XlAxLE4CyXns2fqQbyqWfs=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
+github.com/hugolify/hugolify-example-site v1.2.15 h1:i8igBEG5HrRX66AFD6pHWQpyyhRJocdcMikaeUvsoxM=
+github.com/hugolify/hugolify-example-site v1.2.15/go.mod h1:e21yIPVorsgtbEDK2zovJb3Am8k2Sncu0Gu83EfnjNA=
 github.com/hugolify/hugolify-theme-casestudies v1.0.17 h1:v4Bd4AkCqV7ulzgUZlGRqCHaIoTk1sXhXaNtVnlhDQI=
 github.com/hugolify/hugolify-theme-casestudies v1.0.17/go.mod h1:onu4oRPTkQh3Up05X3V0urIaN0JyAx9NFijp6G3gs+M=
 github.com/hugolify/hugolify-theme-docs v0.0.0-20250606152636-0ff1daefe91d h1:tzOZcj/5X6WI7zJa0IEju4KE31z8TJrUJfMHEo2fG7k=
@@ -42,6 +44,8 @@ github.com/hugolify/hugolify-theme-projects-types v1.0.14 h1:meirPvf8EphoJutkkgH
 github.com/hugolify/hugolify-theme-projects-types v1.0.14/go.mod h1:6w9aM4KMjvQspp6wm67iFZzVRuC6gRR3PTXgxud8BAg=
 github.com/hugolify/hugolify-theme-publications v1.2.8 h1:oqPuPdQQyQSN/C7rt+QAAgewunOfjJyzlMXtWtGtwM0=
 github.com/hugolify/hugolify-theme-publications v1.2.8/go.mod h1:N9Jz49GpilAfNqIbvSVeCQZXgesHz7sSIOBVx8FH6+A=
+github.com/hugolify/hugolify-theme-publications v1.2.10 h1:a1JsrDgF0EGYzbxLu9OCQdIEaCB3tmI42asSAjwhHcc=
+github.com/hugolify/hugolify-theme-publications v1.2.10/go.mod h1:N9Jz49GpilAfNqIbvSVeCQZXgesHz7sSIOBVx8FH6+A=
 github.com/hugolify/hugolify-theme-publications-categories v1.0.6 h1:gNK4GLciwbtlRCAvc6+6aRwSv+JMDY2DwLTpGxVyhp4=
 github.com/hugolify/hugolify-theme-publications-categories v1.0.6/go.mod h1:n5/WMQrllPnuWX9lWX6DMTwdYk2UD8kZo8qh5jAM/94=
 github.com/hugolify/hugolify-theme-publications-persons v1.1.5 h1:dngJ4CViwrATnwnAXEbsMw3aaoGUZVXkhUdepiEj45A=
@@ -54,9 +58,14 @@ github.com/hugolify/hugolify-theme-services-persons v0.0.0-20250519120009-30f16c
 github.com/hugolify/hugolify-theme-services-persons v0.0.0-20250519120009-30f16ce7b1c0/go.mod h1:WMONSlTqzAscFa8q1lIrJHWOysmFWm+s0ed2nuYjQrM=
 github.com/midzer/tobii v2.8.3+incompatible h1:X+joB0tbryJIUn6+XQYCkFTS2P4fVnhvwrGZbYyNixo=
 github.com/midzer/tobii v2.8.3+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
+github.com/midzer/tobii v3.0.0+incompatible h1:cccjAG0fN1u/kdnquWm/FLYffjX53Dj4kSbWFQSlKLc=
+github.com/midzer/tobii v3.0.0+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
 github.com/orestbida/cookieconsent v3.1.0+incompatible h1:L2uj16SEL1bICkn6pJde9uc1qAPmTcEiFZO93zZKdQI=
 github.com/orestbida/cookieconsent v3.1.0+incompatible/go.mod h1:8N46VI/40AwvzASJDpiwfbu6zylSzKSDZRUVNmVXLxw=
+github.com/twbs/bootstrap v5.3.3+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/bootstrap v5.3.6+incompatible h1:efmXVyq839m5QQ0+JBUdQQ1TrmoBqvQ5kRhUueKsH+4=
 github.com/twbs/bootstrap v5.3.6+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
+github.com/twbs/bootstrap v5.3.8+incompatible h1:eK1fsXP7R/FWFt+sSNmmvUH9usPocf240nWVw7Dh02o=
+github.com/twbs/bootstrap v5.3.8+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/icons v1.13.1 h1:6bmNXvoeIbvjFWjfbjXg5JGbelLD1haIsMaEIzE9UZI=
 github.com/twbs/icons v1.13.1/go.mod h1:GnRlymgVWp5iVJCMa0Me5b6tFyGpVc2bSxPMRGIJmyA=

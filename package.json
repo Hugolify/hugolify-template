@@ -15,21 +15,26 @@
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "autoprefixer": "^10.4.13",
+    "bootstrap-icons": "^1.13.1",
     "cssnano": "^5.1.14",
     "netlify-plugin-hugo-cache-resources": "^0.2.1",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
-    "postcss-sass": "^0.5.0"
+    "postcss-sass": "^0.5.0",
+    "subset-font": "^2.4.0"
   },
   "packageManager": "yarn@1.22.22",
   "scripts": {
     "watch": "hugo server",
     "build": "hugo --noChmod --gc --minify",
+    "build:icons:bootstrap": "node scripts/build-icons-bootstrap.js",
     "tidy": "hugo mod tidy",
     "update": "hugo mod get -u",
     "update:all": "yarn update && yarn tidy && yarn upgrade",
     "clean": "hugo mod clean",
     "clean:all": "hugo mod clean --all",
-    "cms": "npx decap-server"
+    "cms": "yarn cms:decapcms",
+    "cms:decapcms": "npx decap-server",
+    "cms:netlifycms": "npx netlify-cms-proxy-server"
   }
 }
