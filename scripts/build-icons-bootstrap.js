@@ -254,28 +254,43 @@ async function extractIconsFromSocialData() {
     const content = fs.readFileSync(socialFilePath, "utf-8");
     const data = yaml.load(content);
 
-    if (data && Array.isArray(data.links)) {
-      data.links.forEach((link) => {
-        if (link.title) {
-          const iconName = link.title.toLowerCase().trim();
-          // Validation basique : lettres, chiffres, tirets
-          if (/^[\w-]+$/.test(iconName)) {
-            icons.add(iconName);
-          }
-        }
-      });
-
-      log("📱", `Trouvé ${icons.size} icônes dans social.yml`);
-    } else {
-      log("⚠️", "Fichier social.yml mal formé ou sans 'links'");
+    if (!data || typeof data !== "object") {
+      log("⚠️", "Fichier social.yml mal formé");
+      return icons;
     }
+
+    // Parcours de toutes les clés racine
+    Object.keys(data).forEach((key) => {
+      const node = data[key];
+
+      // Cas simple : key = "links"
+      if (key === "links" && Array.isArray(node)) {
+        node.forEach((link) => {
+          if (link.title && typeof link.title === "string") {
+            const iconName = link.title.toLowerCase().trim();
+            if (/^[\w-]+$/.test(iconName)) icons.add(iconName);
+          }
+        });
+      }
+
+      // Cas multilingue : key = "fr", "en", etc.
+      else if (node && typeof node === "object" && Array.isArray(node.links)) {
+        node.links.forEach((link) => {
+          if (link.title && typeof link.title === "string") {
+            const iconName = link.title.toLowerCase().trim();
+            if (/^[\w-]+$/.test(iconName)) icons.add(iconName);
+          }
+        });
+      }
+    });
+
+    log("📱", `Trouvé ${icons.size} icônes dans social.yml`);
   } catch (err) {
     console.warn(`⚠️ Erreur de lecture du fichier social.yml : ${err.message}`);
   }
 
   return icons;
 }
-
 
 // Create font subset using subset-font library
 async function createFontSubset(iconNames, unicodeMap) {
