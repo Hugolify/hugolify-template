@@ -76,29 +76,27 @@ function checkBootstrapIcons() {
   }
 }
 
-// Check if subset-font is installed
-function ensureSubsetFont() {
+// Check if package is installed
+function ensurePackageInstalled(pkg) {
   const packageJsonPath = "package.json";
-  
-  // Check if subset-font is in package.json
-  if (fs.existsSync(packageJsonPath)) {
-    const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf-8"));
-    const hasSubsetFont = 
-      (packageJson.dependencies && packageJson.dependencies["subset-font"]) ||
-      (packageJson.devDependencies && packageJson.devDependencies["subset-font"]);
-    
-    if (!hasSubsetFont) {
-      log("📦", "Installing subset-font...");
-      try {
-        execSync("yarn add -D subset-font", { stdio: "inherit" });
-        log("✅", "subset-font installed");
-      } catch (installErr) {
-        console.error("❌ Failed to install subset-font:", installErr.message);
-        process.exit(1);
-      }
+  if (!fs.existsSync(packageJsonPath)) return;
+
+  const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf-8"));
+  const hasPkg = (packageJson.dependencies && packageJson.dependencies[pkg]) ||
+                 (packageJson.devDependencies && packageJson.devDependencies[pkg]);
+
+  if (!hasPkg) {
+    log("📦", `Installing ${pkg}...`);
+    try {
+      execSync(`yarn add -D ${pkg}`, { stdio: "inherit" });
+      log("✅", `${pkg} installed`);
+    } catch (err) {
+      console.error(`❌ Failed to install ${pkg}:`, err.message);
+      process.exit(1);
     }
   }
 }
+
 
 // Extract Bootstrap Icons unicode mapping from the official font CSS
 function getBootstrapIconsUnicodeMap() {
@@ -241,7 +239,45 @@ function extractIconsFromLayouts() {
   return icons;
 }
 
-// 4. Create font subset using subset-font library
+// 4. Extract icons form social menu
+async function extractIconsFromSocialData() {
+  const { default: yaml } = await import("js-yaml");
+  const socialFilePath = "data/menu/social.yml";
+  const icons = new Set();
+
+  if (!fs.existsSync(socialFilePath)) {
+    log("⚠️", "Aucun fichier social.yml trouvé");
+    return icons;
+  }
+
+  try {
+    const content = fs.readFileSync(socialFilePath, "utf-8");
+    const data = yaml.load(content);
+
+    if (data && Array.isArray(data.links)) {
+      data.links.forEach((link) => {
+        if (link.title) {
+          const iconName = link.title.toLowerCase().trim();
+          // Validation basique : lettres, chiffres, tirets
+          if (/^[\w-]+$/.test(iconName)) {
+            icons.add(iconName);
+          }
+        }
+      });
+
+      log("📱", `Trouvé ${icons.size} icônes dans social.yml`);
+    } else {
+      log("⚠️", "Fichier social.yml mal formé ou sans 'links'");
+    }
+  } catch (err) {
+    console.warn(`⚠️ Erreur de lecture du fichier social.yml : ${err.message}`);
+  }
+
+  return icons;
+}
+
+
+// Create font subset using subset-font library
 async function createFontSubset(iconNames, unicodeMap) {
   // Dynamic import of subset-font
   const { default: subsetFont } = await import("subset-font");
@@ -372,7 +408,9 @@ async function main() {
 
     // Check dependencies
     checkBootstrapIcons();
-    ensureSubsetFont();
+    ensurePackageInstalled("subset-font");
+    ensurePackageInstalled("js-yaml");
+
 
     // Load unicode mapping from Bootstrap Icons
     const unicodeMap = getBootstrapIconsUnicodeMap();
@@ -390,8 +428,17 @@ async function main() {
     const iconsFromLayouts = extractIconsFromLayouts();
     log("📐", `Found ${iconsFromLayouts.size} icons in layouts`);
 
+    log("🔍", "Extracting icons from social menu...");
+    const iconsFromSocial = await extractIconsFromSocialData();
+    log("📋", `Found ${iconsFromSocial.size} icons in social menu`);
+
     // Combine all icons
-    const allIcons = new Set([...iconsFromContent, ...iconsFromSass, ...iconsFromLayouts]);
+    const allIcons = new Set([
+      ...iconsFromContent, 
+      ...iconsFromSass, 
+      ...iconsFromLayouts, 
+      ...iconsFromSocial
+    ]);
 
     if (allIcons.size === 0) {
       log("⚠️", "No icons found. Exiting...");

@@ -27,6 +27,7 @@
     "watch": "hugo server",
     "build": "hugo --noChmod --gc --minify",
     "build:search": "yarn build && npm_config_yes=true npx pagefind --site 'public'",
+    "build:icons": "yarn build:icons:bootstrap && yarn build",
     "build:icons:bootstrap": "node scripts/build-icons-bootstrap.js",
     "clean": "hugo mod clean",
     "clean:all": "hugo mod clean --all",
