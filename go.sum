@@ -6,10 +6,10 @@ github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400 h1:L6+F22i76xmeWWw
 github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400/go.mod h1:uekq1D4ebeXgduLj8VIZy8TgfTjrLdSl6nPtVczso78=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+yb0/t3/rau1j8XlAxLE4CyXns2fqQbyqWfs=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
-github.com/hugolify/hugolify-example-site v1.2.15 h1:i8igBEG5HrRX66AFD6pHWQpyyhRJocdcMikaeUvsoxM=
-github.com/hugolify/hugolify-example-site v1.2.15/go.mod h1:e21yIPVorsgtbEDK2zovJb3Am8k2Sncu0Gu83EfnjNA=
-github.com/hugolify/hugolify-theme v1.26.12 h1:6WrXU+MTE+NP6T8ypXibkKoMjJVAdtTtBq4cjC7Cz64=
-github.com/hugolify/hugolify-theme v1.26.12/go.mod h1:Rc64eJSSIWGeU6eHfSzUISNfL9UrJmy3Xs3H05Gz9rQ=
+github.com/hugolify/hugolify-example-site v1.2.16 h1:O6pkIXsGJQMco9rWtjn5+CmhSkJwrfLADy9lOCuUBmI=
+github.com/hugolify/hugolify-example-site v1.2.16/go.mod h1:e21yIPVorsgtbEDK2zovJb3Am8k2Sncu0Gu83EfnjNA=
+github.com/hugolify/hugolify-theme v1.26.13 h1:cfk2Mzm1F3J3NTi+MaZ4qW79MRbLPQWG/riociSvZaY=
+github.com/hugolify/hugolify-theme v1.26.13/go.mod h1:Rc64eJSSIWGeU6eHfSzUISNfL9UrJmy3Xs3H05Gz9rQ=
 github.com/hugolify/hugolify-theme-casestudies v1.0.17 h1:v4Bd4AkCqV7ulzgUZlGRqCHaIoTk1sXhXaNtVnlhDQI=
 github.com/hugolify/hugolify-theme-casestudies v1.0.17/go.mod h1:onu4oRPTkQh3Up05X3V0urIaN0JyAx9NFijp6G3gs+M=
 github.com/hugolify/hugolify-theme-docs v0.0.0-20250606152636-0ff1daefe91d h1:tzOZcj/5X6WI7zJa0IEju4KE31z8TJrUJfMHEo2fG7k=

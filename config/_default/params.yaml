@@ -4,8 +4,7 @@ _merge: deep
 docs:
   sidebarmenu: false
 search:
-  enable: true
-  sort: true
+  enable: false
 
 # Admin
 admin:
