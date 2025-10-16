@@ -7,10 +7,11 @@ require (
 	github.com/dixonandmoe/rellax v0.0.0-20240824005335-9ed6cb0aae03 // indirect
 	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400 // indirect
 	github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 // indirect
-	github.com/hugolify/hugolify-example-site v1.2.16 // indirect
-	github.com/hugolify/hugolify-theme v1.26.13 // indirect
+	github.com/hugolify/hugolify-example-site v1.3.0 // indirect
+	github.com/hugolify/hugolify-theme v1.26.14 // indirect
 	github.com/hugolify/hugolify-theme-casestudies v1.0.17 // indirect
 	github.com/hugolify/hugolify-theme-docs v0.0.0-20250606152636-0ff1daefe91d // indirect
+	github.com/hugolify/hugolify-theme-events v0.0.0-20250519122350-2523dd350f94 // indirect
 	github.com/hugolify/hugolify-theme-expertises v1.1.2 // indirect
 	github.com/hugolify/hugolify-theme-jobs v0.0.0-20250519131837-46f145033bf6 // indirect
 	github.com/hugolify/hugolify-theme-jobs-expertises v0.0.0-20250519100316-cbe1220bb6e2 // indirect
