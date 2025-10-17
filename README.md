@@ -4,20 +4,20 @@
 
 Is a Github template for build easily a fast, accessible friendly and low carbon website!
 
-## Table of content
-
-- [Live demo](#live-demo)
-- [Content types and taxonomies](#content-types-and-taxonomies)
-- [Documentation](#documentation)
-- [License](#license)
-
 ## Live demos
 
 ### Base
 
+**Netlify**
+
 https://demo.hugolify.io/
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5a4fa061-e7a5-4e66-9612-4fae713bda09/deploy-status)](https://app.netlify.com/sites/hugolify-demo/deploys)
+
+**Cloudflare Pages**
+
+https://hugolify.pages.dev/
+
 
 ### Theme 1
 
@@ -31,15 +31,21 @@ https://theme-2--hugolify-demo.netlify.app/
 
 https://theme-3--hugolify-demo.netlify.app/
 
-## Content types and taxonomies
+### Theme 4
 
-Hugolify modules available
+https://theme-4--hugolify-demo.netlify.app/
 
-[https://github.com/Hugolify/hugolify-template/wiki/Content-sections](https://github.com/Hugolify/hugolify-template/wiki/Content-sections)
+### Theme 5
+
+https://theme-5--hugolify-demo.netlify.app/
+
+### Products
+
+https://demo-products--hugolify-demo.netlify.app
 
 ## Documentation
 
-[https://github.com/hugolify/hugolify-template/wiki](https://github.com/hugolify/hugolify-template/wiki)
+https://www.hugolify.io/docs/
 
 ## License
 

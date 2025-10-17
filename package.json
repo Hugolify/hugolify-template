@@ -1,6 +1,6 @@
 {
   "name": "hugolify-template",
-  "version": "1.11.0",
+  "version": "1.16.0",
   "homepage": "https://www.hugolify.io",
   "repository": "https://github.com/hugolify/hugolify-template",
   "bugs": {
@@ -22,14 +22,21 @@
     "postcss-cli": "^10.1.0",
     "postcss-sass": "^0.5.0"
   },
+  "packageManager": "yarn@1.22.22",
   "scripts": {
     "watch": "hugo server",
     "build": "hugo --noChmod --gc --minify",
+    "build:config:pagescms": "node scripts/build-config-pagescms.js",
+    "build:icons": "yarn build:icons:bootstrap && yarn build",
+    "build:icons:bootstrap": "node scripts/build-icons-bootstrap.js",
+    "build:search": "yarn build && npm_config_yes=true npx pagefind --site 'public'",
+    "clean": "hugo mod clean",
+    "clean:all": "hugo mod clean --all",
     "tidy": "hugo mod tidy",
     "update": "hugo mod get -u",
-    "updateall": "yarn update && yarn tidy && yarn upgrade",
-    "clean": "hugo mod clean",
-    "cleanall": "hugo mod clean --all",
-    "cms": "npx netlify-cms-proxy-server"
+    "update:all": "yarn update && yarn tidy && yarn upgrade",
+    "cms": "yarn cms:decapcms",
+    "cms:decapcms": "npx decap-server",
+    "cms:netlifycms": "npx netlify-cms-proxy-server"
   }
 }

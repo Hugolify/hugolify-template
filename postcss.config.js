@@ -1,32 +1,39 @@
 /* eslint-disable no-undef */
 module.exports = {
-  plugins: {
-    autoprefixer: {},
-    cssnano: {
-      preset: 'default'
-    },
-    '@fullhuman/postcss-purgecss': {
-      mode: 'all',
-      content: ['./hugo_stats.json'],
-      dynamicAttributes: ['aria-current', 'href', 'role'],
-      safelist: {
-        standard: [
-          'show',
-          'fade',
-          /-backdrop$/,
-          /^is-/,
-          /^has-/,
-          /^js-/,
-          /^[href^="#"]/,
-          /^[href^="mailto"]/
-        ],
-        deep: [/^tobii/]
+    plugins: {
+      autoprefixer: {},
+      cssnano: {
+        preset: 'default'
       },
-      defaultExtractor: (content) => {
-        let els = JSON.parse(content).htmlElements;
-        els = els.tags.concat(els.classes);
-        return els;
+      '@fullhuman/postcss-purgecss': {
+        mode: 'all',
+        content: ['./hugo_stats.json'],
+        dynamicAttributes: [
+          'aria-current',
+          'aria-hidden',
+          'aria-expanded',
+          'href',
+          'role',
+          'type'
+        ],
+        safelist: {
+          standard: [
+            'show',
+            'showing',
+            'hide',
+            'fade',
+            /-backdrop$/,
+            /^is-/,
+            /^splide_/
+          ],
+          deep: [/^tobii/]
+        },
+        defaultExtractor: (content) => {
+          let els = JSON.parse(content).htmlElements;
+          els = els.tags.concat(els.classes);
+          return els;
+        }
       }
     }
-  }
-};
+  };
+  
