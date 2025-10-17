@@ -1,4 +1,45 @@
 _merge: deep
 
-# admin:
-#   cms: cloudcannon
+admin:
+  cms: tinacms
+
+  # collections
+  collections:
+    config:
+      enable: false
+    indexes:
+      enable: false
+
+  # blocks
+  blocks:
+    enable:
+      - audio
+      - alert
+      - chart
+      - comparison
+      - cta
+      - datas
+      - editorial
+      - embed
+      - faq
+      - figure
+      - form
+      - gallery
+      - images
+      - informations
+      - instagram
+      - latest
+      - logos
+      - map
+      - newsletter
+      - paragraph
+      - pushes
+      - quote
+      - search
+      # - selected
+      - testimonials
+      - timeline
+      - title
+      - video
+    enable:
+      - title

@@ -1,10 +1,10 @@
 imports:
   # Content
-  - path: github.com/hugolify/hugolify-theme-products-tags
+  # - path: github.com/hugolify/hugolify-theme-products-tags
   - path: github.com/hugolify/hugolify-theme-products
 
   # Core theme
   - path: github.com/hugolify/hugolify-theme
 
   # CMS
-  # - path: github.com/hugolify/hugolify-admin
+  - path: github.com/hugolify/hugolify-admin

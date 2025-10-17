@@ -16,17 +16,22 @@
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "@hugolify/prettier-config": "^0.3.1",
     "autoprefixer": "^10.4.13",
+    "bootstrap-icons": "^1.13.1",
     "cssnano": "^5.1.14",
+    "js-yaml": "^4.1.0",
     "netlify-plugin-hugo-cache-resources": "^0.2.1",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
-    "postcss-sass": "^0.5.0"
+    "postcss-sass": "^0.5.0",
+    "subset-font": "^2.4.0"
   },
   "packageManager": "yarn@1.22.22",
   "scripts": {
     "watch": "hugo server",
+    "watch:tinacms": "tinacms dev -c \"hugo server -D\"",
     "build": "hugo --noChmod --gc --minify",
     "build:config:pagescms": "node scripts/build-config-pagescms.js",
+    "build:config:tinacms": "node scripts/build-config-tinacms.js",
     "build:icons": "yarn build:icons:bootstrap && yarn build",
     "build:icons:bootstrap": "node scripts/build-icons-bootstrap.js",
     "build:search": "yarn build && npm_config_yes=true npx pagefind --site 'public'",
@@ -38,5 +43,13 @@
     "cms": "yarn cms:decapcms",
     "cms:decapcms": "npx decap-server",
     "cms:netlifycms": "npx netlify-cms-proxy-server"
+  },
+  "dependencies": {
+    "@tinacms/auth": "^1.1.0",
+    "@tinacms/cli": "^1.10.2",
+    "next-tinacms-cloudinary": "^13.0.10",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tinacms": "^2.8.2"
   }
 }
