@@ -36,10 +36,8 @@ admin:
       - pushes
       - quote
       - search
-      # - selected
+      - selected
       - testimonials
       - timeline
       - title
       - video
-    enable:
-      - title
