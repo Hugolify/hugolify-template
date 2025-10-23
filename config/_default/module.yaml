@@ -1,6 +1,6 @@
 imports:
   # Content
-  # - path: github.com/hugolify/hugolify-theme-products-tags
+  - path: github.com/hugolify/hugolify-theme-products-tags
   - path: github.com/hugolify/hugolify-theme-products
 
   # Core theme
