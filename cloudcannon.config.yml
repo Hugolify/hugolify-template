@@ -13,11 +13,8 @@ collections_config:
     icon: shopping_cart
     name: products
     path: content/products
-    base_url: /products
-    glob:
-      - '!_index.md'
     _inputs:
-      draft:
+      draft: true
       title:
       description:
       image:
@@ -27,10 +24,10 @@ collections_config:
   products_categories:
     disable_add_folder: true
     icon: bookmark
-    name: Products categories
+    name: Categories
     path: content/products_categories
     _inputs:
-      draft:
+      draft: true
       title:
       description:
     _enabled_editors:
