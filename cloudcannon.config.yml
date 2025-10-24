@@ -37,27 +37,13 @@ collections_config:
     icon: file
     disable_add_folder: true
     schemas:
-      default:
-        path: schemas/docs.md
-    add_options:
-      - name: Read the docs
-        icon: local_library
-        href: https://docs.cloudcannon.com
-      - name: Add Document
-        editor: content
-        base_path: /
-        schema: default
+      title:
+      nav_title: 
+      nav_section: 
+      weight: 
+      draft: false
     _enabled_editors:
       - content
-      - visual
-    preview:
-      metadata: 
-        - icon: folder
-          text: 
-            - key: nav_section
-        - icon: format_list_numbered
-          text: 
-            - key: weight
       
 
 # Control which collections are displayed in the CloudCannon site navigation,
