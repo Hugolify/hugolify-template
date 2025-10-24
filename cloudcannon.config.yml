@@ -1,14 +1,17 @@
+paths:
+  uploads: /assets/images/uploads
+
 collections_config:
   products:
-    icon: production_quantity_limits
+    icon: shopping_cart
     name: products
     path: content/products
-    create:
-      path: '[relative_base_path]/{date|year}/{title|slugify}.md'
+    # create:
+    #   path: '[relative_base_path]/{date|year}/{title|slugify}.md'
     _inputs:
       draft:
         type: boolean
-        label: Brouillon
+        label: Draft
       title:
         type: text
         label: Titre
@@ -21,17 +24,17 @@ collections_config:
         fields:
           src:
             type: image
-            label: Fichier image
+            label: Image file
           alt:
             type: text
-            label: Texte alternatif
+            label: Alternative text
   
   products_categories:
     path: content/products_categories
     name: Products categories
-    icon: category
-    create:
-      path: '[relative_base_path]/{title|slugify}/_index.md'
+    icon: bookmark
+    # create:
+    #   path: '[relative_base_path]/{title|slugify}/_index.md'
     _inputs:
       draft:
         type: boolean
@@ -43,7 +46,11 @@ collections_config:
         type: textarea
         label: Description
 
-
+collection_groups:
+  - heading: Products
+    collections:
+      - products
+      - products_categories
     
 _enabled_editors:
   - content
