@@ -1,0 +1,68 @@
+collections_config_override: false
+paths:
+  static: static
+  uploads: assets/images/uploads
+timezone: Etc/UTC
+
+# Collections
+collections_config:
+
+  products:
+    base_url: /products
+    disable_add_folder: true
+    icon: shopping_cart
+    name: products
+    path: content/products
+    _inputs:
+      draft: true
+      title:
+      description:
+      image:
+    _enabled_editors:
+      - content
+  
+  products_categories:
+    disable_add_folder: true
+    icon: bookmark
+    name: Categories
+    path: content/products_categories
+    _inputs:
+      draft: true
+      title:
+      description:
+    _enabled_editors:
+      - content
+
+# Display
+collection_groups:
+  - heading: Products
+    collections:
+      - products
+      - products_categories
+
+# Fields
+_inputs:
+  draft:
+    type: boolean
+    label: Draft
+  title:
+    type: text
+    label: Titre
+  description:
+    type: textarea
+    label: Description
+  image:
+    type: object
+    label: Image
+    fields:
+      src:
+        type: image
+        label: Image file
+      alt:
+        type: text
+        label: Alternative text
+
+
+# Snippets
+_snippets_imports:
+  hugo: true

@@ -1,3 +1,0 @@
----
-title: Products categories 
----
