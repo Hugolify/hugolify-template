@@ -13,13 +13,13 @@ collections_config:
     base_url: /
     icon: feed
     schemas:
-      default:
-        path: schemas/page.md
-    add_options:
-      - name: Add Site Page
-        editor: content
-        base_path: /
-        schema: default
+      title:
+      nav_title:
+      SEO_options:
+          title:
+          image:
+          description:
+      draft: false
     _enabled_editors:
       - content
       - visual
