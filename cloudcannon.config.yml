@@ -1,134 +1,49 @@
-paths:
-  data: data
-  collections: content
-  includes: layouts
-  layouts: layouts
-  static: static
-  uploads: static/uploads
-  source: ''
-  archetypes: archetypes
-  assets: assets
-  content: content
-  pages: content
-  publish: public
-  config: ''
 collections_config:
-  pages:
-    path: content
-    output: true
-    filter: strict
-    parse_branch_index: true
-    description: ''
-    icon: notes
-    _editables: {}
-    _inputs: {}
-    _select_data: {}
-    _structures: {}
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
-    schemas: {}
   products:
-    path: content/products
-    output: true
-    description: ''
     icon: production_quantity_limits
-    documentation:
-    preview:
-      text:
-      subtext:
-      icon:
-      icon_color:
-      image:
-      metadata:
-      gallery:
-    _editables:
-      text:
-        bold: true
-        copyformatting:
-        italic: true
-        link: true
-        paths:
-        redo:
-        removeformat:
-        strike:
-        subscript:
-        superscript:
-        underline:
-        undo:
-    _inputs:
-      src:
-        type: image
-        options:
-          paths:
-          mime_type:
-          correct_orientation: true
-          empty_type:
-          resize_style: contain
-          width:
-          height:
-          expandable:
-        label: Image src
-        cascade: true
-      blocks:
-        type: choice
-        options:
-          allow_empty: false
-          preview:
-          values:
-            - title
-            -
-          value_key:
-        cascade: true
-      url:
-        type: url
-        options:
-          paths:
-          empty_type:
-        cascade: true
-    _select_data: {}
-    _structures: {}
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
-    schemas: {}
-  Catégories:
-    path: content/products_categories
-    output: true
-    url:
-    filter:
-    parse_branch_index:
-    name:
-    description: ''
-    icon: category
-    documentation:
-    preview:
-    sort:
-    sort_options:
-    singular_name:
-    singular_key:
-    _editables: {}
-    _inputs: {}
-    _select_data: {}
-    _structures: {}
-    add_options:
+    name: products
+    path: content/products
     create:
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
-    new_preview_url:
-    schemas: {}
-    schema_key:
-  data:
-    path: data
-    output: false
-    icon: notes
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
-_inputs: {}
-_select_data: {}
-_structures: {}
-_editables: {}
-data_config: {}
-timezone: Etc/UTC
+      path: '[relative_base_path]/{date|year}/{title|slugify}.md'
+    _inputs:
+      draft:
+        type: boolean
+        label: Brouillon
+      title:
+        type: text
+        label: Titre
+      description:
+        type: textarea
+        label: Description
+      image:
+        type: object
+        label: Image
+        fields:
+          src:
+            type: image
+            label: Fichier image
+          alt:
+            type: text
+            label: Texte alternatif
+  
+  products_categories:
+    path: content/products_categories
+    name: Products categories
+    icon: category
+    create:
+      path: '[relative_base_path]/{title|slugify}/_index.md'
+    _inputs:
+      draft:
+        type: boolean
+        label: Brouillon
+      title:
+        type: text
+        label: Titre
+      description:
+        type: textarea
+        label: Description
+
+
+    
+_enabled_editors:
+  - content
