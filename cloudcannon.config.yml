@@ -8,22 +8,23 @@ timezone: Etc/UTC
 collections_config:
 
   products:
-    create:
-      path: '[relative_base_path]/{title|slugify}.md'
+    base_url: /products
     disable_add_folder: true
     icon: shopping_cart
     name: products
     path: content/products
     base_url: /products
+    glob:
+      - '!_index.md'
     _inputs:
       draft:
       title:
       description:
       image:
+    _enabled_editors:
+      - content
   
   products_categories:
-    create:
-      path: '[relative_base_path]/{title|slugify}/_index.md'
     disable_add_folder: true
     icon: bookmark
     name: Products categories
@@ -32,6 +33,8 @@ collections_config:
       draft:
       title:
       description:
+    _enabled_editors:
+      - content
 
 # Display
 collection_groups:
@@ -61,3 +64,8 @@ _inputs:
       alt:
         type: text
         label: Alternative text
+
+
+# Snippets
+_snippets_imports:
+  hugo: true
