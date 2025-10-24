@@ -12,7 +12,7 @@ collections_config:
       - '!docs/_index.md'
     base_url: /
     icon: feed
-    schemas:
+    _inputs:
       title:
       nav_title:
       SEO_options:
