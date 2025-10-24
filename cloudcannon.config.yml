@@ -16,10 +16,10 @@ collections_config:
     path: content/products
     base_url: /products
     _inputs:
-      - draft
-      - title
-      - description
-      - image
+      draft:
+      title:
+      description:
+      image:
   
   products_categories:
     create:
@@ -29,9 +29,9 @@ collections_config:
     name: Products categories
     path: content/products_categories
     _inputs:
-      - draft
-      - title
-      - description
+      draft:
+      title:
+      description:
 
 # Display
 collection_groups:
