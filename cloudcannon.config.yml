@@ -6,49 +6,27 @@ collections_config:
     icon: shopping_cart
     name: products
     path: content/products
+    base_url: /products
+    disable_add_folder: true
     create:
-      path: '[relative_base_path]/{date|year}/{title|slugify}.md'
-      default_front_matter:
-        draft: true
-    _inputs:
-      draft:
-        type: boolean
-        label: Draft
-      title:
-        type: text
-        label: Titre
-      description:
-        type: textarea
-        label: Description
-      image:
-        type: object
-        label: Image
-        fields:
-          src:
-            type: image
-            label: Image file
-          alt:
-            type: text
-            label: Alternative text
+      path: '[relative_base_path]/{title|slugify}.md'
+    _schema:
+      - draft
+      - title
+      - description
+      - image
   
   products_categories:
     path: content/products_categories
     name: Products categories
     icon: bookmark
+    disable_add_folder: true
     create:
       path: '[relative_base_path]/{title|slugify}/_index.md'
-      default_front_matter:
-        draft: true
-    _inputs:
-      draft:
-        type: boolean
-        label: Brouillon
-      title:
-        type: text
-        label: Titre
-      description:
-        type: textarea
-        label: Description
+    _schema:
+      - draft
+      - title
+      - description
 
 collection_groups:
   - heading: Products
@@ -58,3 +36,24 @@ collection_groups:
     
 _enabled_editors:
   - content
+
+_inputs:
+  draft:
+    type: boolean
+    label: Draft
+  title:
+    type: text
+    label: Titre
+  description:
+    type: textarea
+    label: Description
+  image:
+    type: object
+    label: Image
+    fields:
+      src:
+        type: image
+        label: Image file
+      alt:
+        type: text
+        label: Alternative text
