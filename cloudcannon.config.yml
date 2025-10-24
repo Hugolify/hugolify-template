@@ -36,7 +36,7 @@ collections_config:
     base_url: /docs
     icon: file
     disable_add_folder: true
-    schemas:
+    _inputs:
       title:
       nav_title: 
       nav_section: 
