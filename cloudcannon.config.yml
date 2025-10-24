@@ -1,458 +1,63 @@
-# Read the CloudCannon documentation for more information on how to use this file:
-# https://cloudcannon.com/documentation/articles/setting-global-configuration/?ssg=Hugo
-
-# Collections are related sets of content files, typically grouped by folder.
-# Here you can define your collections, as well as any
-# CloudCannon configuration specific to those collections.
-collections_config:
-  pages:
-    disable_add_folder: true
-    path: content
-    glob:
-      - '!docs/_index.md'
-    base_url: /
-    icon: feed
-    schemas:
-      default:
-        path: schemas/page.md
-    add_options:
-      - name: Add Site Page
-        editor: content
-        base_path: /
-        schema: default
-    _enabled_editors:
-      - content
-      - visual
-
-  data:
-    disable_url: true
-    path: data
-    icon: settings
-    disable_add: true
-    disable_add_folder: true
-    
-  docs:
-    path: content/docs
-    base_url: /docs
-    icon: file
-    disable_add_folder: true
-    _inputs:
-      title:
-      nav_title: 
-      nav_section: 
-      weight: 
-      draft: false
-    _enabled_editors:
-      - content
-      
-
-# Control which collections are displayed in the CloudCannon site navigation,
-# and how those collections are grouped.
-collection_groups:
-  - heading: Base Pages
-    collections:
-      - pages
-  - heading: Docs
-    collections:
-      - docs
-  - heading: Site Settings
-    collections:
-      - data
-
-# Structures
-
-
-_structures:
-  product_logo_structure:
-    values:
-      - label: Image
-        icon: add_photo_alternate
-        description: Add as image
-        value: 
-          logo_image:
-          logo_image_dark:
-      - label: Text
-        icon: border_color
-        description: Add as text
-        value: 
-          logo_heading: 
-  footer_link_structure:
-    values:
-      - label: Add Image Link
-        icon: add_photo_alternate
-        value: 
-          url_path:
-          image_path:
-          image_alt_text:
-      - label: Add Text Link
-        icon: add_link
-        value: 
-          url_path:
-          link_title:
-  nav_link_structure:
-    values:
-      - label: Link with Icon
-        icon: add_photo_alternate
-        value:
-          link_title:
-          link_url:
-          link_label:
-          link_icon_path:
-      - label: Text Link
-        icon: add_link
-        value: 
-          link_label:
-          link_url:
-        preview:
-          text: Site Link
-          icon: add_link
-
-
-  
-_inputs:
-  title: 
-    type: text
-    label: Page Title
-  nav_title:
-    type: text
-    label: Sidebar Nav Title
-    comment: The name of the page shown in the sidebar navigation
-  nav_section:
-    type: text
-    label: Parent Section
-    comment: The name of the section the page is nested under in the sidebar navigation
-  weight:
-    type: number
-    comment: The order of the page in the sidebar group
-  project_name:
-    type: text
-  default_og_image:
-    type: image
-    comment: The default image for social media sharing
-  logo: 
-    type: object
-    label: Site Logo
-    comment: Choose between image or text based logos
-    options:
-      structures: _structures.product_logo_structure
-  footer_links:
-    type: array
-    comment: choose between image or text based links
-    options:
-      structures: _structures.footer_link_structure
-  footer_width:
-    type: select
-    options:
-      values: 
-        - contain
-        - full
-  logo_image:
-    type: image
-    comment: Default Display
-  logo_image_dark:
-    type: image
-    comment: Displays when dark mode is enabled
-  logo_text:
-    type: text
-  side_nav_title:
-    type: text
-    label: Sidebar Nav Title
-  favicon:
-    type: object
-  nav_links:
-    type: array
-    label: Navigation Links
-    options:
-      structures: _structures.nav_link_structure
-  link_title:
-    type: text
-    comment: Name used for alt text
-  link_url:
-    type: url 
-    comment: 'if external link, include https://'
-  link_label:
-    type: text
-    comment: Text displayed on the link
-  link_icon_path:
-    type: image
-    comment: '*prefers svgs for dark mode'
-  url_path:
-    type: text
-    comment: 'if external link, include https://'
-  light:
-    type: object
-    label: Light theme color palette
-  dark:
-    type: object
-    label: Dark theme color palette
-  typography:
-    type: object
-    label: Text
-    comment: Text color palette
-  button_colors:
-    type: object
-    label: Buttons
-    comment: Button color palette
-  background_colors:
-    type: object
-    label: BG
-    comment: Background color palette
-  code_block_colors:
-    type: object
-    label: Code Blocks
-    comment: Code block color palette
-  border_colors:
-    type: object
-    label: Borders
-    comment: Border color palette
-  focus_colors:
-    type: object
-    label: Focus
-    comment: Focus color palette
-  shortcode_colors:
-    type: object
-    label: Shortcode
-    comment: Shortcode color palette
-  scrollbar_colors:
-    type: object
-    label: Scrollbars
-    comment: Scrollbar color palette
-  pagefind_colors:
-    type: object
-    label: Pagefind
-    comment: Pagefind color palette
-  text: 
-    type: color
-    label: Primary text
-    comment: Main text color
-  flip-text:
-    type: color
-    comment: Text color for dark backgrounds
-  highlight: 
-    type: color
-    label: Highlighted text
-    comment: Text color for highlighted text.
-  body-bg-color: 
-    type: color
-    comment: Main body background color.
-  code-element: 
-    type: color
-    label: HTML element tags
-    comment: Next color for codeblock html element tags. 
-  code-attribute:
-    type: color
-    label: HTML attributes
-    comment: Text color for codeblock html attributes.
-  code-bool:
-    type: color
-    label: Boolean values
-    comment: Text color for codeblock boolean values.
-  code-params:
-    type: color
-    label: Function/HTML parameters
-    comment: Text color for codeblock function/html parameters.
-  code-values: 
-    type: color
-    label: Key values
-    comment: Text color for codeblock key values.
-  background-body: 
-    type: color
-    comment: Main body background color.
-  background: 
-    type: color
-    comment: Background color for main content area. 
-  background-alt: 
-    type: color
-    comment: Background color for alternate content area.
-  selection: 
-    type: color
-    comment: Selected text background color. 
-  text-main:
-    type: color
-    comment: Main text color. 
-  text-bright: 
-    type: color
-    comment: Text color for bright text.
-  text-muted: 
-    type: color
-    comment: Text color for muted text.
-  links: 
-    type: color
-    comment: Text color for links. 
-  focus: 
-    type: color
-    comment: Focus color for links. 
-  border:
-    type: color
-    comment: Border color for elements.
-  code: 
-    type: color
-    label: Codeblock text color
-    comment: Text color for codeblock text. 
-  button-base: 
-    type: color
-    comment: Background color for buttons.
-  button-hover: 
-    type: color
-    comment: Background color for buttons on hover.
-  scrollbar-thumb: 
-    type: color
-    comment: Scrollbar thumb color.
-  scrollbar-thumb-hover:
-    type: color
-    comment: Scrollbar thumb color on hover. 
-  form-placeholder: 
-    type: color
-    comment: Placeholder text color for form inputs. 
-  form-text:
-    type: color
-    comment: Text color for form inputs.
-  variable:
-    type: color
-    comment: Text color for codeblock variable names.
-  diffcode-added: 
-    type: color
-    options:
-      format: hex
-      alpha: true
-    comment: Background color for added lines in diffcode shortcode.
-  diffcode-removed: 
-    type: color
-    options:
-      format: hex
-      alpha: true
-    comment: Background color for removed lines in diffcode shortcode.
-  diffcode-highlighted: 
-    type: color
-    options:
-      format: hex
-      alpha: true
-    comment: Background color for highlighted lines in diffcode shortcode.
-  pagefind-ui-primary:
-    type: color
-    comment: Primary color for pagefind ui. 
-  pagefind-ui-secondary:
-    type: color
-    comment: Secondary color for pagefind ui. 
-  pagefind-ui-background:
-    type: color
-    comment: Background color for pagefind ui. 
-  pagefind-ui-border:
-    type: color
-    comment: Border color for pagefind ui.
-  pagefind-ui-tag:
-    type: color
-    comment: Tag color for pagefind ui.
-  small_icon:
-    type: image
-    comment: Dimensions - 16px x 16px
-  large_icon:
-    type: image
-    comment: Dimensions - 32px x 32px
-  apple_touch_icon:
-    type: image
-    comment: Dimensions - 57px x 57px
-  shortcut_icon:
-    type: image
-    comment: Bookmark icon
-
-
-
-  
-
-# Snippets
-_snippets_imports:
-  hugo: true
-  
-_snippets:
-  diffcode:
-    snippet: "{{<diffcode>}}\n```[[lang]][[inner]]```\n{{</diffcode>}}"
-    params: 
-      lang:
-        parser: argument
-        options:
-          editor_key: language
-          forbidden_tokens: ["```"]
-          style: 
-            output: inline
-          model:
-            editor_key: language
-            optional: true
-      inner:
-        parser: content
-        options:  
-          editor_key: inner_code
-          style:
-            output: block
-            block:
-              leading: "\n"
-              trailing: "\n"
-              indent: ""
-    inline: false
-    preview:
-      text: Diffcode
-      subtext: Difference formatter
-      icon: difference
-    picker_preview:
-      text: Diffcode
-      subtext: Difference formatter
-      icon: difference
-    _inputs:
-      inner_code:
-        type: code
-      language:
-        type: text
-  tree:
-    snippet: "{{<tree>}}[[inner]]{{</tree>}}"
-    params: 
-      inner:
-        parser: content
-        options:  
-          editor_key: inner_code
-          style:
-            output: block
-            block:
-              leading: "\n"
-              trailing: "\n"
-              indent: ""
-    inline: false
-    definitions:
-      shortcode_name: tree
-      content_key: inner_code
-    preview:
-      text: Tree
-      subtext: Tree directory formatter
-      icon: account_tree
-    picker_preview:
-      text: Tree
-      subtext: Tree directory formatter
-      icon: account_tree
-    _inputs:
-      inner_code:
-        type: code
-
-
-
-
-
-# Set this to true to disable auto-detection of collections.
 collections_config_override: false
-
-# Control which data sets are available to populate select and multiselect inputs.
-data_config:
-
-# Base path to your source files, relative to the root folder of your repository.
-source:
-
-# The locations of various types of files within your site.
-# Each path is relative to your site's source folder.
 paths:
   static: static
-  uploads: static/uploads
-
-# Lets you control the look and behaviour of the Source Editor.
-source_editor:
-
-# Timezone of your site in IANA format. This is used by date and datetime inputs
-# within the CloudCannon Data Editor.
+  uploads: assets/images/uploads
 timezone: Etc/UTC
+
+# Collections
+collections_config:
+
+  products:
+    create:
+      path: '[relative_base_path]/{title|slugify}.md'
+    disable_add_folder: true
+    icon: shopping_cart
+    name: products
+    path: content/products
+    base_url: /products
+    _inputs:
+      - draft
+      - title
+      - description
+      - image
+  
+  products_categories:
+    create:
+      path: '[relative_base_path]/{title|slugify}/_index.md'
+    disable_add_folder: true
+    icon: bookmark
+    name: Products categories
+    path: content/products_categories
+    _inputs:
+      - draft
+      - title
+      - description
+
+# Display
+collection_groups:
+  - heading: Products
+    collections:
+      - products
+      - products_categories
+
+# Fields
+_inputs:
+  draft:
+    type: boolean
+    label: Draft
+  title:
+    type: text
+    label: Titre
+  description:
+    type: textarea
+    label: Description
+  image:
+    type: object
+    label: Image
+    fields:
+      src:
+        type: image
+        label: Image file
+      alt:
+        type: text
+        label: Alternative text
