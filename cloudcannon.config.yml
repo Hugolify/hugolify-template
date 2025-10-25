@@ -1,0 +1,88 @@
+_schema: _schema
+source: /
+paths:
+  uploads: static/uploads
+  static: static
+collections_config:
+  pages:
+    path: ''
+    name: Pages
+    icon: wysiwyg
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  config_default:
+    path: config/_default
+    name: Config Default
+    icon: chair_alt
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  config_production:
+    path: config/production
+    name: Config Production
+    icon: online_prediction
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  data:
+    path: data
+    name: Data
+    icon: data_usage
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: true
+  products:
+    path: content/products
+    glob:
+      - '!_index.md'
+    name: Products
+    singular_name:
+    icon: shopping_cart
+    url:
+    include_developer_files:
+    documentation:
+    description: ''
+    preview:
+    sort:
+    sort_options:
+    _editables:
+    _enabled_editors:
+      - visual
+      - content
+      - data
+    _inputs:
+    _select_data:
+    _structures:
+    add_options:
+    create:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    new_preview_url:
+    schemas:
+    schema_key:
+_snippets_imports:
+  hugo:
+    exclude:
+      - hugo_instagram
+timezone: Europe/Paris
+markdown:
+  engine: commonmark
+  options:
+    xhtml: false
+    breaks: false
+    linkify: false
+    typographer: false
+    spaced_lists: false
+    sentence_per_line: false
+    gfm: true
+    code_block_fences: '```'
+    escape_snippets_in_code_blocks: false
+    treat_indentation_as_code: true
+    table: false
+    strikethrough: false
+    subscript: false
+    superscript: false
+    heading_ids: false
+    attributes: false
