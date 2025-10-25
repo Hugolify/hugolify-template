@@ -7,4 +7,4 @@ imports:
   - path: github.com/hugolify/hugolify-theme
 
   # CMS
-  # - path: github.com/hugolify/hugolify-admin
+  - path: github.com/hugolify/hugolify-admin

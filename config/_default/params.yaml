@@ -1,4 +1,21 @@
 _merge: deep
 
-# admin:
-#   cms: cloudcannon
+admin:
+  cms: cloudcannon
+  collections:
+    config:
+      enable: false
+    indexes:
+      enable: false
+    pages:
+      enable: false
+    products:
+      fields:
+        - draft
+        - date
+        - title_page
+        - description
+        - image
+        - body
+    products_tags:
+      enable: false
