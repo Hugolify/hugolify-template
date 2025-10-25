@@ -1,37 +1,9 @@
 _schema: _schema
 source: /
 paths:
-  uploads: static/uploads
+  uploads: static/images/uploads
   static: static
 collections_config:
-  pages:
-    path: ''
-    name: Pages
-    icon: wysiwyg
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
-  config_default:
-    path: config/_default
-    name: Config Default
-    icon: chair_alt
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
-  config_production:
-    path: config/production
-    name: Config Production
-    icon: online_prediction
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
-  data:
-    path: data
-    name: Data
-    icon: data_usage
-    disable_add: true
-    disable_add_folder: true
-    disable_file_actions: true
   products:
     path: content/products
     glob:
@@ -52,6 +24,14 @@ collections_config:
       - content
       - data
     _inputs:
+      draft:
+        type: switch
+        label: Draft
+        cascade: true
+      title:
+        type: text
+        label: Page title
+        cascade: true
     _select_data:
     _structures:
     add_options:
@@ -62,10 +42,72 @@ collections_config:
     new_preview_url:
     schemas:
     schema_key:
+_inputs:
+  draft:
+    type: switch
+    label: Draft
+    cascade: true
+  title:
+    type: text
+    label: Title
+    cascade: true
+  description:
+    type: textarea
+    label: Description
+    cascade: true
+  src:
+    type: image
+    options:
+      paths:
+      mime_type:
+      accepts_mime_types:
+        - image/svg+xml
+        - image/jpeg
+        - image/png
+      empty_type:
+      resize_style:
+      width: 1
+      height: 1
+      expandable:
+      allowed_sources:
+      prevent_resize_existing_files:
+      sizes:
+    label: Image
+    cascade: true
+  alt:
+    type: text
+    label: Alternative text
+    cascade: true
+_structures:
+  image:
+    style: modal
+    id_key:
+    values:
+      - id:
+        default:
+        icon:
+        image:
+        label:
+        picker_preview:
+        preview:
+        tags:
+        groups:
+          - heading: Image
+            comment: ''
+            documentation:
+            collapsed:
+            inputs:
+              - src
+              - alt
+        place_groups_below:
+        tabbed:
+        value:
 _snippets_imports:
   hugo:
     exclude:
       - hugo_instagram
+editor:
+  default_path:
 timezone: Europe/Paris
 markdown:
   engine: commonmark
