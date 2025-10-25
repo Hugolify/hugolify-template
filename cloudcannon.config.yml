@@ -4,6 +4,7 @@ paths:
   static: static
   uploads: /assets/images/uploads
 
+
 # Snippets
 _snippets_imports:
   hugo: true
