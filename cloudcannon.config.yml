@@ -2,7 +2,7 @@
 collections_config_override: false
 paths:
   static: static
-  uploads: assets/images/uploads
+  uploads: static/images/uploads
 
 # Snippets
 _snippets_imports:
@@ -67,6 +67,19 @@ collections_config:
               name: alt
               required: false
               type: string
+            image_src:
+              choose_url: false
+              hint: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
+              i18n: true
+              label: Image
+              media_folder: /assets/images/uploads
+              media_library:
+                config:
+                  max_file_size: "700000"
+              name: src
+              public_folder: /images/uploads
+              required: false
+              type: image
         required: false
         type: object
       title_page:
