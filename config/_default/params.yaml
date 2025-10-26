@@ -2,6 +2,9 @@ _merge: deep
 
 admin:
   cms: cloudcannon
+  media:
+    public_folder: static/images/uploads
+
   collections:
     config:
       enable: false

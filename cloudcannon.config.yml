@@ -77,12 +77,12 @@ collections_config:
                 config:
                   max_file_size: "700000"
               name: src
-              public_folder: /images/uploads
+              public_folder: static/images/uploads
               required: false
               type: image
         required: false
         type: object
-      title_page:
+      title:
         hint: Displayed in tabs, search results, and in SMS/Messages/Social networks
           preview
         i18n: true
@@ -90,6 +90,7 @@ collections_config:
         name: title
         required: true
         type: string
+    path: content/products
     schemas:
       default:
         path: archetypes/products.md
