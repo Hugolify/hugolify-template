@@ -6,3 +6,4 @@ title_page: Test product
 description: description
 body: Lorem ipsum
 ---
+Lorem ipsum body
