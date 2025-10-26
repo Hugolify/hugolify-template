@@ -11,14 +11,15 @@ admin:
     indexes:
       enable: false
     pages:
-      enable: false
-    products:
+      enable: true
       fields:
         - draft
         - date
         - title_page
         - description
         - image
-        - body
+        # - body
+    products:
+      enable: false
     products_tags:
       enable: false

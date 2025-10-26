@@ -10,14 +10,8 @@ _snippets_imports:
 
 # Collections
 collections_config:
-  products:
+  pages:
     _inputs:
-      body:
-        i18n: true
-        label: Body
-        name: body
-        required: false
-        type: markdown
       date:
         default: '{{now}}'
         i18n: duplicate
@@ -90,9 +84,9 @@ collections_config:
         name: title
         required: true
         type: string
-    path: content/products
+    path: content
     schemas:
       default:
-        path: archetypes/products.md
+        path: archetypes/pages.md
 
 
