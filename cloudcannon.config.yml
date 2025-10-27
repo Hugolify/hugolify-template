@@ -213,7 +213,7 @@ collections_config:
               type: image
           subtype: object
         required: false
-        type: list
+        type: array
       isIndex:
         default: false
         i18n: false
