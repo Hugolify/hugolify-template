@@ -18,8 +18,8 @@ admin:
         - title_page
         - description
         - image
-        # - body
+        - body
     products:
-      enable: false
+      enable: true
     products_tags:
       enable: false

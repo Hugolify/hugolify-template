@@ -1,7 +1,9 @@
 ---
 draft:
 date:
-title_page:
+title:
 description:
-body:
+offer:
+image:
+images:
 ---
