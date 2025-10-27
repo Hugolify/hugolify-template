@@ -15,76 +15,76 @@ collections_config:
       date:
         default: '{{now}}'
         i18n: duplicate
-        label: Date
-        name: date
+        name: Date
         required: true
         type: datetime
+        widget_name: date
       description:
         hint: Displayed in tabs, search results, and in SMS/Messages/Social networks
           preview
         i18n: true
-        label: Description
-        name: description
+        name: Description
         required: false
         type: text
+        widget_name: description
       draft:
         default: true
         i18n: true
-        label: Draft
-        name: draft
+        name: Draft
         required: false
         type: switch
+        widget_name: draft
       image:
         collapsed: true
         i18n: true
-        label: Image
-        name: image
+        name: Image
         options:
           _inputs:
             alt:
               hint: For an image that conveys information (leave blank if decorative
                 image)
               i18n: true
-              label: Text alternative
-              name: alt
+              name: Text alternative
               required: false
               type: text
+              widget_name: alt
             credit:
               buttons:
               - link
               editor_components: []
               i18n: true
-              label: Credit
               minimal: true
               modes:
               - rich_text
-              name: credit
+              name: Credit
               required: false
               type: markdown
+              widget_name: credit
             src:
               choose_url: false
               hint: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
               i18n: true
-              label: Image
               media_folder: /assets/images/uploads
               media_library:
                 config:
                   max_file_size: "700000"
-              name: src
+              name: Image
               public_folder: static/images/uploads
               required: false
               type: image
+              widget_name: src
           subtype: object
         required: false
         type: object
+        widget_name: image
       title:
         hint: Displayed in tabs, search results, and in SMS/Messages/Social networks
           preview
         i18n: true
-        label: Page title
-        name: title
+        name: Page title
         required: true
         type: text
+        widget_name: title
     create:
       path: '[relative_base_path]/{title|slugify}/_index.md'
     description: All pages
@@ -103,182 +103,182 @@ collections_config:
       date:
         default: '{{now}}'
         i18n: duplicate
-        label: Date
-        name: date
+        name: Date
         required: true
         type: datetime
+        widget_name: date
       description:
         hint: Displayed in tabs, search results, and in SMS/Messages/Social networks
           preview
         i18n: true
-        label: Description
-        name: description
+        name: Description
         required: false
         type: text
+        widget_name: description
       draft:
         default: true
         i18n: true
-        label: Draft
-        name: draft
+        name: Draft
         required: false
         type: switch
+        widget_name: draft
       id:
         i18n: duplicate
-        label: Id
-        name: id
+        name: Id
         type: uuid
+        widget_name: id
       image:
         collapsed: true
         hint: Displayed in search results, and in SMS/Messages/Social networks preview
         i18n: true
-        label: Image principale
-        name: image
+        name: Image principale
         options:
           _inputs:
             alt:
               hint: For an image that conveys information (leave blank if decorative
                 image)
               i18n: true
-              label: Text alternative
-              name: alt
+              name: Text alternative
               required: false
               type: text
+              widget_name: alt
             src:
               choose_url: false
               hint: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
               i18n: true
-              label: Image
               media_folder: /assets/images/uploads
               media_library:
                 config:
                   max_file_size: "700000"
-              name: src
+              name: Image
               public_folder: static/images/uploads
               required: false
               type: image
+              widget_name: src
           subtype: object
         required: false
         type: object
+        widget_name: image
       images:
         collapsed: true
         i18n: true
-        label: Images
-        name: images
+        name: Images
         options:
           _inputs:
             alt:
               hint: For an image that conveys information (leave blank if decorative
                 image)
               i18n: true
-              label: Text alternative
-              name: alt
+              name: Text alternative
               required: false
               type: text
+              widget_name: alt
             credit:
               buttons:
               - link
               editor_components: []
               i18n: true
-              label: Credit
               minimal: true
               modes:
               - rich_text
-              name: credit
+              name: Credit
               required: false
               type: markdown
+              widget_name: credit
             half:
               i18n: duplicate
-              label: Half size?
-              name: half
+              name: Half size?
               required: false
               type: switch
+              widget_name: half
             legend:
               i18n: true
-              label: Legend
-              name: legend
+              name: Legend
               required: false
               type: text
+              widget_name: legend
             src:
               choose_url: false
               hint: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
               i18n: true
-              label: Image
               media_folder: /assets/images/uploads
               media_library:
                 config:
                   max_file_size: "700000"
-              name: src
+              name: Image
               public_folder: static/images/uploads
               required: false
               type: image
+              widget_name: src
           subtype: object
         required: false
         type: array
+        widget_name: images
       isIndex:
         default: false
         i18n: false
-        label: is not index
-        name: isIndex
+        name: is not index
         required: false
         type: hidden
+        widget_name: isIndex
       offer:
         collapsed: false
         i18n: true
-        label: Offer
-        name: offer
+        name: Offer
         options:
           _inputs:
             discount:
               hint: 'Amount of the reduction, e.g: 30%'
               i18n: duplicate
-              label: Discount
-              name: discount
+              name: Discount
               pattern:
               - ^[0-9]*(%?)$
               - Value only (without currency)
               required: false
               type: text
+              widget_name: discount
             hide_price:
               i18n: duplicate
-              label: Hide price
-              name: hide_price
+              name: Hide price
               required: false
               type: switch
+              widget_name: hide_price
             price:
               hint: 'e.g: 300000 (for 300 000 €)'
               i18n: duplicate
-              label: Price
-              name: price
+              name: Price
               required: false
               type: number
+              widget_name: price
             text:
               i18n: true
-              label: Text
-              name: text
+              name: Text
               required: false
               type: text
+              widget_name: text
           subtype: object
         required: false
         type: object
+        widget_name: offer
       slug:
         hint: Leave empty to automate with the title. **Be careful to SEO impact.**
         i18n: true
-        label: Slug
-        name: slug
+        name: Slug
         pattern:
         - ^(|[a-z0-9-]&#43;)$
         - Contain only lowercase letters, numbers, and hyphens, with no spaces, accents,
           or special characters
         required: false
         type: text
+        widget_name: slug
       title:
         hint: Displayed in tabs, search results, and in SMS/Messages/Social networks
           preview
         i18n: true
-        label: Page title
-        name: title
+        name: Page title
         required: true
         type: text
+        widget_name: title
     create:
       path: '[relative_base_path]/{{year}}/{{slug}}'
     description: All products
