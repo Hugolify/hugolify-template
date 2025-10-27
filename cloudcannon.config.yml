@@ -76,7 +76,7 @@ collections_config:
               type: image
         required: false
         type: object
-      title:
+      title_page:
         hint: Displayed in tabs, search results, and in SMS/Messages/Social networks
           preview
         i18n: true
@@ -84,9 +84,18 @@ collections_config:
         name: title
         required: true
         type: string
+    create:
+      path: '[relative_base_path]/{title|slugify}/_index.md'
+    description: All pages
+    disable_add: true
+    disable_add_folder: false
+    i18n: true
+    icon: description
+    name: Pages
     path: content
     schemas:
       default:
         path: archetypes/pages.md
+    singular_name: Page
 
 
