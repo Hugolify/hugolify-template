@@ -48,7 +48,7 @@ collections_config:
               label: Text alternative
               name: alt
               required: false
-              type: string
+              type: text
             credit:
               buttons:
               - link
@@ -74,6 +74,7 @@ collections_config:
               public_folder: static/images/uploads
               required: false
               type: image
+          subtype: object
         required: false
         type: object
       title:
@@ -83,7 +84,7 @@ collections_config:
         label: Page title
         name: title
         required: true
-        type: string
+        type: text
     create:
       path: '[relative_base_path]/{title|slugify}/_index.md'
     description: All pages
@@ -141,7 +142,7 @@ collections_config:
               label: Text alternative
               name: alt
               required: false
-              type: string
+              type: text
             src:
               choose_url: false
               hint: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
@@ -155,6 +156,7 @@ collections_config:
               public_folder: static/images/uploads
               required: false
               type: image
+          subtype: object
         required: false
         type: object
       images:
@@ -171,7 +173,7 @@ collections_config:
               label: Text alternative
               name: alt
               required: false
-              type: string
+              type: text
             credit:
               buttons:
               - link
@@ -195,7 +197,7 @@ collections_config:
               label: Legend
               name: legend
               required: false
-              type: string
+              type: text
             src:
               choose_url: false
               hint: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
@@ -209,6 +211,7 @@ collections_config:
               public_folder: static/images/uploads
               required: false
               type: image
+          subtype: object
         required: false
         type: list
       isIndex:
@@ -234,7 +237,7 @@ collections_config:
               - ^[0-9]*(%?)$
               - Value only (without currency)
               required: false
-              type: string
+              type: text
             hide_price:
               i18n: duplicate
               label: Hide price
@@ -253,7 +256,8 @@ collections_config:
               label: Text
               name: text
               required: false
-              type: string
+              type: text
+          subtype: object
         required: false
         type: object
       slug:
@@ -266,7 +270,7 @@ collections_config:
         - Contain only lowercase letters, numbers, and hyphens, with no spaces, accents,
           or special characters
         required: false
-        type: string
+        type: text
       title:
         hint: Displayed in tabs, search results, and in SMS/Messages/Social networks
           preview
@@ -274,7 +278,7 @@ collections_config:
         label: Page title
         name: title
         required: true
-        type: string
+        type: text
     create:
       path: '[relative_base_path]/{{year}}/{{slug}}'
     description: All products
