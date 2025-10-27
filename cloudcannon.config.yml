@@ -20,7 +20,7 @@ collections_config:
         type: datetime
         widget_name: date
       description:
-        hint: Displayed in tabs, search results, and in SMS/Messages/Social networks
+        comment: Displayed in tabs, search results, and in SMS/Messages/Social networks
           preview
         i18n: true
         name: Description
@@ -41,7 +41,7 @@ collections_config:
         options:
           _inputs:
             alt:
-              hint: For an image that conveys information (leave blank if decorative
+              comment: For an image that conveys information (leave blank if decorative
                 image)
               i18n: true
               name: Text alternative
@@ -62,7 +62,7 @@ collections_config:
               widget_name: credit
             src:
               choose_url: false
-              hint: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
+              comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
               i18n: true
               media_folder: /assets/images/uploads
               media_library:
@@ -78,16 +78,16 @@ collections_config:
         type: object
         widget_name: image
       title:
-        hint: Displayed in tabs, search results, and in SMS/Messages/Social networks
+        comment: Displayed in tabs, search results, and in SMS/Messages/Social networks
           preview
         i18n: true
         name: Page title
         required: true
         type: text
         widget_name: title
+    comment: All pages
     create:
       path: '[relative_base_path]/{title|slugify}/_index.md'
-    description: All pages
     disable_add: false
     disable_add_folder: true
     i18n: true
@@ -108,7 +108,7 @@ collections_config:
         type: datetime
         widget_name: date
       description:
-        hint: Displayed in tabs, search results, and in SMS/Messages/Social networks
+        comment: Displayed in tabs, search results, and in SMS/Messages/Social networks
           preview
         i18n: true
         name: Description
@@ -129,13 +129,14 @@ collections_config:
         widget_name: id
       image:
         collapsed: true
-        hint: Displayed in search results, and in SMS/Messages/Social networks preview
+        comment: Displayed in search results, and in SMS/Messages/Social networks
+          preview
         i18n: true
         name: Image principale
         options:
           _inputs:
             alt:
-              hint: For an image that conveys information (leave blank if decorative
+              comment: For an image that conveys information (leave blank if decorative
                 image)
               i18n: true
               name: Text alternative
@@ -144,7 +145,7 @@ collections_config:
               widget_name: alt
             src:
               choose_url: false
-              hint: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
+              comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
               i18n: true
               media_folder: /assets/images/uploads
               media_library:
@@ -166,7 +167,7 @@ collections_config:
         options:
           _inputs:
             alt:
-              hint: For an image that conveys information (leave blank if decorative
+              comment: For an image that conveys information (leave blank if decorative
                 image)
               i18n: true
               name: Text alternative
@@ -199,7 +200,7 @@ collections_config:
               widget_name: legend
             src:
               choose_url: false
-              hint: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
+              comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
               i18n: true
               media_folder: /assets/images/uploads
               media_library:
@@ -228,7 +229,7 @@ collections_config:
         options:
           _inputs:
             discount:
-              hint: 'Amount of the reduction, e.g: 30%'
+              comment: 'Amount of the reduction, e.g: 30%'
               i18n: duplicate
               name: Discount
               pattern:
@@ -244,7 +245,7 @@ collections_config:
               type: switch
               widget_name: hide_price
             price:
-              hint: 'e.g: 300000 (for 300 000 €)'
+              comment: 'e.g: 300000 (for 300 000 €)'
               i18n: duplicate
               name: Price
               required: false
@@ -261,7 +262,7 @@ collections_config:
         type: object
         widget_name: offer
       slug:
-        hint: Leave empty to automate with the title. **Be careful to SEO impact.**
+        comment: Leave empty to automate with the title. **Be careful to SEO impact.**
         i18n: true
         name: Slug
         pattern:
@@ -272,16 +273,16 @@ collections_config:
         type: text
         widget_name: slug
       title:
-        hint: Displayed in tabs, search results, and in SMS/Messages/Social networks
+        comment: Displayed in tabs, search results, and in SMS/Messages/Social networks
           preview
         i18n: true
         name: Page title
         required: true
         type: text
         widget_name: title
+    comment: All products
     create:
       path: '[relative_base_path]/{{year}}/{{slug}}'
-    description: All products
     disable_add: false
     disable_add_folder: true
     i18n: true
