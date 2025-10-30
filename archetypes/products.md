@@ -5,6 +5,7 @@ draft:
 date:
 title:
 description:
-image:
 offer:
+image:
+images:
 ---
