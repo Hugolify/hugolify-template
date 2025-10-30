@@ -172,7 +172,7 @@ collections_config:
         type: text
     comment: All products
     create:
-      path: '[relative_base_path]/{{year}}/{{slug}}'
+      path: '[relative_base_path]/{year}/{slug}'
     disable_add: false
     disable_add_folder: true
     i18n: true
