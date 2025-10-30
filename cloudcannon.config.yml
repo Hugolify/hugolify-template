@@ -103,6 +103,29 @@ collections_config:
         instance_value: UUID
         name: ID
         type: text
+      image:
+        comment: Displayed in search results, and in SMS/Messages/Social networks
+          preview
+        name: Image principale
+        options:
+          _inputs:
+            alt:
+              comment: For an image that conveys information (leave blank if decorative
+                image)
+              name: Text alternative
+              options:
+                required: false
+              type: text
+            src:
+              comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
+              name: Image
+              options:
+                max_file_size: "700000"
+                required: false
+              type: image
+          required: false
+          subtype: object
+        type: object
       isIndex:
         hidden: true
         name: is not index
