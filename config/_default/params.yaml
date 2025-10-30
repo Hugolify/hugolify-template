@@ -21,5 +21,17 @@ admin:
         - body
     products:
       enable: true
+      fields:
+        - id
+        - is_not_index
+        - draft
+        - date
+        - title_page
+        - description
+        - offer
+        - featured_image
+        - images
+        - body
+        - slug
     products_tags:
       enable: false
