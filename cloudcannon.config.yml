@@ -78,5 +78,86 @@ collections_config:
       default:
         path: archetypes/pages.md
     singular_name: Page
+  products:
+    _inputs:
+      date:
+        instance_value: NOW
+        name: Date
+        options:
+          required: true
+        type: datetime
+      description:
+        comment: Displayed in tabs, search results, and in SMS/Messages/Social networks
+          preview
+        name: Description
+        options:
+          required: false
+        type: textarea
+      draft:
+        name: Draft
+        options:
+          required: false
+        type: switch
+      id:
+        disabled: true
+        instance_value: UUID
+        name: ID
+        type: text
+      isIndex:
+        hidden: true
+        name: is not index
+        options:
+          required: false
+        type: switch
+      offer:
+        name: Offer
+        options:
+          _inputs:
+            discount:
+              comment: 'Amount of the reduction, e.g: 30%'
+              name: Discount
+              options:
+                pattern: ^[0-9]*(%?)$
+                pattern_message: Value only (without currency)
+                required: false
+              type: text
+            hide_price:
+              name: Hide price
+              options:
+                required: false
+              type: switch
+            price:
+              comment: 'e.g: 300000 (for 300 000 €)'
+              name: Price
+              options:
+                required: false
+              type: number
+            text:
+              name: Text
+              options:
+                required: false
+              type: text
+          required: false
+          subtype: object
+        type: object
+      title:
+        comment: Displayed in tabs, search results, and in SMS/Messages/Social networks
+          preview
+        name: Page title
+        options:
+          required: true
+        type: text
+    comment: All products
+    create:
+      path: '[relative_base_path]/{{year}}/{{slug}}'
+    disable_add: false
+    disable_add_folder: true
+    i18n: true
+    name: Products
+    path: content/products
+    schemas:
+      default:
+        path: archetypes/products.md
+    singular_name: Product
 
 
