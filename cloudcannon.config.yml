@@ -112,8 +112,7 @@ collections_config:
           subtype: object
         type: object
       image.alt:
-        comment: For an image that conveys information (leave blank if decorative
-          image)
+        comment: For an image that conveys information (leave blank if decorative image)
         name: Text alternative
         options:
           required: false
@@ -216,6 +215,8 @@ collections_config:
         options:
           required: true
         type: text
+      blocks:
+        type: array
     comment: All products
     create:
       path: '[relative_base_path]/{year}/{slug}'
@@ -229,4 +230,15 @@ collections_config:
         path: archetypes/products.md
     singular_name: Product
 
-
+# Blocks
+_structures:
+  blocks:
+    style: modal
+    values:
+      - value:
+          _type: Title
+          heading: 
+      - value:
+          _type: Paragraph
+          title: 
+          text: 

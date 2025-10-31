@@ -8,4 +8,5 @@ description:
 offer:
 image:
 images:
+blocks:
 ---
