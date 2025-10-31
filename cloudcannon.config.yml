@@ -108,24 +108,23 @@ collections_config:
           preview
         name: Image principale
         options:
-          _inputs:
-            alt:
-              comment: For an image that conveys information (leave blank if decorative
-                image)
-              name: Text alternative
-              options:
-                required: false
-              type: text
-            src:
-              comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
-              name: Image
-              options:
-                max_file_size: "700000"
-                required: false
-              type: image
           required: false
           subtype: object
         type: object
+      image.alt:
+        comment: For an image that conveys information (leave blank if decorative
+          image)
+        name: Text alternative
+        options:
+          required: false
+        type: text
+      image.src:
+        comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
+        name: Image
+        options:
+          max_file_size: "700000"
+          required: false
+        type: image
       images:
         name: Images
         options:
