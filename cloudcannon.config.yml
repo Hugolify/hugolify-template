@@ -10,204 +10,8 @@ _snippets_imports:
 
 # Collections
 collections_config:
-  pages:
-    _inputs:
-      date:
-        instance_value: NOW
-        name: Date
-        options:
-          required: true
-        type: datetime
-      description:
-        comment: Displayed in tabs, search results, and in SMS/Messages/Social networks
-          preview
-        name: Description
-        options:
-          required: false
-        type: textarea
-      draft:
-        name: Draft
-        options:
-          required: false
-        type: switch
-      image:
-        name: Images
-        options:
-          _inputs:
-            alt:
-              comment: For an image that conveys information (leave blank if decorative
-                image)
-              name: Text alternative
-              options:
-                required: false
-              type: text
-            credit:
-              name: Credit
-              options:
-                allow_resize: false
-                initial_height: 100
-                required: false
-              type: markdown
-            src:
-              comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
-              name: Image
-              options:
-                max_file_size: "700000"
-                required: false
-              type: image
-          required: false
-          subtype: object
-        type: object
-      title:
-        comment: Displayed in tabs, search results, and in SMS/Messages/Social networks
-          preview
-        name: Page title
-        options:
-          required: true
-        type: text
-    comment: All pages
-    create:
-      path: '[relative_base_path]/{title|slugify}/_index.md'
-    disable_add: false
-    disable_add_folder: true
-    i18n: true
-    icon: description
-    name: Pages
-    path: content
-    schemas:
-      default:
-        path: archetypes/pages.md
-    singular_name: Page
   products:
     _inputs:
-      date:
-        instance_value: NOW
-        name: Date
-        options:
-          required: true
-        type: datetime
-      description:
-        comment: Displayed in tabs, search results, and in SMS/Messages/Social networks
-          preview
-        name: Description
-        options:
-          required: false
-        type: textarea
-      draft:
-        name: Draft
-        options:
-          required: false
-        type: switch
-      id:
-        disabled: true
-        instance_value: UUID
-        name: ID
-        type: text
-      image:
-        comment: Displayed in search results, and in SMS/Messages/Social networks
-          preview
-        name: Image principale
-        options:
-          required: false
-          subtype: object
-        type: object
-      image.alt:
-        comment: For an image that conveys information (leave blank if decorative image)
-        name: Text alternative
-        options:
-          required: false
-        type: text
-      image.src:
-        comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
-        name: Image
-        options:
-          max_file_size: "700000"
-          required: false
-        type: image
-      images:
-        name: Images
-        options:
-          _inputs:
-            alt:
-              comment: For an image that conveys information (leave blank if decorative
-                image)
-              name: Text alternative
-              options:
-                required: false
-              type: text
-            credit:
-              name: Credit
-              options:
-                allow_resize: false
-                initial_height: 100
-                required: false
-              type: markdown
-            half:
-              name: Half size?
-              options:
-                required: false
-              type: switch
-            legend:
-              name: Legend
-              options:
-                required: false
-              type: text
-            src:
-              comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
-              name: Image
-              options:
-                max_file_size: "700000"
-                required: false
-              type: image
-          required: false
-        singular_name: Image
-        type: array
-      isIndex:
-        hidden: true
-        name: is not index
-        options:
-          required: false
-        type: switch
-      offer:
-        name: Offer
-        options:
-          _inputs:
-            discount:
-              comment: 'Amount of the reduction, e.g: 30%'
-              name: Discount
-              options:
-                pattern: ^[0-9]*(%?)$
-                pattern_message: Value only (without currency)
-                required: false
-              type: text
-            hide_price:
-              name: Hide price
-              options:
-                required: false
-              type: switch
-            price:
-              comment: 'e.g: 300000 (for 300 000 €)'
-              name: Price
-              options:
-                required: false
-              type: number
-            text:
-              name: Text
-              options:
-                required: false
-              type: text
-          required: false
-          subtype: object
-        type: object
-      slug:
-        comment: Leave empty to automate with the title. **Be careful to SEO impact.**
-        name: Slug
-        options:
-          pattern: ^(|[a-z0-9-]+)$
-          pattern_message: Contain only lowercase letters, numbers, and hyphens, with
-            no spaces, accents, or special characters
-          required: false
-        type: text
       title:
         comment: Displayed in tabs, search results, and in SMS/Messages/Social networks
           preview
@@ -215,8 +19,6 @@ collections_config:
         options:
           required: true
         type: text
-      blocks:
-        type: array
     comment: All products
     create:
       path: '[relative_base_path]/{year}/{slug}'
@@ -230,15 +32,20 @@ collections_config:
         path: archetypes/products.md
     singular_name: Product
 
+
 # Blocks
 _structures:
+
   blocks:
     style: modal
     values:
+      
       - value:
           _type: Title
-          heading: 
-      - value:
-          _type: Paragraph
-          title: 
-          text: 
+          heading:
+          background:
+        preview:
+          text:
+            - key: title
+            - Title
+
