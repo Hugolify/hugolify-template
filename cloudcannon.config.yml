@@ -12,6 +12,8 @@ _snippets_imports:
 collections_config:
   products:
     _inputs:
+      blocks:
+        type: array
       date:
         instance_value: NOW
         name: Date
@@ -165,49 +167,47 @@ collections_config:
 
 # Blocks
 _structures:
+blocks:
+  style: modal
+  values:
+  - _inputs:
+      background:
+        name: With a background?
+        options:
+          required: false
+        type: switch
+      heading:
+        name: Heading
+        options:
+          _inputs:
+            surtitle:
+              name: Surtitle
+              options:
+                required: false
+              type: text
+            text:
+              name: Text
+              options:
+                allow_resize: false
+                initial_height: 100
+                required: false
+              type: markdown
+            title:
+              name: Title
+              options:
+                required: false
+              type: text
+          required: false
+          subtype: object
+        type: object
+    preview:
+      icon: format_h2
+      text:
+      - key: title
+      - Title
+    value:
+      _type: Title
+      'background:': null
+      'heading:': null
 
-  blocks:
-    style: modal
-    values:
-      
-      - value:
-          _type: Editorial
-          direction:
-          surtitle:
-          title:
-          text_markdown:
-          notes:
-          ctas:
-          image:
-          background:
-        preview:
-          text:
-            - key: editorial
-            - Editorial
-      
-      - value:
-          _type: Paragraph
-          surtitle:
-          title:
-          text_markdown:
-          notes:
-          ctas:
-          grid:
-          offset:
-          align:
-          background:
-        preview:
-          text:
-            - key: paragraph
-            - Paragraph
-      
-      - value:
-          _type: Title
-          heading:
-          background:
-        preview:
-          text:
-            - key: title
-            - Title
-          icon: format_h2
 
