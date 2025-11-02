@@ -13,6 +13,8 @@ collections_config:
   products:
     _inputs:
       blocks:
+        options:
+          structures: _structures.blocks
         type: array
       date:
         instance_value: NOW
