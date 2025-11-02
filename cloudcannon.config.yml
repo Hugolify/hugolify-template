@@ -171,6 +171,37 @@ _structures:
     values:
       
       - value:
+          _type: Editorial
+          direction:
+          surtitle:
+          title:
+          text_markdown:
+          notes:
+          ctas:
+          image:
+          background:
+        preview:
+          text:
+            - key: editorial
+            - Editorial
+      
+      - value:
+          _type: Paragraph
+          surtitle:
+          title:
+          text_markdown:
+          notes:
+          ctas:
+          grid:
+          offset:
+          align:
+          background:
+        preview:
+          text:
+            - key: paragraph
+            - Paragraph
+      
+      - value:
           _type: Title
           heading:
           background:
