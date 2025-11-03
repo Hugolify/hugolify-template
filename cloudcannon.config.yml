@@ -43,7 +43,7 @@ collections_config:
     singular_name: Product
 
 
-# Blocks
+# Structures
 _structures:
   blocks:
     style: modal
@@ -156,143 +156,19 @@ _structures:
           type: text
       label: Editorial
       preview:
+        icon: vertical_split
         text:
         - key: editorial
         - Editorial
       value:
-        background: null
-        ctas: null
-        direction: null
-        image: null
-        notes: null
-        surtitle: null
-        text_markdown: null
-        title: null
-    - _inputs:
-        align:
-          name: Alignment
-          options:
-            required: false
-            value_key: value
-            values:
-            - name: Start
-              value: start
-            - name: Center
-              value: center
-            - name: End
-              value: end
-          type: select
-        background:
-          name: With a background?
-          options:
-            required: false
-          type: switch
-        cta:
-          name: CTAs
-          options:
-            _inputs:
-              blank:
-                name: Is blank?
-                options:
-                  required: false
-                type: switch
-              lang:
-                comment: Enter code lang (e.g. fr) if different of the current page
-                  language
-                name: Language
-                options:
-                  required: false
-                type: text
-              text:
-                name: Text
-                options:
-                  required: false
-                type: text
-              url:
-                name: URL
-                options:
-                  required: false
-                type: text
-            'max_items:': 2
-            required: false
-          singular_name: CTA
-          type: array
-        grid:
-          name: Grid
-          options:
-            required: true
-            value_key: value
-            values:
-            - name: Small
-              value: small
-            - name: Medium
-              value: medium
-            - name: Large
-              value: large
-            - name: Container
-              value: container
-            - name: Full
-              value: full
-          type: select
-        notes:
-          comment: To link a word in the text to a note, suffix it with "[*]". Notes
-            and "[\\*]" are linked by their order.
-          name: Notes
-          options:
-            _inputs:
-              text:
-                name: Text
-                options:
-                  required: false
-                type: text
-            required: false
-          singular_name: Note
-          type: array
-        offset:
-          name: Offset
-          options:
-            required: false
-            value_key: value
-            values:
-            - name: Start
-              value: start
-            - name: Center
-              value: center
-            - name: End
-              value: end
-          type: select
-        surtitle:
-          name: Surtitle
-          options:
-            required: false
-          type: text
-        text:
-          name: Text
-          options:
-            allow_resize: false
-            initial_height: 100
-            required: false
-          type: markdown
-        title:
-          name: Title
-          options:
-            required: false
-          type: text
-      label: Paragraph
-      preview:
-        text:
-        - key: paragraph
-        - Paragraph
-      value:
-        align: null
-        background: null
-        ctas: null
-        grid: null
-        notes: null
-        offset: null
-        surtitle: null
-        text_markdown: null
-        title: null
+        background: 
+        ctas: 
+        direction: 
+        image: 
+        notes: 
+        surtitle: 
+        text_markdown: 
+        title: 
     - _inputs:
         background:
           name: With a background?
@@ -330,7 +206,7 @@ _structures:
         - key: title
         - Title
       value:
-        background: null
-        heading: null
+        background: 
+        heading: 
 
 
