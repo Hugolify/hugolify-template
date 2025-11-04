@@ -1,5 +1,4 @@
 # Config
-collections_config_override: false
 paths:
   static: static
   uploads: static/images/uploads
@@ -10,37 +9,30 @@ _snippets_imports:
 
 # Collections
 collections_config:
-  products:
+  pages:
     _inputs:
       blocks:
         options:
           structures: _structures.blocks
         type: array
-      date:
-        instance_value: NOW
-        name: Date
+      draft:
+        name: Draft
         options:
-          required: true
-        type: datetime
-      title:
-        comment: Displayed in tabs, search results, and in SMS/Messages/Social networks
-          preview
-        name: Page title
-        options:
-          required: true
-        type: text
-    comment: All products
+          required: false
+        type: switch
+    comment: All pages
     create:
-      path: '[relative_base_path]/{year}/{slug}'
+      path: '[relative_base_path]/{title|slugify}/_index.md'
     disable_add: false
     disable_add_folder: true
     i18n: true
-    name: Products
-    path: content/products
+    icon: description
+    name: Pages
+    path: content
     schemas:
       default:
-        path: archetypes/products.md
-    singular_name: Product
+        path: archetypes/pages.md
+    singular_name: Page
 
 
 # Structures
@@ -54,37 +46,109 @@ _structures:
           options:
             required: false
           type: switch
+        chart:
+          fields:
+          - title
+          - chart_type
+          name: Chart
+          options:
+            required: false
+            structures: _structures.chart
+            subtype: object
+          type: object
+        grid:
+          name: Grid
+          options:
+            required: true
+            value_key: value
+            values:
+            - name: Small
+              value: small
+            - name: Medium
+              value: medium
+            - name: Large
+              value: large
+            - name: Container
+              value: container
+            - name: Full
+              value: full
+          type: select
         heading:
+          fields:
+          - surtitle
+          - title
+          - text_markdown
           name: Heading
           options:
             required: false
+            structures: _structures.heading
             subtype: object
           type: object
-        heading.surtitle:
-          name: Surtitle
-          options:
-            required: false
-          type: text
-        heading.text:
-          name: Text
-          options:
-            allow_resize: false
-            initial_height: 100
-            required: false
-          type: markdown
-        heading.title:
-          name: Title
-          options:
-            required: false
-          type: text
-      label: Title
+      label: Chart
       preview:
-        icon: format_h2
         text:
-        - key: title
-        - Title
+        - key: chart
+        - Chart
       value:
-        background: 
-        heading: 
+        background: null
+        chart: null
+        grid: null
+        heading: null
+  chart:
+    values:
+    - label: Chart
+      options:
+        _inputs:
+          title:
+            name: Title
+            options:
+              required: false
+            type: text
+          type:
+            name: Chart type
+            options:
+              required: false
+              value_key: value
+              values:
+              - name: Bar
+                value: bar
+              - name: Pie
+                value: pie
+              - name: Line
+                value: line
+              - name: Polar area
+                value: polarArea
+              - name: Radar
+                value: radar
+            type: select
+      value:
+        "0": null
+        "1": null
+  heading:
+    values:
+    - label: Heading
+      options:
+        _inputs:
+          surtitle:
+            name: Surtitle
+            options:
+              required: false
+            type: text
+          text:
+            name: Text
+            options:
+              allow_resize: false
+              initial_height: 100
+              required: false
+            type: markdown
+          title:
+            name: Title
+            options:
+              required: false
+            type: text
+      value:
+        "0": null
+        "1": null
+        "2": null
 
 
