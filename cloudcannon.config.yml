@@ -25,7 +25,6 @@ collections_config:
       path: '[relative_base_path]/{title|slugify}/_index.md'
     disable_add: false
     disable_add_folder: true
-    i18n: true
     icon: description
     name: Pages
     path: content
@@ -41,21 +40,37 @@ _structures:
     style: modal
     values:
     - _inputs:
+        align:
+          name: Alignment
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Start
+              value: start
+            - name: Center
+              value: center
+            - name: End
+              value: end
+          type: select
         background:
           name: With a background?
           options:
             required: false
           type: switch
-        chart:
+        cta:
           fields:
-          - title
-          - chart_type
-          name: Chart
+          - text
+          - url
+          - lang
+          - is_blank
+          name: CTAs
           options:
+            max_items: 2
             required: false
-            structures: _structures.chart
-            subtype: object
-          type: object
+            structures: _structures.cta
+          singular_name: CTA
+          type: array
         grid:
           name: Grid
           options:
@@ -73,82 +88,73 @@ _structures:
             - name: Full
               value: full
           type: select
-        heading:
+        notes:
+          comment: To link a word in the text to a note, suffix it with "[*]". Notes
+            and "[*]" are linked by their order.
           fields:
-          - surtitle
-          - title
-          - text_markdown
-          name: Heading
+          - text
+          name: Notes
           options:
             required: false
-            structures: _structures.heading
-            subtype: object
-          type: object
-      label: Chart
-      preview:
+            structures: _structures.notes
+          singular_name: Note
+          type: array
+        offset:
+          name: Offset
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Start
+              value: start
+            - name: Center
+              value: center
+            - name: End
+              value: end
+          type: select
+        surtitle:
+          name: Surtitle
+          options:
+            required: false
+          type: text
         text:
-        - key: chart
-        - Chart
+          name: Text
+          options:
+            allow_resize: false
+            initial_height: 100
+            required: false
+          type: markdown
+        title:
+          name: Title
+          options:
+            required: false
+          type: text
+      label: Paragraph
+      preview:
+        icon: subject
+        text:
+        - key: paragraph
+        - Paragraph
       value:
+        align: null
         background: null
-        chart: null
+        ctas: null
         grid: null
-        heading: null
-  chart:
+        notes: null
+        offset: null
+        surtitle: null
+        text_markdown: null
+        title: null
+  notes:
     values:
-    - label: Chart
-      options:
+    - options:
         _inputs:
-          title:
-            name: Title
-            options:
-              required: false
-            type: text
-          type:
-            name: Chart type
-            options:
-              required: false
-              value_key: value
-              values:
-              - name: Bar
-                value: bar
-              - name: Pie
-                value: pie
-              - name: Line
-                value: line
-              - name: Polar area
-                value: polarArea
-              - name: Radar
-                value: radar
-            type: select
-      value:
-        "0": null
-        "1": null
-  heading:
-    values:
-    - label: Heading
-      options:
-        _inputs:
-          surtitle:
-            name: Surtitle
-            options:
-              required: false
-            type: text
           text:
             name: Text
             options:
-              allow_resize: false
-              initial_height: 100
-              required: false
-            type: markdown
-          title:
-            name: Title
-            options:
               required: false
             type: text
       value:
-        "0": null
-        "1": null
-        "2": null
+        text: null
 
 
