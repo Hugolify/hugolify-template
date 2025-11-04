@@ -1,3 +1,5 @@
+
+
 # Config
 paths:
   static: static
@@ -40,6 +42,101 @@ _structures:
     style: modal
     values:
     - _inputs:
+        background:
+          name: With a background?
+          options:
+            required: false
+          type: switch
+        ctas:
+          fields:
+          - text
+          - url
+          - lang
+          - is_blank
+          name: CTAs
+          options:
+            max_items: 2
+            required: false
+            structures: _structures.ctas
+          real_fields:
+          - text
+          - url
+          - lang
+          - is_blank
+          singular_name: CTA
+          type: array
+        direction:
+          name: Direction
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Ltr
+              value: ltr
+            - name: Rtl
+              value: rtl
+          type: select
+        image:
+          fields:
+          - image_src
+          - image_alt
+          - credit
+          name: Images
+          options:
+            required: false
+            structures: _structures.image
+            subtype: object
+          real_fields:
+          - image_src
+          - image_alt
+          - credit
+          type: object
+        notes:
+          comment: To link a word in the text to a note, suffix it with "[\*]". Notes
+            and "[\*]" are linked by their order.
+          fields:
+          - text
+          name: Notes
+          options:
+            required: false
+            structures: _structures.notes
+          real_fields:
+          - text
+          singular_name: Note
+          type: array
+        surtitle:
+          name: Surtitle
+          options:
+            required: false
+          type: text
+        text:
+          name: Text
+          options:
+            allow_resize: false
+            initial_height: 100
+            required: false
+          type: markdown
+        title:
+          name: Title
+          options:
+            required: false
+          type: text
+      label: Editorial
+      preview:
+        icon: vertical_split
+        text:
+        - key: editorial
+        - Editorial
+      value:
+        background: null
+        ctas: null
+        direction: null
+        image: null
+        notes: null
+        surtitle: null
+        text_markdown: null
+        title: null
+    - _inputs:
         align:
           name: Alignment
           options:
@@ -58,7 +155,7 @@ _structures:
           options:
             required: false
           type: switch
-        cta:
+        ctas:
           fields:
           - text
           - url
@@ -68,7 +165,12 @@ _structures:
           options:
             max_items: 2
             required: false
-            structures: _structures.cta
+            structures: _structures.ctas
+          real_fields:
+          - text
+          - url
+          - lang
+          - is_blank
           singular_name: CTA
           type: array
         grid:
@@ -89,14 +191,16 @@ _structures:
               value: full
           type: select
         notes:
-          comment: To link a word in the text to a note, suffix it with "[*]". Notes
-            and "[*]" are linked by their order.
+          comment: To link a word in the text to a note, suffix it with "[\*]". Notes
+            and "[\*]" are linked by their order.
           fields:
           - text
           name: Notes
           options:
             required: false
             structures: _structures.notes
+          real_fields:
+          - text
           singular_name: Note
           type: array
         offset:
@@ -145,6 +249,74 @@ _structures:
         surtitle: null
         text_markdown: null
         title: null
+  ctas:
+    values:
+    - options:
+        _inputs:
+          blank:
+            name: Is blank?
+            options:
+              required: false
+            type: switch
+          lang:
+            comment: Enter code lang (e.g. fr) if different of the current page language
+            name: Language
+            options:
+              required: false
+            type: text
+          text:
+            name: Text
+            options:
+              required: false
+            type: text
+          url:
+            name: URL
+            options:
+              required: false
+            type: text
+      value:
+        is_blank: null
+        lang: null
+        text: null
+        url: null
+  image:
+    values:
+    - options:
+        _inputs:
+          alt:
+            comment: For an image that conveys information (leave blank if decorative
+              image)
+            name: Text alternative
+            options:
+              required: false
+            type: text
+          credit:
+            name: Credit
+            options:
+              allow_resize: false
+              initial_height: 100
+              required: false
+            type: markdown
+          src:
+            comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
+            name: Image
+            options:
+              accepts_mime_types:
+              - image/gif
+              - image/jpeg
+              - image/png
+              - image/webp
+              - image/svg+xml
+              max_file_size: "700000"
+              paths:
+                static: static/images/uploads
+                uploads: /assets/images/uploads
+              required: false
+            type: image
+      value:
+        credit: null
+        image_alt: null
+        image_src: null
   notes:
     values:
     - options:
