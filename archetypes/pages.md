@@ -4,4 +4,5 @@ date:
 title:
 description:
 image:
+blocks:
 ---
