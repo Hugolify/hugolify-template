@@ -8,8 +8,8 @@ github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+y
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
 github.com/hugolify/hugolify-example-site v1.3.1 h1:6mzZwA8ydmr3cgQ4DT0b7Q73PCHzTfBCv798w2RgxXs=
 github.com/hugolify/hugolify-example-site v1.3.1/go.mod h1:e21yIPVorsgtbEDK2zovJb3Am8k2Sncu0Gu83EfnjNA=
-github.com/hugolify/hugolify-theme v1.26.20 h1:mDasCqhk725l67tBBsVHhHRb4HyIMowRVWud4jwoxBM=
-github.com/hugolify/hugolify-theme v1.26.20/go.mod h1:Rc64eJSSIWGeU6eHfSzUISNfL9UrJmy3Xs3H05Gz9rQ=
+github.com/hugolify/hugolify-theme v1.26.21 h1:A8o/Nxkq4WMYaYQT3sv0SUuigqybdI3IMLBmuYpscRo=
+github.com/hugolify/hugolify-theme v1.26.21/go.mod h1:Rc64eJSSIWGeU6eHfSzUISNfL9UrJmy3Xs3H05Gz9rQ=
 github.com/hugolify/hugolify-theme-casestudies v1.0.17 h1:v4Bd4AkCqV7ulzgUZlGRqCHaIoTk1sXhXaNtVnlhDQI=
 github.com/hugolify/hugolify-theme-casestudies v1.0.17/go.mod h1:onu4oRPTkQh3Up05X3V0urIaN0JyAx9NFijp6G3gs+M=
 github.com/hugolify/hugolify-theme-docs v0.0.0-20250606152636-0ff1daefe91d h1:tzOZcj/5X6WI7zJa0IEju4KE31z8TJrUJfMHEo2fG7k=
@@ -62,6 +62,7 @@ github.com/midzer/tobii v3.0.0+incompatible h1:cccjAG0fN1u/kdnquWm/FLYffjX53Dj4k
 github.com/midzer/tobii v3.0.0+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
 github.com/orestbida/cookieconsent v3.1.0+incompatible h1:L2uj16SEL1bICkn6pJde9uc1qAPmTcEiFZO93zZKdQI=
 github.com/orestbida/cookieconsent v3.1.0+incompatible/go.mod h1:8N46VI/40AwvzASJDpiwfbu6zylSzKSDZRUVNmVXLxw=
+github.com/twbs/bootstrap v5.3.3+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/bootstrap v5.3.8+incompatible h1:eK1fsXP7R/FWFt+sSNmmvUH9usPocf240nWVw7Dh02o=
 github.com/twbs/bootstrap v5.3.8+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/icons v1.13.1 h1:6bmNXvoeIbvjFWjfbjXg5JGbelLD1haIsMaEIzE9UZI=
