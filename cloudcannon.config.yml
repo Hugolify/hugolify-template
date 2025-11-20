@@ -15,8 +15,8 @@ collections_config:
     comment: All pages
     create:
       path: '[relative_base_path]/{title|slugify}/_index.md'
-    disable_add: "false"
-    disable_add_folder: "true"
+    disable_add: false
+    disable_add_folder: true
     icon: description
     name: Pages
     path: content
@@ -28,8 +28,8 @@ collections_config:
     comment: All products
     create:
       path: '[relative_base_path]/{year}/{slug}'
-    disable_add: "false"
-    disable_add_folder: "true"
+    disable_add: false
+    disable_add_folder: true
     name: Products
     path: content/products
     schemas:
