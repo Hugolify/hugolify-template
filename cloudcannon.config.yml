@@ -71,37 +71,6 @@ _inputs:
       max_file_size: '700000'
       required: false
     type: file
-  autocomplete:
-    name: Autocomplete
-    options:
-      required: false
-      value_key: value
-      values:
-      - name: Email
-        value: email
-      - name: Tel
-        value: tel
-      - name: Honorific prefix
-        value: honorific-prefix
-      - name: Given name
-        value: given-name
-      - name: Family name
-        value: family-name
-      - name: Name
-        value: name
-      - name: Street address
-        value: street-address
-      - name: Address level1
-        value: address-level1
-      - name: Address level2
-        value: address-level2
-      - name: Postal code
-        value: postal-code
-      - name: Country name
-        value: country-name
-      - name: Organization
-        value: organization
-    type: select
   autoplay:
     name: Autoplay
     options:
@@ -109,11 +78,6 @@ _inputs:
     type: switch
   background:
     name: With a background?
-    options:
-      required: false
-    type: switch
-  blank:
-    name: Is blank?
     options:
       required: false
     type: switch
@@ -207,6 +171,64 @@ _inputs:
     options:
       required: false
     type: textarea
+  form_autocomplete:
+    name: Autocomplete
+    options:
+      required: false
+      value_key: value
+      values:
+      - name: Email
+        value: email
+      - name: Tel
+        value: tel
+      - name: Honorific prefix
+        value: honorific-prefix
+      - name: Given name
+        value: given-name
+      - name: Family name
+        value: family-name
+      - name: Name
+        value: name
+      - name: Street address
+        value: street-address
+      - name: Address level1
+        value: address-level1
+      - name: Address level2
+        value: address-level2
+      - name: Postal code
+        value: postal-code
+      - name: Country name
+        value: country-name
+      - name: Organization
+        value: organization
+    type: select
+  form_type:
+    name: Type
+    options:
+      required: true
+      value_key: value
+      values:
+      - name: Email
+        value: email
+      - name: Checkbox
+        value: checkbox
+      - name: Radio
+        value: radio
+      - name: Select
+        value: select
+      - name: Tel
+        value: tel
+      - name: Text
+        value: text
+      - name: Textarea
+        value: textarea
+    type: select
+  form_value:
+    comment: Only for checkbox and radio fields
+    name: Value
+    options:
+      required: false
+    type: text
   full:
     name: Full width field?
     options:
@@ -234,33 +256,6 @@ _inputs:
     options:
       required: false
     type: switch
-  hiddens:
-    fields:
-    - name
-    - value
-    name: nolabel
-    options:
-      required: false
-      structures: _structures.hiddens
-    real_fields:
-    - name
-    - value
-    type: array
-  image:
-    fields:
-    - image_src
-    - image_alt
-    - is_logo
-    name: Images
-    options:
-      required: false
-      structures: _structures.image
-      subtype: object
-    real_fields:
-    - image_src
-    - image_alt
-    - is_logo
-    type: object
   image_alt:
     comment: For an image that conveys information (leave blank if decorative image)
     name: Text alternative
@@ -283,6 +278,11 @@ _inputs:
         uploads: /assets/images/uploads
       required: false
     type: image
+  is_blank:
+    name: Is blank?
+    options:
+      required: false
+    type: switch
   label:
     name: Label
     options:
@@ -446,35 +446,8 @@ _inputs:
     options:
       required: false
     type: textarea
-  type:
-    name: Type
-    options:
-      required: true
-      value_key: value
-      values:
-      - name: Email
-        value: email
-      - name: Checkbox
-        value: checkbox
-      - name: Radio
-        value: radio
-      - name: Select
-        value: select
-      - name: Tel
-        value: tel
-      - name: Text
-        value: text
-      - name: Textarea
-        value: textarea
-    type: select
   url:
     name: URL
-    options:
-      required: false
-    type: text
-  value:
-    comment: Only for checkbox and radio fields
-    name: Value
     options:
       required: false
     type: text
@@ -879,6 +852,13 @@ _structures:
         image_src: null
         is_screenshot: null
         legend: null
+  form_hiddens:
+    key: hiddens
+    values:
+    - options: {}
+      value:
+        name: null
+        value: null
   form_items:
     key: items
     values:
@@ -922,6 +902,14 @@ _structures:
         credit: null
         image_alt: null
         image_src: null
+  image_simple:
+    key: image
+    values:
+    - options: {}
+      value:
+        image_alt: null
+        image_src: null
+        is_logo: null
   images:
     values:
     - options: {}
