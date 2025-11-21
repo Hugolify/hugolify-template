@@ -53,12 +53,24 @@ _inputs:
       - name: End
         value: end
     type: select
-  alt:
-    comment: For an image that conveys information (leave blank if decorative image)
-    name: Text alternative
+  audio_mp3:
+    comment: MP3 audio file
+    name: MP3
     options:
+      accepts_mime_types:
+      - audio/mpeg
+      max_file_size: '700000'
       required: false
-    type: text
+    type: file
+  audio_ogg:
+    comment: OGG audio file
+    name: OGG
+    options:
+      accepts_mime_types:
+      - audio/ogg
+      max_file_size: '700000'
+      required: false
+    type: file
   autocomplete:
     name: Autocomplete
     options:
@@ -105,6 +117,13 @@ _inputs:
     options:
       required: false
     type: switch
+  chart_data:
+    comment: 'Documentation: https://www.chartjs.org/docs/'
+    name: Data (code)
+    options:
+      required: false
+      syntax: JSON
+    type: code
   chart_type:
     name: Chart type
     options:
@@ -125,6 +144,15 @@ _inputs:
   column:
     name: Column
     options:
+      max: 6
+      min: 1
+      required: false
+      step: 1
+    type: range
+  column_simple:
+    key: column
+    name: Column
+    options:
       max: 2
       min: 1
       required: false
@@ -135,6 +163,18 @@ _inputs:
     options:
       required: false
     type: switch
+  coordinates_lat:
+    key: lat
+    name: Latitude
+    options:
+      required: false
+    type: number
+  coordinates_lng:
+    key: lng
+    name: Longitude
+    options:
+      required: false
+    type: number
   count:
     comment: Items to display
     name: Count
@@ -221,6 +261,28 @@ _inputs:
     - image_alt
     - is_logo
     type: object
+  image_alt:
+    comment: For an image that conveys information (leave blank if decorative image)
+    name: Text alternative
+    options:
+      required: false
+    type: text
+  image_src:
+    comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
+    name: Image
+    options:
+      accepts_mime_types:
+      - image/gif
+      - image/jpeg
+      - image/png
+      - image/webp
+      - image/svg+xml
+      max_file_size: '700000'
+      paths:
+        static: static/images/uploads
+        uploads: /assets/images/uploads
+      required: false
+    type: image
   label:
     name: Label
     options:
@@ -232,17 +294,13 @@ _inputs:
     options:
       required: false
     type: text
-  lat:
-    name: Latitude
-    options:
-      required: false
-    type: number
   legend:
     name: Legend
     options:
       required: false
     type: text
   limit_simple:
+    key: limit
     name: Limit
     options:
       max: 10
@@ -250,34 +308,11 @@ _inputs:
       required: false
       step: 1
     type: range
-  lng:
-    name: Longitude
-    options:
-      required: false
-    type: number
   loop:
     name: Loop
     options:
       required: false
     type: switch
-  mp3:
-    comment: MP3 audio file
-    name: MP3
-    options:
-      accepts_mime_types:
-      - audio/mpeg
-      max_file_size: "700000"
-      required: false
-    type: file
-  mp4:
-    comment: MP4 video file
-    name: MP4
-    options:
-      accepts_mime_types:
-      - video/mp4
-      max_file_size: "5000000"
-      required: false
-    type: file
   name:
     name: Name
     options:
@@ -296,40 +331,6 @@ _inputs:
       - name: End
         value: end
     type: select
-  ogg:
-    comment: OGG audio file
-    name: OGG
-    options:
-      accepts_mime_types:
-      - audio/ogg
-      max_file_size: "700000"
-      required: false
-    type: file
-  params:
-    fields:
-    - carousel_focus
-    - carousel_autoplay
-    - carousel_arrows
-    - carousel_pagination
-    - carousel_type
-    - carousel_perpage
-    - carousel_padding
-    - carousel_gap
-    name: Params
-    options:
-      required: false
-      structures: _structures.params
-      subtype: object
-    real_fields:
-    - carousel_focus
-    - carousel_autoplay
-    - carousel_arrows
-    - carousel_pagination
-    - carousel_type
-    - carousel_perpage
-    - carousel_padding
-    - carousel_gap
-    type: object
   placeholder:
     name: Placeholder
     options:
@@ -345,7 +346,7 @@ _inputs:
       - image/png
       - image/webp
       - image/svg+xml
-      max_file_size: "700000"
+      max_file_size: '700000'
       paths:
         static: static/images/uploads
         uploads: /assets/images/uploads
@@ -363,18 +364,6 @@ _inputs:
     options:
       required: false
     type: switch
-  responsive:
-    fields:
-    - breakpoints
-    - carousel_params
-    name: Responsive
-    options:
-      required: false
-      structures: _structures.responsive
-    real_fields:
-    - breakpoints
-    - carousel_params
-    type: array
   screenshot:
     name: nolabel
     options:
@@ -402,22 +391,6 @@ _inputs:
     options:
       required: false
     type: switch
-  src:
-    comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
-    name: Image
-    options:
-      accepts_mime_types:
-      - image/gif
-      - image/jpeg
-      - image/png
-      - image/webp
-      - image/svg+xml
-      max_file_size: "700000"
-      paths:
-        static: static/images/uploads
-        uploads: /assets/images/uploads
-      required: false
-    type: image
   state:
     name: State
     options:
@@ -505,13 +478,22 @@ _inputs:
     options:
       required: false
     type: text
-  webm:
+  video_mp4:
+    comment: MP4 video file
+    name: MP4
+    options:
+      accepts_mime_types:
+      - video/mp4
+      max_file_size: '5000000'
+      required: false
+    type: file
+  video_webm:
     comment: WEBM video file
     name: WEBM
     options:
       accepts_mime_types:
       - video/webm
-      max_file_size: "5000000"
+      max_file_size: '5000000'
       required: false
     type: file
   zoom:
@@ -847,10 +829,31 @@ _structures:
       value:
         carousel_params: null
         carousel_responsive: null
+  carousel_params:
+    key: params
+    values:
+    - options: {}
+      value:
+        carousel_arrows: null
+        carousel_autoplay: null
+        carousel_focus: null
+        carousel_gap: null
+        carousel_padding: null
+        carousel_pagination: null
+        carousel_perpage: null
+        carousel_type: null
+  carousel_responsive:
+    key: responsive
+    values:
+    - options: {}
+      value:
+        breakpoints: null
+        carousel_params: null
   chart:
     values:
     - options: {}
       value:
+        chart_data: null
         chart_type: null
         title: null
   coordinates:
@@ -952,3 +955,6 @@ _structures:
         transcription: null
         video_mp4: null
         video_webm: null
+
+
+
