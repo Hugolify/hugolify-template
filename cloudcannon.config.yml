@@ -229,11 +229,6 @@ _inputs:
     options:
       required: false
     type: text
-  full:
-    name: Full width field?
-    options:
-      required: false
-    type: switch
   grid:
     name: Grid
     options:
@@ -251,11 +246,6 @@ _inputs:
       - name: Full
         value: full
     type: select
-  half:
-    name: Half size?
-    options:
-      required: false
-    type: switch
   image_alt:
     comment: For an image that conveys information (leave blank if decorative image)
     name: Text alternative
@@ -279,7 +269,32 @@ _inputs:
       required: false
     type: image
   is_blank:
+    key: blank
     name: Is blank?
+    options:
+      required: false
+    type: switch
+  is_form_full:
+    key: full
+    name: Full width field?
+    options:
+      required: false
+    type: switch
+  is_half:
+    key: half
+    name: Half size?
+    options:
+      required: false
+    type: switch
+  is_required:
+    key: required
+    name: Required
+    options:
+      required: false
+    type: switch
+  is_screenshot:
+    key: screenshot
+    name: nolabel
     options:
       required: false
     type: switch
@@ -359,16 +374,6 @@ _inputs:
       initial_height: 100
       required: false
     type: markdown
-  required:
-    name: Required
-    options:
-      required: false
-    type: switch
-  screenshot:
-    name: nolabel
-    options:
-      required: false
-    type: switch
   section:
     name: Section
     options:
