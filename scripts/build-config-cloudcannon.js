@@ -34,9 +34,37 @@ async function buildAndCopy() {
     await runCommand('yarn build');
     console.log('✅ Build completed successfully');
 
-    // Step 2: Copy the file
-    console.log('\n📋 Copying config.yml file...');
     const projectRoot = path.join(__dirname, '..');
+
+    // Step 2: Generate Archetypes
+    console.log('\n🏗️ Generating archetypes...');
+    const archetypesPath = path.join(projectRoot, 'public', 'admin', 'config', 'archetypes.json');
+    if (fs.existsSync(archetypesPath)) {
+      const archetypesData = JSON.parse(fs.readFileSync(archetypesPath, 'utf8'));
+      const archetypesDir = path.join(projectRoot, 'archetypes');
+
+      if (!fs.existsSync(archetypesDir)) {
+        fs.mkdirSync(archetypesDir, { recursive: true });
+      }
+
+      for (const [collection, fields] of Object.entries(archetypesData)) {
+
+        const archetypeFile = path.join(archetypesDir, `${collection}.md`);
+        let content = '---\n';
+        fields.forEach(field => {
+          content += `${field}:\n`;
+        });
+        content += '---\n';
+
+        fs.writeFileSync(archetypeFile, content);
+        console.log(`Created archetype: ${archetypeFile}`);
+      }
+    } else {
+      console.warn(`⚠️ Archetypes JSON not found at ${archetypesPath}`);
+    }
+
+    // Step 3: Copy the file
+    console.log('\n📋 Copying config.yml file...');
     const sourcePath = path.join(projectRoot, 'public', 'admin', 'config.yml');
     const destPath = path.join(projectRoot, 'cloudcannon.config.yml');
 
@@ -46,7 +74,7 @@ async function buildAndCopy() {
 
     fs.copyFileSync(sourcePath, destPath);
     console.log(`✅ File copied: ${sourcePath} -> ${destPath}`);
-    
+
     console.log('\n🎉 Process completed successfully!');
   } catch (error) {
     console.error('\n❌ Error:', error.message);
