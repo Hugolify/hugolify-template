@@ -27,7 +27,7 @@ collections_config:
   products:
     comment: All products
     create:
-      path: '[relative_base_path]/{year}/{title_page|slugify}.md'
+      path: '[relative_base_path]/{date|year}/{title_page|slugify}.md'
     disable_add: false
     disable_add_folder: true
     name: Products
