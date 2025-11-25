@@ -961,16 +961,14 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         icon: null
         text: null
   audio:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         audio_mp3: null
         audio_ogg: null
         autoplay: null
@@ -980,12 +978,12 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         image_simple: null
         text: null
         title: null
   blocks:
+    id_key: type
     remove_empty_inputs: true
     reorder_inputs: false
     style: modal
@@ -1000,6 +998,7 @@ _structures:
         audio: null
         background: null
         heading: null
+        type: audio
     - label: Alert
       preview:
         icon: warning_amber
@@ -1010,6 +1009,7 @@ _structures:
         background: null
         state: null
         text_markdown: null
+        type: alert
     - label: Chart
       preview:
         icon: pie_chart
@@ -1021,6 +1021,7 @@ _structures:
         chart: null
         grid: null
         heading: null
+        type: chart
     - label: Comparison
       preview:
         icon: compare
@@ -1032,6 +1033,7 @@ _structures:
         column: null
         heading: null
         items_comparison: null
+        type: comparison
     - label: Call to action
       preview:
         icon: call_to_action
@@ -1042,6 +1044,7 @@ _structures:
         background: null
         ctas: null
         heading: null
+        type: cta
     - label: Datas
       preview:
         icon: data_usage
@@ -1055,6 +1058,7 @@ _structures:
         items_datas: null
         show_color: null
         show_gauge: null
+        type: datas
     - label: Editorial
       preview:
         icon: vertical_split
@@ -1070,6 +1074,7 @@ _structures:
         surtitle: null
         text_markdown: null
         title: null
+        type: editorial
     - label: Embed
       preview:
         icon: code
@@ -1080,6 +1085,7 @@ _structures:
         background: null
         embed: null
         heading: null
+        type: embed
     - label: FAQ
       preview:
         icon: quiz
@@ -1090,6 +1096,7 @@ _structures:
         background: null
         heading: null
         items_faq: null
+        type: faq
     - label: Figure
       preview:
         icon: image
@@ -1102,6 +1109,7 @@ _structures:
         grid: null
         heading: null
         offset: null
+        type: figure
     - label: Form
       preview:
         icon: send
@@ -1116,6 +1124,7 @@ _structures:
         name: null
         offset: null
         submit: null
+        type: form
     - label: Gallery
       preview:
         icon: view_module
@@ -1127,6 +1136,7 @@ _structures:
         column: null
         gallery: null
         heading: null
+        type: gallery
     - label: Images
       preview:
         icon: collections
@@ -1137,6 +1147,7 @@ _structures:
         background: null
         heading: null
         images: null
+        type: images
     - label: Informations
       preview:
         icon: dashboard
@@ -1148,6 +1159,7 @@ _structures:
         column: null
         heading: null
         items_informations: null
+        type: informations
     - label: Instagram
       preview:
         icon: web_stories
@@ -1160,6 +1172,7 @@ _structures:
         ctas: null
         heading: null
         limit_simple: null
+        type: instagram
     - label: Latest items
       preview:
         icon: view_timeline
@@ -1173,6 +1186,7 @@ _structures:
         layout_grid_list: null
         section: null
         show_more: null
+        type: latest
     - label: Logos
       preview:
         icon: grain
@@ -1185,6 +1199,7 @@ _structures:
         heading: null
         items_logos: null
         layout_grid_carousel: null
+        type: logos
     - label: Map
       preview:
         icon: map
@@ -1197,6 +1212,7 @@ _structures:
         grid: null
         heading: null
         show_places: null
+        type: map
         zoom: null
     - label: Newsletter
       preview:
@@ -1208,6 +1224,7 @@ _structures:
         background: null
         heading: null
         newsletter_form: null
+        type: newsletter
     - label: Paragraph
       preview:
         icon: subject
@@ -1224,6 +1241,7 @@ _structures:
         surtitle: null
         text_markdown: null
         title: null
+        type: paragraph
     - label: Pushes
       preview:
         icon: panorama_wide_angle
@@ -1237,6 +1255,7 @@ _structures:
         heading: null
         items_pushes: null
         layout_grid_carousel: null
+        type: pushes
     - label: Quote
       preview:
         icon: format_quote
@@ -1247,6 +1266,7 @@ _structures:
         author: null
         background: null
         quote: null
+        type: quote
     - label: Search
       preview:
         icon: search
@@ -1256,6 +1276,7 @@ _structures:
       value:
         background: null
         heading: null
+        type: search
     - label: Selection <no value>
       preview:
         icon: checklist_rtl
@@ -1269,6 +1290,7 @@ _structures:
         relation_items: null
         section-hidden: null
         show_more: null
+        type: selected
     - label: Testimonials
       preview:
         icon: 3p
@@ -1281,6 +1303,7 @@ _structures:
         heading: null
         items_testimonials: null
         layout_grid_carousel: null
+        type: testimonials
     - label: Timeline
       preview:
         icon: timeline
@@ -1291,6 +1314,7 @@ _structures:
         background: null
         heading: null
         items_timeline: null
+        type: timeline
     - label: Title
       preview:
         icon: format_h2
@@ -1300,6 +1324,7 @@ _structures:
       value:
         background: null
         heading: null
+        type: title
     - label: Video
       preview:
         icon: videocam
@@ -1310,13 +1335,13 @@ _structures:
         background: null
         grid: null
         heading: null
+        type: video
         video: null
   carousel:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         carousel_params: null
         carousel_responsive: null
   carousel_params:
@@ -1324,8 +1349,7 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         carousel_arrows: null
         carousel_autoplay: null
         carousel_focus: null
@@ -1339,16 +1363,14 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         breakpoints: null
         carousel_params: null
   chart:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         chart_data: null
         chart_type: null
         title: null
@@ -1356,16 +1378,14 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         coordinates_lat: null
         coordinates_lng: null
   cta:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         is_blank: null
         lang: null
         text: null
@@ -1374,8 +1394,7 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         is_blank: null
         lang: null
         text: null
@@ -1385,16 +1404,14 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         image_alt: null
         image_src: null
   figure:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         credit: null
         image_alt: null
         image_src: null
@@ -1405,8 +1422,7 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         name: null
         value: null
   form_items:
@@ -1414,8 +1430,7 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         form_autocomplete: null
         form_options: null
         form_type: null
@@ -1430,16 +1445,14 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         title: null
         value: null
   gallery:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         credit: null
         image_alt: null
         image_src: null
@@ -1448,8 +1461,7 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         surtitle: null
         text_markdown: null
         title: null
@@ -1457,8 +1469,7 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         align: null
         ctas: null
         surtitle: null
@@ -1468,8 +1479,7 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         credit: null
         image_alt: null
         image_src: null
@@ -1478,8 +1488,7 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         image_alt: null
         image_src: null
         is_logo: null
@@ -1487,8 +1496,7 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         credit: null
         image_alt: null
         image_src: null
@@ -1499,23 +1507,20 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         form_hiddens: null
         url: null
   notes:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         text: null
   offer:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         discount: null
         hide_price: null
         price: null
@@ -1524,8 +1529,7 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - options: {}
-      value:
+    - value:
         autoplay: null
         controls: null
         legend: null
