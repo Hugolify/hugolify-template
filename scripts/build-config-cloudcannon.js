@@ -51,8 +51,12 @@ async function buildAndCopy() {
 
         const archetypeFile = path.join(archetypesDir, `${collection}.md`);
         let content = '---\n';
-        fields.forEach(field => {
-          content += `${field}:\n`;
+        fields.forEach(item => {
+          if (item.default !== "") {
+            content += `${item.field}: ${item.default}\n`;
+          } else {
+            content += `${item.field}:\n`;
+          }
         });
         content += '---\n';
 
