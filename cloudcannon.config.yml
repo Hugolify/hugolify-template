@@ -709,12 +709,16 @@ _inputs:
 
 _structures:
   arguments:
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
         icon: null
         text: null
   audio:
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
@@ -724,6 +728,8 @@ _structures:
         loop: null
         transcription: null
   author:
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
@@ -731,6 +737,8 @@ _structures:
         text: null
         title: null
   blocks:
+    remove_empty_inputs: true
+    reorder_inputs: false
     style: modal
     values:
     - label: Audio
@@ -755,7 +763,7 @@ _structures:
         text_markdown: null
     - label: Chart
       preview:
-        icon: chart
+        icon: pie_chart
         text:
         - key: chart
         - Chart
@@ -787,7 +795,7 @@ _structures:
         heading: null
     - label: Datas
       preview:
-        icon: data
+        icon: data_usage
         text:
         - key: datas
         - Datas
@@ -847,7 +855,7 @@ _structures:
         offset: null
     - label: Form
       preview:
-        icon: form
+        icon: send
         text:
         - key: form
         - Form
@@ -1001,7 +1009,7 @@ _structures:
         heading: null
     - label: Selection <no value>
       preview:
-        icon: check_box
+        icon: checklist_rtl
         text:
         - key: selected
         - Selection <no value>
@@ -1055,6 +1063,8 @@ _structures:
         heading: null
         video: null
   carousel:
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
@@ -1062,6 +1072,8 @@ _structures:
         carousel_responsive: null
   carousel_params:
     key: params
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
@@ -1075,12 +1087,16 @@ _structures:
         carousel_type: null
   carousel_responsive:
     key: responsive
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
         breakpoints: null
         carousel_params: null
   chart:
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
@@ -1088,12 +1104,16 @@ _structures:
         chart_type: null
         title: null
   coordinates:
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
         coordinates_lat: null
         coordinates_lng: null
   cta:
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
@@ -1102,6 +1122,8 @@ _structures:
         text: null
         url: null
   ctas:
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
@@ -1111,12 +1133,16 @@ _structures:
         url: null
   featured_image:
     key: image
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
         image_alt: null
         image_src: null
   figure:
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
@@ -1127,6 +1153,8 @@ _structures:
         legend: null
   form_hiddens:
     key: hiddens
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
@@ -1134,6 +1162,8 @@ _structures:
         value: null
   form_items:
     key: items
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
@@ -1148,12 +1178,16 @@ _structures:
         placeholder: null
   form_options:
     key: items
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
         title: null
         value: null
   gallery:
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
@@ -1162,6 +1196,8 @@ _structures:
         image_src: null
         legend: null
   heading:
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
@@ -1169,6 +1205,8 @@ _structures:
         text_markdown: null
         title: null
   hero:
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
@@ -1178,6 +1216,8 @@ _structures:
         text_markdown: null
         title: null
   image:
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
@@ -1186,6 +1226,8 @@ _structures:
         image_src: null
   image_simple:
     key: image
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
@@ -1193,6 +1235,8 @@ _structures:
         image_src: null
         is_logo: null
   images:
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
@@ -1203,17 +1247,23 @@ _structures:
         legend: null
   newsletter_form:
     key: form
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
         form_hiddens: null
         url: null
   notes:
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
         text: null
   offer:
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
@@ -1222,6 +1272,8 @@ _structures:
         price: null
         text: null
   video:
+    remove_empty_inputs: true
+    reorder_inputs: false
     values:
     - options: {}
       value:
