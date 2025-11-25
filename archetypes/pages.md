@@ -1,8 +1,11 @@
 ---
+id:
+isPage: true
 draft:
-date:
 title:
 description:
 image:
+hero:
 blocks:
+slug:
 ---

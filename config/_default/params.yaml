@@ -5,33 +5,16 @@ admin:
   media:
     public_folder: static/images/uploads
 
+  # Group
+  collections_group:
+    - heading: Products
+      collections:
+        - products
+        - products_tags
+
+  # Collections
   collections:
     config:
       enable: false
     indexes:
-      enable: false
-    pages:
-      enable: true
-      fields:
-        - draft
-        - date
-        - title_page
-        - description
-        - image
-        - body
-    products:
-      enable: true
-      fields:
-        - id
-        - is_not_index
-        - draft
-        - date
-        - title_page
-        - description
-        - offer
-        - featured_image
-        - images
-        - body
-        - slug
-    products_tags:
       enable: false
