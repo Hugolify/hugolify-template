@@ -14,7 +14,7 @@ collections_config:
   pages:
     comment: All pages
     create:
-      path: '[relative_base_path]/[slug]/_index.md'
+      path: '[relative_base_path]/{title_page|slugify}/_index.md'
     disable_add: false
     disable_add_folder: true
     icon: description
@@ -39,7 +39,7 @@ collections_config:
   products_tags:
     comment: All products tags
     create:
-      path: '[relative_base_path]/[slug]/_index.md'
+      path: '[relative_base_path]/{title_page|slugify}/_index.md'
     disable_add: false
     disable_add_folder: true
     name: Tags
