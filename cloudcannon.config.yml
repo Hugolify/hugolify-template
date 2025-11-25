@@ -36,6 +36,26 @@ collections_config:
       default:
         path: archetypes/products.md
     singular_name: Product
+  products_tags:
+    comment: All products tags
+    create:
+      path: '[relative_base_path]/{title|slugify}/_index.md'
+    disable_add: false
+    disable_add_folder: true
+    name: Tags
+    path: content/products_tags
+    schemas:
+      default:
+        path: archetypes/products_tags.md
+    singular_name: Tag
+
+
+
+collections_group:
+- collections:
+  - products
+  - products_tags
+  heading: Products
 
 
 
@@ -55,6 +75,7 @@ _inputs:
     type: select
   audio_mp3:
     comment: MP3 audio file
+    key: mp3
     name: MP3
     options:
       accepts_mime_types:
@@ -64,6 +85,7 @@ _inputs:
     type: file
   audio_ogg:
     comment: OGG audio file
+    key: ogg
     name: OGG
     options:
       accepts_mime_types:
@@ -81,14 +103,27 @@ _inputs:
     options:
       required: false
     type: switch
+  badge:
+    comment: Show a badge
+    name: Badge
+    options:
+      required: false
+    type: text
+  body:
+    name: Body
+    options:
+      required: false
+    type: markdown
   chart_data:
     comment: 'Documentation: https://www.chartjs.org/docs/'
+    key: data
     name: Data (code)
     options:
       required: false
       syntax: JSON
     type: code
   chart_type:
+    key: type
     name: Chart type
     options:
       required: false
@@ -105,6 +140,12 @@ _inputs:
       - name: Radar
         value: radar
     type: select
+  color:
+    name: Color
+    options:
+      format: hex
+      required: false
+    type: color
   column:
     name: Column
     options:
@@ -155,6 +196,18 @@ _inputs:
       initial_height: 100
       required: false
     type: markdown
+  date:
+    instance_value: NOW
+    name: Date
+    options:
+      required: true
+    type: datetime
+  description:
+    comment: Displayed in tabs, search results, and in SMS/Messages/Social networks preview
+    name: Description
+    options:
+      required: false
+    type: textarea
   direction:
     name: Direction
     options:
@@ -166,12 +219,26 @@ _inputs:
       - name: Rtl
         value: rtl
     type: select
+  discount:
+    comment: 'Amount of the reduction, e.g: 30%'
+    name: Discount
+    options:
+      pattern: ^[0-9]*(%?)$
+      pattern_message: Value only (without currency)
+      required: false
+    type: text
+  draft:
+    name: Draft
+    options:
+      required: false
+    type: switch
   embed:
     name: Embed
     options:
       required: false
     type: textarea
   form_autocomplete:
+    key: autocomplete
     name: Autocomplete
     options:
       required: false
@@ -203,6 +270,7 @@ _inputs:
         value: organization
     type: select
   form_type:
+    key: type
     name: Type
     options:
       required: true
@@ -225,6 +293,7 @@ _inputs:
     type: select
   form_value:
     comment: Only for checkbox and radio fields
+    key: value
     name: Value
     options:
       required: false
@@ -246,14 +315,27 @@ _inputs:
       - name: Full
         value: full
     type: select
+  hide_price:
+    name: Hide price
+    options:
+      required: false
+    type: switch
+  icon:
+    comment: Icon name from https://icons.getbootstrap.com/
+    name: Icon
+    options:
+      required: false
+    type: text
   image_alt:
     comment: For an image that conveys information (leave blank if decorative image)
+    key: alt
     name: Text alternative
     options:
       required: false
     type: text
   image_src:
     comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
+    key: src
     name: Image
     options:
       accepts_mime_types:
@@ -274,6 +356,19 @@ _inputs:
     options:
       required: false
     type: switch
+  is_card:
+    comment: Adds a background behind the text
+    key: card
+    name: Is card?
+    options:
+      required: false
+    type: switch
+  is_darken:
+    key: darken
+    name: Darken?
+    options:
+      required: false
+    type: switch
   is_form_full:
     key: full
     name: Full width field?
@@ -283,6 +378,31 @@ _inputs:
   is_half:
     key: half
     name: Half size?
+    options:
+      required: false
+    type: switch
+  is_highlighted:
+    name: Is highlighted?
+    options:
+      required: false
+    type: switch
+  is_not_index:
+    hidden: true
+    key: isIndex
+    name: is not index
+    options:
+      required: false
+    type: switch
+  is_open:
+    key: open
+    name: Open?
+    options:
+      required: false
+    type: switch
+  is_page:
+    hidden: true
+    key: isPage
+    name: is page
     options:
       required: false
     type: switch
@@ -298,6 +418,11 @@ _inputs:
     options:
       required: false
     type: switch
+  items:
+    label: nolabel
+    options:
+      values: collections.selected
+    type: multiselect
   label:
     name: Label
     options:
@@ -309,11 +434,40 @@ _inputs:
     options:
       required: false
     type: text
+  layout_grid_carousel:
+    key: layout
+    name: Layout
+    options:
+      required: false
+      value_key: value
+      values:
+      - name: Grid
+        value: grid
+      - name: Carousel
+        value: carousel
+    type: select
+  layout_grid_list:
+    key: layout
+    name: Layout
+    options:
+      required: false
+      value_key: value
+      values:
+      - name: Grid
+        value: grid
+      - name: List
+        value: list
+    type: select
   legend:
     name: Legend
     options:
       required: false
     type: text
+  limit:
+    name: Limit
+    options:
+      required: false
+    type: number
   limit_simple:
     key: limit
     name: Limit
@@ -367,6 +521,22 @@ _inputs:
         uploads: /assets/images/uploads
       required: false
     type: image
+  prefix:
+    name: Prefix
+    options:
+      required: false
+    type: text
+  price:
+    comment: 'e.g: 300000 (for 300 000 €)'
+    name: Price
+    options:
+      required: false
+    type: number
+  products_tags:
+    label: Tags
+    options:
+      values: collections.products_tags
+    type: multiselect
   quote:
     name: Quote
     options:
@@ -384,7 +554,16 @@ _inputs:
         value: pages
       - name: Products
         value: products
+      - name: Products tags
+        value: products_tags
     type: select
+  section-hidden:
+    hidden: true
+    key: section
+    name: section
+    options:
+      required: false
+    type: text
   show_more:
     name: Show more?
     options:
@@ -396,6 +575,14 @@ _inputs:
     options:
       required: false
     type: switch
+  slug:
+    comment: Leave empty to automate with the title. **Be careful to SEO impact.**
+    name: Slug
+    options:
+      pattern: ^(|[a-z0-9-]+)$
+      pattern_message: Contain only lowercase letters, numbers, and hyphens, with no spaces, accents, or special characters
+      required: false
+    type: text
   state:
     name: State
     options:
@@ -424,6 +611,17 @@ _inputs:
     options:
       required: false
     type: text
+  suffix:
+    comment: 'e.g: %'
+    name: Suffix
+    options:
+      required: false
+    type: text
+  summary:
+    name: Summary
+    options:
+      required: false
+    type: text
   surtitle:
     name: Surtitle
     options:
@@ -435,6 +633,7 @@ _inputs:
       required: false
     type: text
   text_markdown:
+    key: text
     name: Text
     options:
       allow_resize: false
@@ -446,6 +645,13 @@ _inputs:
     options:
       required: false
     type: text
+  title_page:
+    comment: Displayed in tabs, search results, and in SMS/Messages/Social networks preview
+    key: title
+    name: Page title
+    options:
+      required: true
+    type: text
   transcription:
     name: Transcription
     options:
@@ -456,8 +662,15 @@ _inputs:
     options:
       required: false
     type: text
+  value_number:
+    key: value
+    name: Value
+    options:
+      required: false
+    type: number
   video_mp4:
     comment: MP4 video file
+    key: mp4
     name: MP4
     options:
       accepts_mime_types:
@@ -467,6 +680,7 @@ _inputs:
     type: file
   video_webm:
     comment: WEBM video file
+    key: webm
     name: WEBM
     options:
       accepts_mime_types:
@@ -486,6 +700,12 @@ _inputs:
 
 
 _structures:
+  arguments:
+    values:
+    - options: {}
+      value:
+        icon: null
+        text: null
   audio:
     values:
     - options: {}
@@ -507,6 +727,7 @@ _structures:
     values:
     - label: Audio
       preview:
+        icon: audiotrack
         text:
         - key: audio
         - Audio
@@ -516,6 +737,7 @@ _structures:
         heading: null
     - label: Alert
       preview:
+        icon: warning_amber
         text:
         - key: alert
         - Alert
@@ -525,6 +747,7 @@ _structures:
         text_markdown: null
     - label: Chart
       preview:
+        icon: chart
         text:
         - key: chart
         - Chart
@@ -535,6 +758,7 @@ _structures:
         heading: null
     - label: Comparison
       preview:
+        icon: compare
         text:
         - key: comparison
         - Comparison
@@ -542,9 +766,10 @@ _structures:
         background: null
         column: null
         heading: null
-        items: null
+        items_comparison: null
     - label: Call to action
       preview:
+        icon: call_to_action
         text:
         - key: cta
         - Call to action
@@ -554,6 +779,7 @@ _structures:
         heading: null
     - label: Datas
       preview:
+        icon: data
         text:
         - key: datas
         - Datas
@@ -561,7 +787,7 @@ _structures:
         background: null
         column: null
         heading: null
-        items: null
+        items_datas: null
         show_color: null
         show_gauge: null
     - label: Editorial
@@ -581,6 +807,7 @@ _structures:
         title: null
     - label: Embed
       preview:
+        icon: code
         text:
         - key: embed
         - Embed
@@ -590,15 +817,17 @@ _structures:
         heading: null
     - label: FAQ
       preview:
+        icon: quiz
         text:
         - key: faq
         - FAQ
       value:
         background: null
         heading: null
-        items: null
+        items_faq: null
     - label: Figure
       preview:
+        icon: image
         text:
         - key: figure
         - Figure
@@ -610,6 +839,7 @@ _structures:
         offset: null
     - label: Form
       preview:
+        icon: form
         text:
         - key: form
         - Form
@@ -623,6 +853,7 @@ _structures:
         submit: null
     - label: Gallery
       preview:
+        icon: view_module
         text:
         - key: gallery
         - Gallery
@@ -633,6 +864,7 @@ _structures:
         heading: null
     - label: Images
       preview:
+        icon: collections
         text:
         - key: images
         - Images
@@ -642,6 +874,7 @@ _structures:
         images: null
     - label: Informations
       preview:
+        icon: dashboard
         text:
         - key: informations
         - Informations
@@ -649,9 +882,10 @@ _structures:
         background: null
         column: null
         heading: null
-        items: null
+        items_informations: null
     - label: Instagram
       preview:
+        icon: web_stories
         text:
         - key: instagram
         - Instagram
@@ -663,6 +897,7 @@ _structures:
         limit_simple: null
     - label: Latest items
       preview:
+        icon: view_timeline
         text:
         - key: latest
         - Latest items
@@ -670,11 +905,12 @@ _structures:
         background: null
         count: null
         heading: null
-        layout: null
+        layout_grid_list: null
         section: null
         show_more: null
     - label: Logos
       preview:
+        icon: grain
         text:
         - key: logos
         - Logos
@@ -682,10 +918,11 @@ _structures:
         background: null
         carousel: null
         heading: null
-        items: null
-        layout: null
+        items_logos: null
+        layout_grid_carousel: null
     - label: Map
       preview:
+        icon: map
         text:
         - key: map
         - Map
@@ -698,6 +935,7 @@ _structures:
         zoom: null
     - label: Newsletter
       preview:
+        icon: attach_email
         text:
         - key: newsletter
         - Newsletter
@@ -723,6 +961,7 @@ _structures:
         title: null
     - label: Pushes
       preview:
+        icon: panorama_wide_angle
         text:
         - key: pushes
         - Pushes
@@ -731,10 +970,11 @@ _structures:
         carousel: null
         column_simple: null
         heading: null
-        items: null
-        layout: null
+        items_pushes: null
+        layout_grid_carousel: null
     - label: Quote
       preview:
+        icon: format_quote
         text:
         - key: quote
         - Quote
@@ -744,6 +984,7 @@ _structures:
         quote: null
     - label: Search
       preview:
+        icon: search
         text:
         - key: search
         - Search
@@ -752,18 +993,20 @@ _structures:
         heading: null
     - label: Selection <no value>
       preview:
+        icon: check_box
         text:
         - key: selected
         - Selection <no value>
       value:
         background: null
         heading: null
-        layout: null
-        relation: null
+        layout_grid_list: null
+        relation_items: null
         section-hidden: null
         show_more: null
     - label: Testimonials
       preview:
+        icon: 3p
         text:
         - key: testimonials
         - Testimonials
@@ -771,17 +1014,18 @@ _structures:
         background: null
         carousel: null
         heading: null
-        items: null
-        layout: null
+        items_testimonials: null
+        layout_grid_carousel: null
     - label: Timeline
       preview:
+        icon: timeline
         text:
         - key: timeline
         - Timeline
       value:
         background: null
         heading: null
-        items: null
+        items_timeline: null
     - label: Title
       preview:
         icon: format_h2
@@ -793,6 +1037,7 @@ _structures:
         heading: null
     - label: Video
       preview:
+        icon: videocam
         text:
         - key: video
         - Video
@@ -840,6 +1085,14 @@ _structures:
       value:
         coordinates_lat: null
         coordinates_lng: null
+  cta:
+    values:
+    - options: {}
+      value:
+        is_blank: null
+        lang: null
+        text: null
+        url: null
   ctas:
     values:
     - options: {}
@@ -848,6 +1101,13 @@ _structures:
         lang: null
         text: null
         url: null
+  featured_image:
+    key: image
+    values:
+    - options: {}
+      value:
+        image_alt: null
+        image_src: null
   figure:
     values:
     - options: {}
@@ -900,6 +1160,15 @@ _structures:
         surtitle: null
         text_markdown: null
         title: null
+  hero:
+    values:
+    - options: {}
+      value:
+        align: null
+        ctas: null
+        surtitle: null
+        text_markdown: null
+        title: null
   image:
     values:
     - options: {}
@@ -935,6 +1204,14 @@ _structures:
     values:
     - options: {}
       value:
+        text: null
+  offer:
+    values:
+    - options: {}
+      value:
+        discount: null
+        hide_price: null
+        price: null
         text: null
   video:
     values:
