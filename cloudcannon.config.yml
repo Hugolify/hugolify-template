@@ -81,6 +81,20 @@ _inputs:
       - name: End
         value: end
     type: select
+  arguments:
+    name: Arguments
+    options:
+      required: false
+      structures: _structures.arguments
+    singular_name: Argument
+    type: array
+  audio:
+    name: Audios
+    options:
+      required: false
+      structures: _structures.audio
+      subtype: object
+    type: object
   audio_mp3:
     comment: MP3 audio file
     key: mp3
@@ -101,6 +115,13 @@ _inputs:
       max_file_size: '700000'
       required: false
     type: file
+  author:
+    name: Author
+    options:
+      required: false
+      structures: _structures.author
+      subtype: object
+    type: object
   autoplay:
     name: Autoplay
     options:
@@ -117,11 +138,36 @@ _inputs:
     options:
       required: false
     type: text
-  body:
-    name: Body
+  carousel:
+    comment: Only for carousel display
+    name: Carousel configuration
     options:
       required: false
-    type: markdown
+      structures: _structures.carousel
+      subtype: object
+    type: object
+  carousel_params:
+    key: params
+    name: Params
+    options:
+      required: false
+      structures: _structures.carousel_params
+      subtype: object
+    type: object
+  carousel_responsive:
+    key: responsive
+    name: Responsive
+    options:
+      required: false
+      structures: _structures.carousel_responsive
+    type: array
+  chart:
+    name: Chart
+    options:
+      required: false
+      structures: _structures.chart
+      subtype: object
+    type: object
   chart_data:
     comment: 'Documentation: https://www.chartjs.org/docs/'
     key: data
@@ -176,6 +222,14 @@ _inputs:
     options:
       required: false
     type: switch
+  coordinates:
+    comment: 'Easily find contact details: https://www.latlong.net/convert-address-to-lat-long.html'
+    name: Geographic coordinates
+    options:
+      required: false
+      structures: _structures.coordinates
+      subtype: object
+    type: object
   coordinates_lat:
     key: lat
     name: Latitude
@@ -204,6 +258,21 @@ _inputs:
       initial_height: 100
       required: false
     type: markdown
+  cta:
+    name: CTA
+    options:
+      required: false
+      structures: _structures.cta
+      subtype: object
+    type: object
+  ctas:
+    name: CTAs
+    options:
+      max_items: 2
+      required: false
+      structures: _structures.ctas
+    singular_name: CTA
+    type: array
   date:
     instance_value: NOW
     name: Date
@@ -245,6 +314,22 @@ _inputs:
     options:
       required: false
     type: textarea
+  featured_image:
+    comment: Displayed in search results, and in SMS/Messages/Social networks preview
+    key: image
+    name: Image principale
+    options:
+      required: false
+      structures: _structures.featured_image
+      subtype: object
+    type: object
+  figure:
+    name: Figure
+    options:
+      required: false
+      structures: _structures.figure
+      subtype: object
+    type: object
   form_autocomplete:
     key: autocomplete
     name: Autocomplete
@@ -277,6 +362,28 @@ _inputs:
       - name: Organization
         value: organization
     type: select
+  form_hiddens:
+    key: hiddens
+    name: nolabel
+    options:
+      required: false
+      structures: _structures.form_hiddens
+    type: array
+  form_items:
+    key: items
+    name: Items
+    options:
+      required: false
+      structures: _structures.form_items
+    singular_name: Item
+    type: array
+  form_options:
+    key: items
+    name: nolabel
+    options:
+      required: false
+      structures: _structures.form_options
+    type: array
   form_type:
     key: type
     name: Type
@@ -306,6 +413,12 @@ _inputs:
     options:
       required: false
     type: text
+  gallery:
+    name: Gallery
+    options:
+      required: false
+      structures: _structures.gallery
+    type: array
   grid:
     name: Grid
     options:
@@ -323,6 +436,20 @@ _inputs:
       - name: Full
         value: full
     type: select
+  heading:
+    name: Heading
+    options:
+      required: false
+      structures: _structures.heading
+      subtype: object
+    type: object
+  hero:
+    name: Hero
+    options:
+      required: false
+      structures: _structures.hero
+      subtype: object
+    type: object
   hide_price:
     name: Hide price
     options:
@@ -334,6 +461,13 @@ _inputs:
     options:
       required: false
     type: text
+  image:
+    name: Images
+    options:
+      required: false
+      structures: _structures.image
+      subtype: object
+    type: object
   image_alt:
     comment: For an image that conveys information (leave blank if decorative image)
     key: alt
@@ -341,6 +475,14 @@ _inputs:
     options:
       required: false
     type: text
+  image_simple:
+    key: image
+    name: Images
+    options:
+      required: false
+      structures: _structures.image_simple
+      subtype: object
+    type: object
   image_src:
     comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
     key: src
@@ -358,6 +500,13 @@ _inputs:
         uploads: /assets/images/uploads
       required: false
     type: image
+  images:
+    name: Images
+    options:
+      required: false
+      structures: _structures.images
+    singular_name: Image
+    type: array
   is_blank:
     key: blank
     name: Is blank?
@@ -431,6 +580,70 @@ _inputs:
     options:
       values: collections.selected
     type: multiselect
+  items_comparison:
+    key: items
+    name: Items
+    options:
+      required: false
+      structures: _structures.items_comparison
+    singular_name: Item
+    type: array
+  items_datas:
+    key: items
+    name: Items
+    options:
+      required: false
+      structures: _structures.items_datas
+    singular_name: Item
+    type: array
+  items_faq:
+    key: items
+    name: Items
+    options:
+      required: false
+      structures: _structures.items_faq
+    singular_name: Item
+    type: array
+  items_informations:
+    key: items
+    name: Items
+    options:
+      required: false
+      structures: _structures.items_informations
+    singular_name: Item
+    type: array
+  items_logos:
+    key: items
+    name: Items
+    options:
+      required: false
+      structures: _structures.items_logos
+    singular_name: Item
+    type: array
+  items_pushes:
+    key: items
+    name: Items
+    options:
+      required: false
+      structures: _structures.items_pushes
+    singular_name: Item
+    type: array
+  items_testimonials:
+    key: items
+    name: Items
+    options:
+      required: false
+      structures: _structures.items_testimonials
+    singular_name: Item
+    type: array
+  items_timeline:
+    key: items
+    name: Items
+    options:
+      required: false
+      structures: _structures.items_timeline
+    singular_name: Item
+    type: array
   label:
     name: Label
     options:
@@ -495,6 +708,29 @@ _inputs:
     options:
       required: false
     type: text
+  newsletter_form:
+    key: form
+    name: Form
+    options:
+      required: false
+      structures: _structures.newsletter_form
+      subtype: object
+    type: object
+  notes:
+    comment: To link a word in the text to a note, suffix it with . Notes and  are linked by their order.
+    name: Notes
+    options:
+      required: false
+      structures: _structures.notes
+    singular_name: Note
+    type: array
+  offer:
+    name: Offer
+    options:
+      required: false
+      structures: _structures.offer
+      subtype: object
+    type: object
   offset:
     name: Offset
     options:
@@ -676,6 +912,13 @@ _inputs:
     options:
       required: false
     type: number
+  video:
+    name: Video
+    options:
+      required: false
+      structures: _structures.video
+      subtype: object
+    type: object
   video_mp4:
     comment: MP4 video file
     key: mp4
