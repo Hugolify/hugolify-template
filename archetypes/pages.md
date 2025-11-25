@@ -1,10 +1,9 @@
 ---
-id:
-isPage: true
+is_page:
 draft:
-title:
+title_page:
 description:
-image:
+featured_image:
 hero:
 blocks:
 slug:

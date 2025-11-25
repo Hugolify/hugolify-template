@@ -1,13 +1,12 @@
 ---
-id:
-isIndex: false
+is_not_index:
 draft:
 date:
-title:
+title_page:
 description:
 offer:
 products_tags:
-image:
+featured_image:
 images:
 slug:
 ---

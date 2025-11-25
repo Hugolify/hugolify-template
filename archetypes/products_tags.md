@@ -1,8 +1,7 @@
 ---
-id:
-isIndex: false
+is_not_index:
 draft:
-title:
+title_page:
 description:
 slug:
 ---
