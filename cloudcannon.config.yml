@@ -12,6 +12,9 @@ _snippets_imports:
 
 collections_config:
   pages:
+    _enabled_editors:
+    - data
+    - content
     comment: All pages
     create:
       path: '[relative_base_path]/{title_page|slugify}/_index.md'
@@ -25,6 +28,9 @@ collections_config:
         path: archetypes/pages.md
     singular_name: Page
   products:
+    _enabled_editors:
+    - data
+    - content
     comment: All products
     create:
       path: '[relative_base_path]/{date|year}/{title_page|slugify}.md'
@@ -37,6 +43,8 @@ collections_config:
         path: archetypes/products.md
     singular_name: Product
   products_tags:
+    _enabled_editors:
+    - data
     comment: All products tags
     create:
       path: '[relative_base_path]/{title_page|slugify}/_index.md'
