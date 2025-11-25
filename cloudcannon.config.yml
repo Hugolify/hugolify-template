@@ -26,6 +26,8 @@ collections_config:
     schemas:
       default:
         path: archetypes/pages.md
+        remove_empty_inputs: true
+        reorder_inputs: false
     singular_name: Page
   products:
     _enabled_editors:
@@ -41,6 +43,8 @@ collections_config:
     schemas:
       default:
         path: archetypes/products.md
+        remove_empty_inputs: true
+        reorder_inputs: false
     singular_name: Product
   products_tags:
     _enabled_editors:
@@ -55,6 +59,8 @@ collections_config:
     schemas:
       default:
         path: archetypes/products_tags.md
+        remove_empty_inputs: true
+        reorder_inputs: false
     singular_name: Tag
 
 
