@@ -1,0 +1,10 @@
+---
+is_not_index:
+draft:
+date:
+title_page:
+description:
+services_categories:
+featured_image:
+slug:
+---

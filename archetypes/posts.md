@@ -1,0 +1,11 @@
+---
+is_not_index:
+draft:
+date:
+title_page:
+description:
+featured_image:
+categories:
+tags:
+slug:
+---

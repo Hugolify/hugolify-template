@@ -1,0 +1,14 @@
+---
+is_not_index:
+draft:
+date:
+title_page:
+description:
+projects_types:
+projects_tags:
+featured_image:
+hero:
+datas:
+images:
+slug:
+---

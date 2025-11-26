@@ -1,0 +1,12 @@
+---
+is_not_index:
+draft:
+date:
+title_page:
+description:
+press:
+persons:
+featured_image:
+images:
+slug:
+---

@@ -29,6 +29,74 @@ collections_config:
         remove_empty_inputs: true
         reorder_inputs: false
     singular_name: Page
+  persons:
+    _enabled_editors:
+    - data
+    - content
+    comment: All persons
+    create:
+      path: '[relative_base_path]/{title_page|slugify}.md'
+    disable_add: false
+    disable_add_folder: true
+    name: Persons
+    path: content/persons
+    schemas:
+      default:
+        path: archetypes/persons.md
+        remove_empty_inputs: true
+        reorder_inputs: false
+    singular_name: Person
+  posts:
+    _enabled_editors:
+    - data
+    - content
+    comment: All news
+    create:
+      path: '[relative_base_path]/{date|year}/{date|month}/{title_page|slugify}.md'
+    disable_add: false
+    disable_add_folder: true
+    name: News
+    path: content/posts
+    schemas:
+      default:
+        path: archetypes/posts.md
+        remove_empty_inputs: true
+        reorder_inputs: false
+    singular_name: New
+  posts_categories:
+    _enabled_editors:
+    - data
+    - content
+    comment: All news categories
+    create:
+      path: '[relative_base_path]/{title_page|slugify}/_index.md'
+    disable_add: false
+    disable_add_folder: true
+    name: Categories
+    path: content/categories
+    schemas:
+      default:
+        path: archetypes/posts_categories.md
+        remove_empty_inputs: true
+        reorder_inputs: false
+    singular_name: Category
+  posts_tags:
+    _enabled_editors:
+    - data
+    - content
+    comment: All news tags
+    create:
+      path: '[relative_base_path]/{title_page|slugify}/_index.md'
+    disable_add: false
+    disable_add_folder: true
+    name: Tags
+    path: content/tags
+    schemas:
+      default:
+        path: archetypes/posts_tags.md
+        remove_empty_inputs: true
+        reorder_inputs: false
+    singular_name: Tag
   products:
     _enabled_editors:
     - data
@@ -62,6 +130,104 @@ collections_config:
         remove_empty_inputs: true
         reorder_inputs: false
     singular_name: Tag
+  projects:
+    _enabled_editors:
+    - data
+    comment: All projects
+    create:
+      path: '[relative_base_path]/{date|year}/{title_page|slugify}.md'
+    disable_add: false
+    disable_add_folder: true
+    name: Projects
+    path: content/projects
+    schemas:
+      default:
+        path: archetypes/projects.md
+        remove_empty_inputs: true
+        reorder_inputs: false
+    singular_name: Project
+  projects_tags:
+    _enabled_editors:
+    - data
+    comment: All projects tags
+    create:
+      path: '[relative_base_path]/{title_page|slugify}/_index.md'
+    disable_add: false
+    disable_add_folder: true
+    name: Tags
+    path: content/projects_tags
+    schemas:
+      default:
+        path: archetypes/projects_tags.md
+        remove_empty_inputs: true
+        reorder_inputs: false
+    singular_name: Tag
+  projects_types:
+    _enabled_editors:
+    - data
+    comment: All projects types
+    create:
+      path: '[relative_base_path]/{title_page|slugify}/_index.md'
+    disable_add: false
+    disable_add_folder: true
+    name: Types
+    path: content/projects_types
+    schemas:
+      default:
+        path: archetypes/projects_types.md
+        remove_empty_inputs: true
+        reorder_inputs: false
+    singular_name: Type
+  publications:
+    _enabled_editors:
+    - data
+    - content
+    comment: All publications
+    create:
+      path: '[relative_base_path]/{date|year}/{date|month}/{title_page|slugify}.md'
+    disable_add: false
+    disable_add_folder: true
+    name: Publications
+    path: content/publications
+    schemas:
+      default:
+        path: archetypes/publications.md
+        remove_empty_inputs: true
+        reorder_inputs: false
+    singular_name: Publication
+  services:
+    _enabled_editors:
+    - data
+    - content
+    comment: All services
+    create:
+      path: '[relative_base_path]/{title_page|slugify}.md'
+    disable_add: false
+    disable_add_folder: true
+    name: Services
+    path: content/services
+    schemas:
+      default:
+        path: archetypes/services.md
+        remove_empty_inputs: true
+        reorder_inputs: false
+    singular_name: Service
+  services_categories:
+    _enabled_editors:
+    - data
+    comment: All services categories
+    create:
+      path: '[relative_base_path]/{title_page|slugify}/_index.md'
+    disable_add: false
+    disable_add_folder: true
+    name: Categories
+    path: content/services_categories
+    schemas:
+      default:
+        path: archetypes/services_categories.md
+        remove_empty_inputs: true
+        reorder_inputs: false
+    singular_name: Category
 
 
 
@@ -167,6 +333,11 @@ _inputs:
       required: false
       structures: _structures.carousel_responsive
     type: array
+  categories:
+    label: Categories
+    options:
+      values: collections.categories
+    type: multiselect
   chart:
     name: Chart
     options:
@@ -223,6 +394,13 @@ _inputs:
       required: false
       step: 1
     type: range
+  contact:
+    name: Contact
+    options:
+      required: false
+      structures: _structures.contact
+      subtype: object
+    type: object
   controls:
     name: Controls
     options:
@@ -279,6 +457,13 @@ _inputs:
       structures: _structures.ctas
     singular_name: CTA
     type: array
+  datas:
+    name: Datas
+    options:
+      required: false
+      structures: _structures.datas
+    singular_name: Data
+    type: array
   date:
     instance_value: NOW
     name: Date
@@ -315,6 +500,11 @@ _inputs:
     options:
       required: false
     type: switch
+  email:
+    name: Email
+    options:
+      required: false
+    type: text
   embed:
     name: Embed
     options:
@@ -750,6 +940,12 @@ _inputs:
       - name: End
         value: end
     type: select
+  phone:
+    comment: 'International format, e.g: +33 1 23 45 67 89'
+    name: Telephone Number
+    options:
+      required: false
+    type: text
   placeholder:
     name: Placeholder
     options:
@@ -776,6 +972,13 @@ _inputs:
     options:
       required: false
     type: text
+  press:
+    name: Press
+    options:
+      required: false
+      structures: _structures.press
+      subtype: object
+    type: object
   price:
     comment: 'e.g: 300000 (for 300 000 €)'
     name: Price
@@ -786,6 +989,21 @@ _inputs:
     label: Tags
     options:
       values: collections.products_tags
+    type: multiselect
+  projects_tags:
+    label: Tags
+    options:
+      values: collections.projects_tags
+    type: multiselect
+  projects_types:
+    label: Types
+    options:
+      values: collections.projects_types
+    type: multiselect
+  publications_persons:
+    label: Persons
+    options:
+      values: collections.persons
     type: multiselect
   quote:
     name: Quote
@@ -802,10 +1020,30 @@ _inputs:
       values:
       - name: Pages
         value: pages
+      - name: Persons
+        value: persons
+      - name: Posts
+        value: posts
+      - name: Categories
+        value: categories
+      - name: Tags
+        value: tags
       - name: Products
         value: products
       - name: Products tags
         value: products_tags
+      - name: Projects
+        value: projects
+      - name: Projects tags
+        value: projects_tags
+      - name: Projects types
+        value: projects_types
+      - name: Publications
+        value: publications
+      - name: Services
+        value: services
+      - name: Services categories
+        value: services_categories
     type: select
   section-hidden:
     hidden: true
@@ -814,6 +1052,11 @@ _inputs:
     options:
       required: false
     type: text
+  services_categories:
+    label: Categories
+    options:
+      values: collections.services_categories
+    type: multiselect
   show_more:
     name: Show more?
     options:
@@ -833,6 +1076,13 @@ _inputs:
       pattern_message: Contain only lowercase letters, numbers, and hyphens, with no spaces, accents, or special characters
       required: false
     type: text
+  socials:
+    name: Socials
+    options:
+      required: false
+      structures: _structures.socials
+    singular_name: Social
+    type: array
   state:
     name: State
     options:
@@ -877,6 +1127,11 @@ _inputs:
     options:
       required: false
     type: text
+  tags:
+    label: Tags
+    options:
+      values: collections.tags
+    type: multiselect
   text:
     name: Text
     options:
@@ -1374,6 +1629,14 @@ _structures:
         chart_data: null
         chart_type: null
         title: null
+  contact:
+    remove_empty_inputs: true
+    reorder_inputs: false
+    values:
+    - value:
+        email: null
+        phone: null
+        socials: null
   coordinates:
     remove_empty_inputs: true
     reorder_inputs: false
@@ -1399,6 +1662,13 @@ _structures:
         lang: null
         text: null
         url: null
+  datas:
+    remove_empty_inputs: true
+    reorder_inputs: false
+    values:
+    - value:
+        text: null
+        title: null
   featured_image:
     key: image
     remove_empty_inputs: true
@@ -1525,6 +1795,20 @@ _structures:
         hide_price: null
         price: null
         text: null
+  press:
+    remove_empty_inputs: true
+    reorder_inputs: false
+    values:
+    - value:
+        title: null
+        url: null
+  socials:
+    remove_empty_inputs: true
+    reorder_inputs: false
+    values:
+    - value:
+        socials_plateform: null
+        url: null
   video:
     remove_empty_inputs: true
     reorder_inputs: false

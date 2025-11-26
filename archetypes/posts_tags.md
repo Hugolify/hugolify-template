@@ -1,0 +1,10 @@
+---
+is_not_index:
+draft:
+title_page:
+description:
+featured_image:
+hero:
+blocks:
+slug:
+---
