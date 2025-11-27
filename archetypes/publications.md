@@ -5,6 +5,7 @@ date:
 title:
 description:
 press:
+publications_categories:
 expertises:
 persons:
 image:

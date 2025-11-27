@@ -2,6 +2,8 @@ imports:
   # Content
   - path: github.com/hugolify/hugolify-theme-casestudies
   - path: github.com/hugolify/hugolify-theme-expertises
+  - path: github.com/hugolify/hugolify-theme-persons-expertises
+  - path: github.com/hugolify/hugolify-theme-persons-places
   - path: github.com/hugolify/hugolify-theme-persons
   - path: github.com/hugolify/hugolify-theme-places
   - path: github.com/hugolify/hugolify-theme-products-tags
@@ -13,6 +15,8 @@ imports:
   - path: github.com/hugolify/hugolify-theme-posts-categories
   - path: github.com/hugolify/hugolify-theme-posts-tags
   - path: github.com/hugolify/hugolify-theme-posts
+  - path: github.com/hugolify/hugolify-theme-publications-categories
+  - path: github.com/hugolify/hugolify-theme-publications-persons
   - path: github.com/hugolify/hugolify-theme-publications
   - path: github.com/hugolify/hugolify-theme-services-categories
   - path: github.com/hugolify/hugolify-theme-services

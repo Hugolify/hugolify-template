@@ -258,6 +258,23 @@ collections_config:
         remove_empty_inputs: true
         reorder_inputs: false
     singular_name: Publication
+  publications_categories:
+    _enabled_editors:
+    - data
+    comment: All publications categories
+    create:
+      path: '[relative_base_path]/{title_page|slugify}/_index.md'
+    disable_add: false
+    disable_add_folder: true
+    icon: bookmarks
+    name: Categories
+    path: content/publications_categories
+    schemas:
+      default:
+        path: archetypes/publications_categories.md
+        remove_empty_inputs: true
+        reorder_inputs: false
+    singular_name: Category
   services:
     _enabled_editors:
     - data
@@ -320,6 +337,167 @@ collection_groups:
 
 
 
+
+_inputs:
+  categories:
+    label: Categories
+    options:
+      values: collections.categories
+    type: multiselect
+  contact:
+    label: Contact
+    options:
+      required: false
+      structures: _structures.contact
+      subtype: object
+    type: object
+  datas:
+    label: Datas
+    options:
+      required: false
+      structures: _structures.datas
+    singular_name: Data
+    type: array
+  date:
+    instance_value: NOW
+    label: Date
+    options:
+      required: true
+    type: datetime
+  description:
+    comment: Displayed in tabs, search results, and in SMS/Messages/Social networks preview
+    label: Description
+    options:
+      required: false
+    type: textarea
+  draft:
+    label: Draft
+    options:
+      required: false
+    type: switch
+  hero:
+    label: Hero
+    options:
+      required: false
+      structures: _structures.hero
+      subtype: object
+    type: object
+  icon:
+    comment: Icon name from https://icons.getbootstrap.com/
+    label: Icon
+    options:
+      required: false
+    type: text
+  image:
+    comment: Displayed in search results, and in SMS/Messages/Social networks preview
+    label: Image principale
+    options:
+      required: false
+      structures: _structures.image
+      subtype: object
+    type: object
+  images:
+    label: Images
+    options:
+      required: false
+      structures: _structures.images
+    singular_name: Image
+    type: array
+  isIndex:
+    hidden: true
+    label: is not index
+    options:
+      required: false
+    type: switch
+  isPage:
+    hidden: true
+    label: is page
+    options:
+      required: false
+    type: switch
+  offer:
+    label: Offer
+    options:
+      required: false
+      structures: _structures.offer
+      subtype: object
+    type: object
+  persons_expertises:
+    label: Expertises
+    options:
+      values: collections.expertises
+    type: multiselect
+  persons_places:
+    label: Places
+    options:
+      values: collections.places
+    type: multiselect
+  posts_expertises:
+    label: Expertises
+    options:
+      values: collections.expertises
+    type: multiselect
+  press:
+    label: Press
+    options:
+      required: false
+      structures: _structures.press
+      subtype: object
+    type: object
+  products_tags:
+    label: Tags
+    options:
+      values: collections.products_tags
+    type: multiselect
+  projects_tags:
+    label: Tags
+    options:
+      values: collections.projects_tags
+    type: multiselect
+  projects_types:
+    label: Types
+    options:
+      values: collections.projects_types
+    type: multiselect
+  publications_categories:
+    label: Categories
+    options:
+      values: collections.publications_categories
+    type: select
+  publications_expertises:
+    label: Expertises
+    options:
+      values: collections.expertises
+    type: multiselect
+  publications_persons:
+    label: Persons
+    options:
+      values: collections.persons
+    type: multiselect
+  services_categories:
+    label: Categories
+    options:
+      values: collections.services_categories
+    type: multiselect
+  slug:
+    comment: Leave empty to automate with the title. **Be careful to SEO impact.**
+    label: Slug
+    options:
+      pattern: ^(|[a-z0-9-]+)$
+      pattern_message: Contain only lowercase letters, numbers, and hyphens, with no spaces, accents, or special characters
+      required: false
+    type: text
+  tags:
+    label: Tags
+    options:
+      values: collections.tags
+    type: multiselect
+  title:
+    comment: Displayed in tabs, search results, and in SMS/Messages/Social networks preview
+    label: Page title
+    options:
+      required: true
+    type: text
 
 
 
@@ -1153,6 +1331,8 @@ _structures:
               value: projects_types
             - name: Publications
               value: publications
+            - name: Publications categories
+              value: publications_categories
             - name: Services
               value: services
             - name: Services categories

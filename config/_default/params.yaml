@@ -5,8 +5,8 @@ admin:
   media:
     public_folder: static/images/uploads
 
-  # Group
-  collections_group:
+  # Groups
+  collection_groups:
     - heading: Products
       collections:
         - products
