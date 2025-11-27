@@ -7,6 +7,13 @@ admin:
 
   # Groups
   collection_groups:
+    - heading: Golbal
+      collections:
+        - casestudies
+        - expertises
+        - pages
+        - persons
+        - places
     - heading: Products
       collections:
         - products
@@ -24,6 +31,7 @@ admin:
     - heading: Publications
       collections:
         - publications
+        - publications_categories
     - heading: Services
       collections:
         - services

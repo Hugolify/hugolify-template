@@ -314,6 +314,13 @@ collections_config:
 
 collection_groups:
 - collections:
+  - casestudies
+  - expertises
+  - pages
+  - persons
+  - places
+  heading: Golbal
+- collections:
   - products
   - products_tags
   heading: Products
@@ -329,6 +336,7 @@ collection_groups:
   heading: Projects
 - collections:
   - publications
+  - publications_categories
   heading: Publications
 - collections:
   - services
