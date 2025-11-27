@@ -16,7 +16,7 @@ collections_config:
     - data
     comment: All cases studies
     create:
-      path: '[relative_base_path]/{date|year}/{title_page|slugify}.md'
+      path: '[relative_base_path]/{date|year}/{title|slugify}.md'
     disable_add: false
     disable_add_folder: true
     icon: web_stories
@@ -34,7 +34,7 @@ collections_config:
     - content
     comment: All expertises
     create:
-      path: '[relative_base_path]/{title_page|slugify}.md'
+      path: '[relative_base_path]/{title|slugify}.md'
     disable_add: false
     disable_add_folder: true
     icon: school
@@ -70,7 +70,7 @@ collections_config:
     - content
     comment: All persons
     create:
-      path: '[relative_base_path]/{title_page|slugify}.md'
+      path: '[relative_base_path]/{title|slugify}.md'
     disable_add: false
     disable_add_folder: true
     icon: person
@@ -88,7 +88,7 @@ collections_config:
     - content
     comment: All places
     create:
-      path: '[relative_base_path]/{title_page|slugify}.md'
+      path: '[relative_base_path]/{title|slugify}.md'
     disable_add: false
     disable_add_folder: true
     icon: location_on
@@ -106,7 +106,7 @@ collections_config:
     - content
     comment: All news
     create:
-      path: '[relative_base_path]/{date|year}/{date|month}/{title_page|slugify}.md'
+      path: '[relative_base_path]/{date|year}/{date|month}/{title|slugify}.md'
     disable_add: false
     disable_add_folder: true
     icon: feed
@@ -160,7 +160,7 @@ collections_config:
     - content
     comment: All products
     create:
-      path: '[relative_base_path]/{date|year}/{title_page|slugify}.md'
+      path: '[relative_base_path]/{date|year}/{title|slugify}.md'
     disable_add: false
     disable_add_folder: true
     icon: box
@@ -194,7 +194,7 @@ collections_config:
     - data
     comment: All projects
     create:
-      path: '[relative_base_path]/{date|year}/{title_page|slugify}.md'
+      path: '[relative_base_path]/{date|year}/{title|slugify}.md'
     disable_add: false
     disable_add_folder: true
     icon: space_dashboard
@@ -246,7 +246,7 @@ collections_config:
     - content
     comment: All publications
     create:
-      path: '[relative_base_path]/{date|year}/{date|month}/{title_page|slugify}.md'
+      path: '[relative_base_path]/{date|year}/{date|month}/{title|slugify}.md'
     disable_add: false
     disable_add_folder: true
     icon: newspaper
@@ -281,7 +281,7 @@ collections_config:
     - content
     comment: All services
     create:
-      path: '[relative_base_path]/{title_page|slugify}.md'
+      path: '[relative_base_path]/{title|slugify}.md'
     disable_add: false
     disable_add_folder: true
     icon: business_center
