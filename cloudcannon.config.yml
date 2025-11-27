@@ -295,7 +295,7 @@ collections_config:
 
 
 
-collections_group:
+collection_groups:
 - collections:
   - products
   - products_tags
