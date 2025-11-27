@@ -284,6 +284,7 @@ collections_config:
       path: '[relative_base_path]/{title_page|slugify}.md'
     disable_add: false
     disable_add_folder: true
+    icon: business_center
     name: Services
     path: content/services
     schemas:
