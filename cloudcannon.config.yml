@@ -1995,7 +1995,7 @@ _structures:
           label: Email
           options:
             required: false
-          type: text
+          type: email
         phone:
           comment: 'International format, e.g: +33 1 23 45 67 89'
           label: Telephone Number
@@ -2056,7 +2056,7 @@ _structures:
           label: URL
           options:
             required: false
-          type: text
+          type: url
       value:
         blank: null
         lang: null
@@ -2087,7 +2087,7 @@ _structures:
           label: URL
           options:
             required: false
-          type: text
+          type: url
       value:
         blank: null
         lang: null
@@ -2575,7 +2575,7 @@ _structures:
           label: URL
           options:
             required: false
-          type: text
+          type: url
       value:
         src: null
         title: null
@@ -2756,7 +2756,7 @@ _structures:
           label: URL
           options:
             required: false
-          type: text
+          type: url
       value:
         title: null
         url: null
@@ -2800,7 +2800,7 @@ _structures:
           label: URL
           options:
             required: false
-          type: text
+          type: url
       value:
         plateform: null
         url: null
