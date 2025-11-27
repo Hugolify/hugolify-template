@@ -73,6 +73,7 @@ collections_config:
       path: '[relative_base_path]/{title_page|slugify}.md'
     disable_add: false
     disable_add_folder: true
+    icon: person
     name: Persons
     path: content/persons
     schemas:
@@ -90,6 +91,7 @@ collections_config:
       path: '[relative_base_path]/{title_page|slugify}.md'
     disable_add: false
     disable_add_folder: true
+    icon: location_on
     name: Places
     path: content/places
     schemas:
@@ -107,6 +109,7 @@ collections_config:
       path: '[relative_base_path]/{date|year}/{date|month}/{title_page|slugify}.md'
     disable_add: false
     disable_add_folder: true
+    icon: feed
     name: News
     path: content/posts
     schemas:
@@ -124,6 +127,7 @@ collections_config:
       path: '[relative_base_path]/{title_page|slugify}/_index.md'
     disable_add: false
     disable_add_folder: true
+    icon: bookmarks
     name: Categories
     path: content/categories
     schemas:
@@ -141,6 +145,7 @@ collections_config:
       path: '[relative_base_path]/{title_page|slugify}/_index.md'
     disable_add: false
     disable_add_folder: true
+    icon: bookmarks
     name: Tags
     path: content/tags
     schemas:
@@ -158,6 +163,7 @@ collections_config:
       path: '[relative_base_path]/{date|year}/{title_page|slugify}.md'
     disable_add: false
     disable_add_folder: true
+    icon: box
     name: Products
     path: content/products
     schemas:
@@ -174,6 +180,7 @@ collections_config:
       path: '[relative_base_path]/{title_page|slugify}/_index.md'
     disable_add: false
     disable_add_folder: true
+    icon: bookmarks
     name: Tags
     path: content/products_tags
     schemas:
@@ -190,6 +197,7 @@ collections_config:
       path: '[relative_base_path]/{date|year}/{title_page|slugify}.md'
     disable_add: false
     disable_add_folder: true
+    icon: space_dashboard
     name: Projects
     path: content/projects
     schemas:
@@ -206,6 +214,7 @@ collections_config:
       path: '[relative_base_path]/{title_page|slugify}/_index.md'
     disable_add: false
     disable_add_folder: true
+    icon: bookmarks
     name: Tags
     path: content/projects_tags
     schemas:
@@ -222,6 +231,7 @@ collections_config:
       path: '[relative_base_path]/{title_page|slugify}/_index.md'
     disable_add: false
     disable_add_folder: true
+    icon: bookmarks
     name: Types
     path: content/projects_types
     schemas:
@@ -239,6 +249,7 @@ collections_config:
       path: '[relative_base_path]/{date|year}/{date|month}/{title_page|slugify}.md'
     disable_add: false
     disable_add_folder: true
+    icon: newspaper
     name: Publications
     path: content/publications
     schemas:
@@ -272,6 +283,7 @@ collections_config:
       path: '[relative_base_path]/{title_page|slugify}/_index.md'
     disable_add: false
     disable_add_folder: true
+    icon: bookmarks
     name: Categories
     path: content/services_categories
     schemas:
@@ -1096,7 +1108,7 @@ _structures:
             structures: _structures.heading
             subtype: object
           type: object
-        layout:
+        layout_grid_list:
           label: Layout
           options:
             required: false
@@ -1192,7 +1204,7 @@ _structures:
             structures: _structures.items_logos
           singular_name: Item
           type: array
-        layout:
+        layout_grid_carousel:
           label: Layout
           options:
             required: false
@@ -1446,7 +1458,7 @@ _structures:
             structures: _structures.items_pushes
           singular_name: Item
           type: array
-        layout:
+        layout_grid_carousel:
           label: Layout
           options:
             required: false
@@ -1541,7 +1553,7 @@ _structures:
           options:
             values: collections.selected
           type: multiselect
-        layout:
+        layout_grid_list:
           label: Layout
           options:
             required: false
@@ -1602,7 +1614,7 @@ _structures:
             structures: _structures.items_testimonials
           singular_name: Item
           type: array
-        layout:
+        layout_grid_carousel:
           label: Layout
           options:
             required: false
