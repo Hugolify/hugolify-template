@@ -1,14 +1,10 @@
 ---
 isIndex: false
 draft:
-date:
 title:
 description:
-projects_types:
-projects_tags:
+address:
+contact:
 image:
-hero:
-datas:
-images:
 slug:
 ---

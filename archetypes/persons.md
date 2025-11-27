@@ -1,9 +1,11 @@
 ---
-is_not_index:
+isIndex: false
 draft:
-title_page:
+title:
 description:
-featured_image:
+image:
+expertises:
+places:
 contact:
 slug:
 ---

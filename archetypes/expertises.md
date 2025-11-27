@@ -1,10 +1,8 @@
 ---
-isPage: true
+isIndex: false
 draft:
 title:
 description:
-image:
-hero:
-blocks:
+icon:
 slug:
 ---

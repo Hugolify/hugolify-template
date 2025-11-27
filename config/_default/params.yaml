@@ -11,6 +11,23 @@ admin:
       collections:
         - products
         - products_tags
+    - heading: Posts
+      collections:
+        - posts
+        - posts_categories
+        - posts_tags
+    - heading: Projects
+      collections:
+        - projects
+        - projects_tags
+        - projects_types
+    - heading: Publications
+      collections:
+        - publications
+    - heading: Services
+      collections:
+        - services
+        - services_categories
 
   # Collections
   collections:

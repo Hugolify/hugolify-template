@@ -11,6 +11,41 @@ _snippets_imports:
 
 
 collections_config:
+  casestudies:
+    _enabled_editors:
+    - data
+    comment: All cases studies
+    create:
+      path: '[relative_base_path]/{date|year}/{title_page|slugify}.md'
+    disable_add: false
+    disable_add_folder: true
+    icon: web_stories
+    name: Cases studies
+    path: content/casestudies
+    schemas:
+      default:
+        path: archetypes/casestudies.md
+        remove_empty_inputs: true
+        reorder_inputs: false
+    singular_name: Case study
+  expertises:
+    _enabled_editors:
+    - data
+    - content
+    comment: All expertises
+    create:
+      path: '[relative_base_path]/{title_page|slugify}.md'
+    disable_add: false
+    disable_add_folder: true
+    icon: school
+    name: Expertises
+    path: content/expertises
+    schemas:
+      default:
+        path: archetypes/expertises.md
+        remove_empty_inputs: true
+        reorder_inputs: false
+    singular_name: Expertise
   pages:
     _enabled_editors:
     - data
@@ -46,6 +81,23 @@ collections_config:
         remove_empty_inputs: true
         reorder_inputs: false
     singular_name: Person
+  places:
+    _enabled_editors:
+    - data
+    - content
+    comment: All places
+    create:
+      path: '[relative_base_path]/{title_page|slugify}.md'
+    disable_add: false
+    disable_add_folder: true
+    name: Places
+    path: content/places
+    schemas:
+      default:
+        path: archetypes/places.md
+        remove_empty_inputs: true
+        reorder_inputs: false
+    singular_name: Place
   posts:
     _enabled_editors:
     - data
@@ -236,978 +288,26 @@ collections_group:
   - products
   - products_tags
   heading: Products
+- collections:
+  - posts
+  - posts_categories
+  - posts_tags
+  heading: Posts
+- collections:
+  - projects
+  - projects_tags
+  - projects_types
+  heading: Projects
+- collections:
+  - publications
+  heading: Publications
+- collections:
+  - services
+  - services_categories
+  heading: Services
 
 
 
-_inputs:
-  align:
-    name: Alignment
-    options:
-      required: false
-      value_key: value
-      values:
-      - name: Start
-        value: start
-      - name: Center
-        value: center
-      - name: End
-        value: end
-    type: select
-  arguments:
-    name: Arguments
-    options:
-      required: false
-      structures: _structures.arguments
-    singular_name: Argument
-    type: array
-  audio:
-    name: Audios
-    options:
-      required: false
-      structures: _structures.audio
-      subtype: object
-    type: object
-  audio_mp3:
-    comment: MP3 audio file
-    key: mp3
-    name: MP3
-    options:
-      accepts_mime_types:
-      - audio/mpeg
-      max_file_size: '700000'
-      required: false
-    type: file
-  audio_ogg:
-    comment: OGG audio file
-    key: ogg
-    name: OGG
-    options:
-      accepts_mime_types:
-      - audio/ogg
-      max_file_size: '700000'
-      required: false
-    type: file
-  author:
-    name: Author
-    options:
-      required: false
-      structures: _structures.author
-      subtype: object
-    type: object
-  autoplay:
-    name: Autoplay
-    options:
-      required: false
-    type: switch
-  background:
-    name: With a background?
-    options:
-      required: false
-    type: switch
-  badge:
-    comment: Show a badge
-    name: Badge
-    options:
-      required: false
-    type: text
-  carousel:
-    comment: Only for carousel display
-    name: Carousel configuration
-    options:
-      required: false
-      structures: _structures.carousel
-      subtype: object
-    type: object
-  carousel_params:
-    key: params
-    name: Params
-    options:
-      required: false
-      structures: _structures.carousel_params
-      subtype: object
-    type: object
-  carousel_responsive:
-    key: responsive
-    name: Responsive
-    options:
-      required: false
-      structures: _structures.carousel_responsive
-    type: array
-  categories:
-    label: Categories
-    options:
-      values: collections.categories
-    type: multiselect
-  chart:
-    name: Chart
-    options:
-      required: false
-      structures: _structures.chart
-      subtype: object
-    type: object
-  chart_data:
-    comment: 'Documentation: https://www.chartjs.org/docs/'
-    key: data
-    name: Data (code)
-    options:
-      required: false
-      syntax: JSON
-    type: code
-  chart_type:
-    key: type
-    name: Chart type
-    options:
-      required: false
-      value_key: value
-      values:
-      - name: Bar
-        value: bar
-      - name: Pie
-        value: pie
-      - name: Line
-        value: line
-      - name: Polar area
-        value: polarArea
-      - name: Radar
-        value: radar
-    type: select
-  color:
-    name: Color
-    options:
-      format: hex
-      required: false
-    type: color
-  column:
-    name: Column
-    options:
-      max: 6
-      min: 1
-      required: false
-      step: 1
-    type: range
-  column_simple:
-    key: column
-    name: Column
-    options:
-      max: 2
-      min: 1
-      required: false
-      step: 1
-    type: range
-  contact:
-    name: Contact
-    options:
-      required: false
-      structures: _structures.contact
-      subtype: object
-    type: object
-  controls:
-    name: Controls
-    options:
-      required: false
-    type: switch
-  coordinates:
-    comment: 'Easily find contact details: https://www.latlong.net/convert-address-to-lat-long.html'
-    name: Geographic coordinates
-    options:
-      required: false
-      structures: _structures.coordinates
-      subtype: object
-    type: object
-  coordinates_lat:
-    key: lat
-    name: Latitude
-    options:
-      required: false
-    type: number
-  coordinates_lng:
-    key: lng
-    name: Longitude
-    options:
-      required: false
-    type: number
-  count:
-    comment: Items to display
-    name: Count
-    options:
-      max: 10
-      min: 1
-      required: false
-      step: 1
-    type: range
-  credit:
-    name: Credit
-    options:
-      allow_resize: false
-      initial_height: 100
-      required: false
-    type: markdown
-  cta:
-    name: CTA
-    options:
-      required: false
-      structures: _structures.cta
-      subtype: object
-    type: object
-  ctas:
-    name: CTAs
-    options:
-      max_items: 2
-      required: false
-      structures: _structures.ctas
-    singular_name: CTA
-    type: array
-  datas:
-    name: Datas
-    options:
-      required: false
-      structures: _structures.datas
-    singular_name: Data
-    type: array
-  date:
-    instance_value: NOW
-    name: Date
-    options:
-      required: true
-    type: datetime
-  description:
-    comment: Displayed in tabs, search results, and in SMS/Messages/Social networks preview
-    name: Description
-    options:
-      required: false
-    type: textarea
-  direction:
-    name: Direction
-    options:
-      required: false
-      value_key: value
-      values:
-      - name: Ltr
-        value: ltr
-      - name: Rtl
-        value: rtl
-    type: select
-  discount:
-    comment: 'Amount of the reduction, e.g: 30%'
-    name: Discount
-    options:
-      pattern: ^[0-9]*(%?)$
-      pattern_message: Value only (without currency)
-      required: false
-    type: text
-  draft:
-    name: Draft
-    options:
-      required: false
-    type: switch
-  email:
-    name: Email
-    options:
-      required: false
-    type: text
-  embed:
-    name: Embed
-    options:
-      required: false
-    type: textarea
-  featured_image:
-    comment: Displayed in search results, and in SMS/Messages/Social networks preview
-    key: image
-    name: Image principale
-    options:
-      required: false
-      structures: _structures.featured_image
-      subtype: object
-    type: object
-  figure:
-    name: Figure
-    options:
-      required: false
-      structures: _structures.figure
-      subtype: object
-    type: object
-  form_autocomplete:
-    key: autocomplete
-    name: Autocomplete
-    options:
-      required: false
-      value_key: value
-      values:
-      - name: Email
-        value: email
-      - name: Tel
-        value: tel
-      - name: Honorific prefix
-        value: honorific-prefix
-      - name: Given name
-        value: given-name
-      - name: Family name
-        value: family-name
-      - name: Name
-        value: name
-      - name: Street address
-        value: street-address
-      - name: Address level1
-        value: address-level1
-      - name: Address level2
-        value: address-level2
-      - name: Postal code
-        value: postal-code
-      - name: Country name
-        value: country-name
-      - name: Organization
-        value: organization
-    type: select
-  form_hiddens:
-    key: hiddens
-    name: nolabel
-    options:
-      required: false
-      structures: _structures.form_hiddens
-    type: array
-  form_items:
-    key: items
-    name: Items
-    options:
-      required: false
-      structures: _structures.form_items
-    singular_name: Item
-    type: array
-  form_options:
-    key: items
-    name: nolabel
-    options:
-      required: false
-      structures: _structures.form_options
-    type: array
-  form_type:
-    key: type
-    name: Type
-    options:
-      required: true
-      value_key: value
-      values:
-      - name: Email
-        value: email
-      - name: Checkbox
-        value: checkbox
-      - name: Radio
-        value: radio
-      - name: Select
-        value: select
-      - name: Tel
-        value: tel
-      - name: Text
-        value: text
-      - name: Textarea
-        value: textarea
-    type: select
-  form_value:
-    comment: Only for checkbox and radio fields
-    key: value
-    name: Value
-    options:
-      required: false
-    type: text
-  gallery:
-    name: Gallery
-    options:
-      required: false
-      structures: _structures.gallery
-    type: array
-  grid:
-    name: Grid
-    options:
-      required: true
-      value_key: value
-      values:
-      - name: Small
-        value: small
-      - name: Medium
-        value: medium
-      - name: Large
-        value: large
-      - name: Container
-        value: container
-      - name: Full
-        value: full
-    type: select
-  heading:
-    name: Heading
-    options:
-      required: false
-      structures: _structures.heading
-      subtype: object
-    type: object
-  hero:
-    name: Hero
-    options:
-      required: false
-      structures: _structures.hero
-      subtype: object
-    type: object
-  hide_price:
-    name: Hide price
-    options:
-      required: false
-    type: switch
-  icon:
-    comment: Icon name from https://icons.getbootstrap.com/
-    name: Icon
-    options:
-      required: false
-    type: text
-  image:
-    name: Images
-    options:
-      required: false
-      structures: _structures.image
-      subtype: object
-    type: object
-  image_alt:
-    comment: For an image that conveys information (leave blank if decorative image)
-    key: alt
-    name: Text alternative
-    options:
-      required: false
-    type: text
-  image_simple:
-    key: image
-    name: Images
-    options:
-      required: false
-      structures: _structures.image_simple
-      subtype: object
-    type: object
-  image_src:
-    comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
-    key: src
-    name: Image
-    options:
-      accepts_mime_types:
-      - image/gif
-      - image/jpeg
-      - image/png
-      - image/webp
-      - image/svg+xml
-      max_file_size: '700000'
-      paths:
-        static: static/images/uploads
-        uploads: /assets/images/uploads
-      required: false
-    type: image
-  images:
-    name: Images
-    options:
-      required: false
-      structures: _structures.images
-    singular_name: Image
-    type: array
-  is_blank:
-    key: blank
-    name: Is blank?
-    options:
-      required: false
-    type: switch
-  is_card:
-    comment: Adds a background behind the text
-    key: card
-    name: Is card?
-    options:
-      required: false
-    type: switch
-  is_darken:
-    key: darken
-    name: Darken?
-    options:
-      required: false
-    type: switch
-  is_form_full:
-    key: full
-    name: Full width field?
-    options:
-      required: false
-    type: switch
-  is_half:
-    key: half
-    name: Half size?
-    options:
-      required: false
-    type: switch
-  is_highlighted:
-    name: Is highlighted?
-    options:
-      required: false
-    type: switch
-  is_not_index:
-    hidden: true
-    key: isIndex
-    name: is not index
-    options:
-      required: false
-    type: switch
-  is_open:
-    key: open
-    name: Open?
-    options:
-      required: false
-    type: switch
-  is_page:
-    hidden: true
-    key: isPage
-    name: is page
-    options:
-      required: false
-    type: switch
-  is_required:
-    key: required
-    name: Required
-    options:
-      required: false
-    type: switch
-  is_screenshot:
-    key: screenshot
-    name: nolabel
-    options:
-      required: false
-    type: switch
-  items:
-    label: nolabel
-    options:
-      values: collections.selected
-    type: multiselect
-  items_comparison:
-    key: items
-    name: Items
-    options:
-      required: false
-      structures: _structures.items_comparison
-    singular_name: Item
-    type: array
-  items_datas:
-    key: items
-    name: Items
-    options:
-      required: false
-      structures: _structures.items_datas
-    singular_name: Item
-    type: array
-  items_faq:
-    key: items
-    name: Items
-    options:
-      required: false
-      structures: _structures.items_faq
-    singular_name: Item
-    type: array
-  items_informations:
-    key: items
-    name: Items
-    options:
-      required: false
-      structures: _structures.items_informations
-    singular_name: Item
-    type: array
-  items_logos:
-    key: items
-    name: Items
-    options:
-      required: false
-      structures: _structures.items_logos
-    singular_name: Item
-    type: array
-  items_pushes:
-    key: items
-    name: Items
-    options:
-      required: false
-      structures: _structures.items_pushes
-    singular_name: Item
-    type: array
-  items_testimonials:
-    key: items
-    name: Items
-    options:
-      required: false
-      structures: _structures.items_testimonials
-    singular_name: Item
-    type: array
-  items_timeline:
-    key: items
-    name: Items
-    options:
-      required: false
-      structures: _structures.items_timeline
-    singular_name: Item
-    type: array
-  label:
-    name: Label
-    options:
-      required: false
-    type: text
-  lang:
-    comment: Enter code lang (e.g. fr) if different of the current page language
-    name: Language
-    options:
-      required: false
-    type: text
-  layout_grid_carousel:
-    key: layout
-    name: Layout
-    options:
-      required: false
-      value_key: value
-      values:
-      - name: Grid
-        value: grid
-      - name: Carousel
-        value: carousel
-    type: select
-  layout_grid_list:
-    key: layout
-    name: Layout
-    options:
-      required: false
-      value_key: value
-      values:
-      - name: Grid
-        value: grid
-      - name: List
-        value: list
-    type: select
-  legend:
-    name: Legend
-    options:
-      required: false
-    type: text
-  limit:
-    name: Limit
-    options:
-      required: false
-    type: number
-  limit_simple:
-    key: limit
-    name: Limit
-    options:
-      max: 10
-      min: 1
-      required: false
-      step: 1
-    type: range
-  loop:
-    name: Loop
-    options:
-      required: false
-    type: switch
-  name:
-    name: Name
-    options:
-      required: false
-    type: text
-  newsletter_form:
-    key: form
-    name: Form
-    options:
-      required: false
-      structures: _structures.newsletter_form
-      subtype: object
-    type: object
-  notes:
-    comment: To link a word in the text to a note, suffix it with . Notes and  are linked by their order.
-    name: Notes
-    options:
-      required: false
-      structures: _structures.notes
-    singular_name: Note
-    type: array
-  offer:
-    name: Offer
-    options:
-      required: false
-      structures: _structures.offer
-      subtype: object
-    type: object
-  offset:
-    name: Offset
-    options:
-      required: false
-      value_key: value
-      values:
-      - name: Start
-        value: start
-      - name: Center
-        value: center
-      - name: End
-        value: end
-    type: select
-  phone:
-    comment: 'International format, e.g: +33 1 23 45 67 89'
-    name: Telephone Number
-    options:
-      required: false
-    type: text
-  placeholder:
-    name: Placeholder
-    options:
-      required: false
-    type: text
-  poster:
-    comment: Placehoster image for video
-    name: Poster
-    options:
-      accepts_mime_types:
-      - image/gif
-      - image/jpeg
-      - image/png
-      - image/webp
-      - image/svg+xml
-      max_file_size: '700000'
-      paths:
-        static: static/images/uploads
-        uploads: /assets/images/uploads
-      required: false
-    type: image
-  prefix:
-    name: Prefix
-    options:
-      required: false
-    type: text
-  press:
-    name: Press
-    options:
-      required: false
-      structures: _structures.press
-      subtype: object
-    type: object
-  price:
-    comment: 'e.g: 300000 (for 300 000 €)'
-    name: Price
-    options:
-      required: false
-    type: number
-  products_tags:
-    label: Tags
-    options:
-      values: collections.products_tags
-    type: multiselect
-  projects_tags:
-    label: Tags
-    options:
-      values: collections.projects_tags
-    type: multiselect
-  projects_types:
-    label: Types
-    options:
-      values: collections.projects_types
-    type: multiselect
-  publications_persons:
-    label: Persons
-    options:
-      values: collections.persons
-    type: multiselect
-  quote:
-    name: Quote
-    options:
-      allow_resize: false
-      initial_height: 100
-      required: false
-    type: markdown
-  section:
-    name: Section
-    options:
-      required: false
-      value_key: value
-      values:
-      - name: Pages
-        value: pages
-      - name: Persons
-        value: persons
-      - name: Posts
-        value: posts
-      - name: Categories
-        value: categories
-      - name: Tags
-        value: tags
-      - name: Products
-        value: products
-      - name: Products tags
-        value: products_tags
-      - name: Projects
-        value: projects
-      - name: Projects tags
-        value: projects_tags
-      - name: Projects types
-        value: projects_types
-      - name: Publications
-        value: publications
-      - name: Services
-        value: services
-      - name: Services categories
-        value: services_categories
-    type: select
-  section-hidden:
-    hidden: true
-    key: section
-    name: section
-    options:
-      required: false
-    type: text
-  services_categories:
-    label: Categories
-    options:
-      values: collections.services_categories
-    type: multiselect
-  show_more:
-    name: Show more?
-    options:
-      required: false
-    type: switch
-  show_places:
-    comment: Only if you have places already saved (this will disable the marker below)
-    name: Show all registered places?
-    options:
-      required: false
-    type: switch
-  slug:
-    comment: Leave empty to automate with the title. **Be careful to SEO impact.**
-    name: Slug
-    options:
-      pattern: ^(|[a-z0-9-]+)$
-      pattern_message: Contain only lowercase letters, numbers, and hyphens, with no spaces, accents, or special characters
-      required: false
-    type: text
-  socials:
-    name: Socials
-    options:
-      required: false
-      structures: _structures.socials
-    singular_name: Social
-    type: array
-  state:
-    name: State
-    options:
-      required: true
-      value_key: value
-      values:
-      - name: Danger
-        value: danger
-      - name: Dark
-        value: dark
-      - name: Info
-        value: info
-      - name: Light
-        value: light
-      - name: Primary
-        value: primary
-      - name: Secondary
-        value: secondary
-      - name: Success
-        value: success
-      - name: Warning
-        value: warning
-    type: select
-  submit:
-    name: Send button text
-    options:
-      required: false
-    type: text
-  suffix:
-    comment: 'e.g: %'
-    name: Suffix
-    options:
-      required: false
-    type: text
-  summary:
-    name: Summary
-    options:
-      required: false
-    type: text
-  surtitle:
-    name: Surtitle
-    options:
-      required: false
-    type: text
-  tags:
-    label: Tags
-    options:
-      values: collections.tags
-    type: multiselect
-  text:
-    name: Text
-    options:
-      required: false
-    type: text
-  text_markdown:
-    key: text
-    name: Text
-    options:
-      allow_resize: false
-      initial_height: 100
-      required: false
-    type: markdown
-  title:
-    name: Title
-    options:
-      required: false
-    type: text
-  title_page:
-    comment: Displayed in tabs, search results, and in SMS/Messages/Social networks preview
-    key: title
-    name: Page title
-    options:
-      required: true
-    type: text
-  transcription:
-    name: Transcription
-    options:
-      required: false
-    type: textarea
-  url:
-    name: URL
-    options:
-      required: false
-    type: text
-  value_number:
-    key: value
-    name: Value
-    options:
-      required: false
-    type: number
-  video:
-    name: Video
-    options:
-      required: false
-      structures: _structures.video
-      subtype: object
-    type: object
-  video_mp4:
-    comment: MP4 video file
-    key: mp4
-    name: MP4
-    options:
-      accepts_mime_types:
-      - video/mp4
-      max_file_size: '5000000'
-      required: false
-    type: file
-  video_webm:
-    comment: WEBM video file
-    key: webm
-    name: WEBM
-    options:
-      accepts_mime_types:
-      - video/webm
-      max_file_size: '5000000'
-      required: false
-    type: file
-  zoom:
-    name: Zoom
-    options:
-      max: 20
-      min: 1
-      required: false
-      step: 1
-    type: number
 
 
 
@@ -1216,25 +316,89 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - value:
+    - _inputs:
+        icon:
+          comment: Icon name from https://icons.getbootstrap.com/
+          label: Icon
+          options:
+            required: false
+          type: text
+        text:
+          label: Text
+          options:
+            required: false
+          type: text
+      value:
         icon: null
         text: null
   audio:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - value:
-        audio_mp3: null
-        audio_ogg: null
+    - _inputs:
+        autoplay:
+          label: Autoplay
+          options:
+            required: false
+          type: switch
+        loop:
+          label: Loop
+          options:
+            required: false
+          type: switch
+        mp3:
+          comment: MP3 audio file
+          label: MP3
+          options:
+            accepts_mime_types:
+            - audio/mpeg
+            max_file_size: '700000'
+            required: false
+          type: file
+        ogg:
+          comment: OGG audio file
+          label: OGG
+          options:
+            accepts_mime_types:
+            - audio/ogg
+            max_file_size: '700000'
+            required: false
+          type: file
+        transcription:
+          label: Transcription
+          options:
+            required: false
+          type: textarea
+      value:
         autoplay: null
         loop: null
+        mp3: null
+        ogg: null
         transcription: null
   author:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - value:
-        image_simple: null
+    - _inputs:
+        image:
+          label: Images
+          options:
+            required: false
+            structures: _structures.image_simple
+            subtype: object
+          type: object
+        text:
+          label: Text
+          options:
+            required: false
+          type: text
+        title:
+          label: Title
+          options:
+            required: false
+          type: text
+      value:
+        image: null
         text: null
         title: null
   blocks:
@@ -1243,7 +407,27 @@ _structures:
     reorder_inputs: false
     style: modal
     values:
-    - label: Audio
+    - _inputs:
+        audio:
+          label: Audios
+          options:
+            required: false
+            structures: _structures.audio
+            subtype: object
+          type: object
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          type: object
+      label: Audio
       preview:
         icon: audiotrack
         text:
@@ -1254,7 +438,43 @@ _structures:
         background: null
         heading: null
         type: audio
-    - label: Alert
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        state:
+          label: State
+          options:
+            required: true
+            value_key: value
+            values:
+            - name: Danger
+              value: danger
+            - name: Dark
+              value: dark
+            - name: Info
+              value: info
+            - name: Light
+              value: light
+            - name: Primary
+              value: primary
+            - name: Secondary
+              value: secondary
+            - name: Success
+              value: success
+            - name: Warning
+              value: warning
+          type: select
+        text_markdown:
+          label: Text
+          options:
+            allow_resize: false
+            initial_height: 100
+            required: false
+          type: markdown
+      label: Alert
       preview:
         icon: warning_amber
         text:
@@ -1265,7 +485,44 @@ _structures:
         state: null
         text_markdown: null
         type: alert
-    - label: Chart
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        chart:
+          label: Chart
+          options:
+            required: false
+            structures: _structures.chart
+            subtype: object
+          type: object
+        grid:
+          label: Grid
+          options:
+            required: true
+            value_key: value
+            values:
+            - name: Small
+              value: small
+            - name: Medium
+              value: medium
+            - name: Large
+              value: large
+            - name: Container
+              value: container
+            - name: Full
+              value: full
+          type: select
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          type: object
+      label: Chart
       preview:
         icon: pie_chart
         text:
@@ -1277,7 +534,35 @@ _structures:
         grid: null
         heading: null
         type: chart
-    - label: Comparison
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        column:
+          label: Column
+          options:
+            max: 6
+            min: 1
+            required: false
+            step: 1
+          type: range
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          type: object
+        items:
+          label: Items
+          options:
+            required: false
+            structures: _structures.items_comparison
+          singular_name: Item
+          type: array
+      label: Comparison
       preview:
         icon: compare
         text:
@@ -1287,9 +572,29 @@ _structures:
         background: null
         column: null
         heading: null
-        items_comparison: null
         type: comparison
-    - label: Call to action
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        ctas:
+          label: CTAs
+          options:
+            max_items: 2
+            required: false
+            structures: _structures.ctas
+          singular_name: CTA
+          type: array
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          type: object
+      label: Call to action
       preview:
         icon: call_to_action
         text:
@@ -1300,7 +605,35 @@ _structures:
         ctas: null
         heading: null
         type: cta
-    - label: Datas
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        column:
+          label: Column
+          options:
+            max: 6
+            min: 1
+            required: false
+            step: 1
+          type: range
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          type: object
+        items:
+          label: Items
+          options:
+            required: false
+            structures: _structures.items_datas
+          singular_name: Item
+          type: array
+      label: Datas
       preview:
         icon: data_usage
         text:
@@ -1310,11 +643,65 @@ _structures:
         background: null
         column: null
         heading: null
-        items_datas: null
-        show_color: null
-        show_gauge: null
         type: datas
-    - label: Editorial
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        ctas:
+          label: CTAs
+          options:
+            max_items: 2
+            required: false
+            structures: _structures.ctas
+          singular_name: CTA
+          type: array
+        direction:
+          label: Direction
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Ltr
+              value: ltr
+            - name: Rtl
+              value: rtl
+          type: select
+        image:
+          label: Images
+          options:
+            required: false
+            structures: _structures.image
+            subtype: object
+          type: object
+        notes:
+          comment: To link a word in the text to a note, suffix it with . Notes and  are linked by their order.
+          label: Notes
+          options:
+            required: false
+            structures: _structures.notes
+          singular_name: Note
+          type: array
+        surtitle:
+          label: Surtitle
+          options:
+            required: false
+          type: text
+        text_markdown:
+          label: Text
+          options:
+            allow_resize: false
+            initial_height: 100
+            required: false
+          type: markdown
+        title:
+          label: Title
+          options:
+            required: false
+          type: text
+      label: Editorial
       preview:
         icon: vertical_split
         text:
@@ -1330,7 +717,25 @@ _structures:
         text_markdown: null
         title: null
         type: editorial
-    - label: Embed
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        embed:
+          label: Embed
+          options:
+            required: false
+          type: textarea
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          type: object
+      label: Embed
       preview:
         icon: code
         text:
@@ -1341,7 +746,27 @@ _structures:
         embed: null
         heading: null
         type: embed
-    - label: FAQ
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          type: object
+        items:
+          label: Items
+          options:
+            required: false
+            structures: _structures.items_faq
+          singular_name: Item
+          type: array
+      label: FAQ
       preview:
         icon: quiz
         text:
@@ -1350,9 +775,58 @@ _structures:
       value:
         background: null
         heading: null
-        items_faq: null
         type: faq
-    - label: Figure
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        figure:
+          label: Figure
+          options:
+            required: false
+            structures: _structures.figure
+            subtype: object
+          type: object
+        grid:
+          label: Grid
+          options:
+            required: true
+            value_key: value
+            values:
+            - name: Small
+              value: small
+            - name: Medium
+              value: medium
+            - name: Large
+              value: large
+            - name: Container
+              value: container
+            - name: Full
+              value: full
+          type: select
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          type: object
+        offset:
+          label: Offset
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Start
+              value: start
+            - name: Center
+              value: center
+            - name: End
+              value: end
+          type: select
+      label: Figure
       preview:
         icon: image
         text:
@@ -1365,7 +839,67 @@ _structures:
         heading: null
         offset: null
         type: figure
-    - label: Form
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        grid:
+          label: Grid
+          options:
+            required: true
+            value_key: value
+            values:
+            - name: Small
+              value: small
+            - name: Medium
+              value: medium
+            - name: Large
+              value: large
+            - name: Container
+              value: container
+            - name: Full
+              value: full
+          type: select
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          type: object
+        items:
+          label: Items
+          options:
+            required: false
+            structures: _structures.items
+          singular_name: Item
+          type: array
+        name:
+          label: Name
+          options:
+            required: false
+          type: text
+        offset:
+          label: Offset
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Start
+              value: start
+            - name: Center
+              value: center
+            - name: End
+              value: end
+          type: select
+        submit:
+          label: Send button text
+          options:
+            required: false
+          type: text
+      label: Form
       preview:
         icon: send
         text:
@@ -1373,14 +907,41 @@ _structures:
         - Form
       value:
         background: null
-        form_items: null
         grid: null
         heading: null
+        items: null
         name: null
         offset: null
         submit: null
         type: form
-    - label: Gallery
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        column:
+          label: Column
+          options:
+            max: 6
+            min: 1
+            required: false
+            step: 1
+          type: range
+        gallery:
+          label: Gallery
+          options:
+            required: false
+            structures: _structures.gallery
+          type: array
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          type: object
+      label: Gallery
       preview:
         icon: view_module
         text:
@@ -1392,7 +953,27 @@ _structures:
         gallery: null
         heading: null
         type: gallery
-    - label: Images
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          type: object
+        images:
+          label: Images
+          options:
+            required: false
+            structures: _structures.images
+          singular_name: Image
+          type: array
+      label: Images
       preview:
         icon: collections
         text:
@@ -1403,7 +984,35 @@ _structures:
         heading: null
         images: null
         type: images
-    - label: Informations
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        column:
+          label: Column
+          options:
+            max: 6
+            min: 1
+            required: false
+            step: 1
+          type: range
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          type: object
+        items:
+          label: Items
+          options:
+            required: false
+            structures: _structures.items_informations
+          singular_name: Item
+          type: array
+      label: Informations
       preview:
         icon: dashboard
         text:
@@ -1413,9 +1022,46 @@ _structures:
         background: null
         column: null
         heading: null
-        items_informations: null
         type: informations
-    - label: Instagram
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        count:
+          comment: Items to display
+          label: Count
+          options:
+            max: 10
+            min: 1
+            required: false
+            step: 1
+          type: range
+        ctas:
+          label: CTAs
+          options:
+            max_items: 2
+            required: false
+            structures: _structures.ctas
+          singular_name: CTA
+          type: array
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          type: object
+        limit_simple:
+          label: Limit
+          options:
+            max: 10
+            min: 1
+            required: false
+            step: 1
+          type: range
+      label: Instagram
       preview:
         icon: web_stories
         text:
@@ -1428,7 +1074,84 @@ _structures:
         heading: null
         limit_simple: null
         type: instagram
-    - label: Latest items
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        count:
+          comment: Items to display
+          label: Count
+          options:
+            max: 10
+            min: 1
+            required: false
+            step: 1
+          type: range
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          type: object
+        layout:
+          label: Layout
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Grid
+              value: grid
+            - name: List
+              value: list
+          type: select
+        section:
+          label: Section
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Casestudies
+              value: casestudies
+            - name: Expertises
+              value: expertises
+            - name: Pages
+              value: pages
+            - name: Persons
+              value: persons
+            - name: Places
+              value: places
+            - name: Posts
+              value: posts
+            - name: Categories
+              value: categories
+            - name: Tags
+              value: tags
+            - name: Products
+              value: products
+            - name: Products tags
+              value: products_tags
+            - name: Projects
+              value: projects
+            - name: Projects tags
+              value: projects_tags
+            - name: Projects types
+              value: projects_types
+            - name: Publications
+              value: publications
+            - name: Services
+              value: services
+            - name: Services categories
+              value: services_categories
+          type: select
+        show_more:
+          label: Show more?
+          options:
+            required: false
+          type: switch
+      label: Latest items
       preview:
         icon: view_timeline
         text:
@@ -1438,11 +1161,49 @@ _structures:
         background: null
         count: null
         heading: null
-        layout_grid_list: null
         section: null
         show_more: null
         type: latest
-    - label: Logos
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        carousel:
+          comment: Only for carousel display
+          label: Carousel configuration
+          options:
+            required: false
+            structures: _structures.carousel
+            subtype: object
+          type: object
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          type: object
+        items:
+          label: Items
+          options:
+            required: false
+            structures: _structures.items_logos
+          singular_name: Item
+          type: array
+        layout:
+          label: Layout
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Grid
+              value: grid
+            - name: Carousel
+              value: carousel
+          type: select
+      label: Logos
       preview:
         icon: grain
         text:
@@ -1452,10 +1213,60 @@ _structures:
         background: null
         carousel: null
         heading: null
-        items_logos: null
-        layout_grid_carousel: null
         type: logos
-    - label: Map
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        coordinates:
+          comment: 'Easily find contact details: https://www.latlong.net/convert-address-to-lat-long.html'
+          label: Geographic coordinates
+          options:
+            required: false
+            structures: _structures.coordinates
+            subtype: object
+          type: object
+        grid:
+          label: Grid
+          options:
+            required: true
+            value_key: value
+            values:
+            - name: Small
+              value: small
+            - name: Medium
+              value: medium
+            - name: Large
+              value: large
+            - name: Container
+              value: container
+            - name: Full
+              value: full
+          type: select
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          type: object
+        show_places:
+          comment: Only if you have places already saved (this will disable the marker below)
+          label: Show all registered places?
+          options:
+            required: false
+          type: switch
+        zoom:
+          label: Zoom
+          options:
+            max: 20
+            min: 1
+            required: false
+            step: 1
+          type: number
+      label: Map
       preview:
         icon: map
         text:
@@ -1469,7 +1280,27 @@ _structures:
         show_places: null
         type: map
         zoom: null
-    - label: Newsletter
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        form:
+          label: Form
+          options:
+            required: false
+            structures: _structures.form
+            subtype: object
+          type: object
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          type: object
+      label: Newsletter
       preview:
         icon: attach_email
         text:
@@ -1477,10 +1308,92 @@ _structures:
         - Newsletter
       value:
         background: null
+        form: null
         heading: null
-        newsletter_form: null
         type: newsletter
-    - label: Paragraph
+    - _inputs:
+        align:
+          label: Alignment
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Start
+              value: start
+            - name: Center
+              value: center
+            - name: End
+              value: end
+          type: select
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        ctas:
+          label: CTAs
+          options:
+            max_items: 2
+            required: false
+            structures: _structures.ctas
+          singular_name: CTA
+          type: array
+        grid:
+          label: Grid
+          options:
+            required: true
+            value_key: value
+            values:
+            - name: Small
+              value: small
+            - name: Medium
+              value: medium
+            - name: Large
+              value: large
+            - name: Container
+              value: container
+            - name: Full
+              value: full
+          type: select
+        notes:
+          comment: To link a word in the text to a note, suffix it with . Notes and  are linked by their order.
+          label: Notes
+          options:
+            required: false
+            structures: _structures.notes
+          singular_name: Note
+          type: array
+        offset:
+          label: Offset
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Start
+              value: start
+            - name: Center
+              value: center
+            - name: End
+              value: end
+          type: select
+        surtitle:
+          label: Surtitle
+          options:
+            required: false
+          type: text
+        text_markdown:
+          label: Text
+          options:
+            allow_resize: false
+            initial_height: 100
+            required: false
+          type: markdown
+        title:
+          label: Title
+          options:
+            required: false
+          type: text
+      label: Paragraph
       preview:
         icon: subject
         text:
@@ -1497,7 +1410,54 @@ _structures:
         text_markdown: null
         title: null
         type: paragraph
-    - label: Pushes
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        carousel:
+          comment: Only for carousel display
+          label: Carousel configuration
+          options:
+            required: false
+            structures: _structures.carousel
+            subtype: object
+          type: object
+        column:
+          label: Column
+          options:
+            max: 2
+            min: 1
+            required: false
+            step: 1
+          type: range
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          type: object
+        items:
+          label: Items
+          options:
+            required: false
+            structures: _structures.items_pushes
+          singular_name: Item
+          type: array
+        layout:
+          label: Layout
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Grid
+              value: grid
+            - name: Carousel
+              value: carousel
+          type: select
+      label: Pushes
       preview:
         icon: panorama_wide_angle
         text:
@@ -1506,12 +1466,30 @@ _structures:
       value:
         background: null
         carousel: null
-        column_simple: null
+        column: null
         heading: null
-        items_pushes: null
-        layout_grid_carousel: null
         type: pushes
-    - label: Quote
+    - _inputs:
+        author:
+          label: Author
+          options:
+            required: false
+            structures: _structures.author
+            subtype: object
+          type: object
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        quote:
+          label: Quote
+          options:
+            allow_resize: false
+            initial_height: 100
+            required: false
+          type: markdown
+      label: Quote
       preview:
         icon: format_quote
         text:
@@ -1522,7 +1500,20 @@ _structures:
         background: null
         quote: null
         type: quote
-    - label: Search
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          type: object
+      label: Search
       preview:
         icon: search
         text:
@@ -1532,7 +1523,47 @@ _structures:
         background: null
         heading: null
         type: search
-    - label: Selection <no value>
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          type: object
+        items:
+          label: nolabel
+          options:
+            values: collections.selected
+          type: multiselect
+        layout:
+          label: Layout
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Grid
+              value: grid
+            - name: List
+              value: list
+          type: select
+        section:
+          hidden: true
+          label: section
+          options:
+            required: false
+          type: text
+        show_more:
+          label: Show more?
+          options:
+            required: false
+          type: switch
+      label: Selection <no value>
       preview:
         icon: checklist_rtl
         text:
@@ -1541,12 +1572,48 @@ _structures:
       value:
         background: null
         heading: null
-        layout_grid_list: null
-        relation_items: null
-        section-hidden: null
         show_more: null
         type: selected
-    - label: Testimonials
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        carousel:
+          comment: Only for carousel display
+          label: Carousel configuration
+          options:
+            required: false
+            structures: _structures.carousel
+            subtype: object
+          type: object
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          type: object
+        items:
+          label: Items
+          options:
+            required: false
+            structures: _structures.items_testimonials
+          singular_name: Item
+          type: array
+        layout:
+          label: Layout
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Grid
+              value: grid
+            - name: Carousel
+              value: carousel
+          type: select
+      label: Testimonials
       preview:
         icon: 3p
         text:
@@ -1556,10 +1623,28 @@ _structures:
         background: null
         carousel: null
         heading: null
-        items_testimonials: null
-        layout_grid_carousel: null
         type: testimonials
-    - label: Timeline
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          type: object
+        items:
+          label: Items
+          options:
+            required: false
+            structures: _structures.items_timeline
+          singular_name: Item
+          type: array
+      label: Timeline
       preview:
         icon: timeline
         text:
@@ -1568,9 +1653,21 @@ _structures:
       value:
         background: null
         heading: null
-        items_timeline: null
         type: timeline
-    - label: Title
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          type: object
+      label: Title
       preview:
         icon: format_h2
         text:
@@ -1580,7 +1677,44 @@ _structures:
         background: null
         heading: null
         type: title
-    - label: Video
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+        grid:
+          label: Grid
+          options:
+            required: true
+            value_key: value
+            values:
+            - name: Small
+              value: small
+            - name: Medium
+              value: medium
+            - name: Large
+              value: large
+            - name: Container
+              value: container
+            - name: Full
+              value: full
+          type: select
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          type: object
+        video:
+          label: Video
+          options:
+            required: false
+            structures: _structures.video
+            subtype: object
+          type: object
+      label: Video
       preview:
         icon: videocam
         text:
@@ -1596,44 +1730,85 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - value:
-        carousel_params: null
-        carousel_responsive: null
-  carousel_params:
-    key: params
-    remove_empty_inputs: true
-    reorder_inputs: false
-    values:
-    - value:
-        carousel_arrows: null
-        carousel_autoplay: null
-        carousel_focus: null
-        carousel_gap: null
-        carousel_padding: null
-        carousel_pagination: null
-        carousel_perpage: null
-        carousel_type: null
-  carousel_responsive:
-    key: responsive
-    remove_empty_inputs: true
-    reorder_inputs: false
-    values:
-    - value:
-        breakpoints: null
-        carousel_params: null
+    - _inputs:
+        params:
+          label: Params
+          options:
+            required: false
+            structures: _structures.params
+            subtype: object
+          type: object
+        responsive:
+          label: Responsive
+          options:
+            required: false
+            structures: _structures.responsive
+          type: array
+      value:
+        params: null
+        responsive: null
   chart:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - value:
-        chart_data: null
-        chart_type: null
+    - _inputs:
+        data:
+          comment: 'Documentation: https://www.chartjs.org/docs/'
+          label: Data (code)
+          options:
+            required: false
+            syntax: JSON
+          type: code
+        title:
+          label: Title
+          options:
+            required: false
+          type: text
+        type:
+          label: Chart type
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Bar
+              value: bar
+            - name: Pie
+              value: pie
+            - name: Line
+              value: line
+            - name: Polar area
+              value: polarArea
+            - name: Radar
+              value: radar
+          type: select
+      value:
+        data: null
         title: null
+        type: null
   contact:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - value:
+    - _inputs:
+        email:
+          label: Email
+          options:
+            required: false
+          type: text
+        phone:
+          comment: 'International format, e.g: +33 1 23 45 67 89'
+          label: Telephone Number
+          options:
+            required: false
+          type: text
+        socials:
+          label: Socials
+          options:
+            required: false
+            structures: _structures.socials
+          singular_name: Social
+          type: array
+      value:
         email: null
         phone: null
         socials: null
@@ -1641,15 +1816,48 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - value:
-        coordinates_lat: null
-        coordinates_lng: null
+    - _inputs:
+        lat:
+          label: Latitude
+          options:
+            required: false
+          type: number
+        lng:
+          label: Longitude
+          options:
+            required: false
+          type: number
+      value:
+        lat: null
+        lng: null
   cta:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - value:
-        is_blank: null
+    - _inputs:
+        blank:
+          label: Is blank?
+          options:
+            required: false
+          type: switch
+        lang:
+          comment: Enter code lang (e.g. fr) if different of the current page language
+          label: Language
+          options:
+            required: false
+          type: text
+        text:
+          label: Text
+          options:
+            required: false
+          type: text
+        url:
+          label: URL
+          options:
+            required: false
+          type: text
+      value:
+        blank: null
         lang: null
         text: null
         url: null
@@ -1657,8 +1865,30 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - value:
-        is_blank: null
+    - _inputs:
+        blank:
+          label: Is blank?
+          options:
+            required: false
+          type: switch
+        lang:
+          comment: Enter code lang (e.g. fr) if different of the current page language
+          label: Language
+          options:
+            required: false
+          type: text
+        text:
+          label: Text
+          options:
+            required: false
+          type: text
+        url:
+          label: URL
+          options:
+            required: false
+          type: text
+      value:
+        blank: null
         lang: null
         text: null
         url: null
@@ -1666,72 +1896,137 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - value:
+    - _inputs:
+        text:
+          label: Text
+          options:
+            required: false
+          type: text
+        title:
+          label: Title
+          options:
+            required: false
+          type: text
+      value:
         text: null
         title: null
-  featured_image:
-    key: image
-    remove_empty_inputs: true
-    reorder_inputs: false
-    values:
-    - value:
-        image_alt: null
-        image_src: null
   figure:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - value:
+    - _inputs:
+        alt:
+          comment: For an image that conveys information (leave blank if decorative image)
+          label: Text alternative
+          options:
+            required: false
+          type: text
+        credit:
+          label: Credit
+          options:
+            allow_resize: false
+            initial_height: 100
+            required: false
+          type: markdown
+        legend:
+          label: Legend
+          options:
+            required: false
+          type: text
+        screenshot:
+          label: nolabel
+          options:
+            required: false
+          type: switch
+        src:
+          comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
+          label: Image
+          options:
+            accepts_mime_types:
+            - image/gif
+            - image/jpeg
+            - image/png
+            - image/webp
+            - image/svg+xml
+            max_file_size: '700000'
+            paths:
+              static: static/images/uploads
+              uploads: /assets/images/uploads
+            required: false
+          type: image
+      value:
+        alt: null
         credit: null
-        image_alt: null
-        image_src: null
-        is_screenshot: null
         legend: null
-  form_hiddens:
-    key: hiddens
-    remove_empty_inputs: true
-    reorder_inputs: false
-    values:
-    - value:
-        name: null
-        value: null
-  form_items:
-    key: items
-    remove_empty_inputs: true
-    reorder_inputs: false
-    values:
-    - value:
-        form_autocomplete: null
-        form_options: null
-        form_type: null
-        form_value: null
-        is_form_full: null
-        is_required: null
-        label: null
-        name: null
-        placeholder: null
-  form_options:
-    key: items
-    remove_empty_inputs: true
-    reorder_inputs: false
-    values:
-    - value:
-        title: null
-        value: null
+        screenshot: null
+        src: null
   gallery:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - value:
+    - _inputs:
+        alt:
+          comment: For an image that conveys information (leave blank if decorative image)
+          label: Text alternative
+          options:
+            required: false
+          type: text
+        credit:
+          label: Credit
+          options:
+            allow_resize: false
+            initial_height: 100
+            required: false
+          type: markdown
+        legend:
+          label: Legend
+          options:
+            required: false
+          type: text
+        src:
+          comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
+          label: Image
+          options:
+            accepts_mime_types:
+            - image/gif
+            - image/jpeg
+            - image/png
+            - image/webp
+            - image/svg+xml
+            max_file_size: '700000'
+            paths:
+              static: static/images/uploads
+              uploads: /assets/images/uploads
+            required: false
+          type: image
+      value:
+        alt: null
         credit: null
-        image_alt: null
-        image_src: null
         legend: null
+        src: null
   heading:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - value:
+    - _inputs:
+        surtitle:
+          label: Surtitle
+          options:
+            required: false
+          type: text
+        text_markdown:
+          label: Text
+          options:
+            allow_resize: false
+            initial_height: 100
+            required: false
+          type: markdown
+        title:
+          label: Title
+          options:
+            required: false
+          type: text
+      value:
         surtitle: null
         text_markdown: null
         title: null
@@ -1739,7 +2034,46 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - value:
+    - _inputs:
+        align:
+          label: Alignment
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Start
+              value: start
+            - name: Center
+              value: center
+            - name: End
+              value: end
+          type: select
+        ctas:
+          label: CTAs
+          options:
+            max_items: 2
+            required: false
+            structures: _structures.ctas
+          singular_name: CTA
+          type: array
+        surtitle:
+          label: Surtitle
+          options:
+            required: false
+          type: text
+        text_markdown:
+          label: Text
+          options:
+            allow_resize: false
+            initial_height: 100
+            required: false
+          type: markdown
+        title:
+          label: Title
+          options:
+            required: false
+          type: text
+      value:
         align: null
         ctas: null
         surtitle: null
@@ -1749,48 +2083,460 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - value:
+    - _inputs:
+        alt:
+          comment: For an image that conveys information (leave blank if decorative image)
+          label: Text alternative
+          options:
+            required: false
+          type: text
+        credit:
+          label: Credit
+          options:
+            allow_resize: false
+            initial_height: 100
+            required: false
+          type: markdown
+        src:
+          comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
+          label: Image
+          options:
+            accepts_mime_types:
+            - image/gif
+            - image/jpeg
+            - image/png
+            - image/webp
+            - image/svg+xml
+            max_file_size: '700000'
+            paths:
+              static: static/images/uploads
+              uploads: /assets/images/uploads
+            required: false
+          type: image
+      value:
+        alt: null
         credit: null
-        image_alt: null
-        image_src: null
-  image_simple:
-    key: image
-    remove_empty_inputs: true
-    reorder_inputs: false
-    values:
-    - value:
-        image_alt: null
-        image_src: null
-        is_logo: null
+        src: null
   images:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - value:
+    - _inputs:
+        alt:
+          comment: For an image that conveys information (leave blank if decorative image)
+          label: Text alternative
+          options:
+            required: false
+          type: text
+        credit:
+          label: Credit
+          options:
+            allow_resize: false
+            initial_height: 100
+            required: false
+          type: markdown
+        half:
+          label: Half size?
+          options:
+            required: false
+          type: switch
+        legend:
+          label: Legend
+          options:
+            required: false
+          type: text
+        src:
+          comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
+          label: Image
+          options:
+            accepts_mime_types:
+            - image/gif
+            - image/jpeg
+            - image/png
+            - image/webp
+            - image/svg+xml
+            max_file_size: '700000'
+            paths:
+              static: static/images/uploads
+              uploads: /assets/images/uploads
+            required: false
+          type: image
+      value:
+        alt: null
         credit: null
-        image_alt: null
-        image_src: null
-        is_half: null
+        half: null
         legend: null
-  newsletter_form:
-    key: form
+        src: null
+  items_comparison:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - value:
-        form_hiddens: null
+    - _inputs:
+        arguments:
+          label: Arguments
+          options:
+            required: false
+            structures: _structures.arguments
+          singular_name: Argument
+          type: array
+        badge:
+          comment: Show a badge
+          label: Badge
+          options:
+            required: false
+          type: text
+        cta:
+          label: CTA
+          options:
+            required: false
+            structures: _structures.cta
+            subtype: object
+          type: object
+        is_highlighted:
+          label: Is highlighted?
+          options:
+            required: false
+          type: switch
+        offer:
+          label: Offer
+          options:
+            required: false
+            structures: _structures.offer
+            subtype: object
+          type: object
+        text:
+          label: Text
+          options:
+            required: false
+          type: text
+        title:
+          label: Title
+          options:
+            required: false
+          type: text
+      value:
+        arguments: null
+        badge: null
+        cta: null
+        is_highlighted: null
+        offer: null
+        text: null
+        title: null
+  items_datas:
+    remove_empty_inputs: true
+    reorder_inputs: false
+    values:
+    - _inputs:
+        limit:
+          label: Limit
+          options:
+            required: false
+          type: number
+        prefix:
+          label: Prefix
+          options:
+            required: false
+          type: text
+        suffix:
+          comment: 'e.g: %'
+          label: Suffix
+          options:
+            required: false
+          type: text
+        text:
+          label: Text
+          options:
+            required: false
+          type: text
+        title:
+          label: Title
+          options:
+            required: false
+          type: text
+        value_number:
+          label: Value
+          options:
+            required: false
+          type: number
+      value:
+        limit: null
+        prefix: null
+        suffix: null
+        text: null
+        title: null
+        value_number: null
+  items_faq:
+    remove_empty_inputs: true
+    reorder_inputs: false
+    values:
+    - _inputs:
+        name:
+          label: Name
+          options:
+            required: false
+          type: text
+        open:
+          label: Open?
+          options:
+            required: false
+          type: switch
+        summary:
+          label: Summary
+          options:
+            required: false
+          type: text
+        text_markdown:
+          label: Text
+          options:
+            allow_resize: false
+            initial_height: 100
+            required: false
+          type: markdown
+        title:
+          label: Title
+          options:
+            required: false
+          type: text
+      value:
+        name: null
+        open: null
+        summary: null
+        text_markdown: null
+        title: null
+  items_informations:
+    remove_empty_inputs: true
+    reorder_inputs: false
+    values:
+    - _inputs:
+        cta:
+          label: CTA
+          options:
+            required: false
+            structures: _structures.cta
+            subtype: object
+          type: object
+        icon:
+          comment: Icon name from https://icons.getbootstrap.com/
+          label: Icon
+          options:
+            required: false
+          type: text
+        image:
+          label: Images
+          options:
+            required: false
+            structures: _structures.image_simple
+            subtype: object
+          type: object
+        text:
+          label: Text
+          options:
+            required: false
+          type: text
+        title:
+          label: Title
+          options:
+            required: false
+          type: text
+      value:
+        cta: null
+        icon: null
+        image: null
+        text: null
+        title: null
+  items_logos:
+    remove_empty_inputs: true
+    reorder_inputs: false
+    values:
+    - _inputs:
+        src:
+          comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
+          label: Image
+          options:
+            accepts_mime_types:
+            - image/gif
+            - image/jpeg
+            - image/png
+            - image/webp
+            - image/svg+xml
+            max_file_size: '700000'
+            paths:
+              static: static/images/uploads
+              uploads: /assets/images/uploads
+            required: false
+          type: image
+        title:
+          label: Title
+          options:
+            required: false
+          type: text
+        url:
+          label: URL
+          options:
+            required: false
+          type: text
+      value:
+        src: null
+        title: null
         url: null
+  items_pushes:
+    remove_empty_inputs: true
+    reorder_inputs: false
+    values:
+    - _inputs:
+        card:
+          comment: Adds a background behind the text
+          label: Is card?
+          options:
+            required: false
+          type: switch
+        color:
+          label: Color
+          options:
+            format: hex
+            required: false
+          type: color
+        cta:
+          label: CTA
+          options:
+            required: false
+            structures: _structures.cta
+            subtype: object
+          type: object
+        darken:
+          label: Darken?
+          options:
+            required: false
+          type: switch
+        image:
+          label: Images
+          options:
+            required: false
+            structures: _structures.image
+            subtype: object
+          type: object
+        offset:
+          label: Offset
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Start
+              value: start
+            - name: Center
+              value: center
+            - name: End
+              value: end
+          type: select
+        text:
+          label: Text
+          options:
+            required: false
+          type: text
+        title:
+          label: Title
+          options:
+            required: false
+          type: text
+      value:
+        card: null
+        color: null
+        cta: null
+        darken: null
+        image: null
+        offset: null
+        text: null
+        title: null
+  items_testimonials:
+    remove_empty_inputs: true
+    reorder_inputs: false
+    values:
+    - _inputs:
+        author:
+          label: Author
+          options:
+            required: false
+            structures: _structures.author
+            subtype: object
+          type: object
+        quote:
+          label: Quote
+          options:
+            allow_resize: false
+            initial_height: 100
+            required: false
+          type: markdown
+      value:
+        author: null
+        quote: null
+  items_timeline:
+    remove_empty_inputs: true
+    reorder_inputs: false
+    values:
+    - _inputs:
+        surtitle:
+          label: Surtitle
+          options:
+            required: false
+          type: text
+        text_markdown:
+          label: Text
+          options:
+            allow_resize: false
+            initial_height: 100
+            required: false
+          type: markdown
+        title:
+          label: Title
+          options:
+            required: false
+          type: text
+      value:
+        surtitle: null
+        text_markdown: null
+        title: null
   notes:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - value:
+    - _inputs:
+        text:
+          label: Text
+          options:
+            required: false
+          type: text
+      value:
         text: null
   offer:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - value:
+    - _inputs:
+        discount:
+          comment: 'Amount of the reduction, e.g: 30%'
+          label: Discount
+          options:
+            pattern: ^[0-9]*(%?)$
+            pattern_message: Value only (without currency)
+            required: false
+          type: text
+        hide_price:
+          label: Hide price
+          options:
+            required: false
+          type: switch
+        price:
+          comment: 'e.g: 300000 (for 300 000 €)'
+          label: Price
+          options:
+            required: false
+          type: number
+        text:
+          label: Text
+          options:
+            required: false
+          type: text
+      value:
         discount: null
         hide_price: null
         price: null
@@ -1799,29 +2545,137 @@ _structures:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - value:
+    - _inputs:
+        title:
+          label: Title
+          options:
+            required: false
+          type: text
+        url:
+          label: URL
+          options:
+            required: false
+          type: text
+      value:
         title: null
         url: null
   socials:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - value:
-        socials_plateform: null
+    - _inputs:
+        plateform:
+          label: nolabel
+          options:
+            required: true
+            value_key: value
+            values:
+            - name: Facebook
+              value: facebook
+            - name: Github
+              value: github
+            - name: Google
+              value: google
+            - name: Instagram
+              value: instagram
+            - name: Linkedin
+              value: linkedin
+            - name: Pinterest
+              value: pinterest
+            - name: Threads
+              value: threads
+            - name: Tiktok
+              value: tiktok
+            - name: Twitch
+              value: twitch
+            - name: Twitter
+              value: twitter
+            - name: Vimeo
+              value: vimeo
+            - name: Youtube
+              value: youtube
+          type: select
+        url:
+          label: URL
+          options:
+            required: false
+          type: text
+      value:
+        plateform: null
         url: null
   video:
     remove_empty_inputs: true
     reorder_inputs: false
     values:
-    - value:
+    - _inputs:
+        autoplay:
+          label: Autoplay
+          options:
+            required: false
+          type: switch
+        controls:
+          label: Controls
+          options:
+            required: false
+          type: switch
+        legend:
+          label: Legend
+          options:
+            required: false
+          type: text
+        loop:
+          label: Loop
+          options:
+            required: false
+          type: switch
+        mp4:
+          comment: MP4 video file
+          label: MP4
+          options:
+            accepts_mime_types:
+            - video/mp4
+            max_file_size: '5000000'
+            required: false
+          type: file
+        poster:
+          comment: Placehoster image for video
+          label: Poster
+          options:
+            accepts_mime_types:
+            - image/gif
+            - image/jpeg
+            - image/png
+            - image/webp
+            - image/svg+xml
+            max_file_size: '700000'
+            paths:
+              static: static/images/uploads
+              uploads: /assets/images/uploads
+            required: false
+          type: image
+        transcription:
+          label: Transcription
+          options:
+            required: false
+          type: textarea
+        webm:
+          comment: WEBM video file
+          label: WEBM
+          options:
+            accepts_mime_types:
+            - video/webm
+            max_file_size: '5000000'
+            required: false
+          type: file
+      value:
         autoplay: null
         controls: null
         legend: null
         loop: null
+        mp4: null
         poster: null
         transcription: null
-        video_mp4: null
-        video_webm: null
+        webm: null
 
 
 

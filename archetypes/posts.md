@@ -1,11 +1,12 @@
 ---
-is_not_index:
+isIndex: false
 draft:
 date:
-title_page:
+title:
 description:
-featured_image:
+image:
 categories:
 tags:
+expertises:
 slug:
 ---

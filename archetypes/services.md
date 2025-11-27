@@ -1,10 +1,10 @@
 ---
-is_not_index:
+isIndex: false
 draft:
 date:
-title_page:
+title:
 description:
 services_categories:
-featured_image:
+image:
 slug:
 ---
