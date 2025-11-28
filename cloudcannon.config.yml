@@ -348,6 +348,13 @@ collection_groups:
 
 
 _inputs:
+  address:
+    label: Address
+    options:
+      required: false
+      structures: _structures.address
+      subtype: object
+    type: object
   categories:
     label: Categories
     options:
@@ -511,6 +518,45 @@ _inputs:
 
 
 _structures:
+  address:
+    remove_empty_inputs: true
+    reorder_inputs: false
+    values:
+    - _inputs:
+        city:
+          label: nolabel
+          options:
+            required: false
+          type: text
+        coordinates:
+          comment: 'Easily find contact details: https://www.latlong.net/convert-address-to-lat-long.html'
+          label: Geographic coordinates
+          options:
+            required: false
+            structures: _structures.coordinates
+            subtype: object
+          type: object
+        country:
+          label: Country
+          options:
+            required: false
+          type: text
+        street:
+          label: Street
+          options:
+            required: false
+          type: text
+        zipcode:
+          label: Postal code
+          options:
+            required: false
+          type: text
+      value:
+        city: null
+        coordinates: null
+        country: null
+        street: null
+        zipcode: null
   arguments:
     remove_empty_inputs: true
     reorder_inputs: false
