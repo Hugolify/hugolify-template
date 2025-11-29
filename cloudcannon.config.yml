@@ -346,7 +346,6 @@ collection_groups:
 
 
 
-
 _inputs:
   address:
     label: Address
@@ -524,7 +523,7 @@ _structures:
     values:
     - _inputs:
         city:
-          label: nolabel
+          label: City
           options:
             required: false
           type: text
@@ -817,6 +816,7 @@ _structures:
         background: null
         column: null
         heading: null
+        items: null
         type: comparison
     - _inputs:
         background:
@@ -888,6 +888,7 @@ _structures:
         background: null
         column: null
         heading: null
+        items: null
         type: datas
     - _inputs:
         background:
@@ -1020,6 +1021,7 @@ _structures:
       value:
         background: null
         heading: null
+        items: null
         type: faq
     - _inputs:
         background:
@@ -1267,6 +1269,7 @@ _structures:
         background: null
         column: null
         heading: null
+        items: null
         type: informations
     - _inputs:
         background:
@@ -1298,7 +1301,7 @@ _structures:
             structures: _structures.heading
             subtype: object
           type: object
-        limit_simple:
+        limit:
           label: Limit
           options:
             max: 10
@@ -1317,7 +1320,7 @@ _structures:
         count: null
         ctas: null
         heading: null
-        limit_simple: null
+        limit: null
         type: instagram
     - _inputs:
         background:
@@ -1341,7 +1344,7 @@ _structures:
             structures: _structures.heading
             subtype: object
           type: object
-        layout_grid_list:
+        layout:
           label: Layout
           options:
             required: false
@@ -1408,6 +1411,7 @@ _structures:
         background: null
         count: null
         heading: null
+        layout: null
         section: null
         show_more: null
         type: latest
@@ -1439,7 +1443,7 @@ _structures:
             structures: _structures.items_logos
           singular_name: Item
           type: array
-        layout_grid_carousel:
+        layout:
           label: Layout
           options:
             required: false
@@ -1460,6 +1464,8 @@ _structures:
         background: null
         carousel: null
         heading: null
+        items: null
+        layout: null
         type: logos
     - _inputs:
         background:
@@ -1693,7 +1699,7 @@ _structures:
             structures: _structures.items_pushes
           singular_name: Item
           type: array
-        layout_grid_carousel:
+        layout:
           label: Layout
           options:
             required: false
@@ -1715,6 +1721,8 @@ _structures:
         carousel: null
         column: null
         heading: null
+        items: null
+        layout: null
         type: pushes
     - _inputs:
         author:
@@ -1788,7 +1796,7 @@ _structures:
           options:
             values: collections.selected
           type: multiselect
-        layout_grid_list:
+        layout:
           label: Layout
           options:
             required: false
@@ -1819,6 +1827,9 @@ _structures:
       value:
         background: null
         heading: null
+        items: null
+        layout: null
+        section: null
         show_more: null
         type: selected
     - _inputs:
@@ -1849,7 +1860,7 @@ _structures:
             structures: _structures.items_testimonials
           singular_name: Item
           type: array
-        layout_grid_carousel:
+        layout:
           label: Layout
           options:
             required: false
@@ -1870,6 +1881,8 @@ _structures:
         background: null
         carousel: null
         heading: null
+        items: null
+        layout: null
         type: testimonials
     - _inputs:
         background:
@@ -1900,6 +1913,7 @@ _structures:
       value:
         background: null
         heading: null
+        items: null
         type: timeline
     - _inputs:
         background:
@@ -2006,6 +2020,13 @@ _structures:
             required: false
             syntax: JSON
           type: code
+        items:
+          label: Items
+          options:
+            required: false
+            structures: _structures.items_chart
+          singular_name: Item
+          type: array
         title:
           label: Title
           options:
@@ -2181,7 +2202,8 @@ _structures:
             required: false
           type: text
         screenshot:
-          label: nolabel
+          comment: Add fake browser
+          label: Is screenshot?
           options:
             required: false
           type: switch
@@ -2303,6 +2325,13 @@ _structures:
             structures: _structures.ctas
           singular_name: CTA
           type: array
+        image:
+          label: Images
+          options:
+            required: false
+            structures: _structures.image
+            subtype: object
+          type: object
         surtitle:
           label: Surtitle
           options:
@@ -2320,6 +2349,13 @@ _structures:
           options:
             required: false
           type: text
+        video:
+          label: Video
+          options:
+            required: false
+            structures: _structures.video
+            subtype: object
+          type: object
       value:
         align: null
         ctas: null
@@ -2812,7 +2848,7 @@ _structures:
     values:
     - _inputs:
         plateform:
-          label: nolabel
+          label: Platform
           options:
             required: true
             value_key: value
