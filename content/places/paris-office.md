@@ -10,4 +10,12 @@ image:
   alt:
   credit: ''
   src: /assets/images/uploads/share-hmb.png
+address:
+  city:
+  coordinates:
+    lat:
+    lng:
+  country:
+  street:
+  zipcode:
 ---
