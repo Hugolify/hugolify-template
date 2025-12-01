@@ -11,11 +11,11 @@ image:
   credit: ''
   src: /assets/images/uploads/share-hmb.png
 address:
-  city:
+  city: Bordeaux
   coordinates:
-    lat:
-    lng:
-  country:
+    lat: 44.833328
+    lng: -0.56667
+  country: France
   street:
   zipcode:
 ---
