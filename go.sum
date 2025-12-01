@@ -44,10 +44,10 @@ github.com/hugolify/hugolify-theme-publications-categories v1.0.7 h1:aqtFhWa1amq
 github.com/hugolify/hugolify-theme-publications-categories v1.0.7/go.mod h1:n5/WMQrllPnuWX9lWX6DMTwdYk2UD8kZo8qh5jAM/94=
 github.com/hugolify/hugolify-theme-publications-persons v1.1.6 h1:L2ycREkSEb8rQDUqVqxXjdSvF8c00HoUxKYi82C7Hvg=
 github.com/hugolify/hugolify-theme-publications-persons v1.1.6/go.mod h1:G4luGI84c3ZJZbyrNEFBxWVugkobfq7FBu+oYjPEV2M=
-github.com/hugolify/hugolify-theme-services v1.0.6 h1:QKMqmG0K7sZs/pnBCy8YciKMHBj5pBvgrlrLcwYFwI4=
-github.com/hugolify/hugolify-theme-services v1.0.6/go.mod h1:cQLM7C338M+jGK9Lk1rg+4VOymcKkDFJLPgfrtp3Xtg=
-github.com/hugolify/hugolify-theme-services-categories v0.0.0-20251127081657-69562ec7d69d h1:6meFF583vbFSHZGO5NMxmNyRJfc+sI86XU0XXLn+ooo=
-github.com/hugolify/hugolify-theme-services-categories v0.0.0-20251127081657-69562ec7d69d/go.mod h1:Oo6t04/3azdXOOU1LvKmKeYGGF+tWUp9xq/FhJ9eVfY=
+github.com/hugolify/hugolify-theme-services v1.0.7 h1:zwMs4HZ+5rMYwXCMabR17oOr8+TRcBNvfCleLX62nAw=
+github.com/hugolify/hugolify-theme-services v1.0.7/go.mod h1:cQLM7C338M+jGK9Lk1rg+4VOymcKkDFJLPgfrtp3Xtg=
+github.com/hugolify/hugolify-theme-services-categories v0.0.0-20251127145719-f1eeb1956938 h1:M7YkB67Wp+AzFGvjOC32KY58SW/LbAfaluhUQ7r32yw=
+github.com/hugolify/hugolify-theme-services-categories v0.0.0-20251127145719-f1eeb1956938/go.mod h1:Oo6t04/3azdXOOU1LvKmKeYGGF+tWUp9xq/FhJ9eVfY=
 github.com/midzer/tobii v3.1.0+incompatible h1:4eV2tjsk0NFYRtbufY16dZzaBBHPgl6Wvsc3ryydHnw=
 github.com/midzer/tobii v3.1.0+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
 github.com/orestbida/cookieconsent v3.1.0+incompatible h1:L2uj16SEL1bICkn6pJde9uc1qAPmTcEiFZO93zZKdQI=

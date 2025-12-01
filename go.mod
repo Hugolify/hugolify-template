@@ -29,8 +29,8 @@ require (
 	github.com/hugolify/hugolify-theme-publications v1.2.11 // indirect
 	github.com/hugolify/hugolify-theme-publications-categories v1.0.7 // indirect
 	github.com/hugolify/hugolify-theme-publications-persons v1.1.6 // indirect
-	github.com/hugolify/hugolify-theme-services v1.0.6 // indirect
-	github.com/hugolify/hugolify-theme-services-categories v0.0.0-20251127081657-69562ec7d69d // indirect
+	github.com/hugolify/hugolify-theme-services v1.0.7 // indirect
+	github.com/hugolify/hugolify-theme-services-categories v0.0.0-20251127145719-f1eeb1956938 // indirect
 	github.com/midzer/tobii v3.1.0+incompatible // indirect
 	github.com/orestbida/cookieconsent v3.1.0+incompatible // indirect
 	github.com/twbs/bootstrap v5.3.8+incompatible // indirect
