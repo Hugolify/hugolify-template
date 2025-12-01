@@ -6,8 +6,8 @@ title:
 description:
 press:
 publications_categories:
-expertises:
-persons:
+publications_expertises:
+publications_persons:
 image:
 images:
 slug:

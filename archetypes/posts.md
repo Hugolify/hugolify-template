@@ -7,6 +7,6 @@ description:
 image:
 categories:
 tags:
-expertises:
+posts_expertises:
 slug:
 ---

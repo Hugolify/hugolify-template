@@ -4,8 +4,8 @@ draft:
 title:
 description:
 image:
-expertises:
-places:
+persons_expertises:
+persons_places:
 contact:
 slug:
 ---
