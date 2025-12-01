@@ -1,8 +1,7 @@
 ---
 _schema: default
-is_not_index:
-draft:
-title_page: New path
+isIndex: false
+draft: false
+title: New path
 description:
-slug:
 ---

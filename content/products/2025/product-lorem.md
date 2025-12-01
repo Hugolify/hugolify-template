@@ -1,9 +1,9 @@
 ---
 _schema: default
-is_not_index:
-draft:
+isIndex: false
+draft: false
 date: 2025-11-25T11:18:16Z
-title_page: Product lorem
+title: Product lorem
 description: Description test
 offer:
   price: 300

@@ -1,6 +1,6 @@
 ---
 _schema: default
-title_page: Nested page
+title: Nested page
 hero:
   align:
   ctas:
