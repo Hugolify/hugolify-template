@@ -3,7 +3,7 @@
 
 paths:
   static: assets
-  uploads: assets/images/uploads
+  uploads: /assets/images/uploads
 
 
 _snippets_imports:
@@ -786,8 +786,8 @@ _structures:
         text_markdown:
           label: Text
           options:
-            allow_resize: false
-            initial_height: 100
+            allow_resize: true
+            initial_height: 150
             required: false
           type: markdown
       label: Alert
@@ -1010,8 +1010,8 @@ _structures:
         text_markdown:
           label: Text
           options:
-            allow_resize: false
-            initial_height: 100
+            allow_resize: true
+            initial_height: 150
             required: false
           type: markdown
         title:
@@ -1192,7 +1192,7 @@ _structures:
           label: Items
           options:
             required: false
-            structures: _structures.items
+            structures: _structures.form_items
           singular_name: Item
           type: array
         name:
@@ -1709,8 +1709,8 @@ _structures:
         text_markdown:
           label: Text
           options:
-            allow_resize: false
-            initial_height: 100
+            allow_resize: true
+            initial_height: 150
             required: false
           type: markdown
         title:
@@ -1812,8 +1812,8 @@ _structures:
         quote:
           label: Quote
           options:
-            allow_resize: false
-            initial_height: 100
+            allow_resize: true
+            initial_height: 150
             required: false
           type: markdown
       label: Quote
@@ -2086,6 +2086,104 @@ _structures:
       value:
         params: null
         responsive: null
+  carousel_params:
+    remove_empty_inputs: true
+    reorder_inputs: false
+    values:
+    - _inputs:
+        arrows:
+          label: Arrows
+          options:
+            required: false
+          type: switch
+        autoplay:
+          label: Autoplay
+          options:
+            required: false
+          type: switch
+        focus:
+          label: Focus
+          options:
+            required: false
+          type: switch
+        gap:
+          comment: The gap between slides. Expressed in rem.
+          label: Gap
+          options:
+            required: false
+          type: number
+        padding:
+          comment: Padding left/right of the carousel. In rem value
+          label: Padding
+          options:
+            required: false
+          type: number
+        pagination:
+          label: Pagination
+          options:
+            required: false
+          type: switch
+        perPage:
+          comment: Number of slides to display
+          label: Per page
+          options:
+            min: 1
+            required: false
+          type: number
+        type:
+          label: Carousel type
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Slide
+              value: slide
+            - name: Loop
+              value: loop
+            - name: Fade
+              value: fade
+          type: select
+      value:
+        arrows: null
+        autoplay: null
+        focus: null
+        gap: null
+        padding: null
+        pagination: null
+        perPage: null
+        type: null
+  carousel_responsive:
+    remove_empty_inputs: true
+    reorder_inputs: false
+    values:
+    - _inputs:
+        breakpoints:
+          label: Breakpoints
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Desktop
+              value: '1440'
+            - name: Laptop
+              value: '1280'
+            - name: Mobile
+              value: '640'
+            - name: Tablet
+              value: '768'
+            - name: Wide tablet
+              value: '1024'
+          type: select
+        params:
+          label: Params
+          options:
+            required: false
+            structures: _structures.params
+            subtype: object
+          type: object
+      value:
+        breakpoints: null
+        params: null
   chart:
     remove_empty_inputs: true
     reorder_inputs: false
@@ -2256,6 +2354,36 @@ _structures:
       value:
         text: null
         title: null
+  featured_image:
+    remove_empty_inputs: true
+    reorder_inputs: false
+    values:
+    - _inputs:
+        alt:
+          comment: For an image that conveys information (leave blank if decorative image)
+          label: Text alternative
+          options:
+            required: false
+          type: text
+        src:
+          comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
+          label: Image
+          options:
+            accepts_mime_types:
+            - image/gif
+            - image/jpeg
+            - image/png
+            - image/webp
+            - image/svg+xml
+            max_file_size: '700000'
+            paths:
+              static: static/images/uploads
+              uploads: /assets/images/uploads
+            required: false
+          type: image
+      value:
+        alt: null
+        src: null
   figure:
     remove_empty_inputs: true
     reorder_inputs: false
@@ -2270,8 +2398,8 @@ _structures:
         credit:
           label: Credit
           options:
-            allow_resize: false
-            initial_height: 100
+            allow_resize: true
+            initial_height: 150
             required: false
           type: markdown
         legend:
@@ -2307,6 +2435,148 @@ _structures:
         legend: null
         screenshot: null
         src: null
+  form_hiddens:
+    remove_empty_inputs: true
+    reorder_inputs: false
+    values:
+    - _inputs:
+        name:
+          label: Name
+          options:
+            required: false
+          type: text
+        value:
+          label: Value
+          options:
+            required: false
+          type: text
+      value:
+        name: null
+        value: null
+  form_items:
+    remove_empty_inputs: true
+    reorder_inputs: false
+    values:
+    - _inputs:
+        autocomplete:
+          label: Autocomplete
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Email
+              value: email
+            - name: Tel
+              value: tel
+            - name: Title
+              value: honorific-prefix
+            - name: Firstname
+              value: given-name
+            - name: Lastname
+              value: family-name
+            - name: Name
+              value: name
+            - name: Street
+              value: street-address
+            - name: Address level1
+              value: address-level1
+            - name: Address level2
+              value: address-level2
+            - name: Postal code
+              value: postal-code
+            - name: Country name
+              value: country-name
+            - name: Organization
+              value: organization
+          type: select
+        full:
+          label: Full width field?
+          options:
+            required: false
+          type: switch
+        items:
+          comment: Only for select fields
+          label: Options
+          options:
+            required: false
+            structures: _structures.form_options
+          singular_name: Option
+          type: array
+        label:
+          label: Label
+          options:
+            required: false
+          type: text
+        name:
+          label: Name
+          options:
+            required: false
+          type: text
+        placeholder:
+          label: Placeholder
+          options:
+            required: false
+          type: text
+        required:
+          label: Required
+          options:
+            required: false
+          type: switch
+        type:
+          label: Type
+          options:
+            required: true
+            value_key: value
+            values:
+            - name: Email
+              value: email
+            - name: Checkbox
+              value: checkbox
+            - name: Radio
+              value: radio
+            - name: Select
+              value: select
+            - name: Tel
+              value: tel
+            - name: Text
+              value: text
+            - name: Textarea
+              value: textarea
+          type: select
+        value:
+          comment: Only for checkbox and radio fields
+          label: Value
+          options:
+            required: false
+          type: text
+      value:
+        autocomplete: null
+        full: null
+        items: null
+        label: null
+        name: null
+        placeholder: null
+        required: null
+        type: null
+        value: null
+  form_options:
+    remove_empty_inputs: true
+    reorder_inputs: false
+    values:
+    - _inputs:
+        title:
+          label: Title
+          options:
+            required: false
+          type: text
+        value:
+          label: Value
+          options:
+            required: false
+          type: text
+      value:
+        title: null
+        value: null
   gallery:
     remove_empty_inputs: true
     reorder_inputs: false
@@ -2321,8 +2591,8 @@ _structures:
         credit:
           label: Credit
           options:
-            allow_resize: false
-            initial_height: 100
+            allow_resize: true
+            initial_height: 150
             required: false
           type: markdown
         legend:
@@ -2364,8 +2634,8 @@ _structures:
         text_markdown:
           label: Text
           options:
-            allow_resize: false
-            initial_height: 100
+            allow_resize: true
+            initial_height: 150
             required: false
           type: markdown
         title:
@@ -2418,8 +2688,8 @@ _structures:
         text_markdown:
           label: Text
           options:
-            allow_resize: false
-            initial_height: 100
+            allow_resize: true
+            initial_height: 150
             required: false
           type: markdown
         title:
@@ -2454,8 +2724,8 @@ _structures:
         credit:
           label: Credit
           options:
-            allow_resize: false
-            initial_height: 100
+            allow_resize: true
+            initial_height: 150
             required: false
           type: markdown
         src:
@@ -2478,6 +2748,43 @@ _structures:
         alt: null
         credit: null
         src: null
+  image_simple:
+    remove_empty_inputs: true
+    reorder_inputs: false
+    values:
+    - _inputs:
+        alt:
+          comment: For an image that conveys information (leave blank if decorative image)
+          label: Text alternative
+          options:
+            required: false
+          type: text
+        isLogo:
+          comment: Positioned in the center and not cropped
+          label: Is logo?
+          options:
+            required: false
+          type: switch
+        src:
+          comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
+          label: Image
+          options:
+            accepts_mime_types:
+            - image/gif
+            - image/jpeg
+            - image/png
+            - image/webp
+            - image/svg+xml
+            max_file_size: '700000'
+            paths:
+              static: static/images/uploads
+              uploads: /assets/images/uploads
+            required: false
+          type: image
+      value:
+        alt: null
+        isLogo: null
+        src: null
   images:
     remove_empty_inputs: true
     reorder_inputs: false
@@ -2492,8 +2799,8 @@ _structures:
         credit:
           label: Credit
           options:
-            allow_resize: false
-            initial_height: 100
+            allow_resize: true
+            initial_height: 150
             required: false
           type: markdown
         half:
@@ -2649,8 +2956,8 @@ _structures:
         text_markdown:
           label: Text
           options:
-            allow_resize: false
-            initial_height: 100
+            allow_resize: true
+            initial_height: 150
             required: false
           type: markdown
         title:
@@ -2823,8 +3130,8 @@ _structures:
         quote:
           label: Quote
           options:
-            allow_resize: false
-            initial_height: 100
+            allow_resize: true
+            initial_height: 150
             required: false
           type: markdown
       value:
@@ -2843,8 +3150,8 @@ _structures:
         text_markdown:
           label: Text
           options:
-            allow_resize: false
-            initial_height: 100
+            allow_resize: true
+            initial_height: 150
             required: false
           type: markdown
         title:
@@ -2856,6 +3163,25 @@ _structures:
         surtitle: null
         text_markdown: null
         title: null
+  newsletter_form:
+    remove_empty_inputs: true
+    reorder_inputs: false
+    values:
+    - _inputs:
+        hiddens:
+          label: nolabel
+          options:
+            required: false
+            structures: _structures.hiddens
+          type: array
+        url:
+          label: URL
+          options:
+            required: false
+          type: url
+      value:
+        hiddens: null
+        url: null
   notes:
     remove_empty_inputs: true
     reorder_inputs: false
