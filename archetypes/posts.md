@@ -1,6 +1,6 @@
 ---
 isIndex: false
-draft:
+draft: false
 date:
 title:
 description:

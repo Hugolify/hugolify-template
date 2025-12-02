@@ -1,6 +1,6 @@
 ---
 isPage: true
-draft:
+draft: false
 title:
 description:
 image:
