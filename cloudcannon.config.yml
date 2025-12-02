@@ -1,6 +1,10 @@
+
+
+
 paths:
   static: assets
   uploads: assets/images/uploads
+
 
 _snippets_imports:
   hugo: true
@@ -78,6 +82,8 @@ collections_config:
       subtext:
         - key: persons_expertises
       image:
+        - key: image.src
+      gallery:
         - key: image.src
     schemas:
       default:
@@ -357,6 +363,17 @@ _inputs:
       structures: _structures.address
       subtype: object
     type: object
+  authors:
+    label: Authors
+    options:
+      value_key:
+      - id
+      - uuid
+      - title
+      - name
+      - path
+      values: collections.persons
+    type: multiselect
   categories:
     label: Categories
     options:
