@@ -2,8 +2,8 @@
 
 
 paths:
-  static: static
-  uploads: static/images/uploads
+  static: assets
+  uploads: /assets/images/uploads
 
 
 _snippets_imports:
