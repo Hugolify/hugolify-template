@@ -72,6 +72,13 @@ collections_config:
     icon: person
     name: Persons
     path: content/persons
+    preview:
+      text:
+        - key: title
+      subtext:
+        - key: persons_expertises
+      image:
+        - key: image.src
     schemas:
       default:
         path: archetypes/persons.md
