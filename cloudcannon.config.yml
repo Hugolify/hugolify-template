@@ -2376,9 +2376,6 @@ _structures:
             - image/webp
             - image/svg+xml
             max_file_size: '700000'
-            paths:
-              static: static/images/uploads
-              uploads: /assets/images/uploads
             required: false
           type: image
       value:
@@ -2424,9 +2421,6 @@ _structures:
             - image/webp
             - image/svg+xml
             max_file_size: '700000'
-            paths:
-              static: static/images/uploads
-              uploads: /assets/images/uploads
             required: false
           type: image
       value:
@@ -2611,9 +2605,6 @@ _structures:
             - image/webp
             - image/svg+xml
             max_file_size: '700000'
-            paths:
-              static: static/images/uploads
-              uploads: /assets/images/uploads
             required: false
           type: image
       value:
@@ -2739,9 +2730,6 @@ _structures:
             - image/webp
             - image/svg+xml
             max_file_size: '700000'
-            paths:
-              static: static/images/uploads
-              uploads: /assets/images/uploads
             required: false
           type: image
       value:
@@ -2776,9 +2764,6 @@ _structures:
             - image/webp
             - image/svg+xml
             max_file_size: '700000'
-            paths:
-              static: static/images/uploads
-              uploads: /assets/images/uploads
             required: false
           type: image
       value:
@@ -2824,9 +2809,6 @@ _structures:
             - image/webp
             - image/svg+xml
             max_file_size: '700000'
-            paths:
-              static: static/images/uploads
-              uploads: /assets/images/uploads
             required: false
           type: image
       value:
@@ -3028,9 +3010,6 @@ _structures:
             - image/webp
             - image/svg+xml
             max_file_size: '700000'
-            paths:
-              static: static/images/uploads
-              uploads: /assets/images/uploads
             required: false
           type: image
         title:
@@ -3335,9 +3314,6 @@ _structures:
             - image/webp
             - image/svg+xml
             max_file_size: '700000'
-            paths:
-              static: static/images/uploads
-              uploads: /assets/images/uploads
             required: false
           type: image
         transcription:
