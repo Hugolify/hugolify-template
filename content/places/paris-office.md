@@ -9,7 +9,7 @@ contact:
 image:
   alt:
   credit: ''
-  src: /assets/images/uploads/share-hmb.png
+  src: /images/uploads/share-hmb.png
 address:
   city: Bordeaux
   coordinates:
@@ -18,4 +18,5 @@ address:
   country: France
   street:
   zipcode:
+draft: false
 ---
