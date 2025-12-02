@@ -1,10 +1,6 @@
-
-
-
 paths:
   static: assets
-  uploads: /assets/images/uploads
-
+  uploads: assets/images/uploads
 
 _snippets_imports:
   hugo: true
