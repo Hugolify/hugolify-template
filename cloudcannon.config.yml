@@ -481,9 +481,12 @@ collection_groups:
   - casestudies
   - expertises
   - pages
-  - persons
   - places
   heading: Golbal
+- collections:
+  - persons
+  - persons_statutes
+  heading: Team
 - collections:
   - products
   - products_tags

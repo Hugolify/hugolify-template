@@ -12,8 +12,11 @@ admin:
         - casestudies
         - expertises
         - pages
-        - persons
         - places
+    - heading: Team
+      collections:
+        - persons
+        - persons_statutes
     - heading: Products
       collections:
         - products
