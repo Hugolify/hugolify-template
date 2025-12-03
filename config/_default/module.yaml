@@ -4,6 +4,7 @@ imports:
   - path: github.com/hugolify/hugolify-theme-expertises
   - path: github.com/hugolify/hugolify-theme-persons-expertises
   - path: github.com/hugolify/hugolify-theme-persons-places
+  - path: github.com/hugolify/hugolify-theme-persons-statutes
   - path: github.com/hugolify/hugolify-theme-persons
   - path: github.com/hugolify/hugolify-theme-places
   - path: github.com/hugolify/hugolify-theme-products-tags

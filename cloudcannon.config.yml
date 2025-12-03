@@ -3,7 +3,7 @@
 
 paths:
   static: assets
-  uploads: assets/images/uploads
+  uploads: /assets/images/uploads
 
 
 _snippets_imports:
@@ -80,10 +80,11 @@ collections_config:
       text:
         - key: title
       subtext:
-        - key: persons_expertises
+        - key: 
+          - persons_statutes
+          - persons_expertises
+          - description
       image:
-        - key: image.src
-      gallery:
         - key: image.src
     schemas:
       default:
@@ -91,6 +92,22 @@ collections_config:
         remove_empty_inputs: true
         reorder_inputs: false
     singular_name: Person
+  persons_statutes:
+    _enabled_editors:
+    - data
+    comment: All statutes
+    create:
+      path: '[relative_base_path]/{title_page|slugify}/_index.md'
+    disable_add: false
+    disable_add_folder: true
+    name: Statutes
+    path: content/persons_statutes
+    schemas:
+      default:
+        path: archetypes/persons_statutes.md
+        remove_empty_inputs: true
+        reorder_inputs: false
+    singular_name: Status
   places:
     _enabled_editors:
     - data
@@ -485,6 +502,17 @@ _inputs:
       - path
       values: collections.places
     type: multiselect
+  persons_statutes:
+    label: Statutes
+    options:
+      value_key:
+      - id
+      - uuid
+      - title
+      - name
+      - path
+      values: collections.persons_statutes
+    type: select
   posts_expertises:
     label: Expertises
     options:
@@ -605,6 +633,33 @@ _inputs:
     options:
       required: true
     type: text
+  weight:
+    label: Position (importance)
+    options:
+      required: true
+      value_key: value
+      values:
+      - name: 10th
+        value: 10
+      - name: 20th
+        value: 20
+      - name: 30th
+        value: 30
+      - name: 40th
+        value: 40
+      - name: 50th
+        value: 50
+      - name: 60th
+        value: 60
+      - name: 70th
+        value: 70
+      - name: 80th
+        value: 80
+      - name: 90th
+        value: 90
+      - name: 100th
+        value: 100
+    type: select
 
 
 
@@ -1461,6 +1516,8 @@ _structures:
               value: pages
             - name: Persons
               value: persons
+            - name: Persons statutes
+              value: persons_statutes
             - name: Places
               value: places
             - name: Posts
