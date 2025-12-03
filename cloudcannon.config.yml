@@ -68,7 +68,7 @@ collections_config:
     - content
     comment: All pages
     create:
-      path: '[relative_base_path]/{title_page|slugify}/_index.md'
+      path: '[relative_base_path]/{title|slugify}/_index.md'
     disable_add: false
     disable_add_folder: true
     icon: description
@@ -122,9 +122,10 @@ collections_config:
     - data
     comment: All statutes
     create:
-      path: '[relative_base_path]/{title_page|slugify}/_index.md'
+      path: '[relative_base_path]/{title|slugify}/_index.md'
     disable_add: false
     disable_add_folder: true
+    icon: info
     name: Statutes
     path: content/persons_statutes
     preview:
@@ -199,7 +200,7 @@ collections_config:
     - content
     comment: All news categories
     create:
-      path: '[relative_base_path]/{title_page|slugify}/_index.md'
+      path: '[relative_base_path]/{title|slugify}/_index.md'
     disable_add: false
     disable_add_folder: true
     icon: bookmarks
@@ -225,7 +226,7 @@ collections_config:
     - content
     comment: All news tags
     create:
-      path: '[relative_base_path]/{title_page|slugify}/_index.md'
+      path: '[relative_base_path]/{title|slugify}/_index.md'
     disable_add: false
     disable_add_folder: true
     icon: bookmarks
@@ -276,7 +277,7 @@ collections_config:
     - data
     comment: All products tags
     create:
-      path: '[relative_base_path]/{title_page|slugify}/_index.md'
+      path: '[relative_base_path]/{title|slugify}/_index.md'
     disable_add: false
     disable_add_folder: true
     icon: bookmarks
@@ -326,7 +327,7 @@ collections_config:
     - data
     comment: All projects tags
     create:
-      path: '[relative_base_path]/{title_page|slugify}/_index.md'
+      path: '[relative_base_path]/{title|slugify}/_index.md'
     disable_add: false
     disable_add_folder: true
     icon: bookmarks
@@ -351,7 +352,7 @@ collections_config:
     - data
     comment: All projects types
     create:
-      path: '[relative_base_path]/{title_page|slugify}/_index.md'
+      path: '[relative_base_path]/{title|slugify}/_index.md'
     disable_add: false
     disable_add_folder: true
     icon: bookmarks
@@ -402,7 +403,7 @@ collections_config:
     - data
     comment: All publications categories
     create:
-      path: '[relative_base_path]/{title_page|slugify}/_index.md'
+      path: '[relative_base_path]/{title|slugify}/_index.md'
     disable_add: false
     disable_add_folder: true
     icon: bookmarks
@@ -453,7 +454,7 @@ collections_config:
     - data
     comment: All services categories
     create:
-      path: '[relative_base_path]/{title_page|slugify}/_index.md'
+      path: '[relative_base_path]/{title|slugify}/_index.md'
     disable_add: false
     disable_add_folder: true
     icon: bookmarks

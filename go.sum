@@ -18,8 +18,8 @@ github.com/hugolify/hugolify-theme-persons-expertises v1.0.5 h1:GrGJYisXdx1mCazt
 github.com/hugolify/hugolify-theme-persons-expertises v1.0.5/go.mod h1:IAchs3PkkihEqxLoGksvBaUs99+O6PK2WhTB/lgbPNI=
 github.com/hugolify/hugolify-theme-persons-places v1.1.4 h1:Q/2MKJo7WC0wd/W4XyAdqkqn+hdtHydbmZ0qvhIcR7c=
 github.com/hugolify/hugolify-theme-persons-places v1.1.4/go.mod h1:v2u3pBk3nplBd/rJgnWb8JfnSia6TCnlWY/SyCMEY6o=
-github.com/hugolify/hugolify-theme-persons-statutes v1.1.11 h1:UdyMqd8lbdu8hn7amy/hQHOhrWeaiexfI8zOlEJKa5s=
-github.com/hugolify/hugolify-theme-persons-statutes v1.1.11/go.mod h1:/eWhaX5TxpPMzR6B/p071ViwbAllrqqCv6Soqta6FjY=
+github.com/hugolify/hugolify-theme-persons-statutes v1.1.12 h1:DbH0jLNQAyeHkYHRfIqKAG30mpul3ZT0oRmGU0G6XEo=
+github.com/hugolify/hugolify-theme-persons-statutes v1.1.12/go.mod h1:/eWhaX5TxpPMzR6B/p071ViwbAllrqqCv6Soqta6FjY=
 github.com/hugolify/hugolify-theme-places v1.2.4 h1:5F10iF96ac3+8f8XNOpL5BJBq5eJ7XIQ7a5fRrnGlgE=
 github.com/hugolify/hugolify-theme-places v1.2.4/go.mod h1:PCG6B4DqYrhNcdJS1D632yQ0jROHoMYFlyLHv0sFeFo=
 github.com/hugolify/hugolify-theme-posts v1.2.8 h1:E7OQlNyYDY03Pye0unxZ4207lGhhTICICM8g5nRfFs4=
