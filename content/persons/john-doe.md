@@ -16,4 +16,5 @@ contact:
   phone: +33 1 23 45 67 89
   socials:
 draft: false
+persons_statutes: CEO
 ---
