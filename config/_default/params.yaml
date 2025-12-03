@@ -43,3 +43,10 @@ admin:
       enable: false
     indexes:
       enable: false
+    persons:
+      card_preview:
+        subtext:
+          key: 
+            - persons_statutes
+            - persons_expertises
+            - description
