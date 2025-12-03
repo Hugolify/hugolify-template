@@ -49,7 +49,6 @@ admin:
     persons:
       card_preview:
         subtext:
-          key: 
-            - persons_statutes
-            - persons_expertises
-            - description
+          - key: persons_statutes
+          - key: persons_expertises
+          - key: description

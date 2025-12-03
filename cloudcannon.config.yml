@@ -105,10 +105,9 @@ collections_config:
         image:
           key: image.src
       subtext:
-        key:
-        - persons_statutes
-        - persons_expertises
-        - description
+      - key: persons_statutes
+      - key: persons_expertises
+      - key: description
       text:
         key: title
     schemas:
