@@ -22,6 +22,14 @@ collections_config:
     icon: web_stories
     name: Cases studies
     path: content/casestudies
+    preview:
+      gallery:
+        image: image.src
+      subtext:
+      - persons_statutes
+      - persons_expertises
+      - description
+      text: title
     schemas:
       default:
         path: archetypes/casestudies.md
@@ -40,6 +48,14 @@ collections_config:
     icon: school
     name: Expertises
     path: content/expertises
+    preview:
+      gallery:
+        image: image.src
+      subtext:
+      - persons_statutes
+      - persons_expertises
+      - description
+      text: title
     schemas:
       default:
         path: archetypes/expertises.md
@@ -58,6 +74,14 @@ collections_config:
     icon: description
     name: Pages
     path: content
+    preview:
+      gallery:
+        image: image.src
+      subtext:
+      - persons_statutes
+      - persons_expertises
+      - description
+      text: title
     schemas:
       default:
         path: archetypes/pages.md
@@ -77,15 +101,13 @@ collections_config:
     name: Persons
     path: content/persons
     preview:
-      text:
-        - key: title
+      gallery:
+        image: image.src
       subtext:
-        - key: 
-          - persons_statutes
-          - persons_expertises
-          - description
-      image:
-        - key: image.src
+      - persons_statutes
+      - persons_expertises
+      - description
+      text: title
     schemas:
       default:
         path: archetypes/persons.md
@@ -102,6 +124,14 @@ collections_config:
     disable_add_folder: true
     name: Statutes
     path: content/persons_statutes
+    preview:
+      gallery:
+        image: image.src
+      subtext:
+      - persons_statutes
+      - persons_expertises
+      - description
+      text: title
     schemas:
       default:
         path: archetypes/persons_statutes.md
@@ -120,6 +150,14 @@ collections_config:
     icon: location_on
     name: Places
     path: content/places
+    preview:
+      gallery:
+        image: image.src
+      subtext:
+      - persons_statutes
+      - persons_expertises
+      - description
+      text: title
     schemas:
       default:
         path: archetypes/places.md
@@ -138,6 +176,14 @@ collections_config:
     icon: feed
     name: News
     path: content/posts
+    preview:
+      gallery:
+        image: image.src
+      subtext:
+      - persons_statutes
+      - persons_expertises
+      - description
+      text: title
     schemas:
       default:
         path: archetypes/posts.md
@@ -156,6 +202,14 @@ collections_config:
     icon: bookmarks
     name: Categories
     path: content/categories
+    preview:
+      gallery:
+        image: image.src
+      subtext:
+      - persons_statutes
+      - persons_expertises
+      - description
+      text: title
     schemas:
       default:
         path: archetypes/posts_categories.md
@@ -174,6 +228,14 @@ collections_config:
     icon: bookmarks
     name: Tags
     path: content/tags
+    preview:
+      gallery:
+        image: image.src
+      subtext:
+      - persons_statutes
+      - persons_expertises
+      - description
+      text: title
     schemas:
       default:
         path: archetypes/posts_tags.md
@@ -192,6 +254,14 @@ collections_config:
     icon: box
     name: Products
     path: content/products
+    preview:
+      gallery:
+        image: image.src
+      subtext:
+      - persons_statutes
+      - persons_expertises
+      - description
+      text: title
     schemas:
       default:
         path: archetypes/products.md
@@ -209,6 +279,14 @@ collections_config:
     icon: bookmarks
     name: Tags
     path: content/products_tags
+    preview:
+      gallery:
+        image: image.src
+      subtext:
+      - persons_statutes
+      - persons_expertises
+      - description
+      text: title
     schemas:
       default:
         path: archetypes/products_tags.md
@@ -226,6 +304,14 @@ collections_config:
     icon: space_dashboard
     name: Projects
     path: content/projects
+    preview:
+      gallery:
+        image: image.src
+      subtext:
+      - persons_statutes
+      - persons_expertises
+      - description
+      text: title
     schemas:
       default:
         path: archetypes/projects.md
@@ -243,6 +329,14 @@ collections_config:
     icon: bookmarks
     name: Tags
     path: content/projects_tags
+    preview:
+      gallery:
+        image: image.src
+      subtext:
+      - persons_statutes
+      - persons_expertises
+      - description
+      text: title
     schemas:
       default:
         path: archetypes/projects_tags.md
@@ -260,6 +354,14 @@ collections_config:
     icon: bookmarks
     name: Types
     path: content/projects_types
+    preview:
+      gallery:
+        image: image.src
+      subtext:
+      - persons_statutes
+      - persons_expertises
+      - description
+      text: title
     schemas:
       default:
         path: archetypes/projects_types.md
@@ -278,6 +380,14 @@ collections_config:
     icon: newspaper
     name: Publications
     path: content/publications
+    preview:
+      gallery:
+        image: image.src
+      subtext:
+      - persons_statutes
+      - persons_expertises
+      - description
+      text: title
     schemas:
       default:
         path: archetypes/publications.md
@@ -295,6 +405,14 @@ collections_config:
     icon: bookmarks
     name: Categories
     path: content/publications_categories
+    preview:
+      gallery:
+        image: image.src
+      subtext:
+      - persons_statutes
+      - persons_expertises
+      - description
+      text: title
     schemas:
       default:
         path: archetypes/publications_categories.md
@@ -313,6 +431,14 @@ collections_config:
     icon: business_center
     name: Services
     path: content/services
+    preview:
+      gallery:
+        image: image.src
+      subtext:
+      - persons_statutes
+      - persons_expertises
+      - description
+      text: title
     schemas:
       default:
         path: archetypes/services.md
@@ -330,6 +456,14 @@ collections_config:
     icon: bookmarks
     name: Categories
     path: content/services_categories
+    preview:
+      gallery:
+        image: image.src
+      subtext:
+      - persons_statutes
+      - persons_expertises
+      - description
+      text: title
     schemas:
       default:
         path: archetypes/services_categories.md
