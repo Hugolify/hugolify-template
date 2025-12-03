@@ -24,12 +24,12 @@ collections_config:
     path: content/casestudies
     preview:
       gallery:
-        image: image.src
+        image:
+          key: image.src
       subtext:
-      - persons_statutes
-      - persons_expertises
-      - description
-      text: title
+        key: description
+      text:
+        key: title
     schemas:
       default:
         path: archetypes/casestudies.md
@@ -50,12 +50,12 @@ collections_config:
     path: content/expertises
     preview:
       gallery:
-        image: image.src
+        image:
+          key: image.src
       subtext:
-      - persons_statutes
-      - persons_expertises
-      - description
-      text: title
+        key: description
+      text:
+        key: title
     schemas:
       default:
         path: archetypes/expertises.md
@@ -76,12 +76,12 @@ collections_config:
     path: content
     preview:
       gallery:
-        image: image.src
+        image:
+          key: image.src
       subtext:
-      - persons_statutes
-      - persons_expertises
-      - description
-      text: title
+        key: description
+      text:
+        key: title
     schemas:
       default:
         path: archetypes/pages.md
@@ -102,12 +102,12 @@ collections_config:
     path: content/persons
     preview:
       gallery:
-        image: image.src
+        image:
+          key: image.src
       subtext:
-      - persons_statutes
-      - persons_expertises
-      - description
-      text: title
+        key: description
+      text:
+        key: title
     schemas:
       default:
         path: archetypes/persons.md
@@ -126,12 +126,12 @@ collections_config:
     path: content/persons_statutes
     preview:
       gallery:
-        image: image.src
+        image:
+          key: image.src
       subtext:
-      - persons_statutes
-      - persons_expertises
-      - description
-      text: title
+        key: description
+      text:
+        key: title
     schemas:
       default:
         path: archetypes/persons_statutes.md
@@ -152,12 +152,12 @@ collections_config:
     path: content/places
     preview:
       gallery:
-        image: image.src
+        image:
+          key: image.src
       subtext:
-      - persons_statutes
-      - persons_expertises
-      - description
-      text: title
+        key: description
+      text:
+        key: title
     schemas:
       default:
         path: archetypes/places.md
@@ -178,12 +178,12 @@ collections_config:
     path: content/posts
     preview:
       gallery:
-        image: image.src
+        image:
+          key: image.src
       subtext:
-      - persons_statutes
-      - persons_expertises
-      - description
-      text: title
+        key: description
+      text:
+        key: title
     schemas:
       default:
         path: archetypes/posts.md
@@ -204,12 +204,12 @@ collections_config:
     path: content/categories
     preview:
       gallery:
-        image: image.src
+        image:
+          key: image.src
       subtext:
-      - persons_statutes
-      - persons_expertises
-      - description
-      text: title
+        key: description
+      text:
+        key: title
     schemas:
       default:
         path: archetypes/posts_categories.md
@@ -230,12 +230,12 @@ collections_config:
     path: content/tags
     preview:
       gallery:
-        image: image.src
+        image:
+          key: image.src
       subtext:
-      - persons_statutes
-      - persons_expertises
-      - description
-      text: title
+        key: description
+      text:
+        key: title
     schemas:
       default:
         path: archetypes/posts_tags.md
@@ -256,12 +256,12 @@ collections_config:
     path: content/products
     preview:
       gallery:
-        image: image.src
+        image:
+          key: image.src
       subtext:
-      - persons_statutes
-      - persons_expertises
-      - description
-      text: title
+        key: description
+      text:
+        key: title
     schemas:
       default:
         path: archetypes/products.md
@@ -281,12 +281,12 @@ collections_config:
     path: content/products_tags
     preview:
       gallery:
-        image: image.src
+        image:
+          key: image.src
       subtext:
-      - persons_statutes
-      - persons_expertises
-      - description
-      text: title
+        key: description
+      text:
+        key: title
     schemas:
       default:
         path: archetypes/products_tags.md
@@ -306,12 +306,12 @@ collections_config:
     path: content/projects
     preview:
       gallery:
-        image: image.src
+        image:
+          key: image.src
       subtext:
-      - persons_statutes
-      - persons_expertises
-      - description
-      text: title
+        key: description
+      text:
+        key: title
     schemas:
       default:
         path: archetypes/projects.md
@@ -331,12 +331,12 @@ collections_config:
     path: content/projects_tags
     preview:
       gallery:
-        image: image.src
+        image:
+          key: image.src
       subtext:
-      - persons_statutes
-      - persons_expertises
-      - description
-      text: title
+        key: description
+      text:
+        key: title
     schemas:
       default:
         path: archetypes/projects_tags.md
@@ -356,12 +356,12 @@ collections_config:
     path: content/projects_types
     preview:
       gallery:
-        image: image.src
+        image:
+          key: image.src
       subtext:
-      - persons_statutes
-      - persons_expertises
-      - description
-      text: title
+        key: description
+      text:
+        key: title
     schemas:
       default:
         path: archetypes/projects_types.md
@@ -382,12 +382,12 @@ collections_config:
     path: content/publications
     preview:
       gallery:
-        image: image.src
+        image:
+          key: image.src
       subtext:
-      - persons_statutes
-      - persons_expertises
-      - description
-      text: title
+        key: description
+      text:
+        key: title
     schemas:
       default:
         path: archetypes/publications.md
@@ -407,12 +407,12 @@ collections_config:
     path: content/publications_categories
     preview:
       gallery:
-        image: image.src
+        image:
+          key: image.src
       subtext:
-      - persons_statutes
-      - persons_expertises
-      - description
-      text: title
+        key: description
+      text:
+        key: title
     schemas:
       default:
         path: archetypes/publications_categories.md
@@ -433,12 +433,12 @@ collections_config:
     path: content/services
     preview:
       gallery:
-        image: image.src
+        image:
+          key: image.src
       subtext:
-      - persons_statutes
-      - persons_expertises
-      - description
-      text: title
+        key: description
+      text:
+        key: title
     schemas:
       default:
         path: archetypes/services.md
@@ -458,12 +458,12 @@ collections_config:
     path: content/services_categories
     preview:
       gallery:
-        image: image.src
+        image:
+          key: image.src
       subtext:
-      - persons_statutes
-      - persons_expertises
-      - description
-      text: title
+        key: description
+      text:
+        key: title
     schemas:
       default:
         path: archetypes/services_categories.md
