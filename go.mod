@@ -16,6 +16,7 @@ require (
 	github.com/hugolify/hugolify-theme-persons v1.3.26 // indirect
 	github.com/hugolify/hugolify-theme-persons-expertises v1.0.5 // indirect
 	github.com/hugolify/hugolify-theme-persons-places v1.1.4 // indirect
+	github.com/hugolify/hugolify-theme-persons-statutes v1.1.11 // indirect
 	github.com/hugolify/hugolify-theme-places v1.2.4 // indirect
 	github.com/hugolify/hugolify-theme-posts v1.2.8 // indirect
 	github.com/hugolify/hugolify-theme-posts-authors v1.0.14 // indirect
