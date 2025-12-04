@@ -526,7 +526,7 @@ _inputs:
       value_key:
       - id
       - uuid
-      - name
+      - slug
       - title
       - path
       values: collections.persons
@@ -537,7 +537,7 @@ _inputs:
       value_key:
       - id
       - uuid
-      - name
+      - slug
       - title
       - path
       values: collections.categories
@@ -626,7 +626,7 @@ _inputs:
       value_key:
       - id
       - uuid
-      - name
+      - slug
       - title
       - path
       values: collections.expertises
@@ -637,7 +637,7 @@ _inputs:
       value_key:
       - id
       - uuid
-      - name
+      - slug
       - title
       - path
       values: collections.places
@@ -648,7 +648,7 @@ _inputs:
       value_key:
       - id
       - uuid
-      - name
+      - slug
       - title
       - path
       values: collections.persons_statutes
@@ -659,7 +659,7 @@ _inputs:
       value_key:
       - id
       - uuid
-      - name
+      - slug
       - title
       - path
       values: collections.expertises
@@ -677,7 +677,7 @@ _inputs:
       value_key:
       - id
       - uuid
-      - name
+      - slug
       - title
       - path
       values: collections.products_tags
@@ -688,7 +688,7 @@ _inputs:
       value_key:
       - id
       - uuid
-      - name
+      - slug
       - title
       - path
       values: collections.projects_tags
@@ -699,7 +699,7 @@ _inputs:
       value_key:
       - id
       - uuid
-      - name
+      - slug
       - title
       - path
       values: collections.projects_types
@@ -710,7 +710,7 @@ _inputs:
       value_key:
       - id
       - uuid
-      - name
+      - slug
       - title
       - path
       values: collections.publications_categories
@@ -721,7 +721,7 @@ _inputs:
       value_key:
       - id
       - uuid
-      - name
+      - slug
       - title
       - path
       values: collections.expertises
@@ -732,7 +732,7 @@ _inputs:
       value_key:
       - id
       - uuid
-      - name
+      - slug
       - title
       - path
       values: collections.persons
@@ -743,7 +743,7 @@ _inputs:
       value_key:
       - id
       - uuid
-      - name
+      - slug
       - title
       - path
       values: collections.services_categories
@@ -762,7 +762,7 @@ _inputs:
       value_key:
       - id
       - uuid
-      - name
+      - slug
       - title
       - path
       values: collections.tags
@@ -2086,7 +2086,7 @@ _structures:
             value_key:
             - id
             - uuid
-            - name
+            - slug
             - title
             - path
             values: collections.selected
