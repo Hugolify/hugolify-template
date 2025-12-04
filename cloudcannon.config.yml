@@ -523,23 +523,11 @@ _inputs:
   authors:
     label: Authors
     options:
-      value_key:
-      - id
-      - uuid
-      - slug
-      - title
-      - path
       values: collections.persons
     type: multiselect
   categories:
     label: Categories
     options:
-      value_key:
-      - id
-      - uuid
-      - slug
-      - title
-      - path
       values: collections.categories
     type: multiselect
   contact:
@@ -623,45 +611,21 @@ _inputs:
   persons_expertises:
     label: Expertises
     options:
-      value_key:
-      - id
-      - uuid
-      - slug
-      - title
-      - path
       values: collections.expertises
     type: multiselect
   persons_places:
     label: Places
     options:
-      value_key:
-      - id
-      - uuid
-      - slug
-      - title
-      - path
       values: collections.places
     type: multiselect
   persons_statutes:
     label: Statutes
     options:
-      value_key:
-      - id
-      - uuid
-      - slug
-      - title
-      - path
       values: collections.persons_statutes
     type: select
   posts_expertises:
     label: Expertises
     options:
-      value_key:
-      - id
-      - uuid
-      - slug
-      - title
-      - path
       values: collections.expertises
     type: multiselect
   press:
@@ -674,78 +638,36 @@ _inputs:
   products_tags:
     label: Tags
     options:
-      value_key:
-      - id
-      - uuid
-      - slug
-      - title
-      - path
       values: collections.products_tags
     type: multiselect
   projects_tags:
     label: Tags
     options:
-      value_key:
-      - id
-      - uuid
-      - slug
-      - title
-      - path
       values: collections.projects_tags
     type: multiselect
   projects_types:
     label: Types
     options:
-      value_key:
-      - id
-      - uuid
-      - slug
-      - title
-      - path
       values: collections.projects_types
     type: multiselect
   publications_categories:
     label: Categories
     options:
-      value_key:
-      - id
-      - uuid
-      - slug
-      - title
-      - path
       values: collections.publications_categories
     type: select
   publications_expertises:
     label: Expertises
     options:
-      value_key:
-      - id
-      - uuid
-      - slug
-      - title
-      - path
       values: collections.expertises
     type: multiselect
   publications_persons:
     label: Persons
     options:
-      value_key:
-      - id
-      - uuid
-      - slug
-      - title
-      - path
       values: collections.persons
     type: multiselect
   services_categories:
     label: Categories
     options:
-      value_key:
-      - id
-      - uuid
-      - slug
-      - title
-      - path
       values: collections.services_categories
     type: multiselect
   slug:
@@ -759,12 +681,6 @@ _inputs:
   tags:
     label: Tags
     options:
-      value_key:
-      - id
-      - uuid
-      - slug
-      - title
-      - path
       values: collections.tags
     type: multiselect
   title:
@@ -2083,12 +1999,6 @@ _structures:
         items:
           label: nolabel
           options:
-            value_key:
-            - id
-            - uuid
-            - slug
-            - title
-            - path
             values: collections.selected
           type: multiselect
         layout:
