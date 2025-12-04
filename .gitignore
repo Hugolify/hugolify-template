@@ -6,3 +6,4 @@ resources
 # Local Netlify folder
 .netlify
 jsconfig.json
+.env
