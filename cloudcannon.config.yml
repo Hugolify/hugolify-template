@@ -526,8 +526,8 @@ _inputs:
       value_key:
       - id
       - uuid
-      - title
       - name
+      - title
       - path
       values: collections.persons
     type: multiselect
@@ -537,8 +537,8 @@ _inputs:
       value_key:
       - id
       - uuid
-      - title
       - name
+      - title
       - path
       values: collections.categories
     type: multiselect
@@ -626,8 +626,8 @@ _inputs:
       value_key:
       - id
       - uuid
-      - title
       - name
+      - title
       - path
       values: collections.expertises
     type: multiselect
@@ -637,8 +637,8 @@ _inputs:
       value_key:
       - id
       - uuid
-      - title
       - name
+      - title
       - path
       values: collections.places
     type: multiselect
@@ -648,8 +648,8 @@ _inputs:
       value_key:
       - id
       - uuid
-      - title
       - name
+      - title
       - path
       values: collections.persons_statutes
     type: select
@@ -659,8 +659,8 @@ _inputs:
       value_key:
       - id
       - uuid
-      - title
       - name
+      - title
       - path
       values: collections.expertises
     type: multiselect
@@ -677,8 +677,8 @@ _inputs:
       value_key:
       - id
       - uuid
-      - title
       - name
+      - title
       - path
       values: collections.products_tags
     type: multiselect
@@ -688,8 +688,8 @@ _inputs:
       value_key:
       - id
       - uuid
-      - title
       - name
+      - title
       - path
       values: collections.projects_tags
     type: multiselect
@@ -699,8 +699,8 @@ _inputs:
       value_key:
       - id
       - uuid
-      - title
       - name
+      - title
       - path
       values: collections.projects_types
     type: multiselect
@@ -710,8 +710,8 @@ _inputs:
       value_key:
       - id
       - uuid
-      - title
       - name
+      - title
       - path
       values: collections.publications_categories
     type: select
@@ -721,8 +721,8 @@ _inputs:
       value_key:
       - id
       - uuid
-      - title
       - name
+      - title
       - path
       values: collections.expertises
     type: multiselect
@@ -732,8 +732,8 @@ _inputs:
       value_key:
       - id
       - uuid
-      - title
       - name
+      - title
       - path
       values: collections.persons
     type: multiselect
@@ -743,8 +743,8 @@ _inputs:
       value_key:
       - id
       - uuid
-      - title
       - name
+      - title
       - path
       values: collections.services_categories
     type: multiselect
@@ -762,8 +762,8 @@ _inputs:
       value_key:
       - id
       - uuid
-      - title
       - name
+      - title
       - path
       values: collections.tags
     type: multiselect
@@ -1404,11 +1404,11 @@ _structures:
             subtype: object
           type: object
         items:
-          label: Items
+          label: Fields
           options:
             required: false
             structures: _structures.form_items
-          singular_name: Item
+          singular_name: Field
           type: array
         name:
           label: Name
@@ -2086,8 +2086,8 @@ _structures:
             value_key:
             - id
             - uuid
-            - title
             - name
+            - title
             - path
             values: collections.selected
           type: multiselect
