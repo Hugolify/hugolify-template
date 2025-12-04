@@ -8,9 +8,9 @@ image:
   credit: Unsplash
   src: /images/uploads/jake-nackos-if9tk5uy-ki-unsplash.jpg
 persons_places:
-  - Paris office
+  - /content/places/paris-office.md
 description: Description
-persons_statutes: Manager
+persons_statutes: /content/persons_statutes/manager/_index.md
 persons_expertises:
-  - Lorem expertise ipsum
+  - /content/expertises/lorem-expertise-ipsum.md
 ---
