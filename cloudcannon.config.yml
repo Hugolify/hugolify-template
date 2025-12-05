@@ -526,6 +526,8 @@ _inputs:
       value_key:
       - id
       - uuid
+      - url
+      - filename_without_ext
       - title
       - name
       - path
@@ -537,6 +539,8 @@ _inputs:
       value_key:
       - id
       - uuid
+      - url
+      - filename_without_ext
       - title
       - name
       - path
@@ -626,6 +630,8 @@ _inputs:
       value_key:
       - id
       - uuid
+      - url
+      - filename_without_ext
       - title
       - name
       - path
@@ -637,6 +643,8 @@ _inputs:
       value_key:
       - id
       - uuid
+      - url
+      - filename_without_ext
       - title
       - name
       - path
@@ -648,6 +656,8 @@ _inputs:
       value_key:
       - id
       - uuid
+      - url
+      - filename_without_ext
       - title
       - name
       - path
@@ -659,6 +669,8 @@ _inputs:
       value_key:
       - id
       - uuid
+      - url
+      - filename_without_ext
       - title
       - name
       - path
@@ -677,6 +689,8 @@ _inputs:
       value_key:
       - id
       - uuid
+      - url
+      - filename_without_ext
       - title
       - name
       - path
@@ -688,6 +702,8 @@ _inputs:
       value_key:
       - id
       - uuid
+      - url
+      - filename_without_ext
       - title
       - name
       - path
@@ -699,6 +715,8 @@ _inputs:
       value_key:
       - id
       - uuid
+      - url
+      - filename_without_ext
       - title
       - name
       - path
@@ -710,6 +728,8 @@ _inputs:
       value_key:
       - id
       - uuid
+      - url
+      - filename_without_ext
       - title
       - name
       - path
@@ -721,6 +741,8 @@ _inputs:
       value_key:
       - id
       - uuid
+      - url
+      - filename_without_ext
       - title
       - name
       - path
@@ -732,6 +754,8 @@ _inputs:
       value_key:
       - id
       - uuid
+      - url
+      - filename_without_ext
       - title
       - name
       - path
@@ -743,6 +767,8 @@ _inputs:
       value_key:
       - id
       - uuid
+      - url
+      - filename_without_ext
       - title
       - name
       - path
@@ -762,6 +788,8 @@ _inputs:
       value_key:
       - id
       - uuid
+      - url
+      - filename_without_ext
       - title
       - name
       - path
@@ -912,7 +940,7 @@ _structures:
     values:
     - _inputs:
         image:
-          label: Images
+          label: Image
           options:
             required: false
             structures: _structures.image_simple
@@ -1197,26 +1225,18 @@ _structures:
             required: false
             value_key: value
             values:
-            - name: Ltr
+            - name: Text on the left / image on the right
               value: ltr
-            - name: Rtl
+            - name: Image on the left / text on the right
               value: rtl
           type: select
         image:
-          label: Images
+          label: Image
           options:
             required: false
             structures: _structures.image
             subtype: object
           type: object
-        notes:
-          comment: To link a word in the text to a note, suffix it with . Notes and  are linked by their order.
-          label: Notes
-          options:
-            required: false
-            structures: _structures.notes
-          singular_name: Note
-          type: array
         surtitle:
           label: Surtitle
           options:
@@ -1245,7 +1265,6 @@ _structures:
         ctas: null
         direction: null
         image: null
-        notes: null
         surtitle: null
         text_markdown: null
         title: null
@@ -1686,6 +1705,7 @@ _structures:
               value: services_categories
           type: select
         show_more:
+          comment: Shows a button to see more items
           label: Show more?
           options:
             required: false
@@ -1897,14 +1917,6 @@ _structures:
             - name: Full
               value: full
           type: select
-        notes:
-          comment: To link a word in the text to a note, suffix it with . Notes and  are linked by their order.
-          label: Notes
-          options:
-            required: false
-            structures: _structures.notes
-          singular_name: Note
-          type: array
         offset:
           label: Offset
           options:
@@ -1946,7 +1958,6 @@ _structures:
         background: null
         ctas: null
         grid: null
-        notes: null
         offset: null
         surtitle: null
         text_markdown: null
@@ -2086,6 +2097,8 @@ _structures:
             value_key:
             - id
             - uuid
+            - url
+            - filename_without_ext
             - title
             - name
             - path
@@ -2109,6 +2122,7 @@ _structures:
             required: false
           type: text
         show_more:
+          comment: Shows a button to see more items
           label: Show more?
           options:
             required: false
@@ -2513,6 +2527,7 @@ _structures:
             required: false
           type: text
         url:
+          comment: Absolute URL (e.g https://www.example.com)
           label: URL
           options:
             required: false
@@ -2544,6 +2559,7 @@ _structures:
             required: false
           type: text
         url:
+          comment: Absolute URL (e.g https://www.example.com)
           label: URL
           options:
             required: false
@@ -2882,7 +2898,7 @@ _structures:
           singular_name: CTA
           type: array
         image:
-          label: Images
+          label: Image
           options:
             required: false
             structures: _structures.image
@@ -3189,7 +3205,7 @@ _structures:
             required: false
           type: text
         image:
-          label: Images
+          label: Image
           options:
             required: false
             structures: _structures.image_simple
@@ -3235,6 +3251,7 @@ _structures:
             required: false
           type: text
         url:
+          comment: Absolute URL (e.g https://www.example.com)
           label: URL
           options:
             required: false
@@ -3273,7 +3290,7 @@ _structures:
             required: false
           type: switch
         image:
-          label: Images
+          label: Image
           options:
             required: false
             structures: _structures.image
@@ -3371,6 +3388,7 @@ _structures:
             structures: _structures.hiddens
           type: array
         url:
+          comment: Absolute URL (e.g https://www.example.com)
           label: URL
           options:
             required: false
@@ -3378,18 +3396,6 @@ _structures:
       value:
         hiddens: null
         url: null
-  notes:
-    remove_empty_inputs: true
-    reorder_inputs: false
-    values:
-    - _inputs:
-        text:
-          label: Text
-          options:
-            required: false
-          type: text
-      value:
-        text: null
   offer:
     remove_empty_inputs: true
     reorder_inputs: false
@@ -3435,6 +3441,7 @@ _structures:
             required: false
           type: text
         url:
+          comment: Absolute URL (e.g https://www.example.com)
           label: URL
           options:
             required: false
@@ -3479,6 +3486,7 @@ _structures:
               value: youtube
           type: select
         url:
+          comment: Absolute URL (e.g https://www.example.com)
           label: URL
           options:
             required: false
