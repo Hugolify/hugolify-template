@@ -10,7 +10,7 @@ image:
 persons_places:
   - Paris office
 description: Description
-persons_statutes: Manager
+persons_statutes: CEO
 persons_expertises:
   - Lorem expertise ipsum
 ---
