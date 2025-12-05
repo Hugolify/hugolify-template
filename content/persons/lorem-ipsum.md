@@ -7,9 +7,9 @@ image:
   alt:
   credit:
   src:
-persons_statutes: Manager
+persons_statutes: _index
 persons_expertises:
-  - Lorem expertise ipsum
+  - lorem-expertise-ipsum
 persons_places:
-  - Paris office
+  - paris-office
 ---
