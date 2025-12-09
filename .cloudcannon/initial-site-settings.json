@@ -1,0 +1,21 @@
+{
+  "ssg": "hugo",
+  "mode": "hosted",
+  "build": {
+    "hugoVersion": "0.152.2",
+    "rubyVersion": "2.7.3",
+    "nodeVersion": "20",
+    "denoVersion": "1.40.2",
+    "install_command": "yarn",
+    "build_command": "yarn build",
+    "output_path": "public",
+    "environment_variables": [
+      {
+        "key": "HUGO_CACHEDIR",
+        "value": "/usr/local/__site/src/.hugo_cache/"
+      }
+    ],
+    "preserved_paths": "node_modules/,resources/,.hugo_cache/",
+    "includeGit": true
+  }
+}
