@@ -519,31 +519,24 @@ _inputs:
       required: false
       structures: _structures.address
       subtype: object
+    preview:
+      text:
+      - key: title
+      - key: name
+      - key: text
     type: object
   authors:
     label: Authors
     options:
       value_key:
-      - id
-      - uuid
       - filename_without_ext
-      - title
-      - name
-      - url
-      - path
       values: collections.persons
     type: multiselect
   categories:
     label: Categories
     options:
       value_key:
-      - id
-      - uuid
-      - filename_without_ext
       - title
-      - name
-      - url
-      - path
       values: collections.categories
     type: multiselect
   contact:
@@ -552,12 +545,22 @@ _inputs:
       required: false
       structures: _structures.contact
       subtype: object
+    preview:
+      text:
+      - key: title
+      - key: name
+      - key: text
     type: object
   datas:
     label: Datas
     options:
       required: false
       structures: _structures.datas
+    preview:
+      text:
+      - key: title
+      - key: name
+      - key: text
     singular_name: Data
     type: array
   date:
@@ -583,6 +586,11 @@ _inputs:
       required: false
       structures: _structures.hero
       subtype: object
+    preview:
+      text:
+      - key: title
+      - key: name
+      - key: text
     type: object
   icon:
     comment: Icon name from https://icons.getbootstrap.com/
@@ -597,12 +605,22 @@ _inputs:
       required: false
       structures: _structures.image
       subtype: object
+    preview:
+      text:
+      - key: title
+      - key: name
+      - key: text
     type: object
   images:
     label: Images
     options:
       required: false
       structures: _structures.images
+    preview:
+      text:
+      - key: title
+      - key: name
+      - key: text
     singular_name: Image
     type: array
   isIndex:
@@ -623,57 +641,38 @@ _inputs:
       required: false
       structures: _structures.offer
       subtype: object
+    preview:
+      text:
+      - key: title
+      - key: name
+      - key: text
     type: object
   persons_expertises:
     label: Expertises
     options:
       value_key:
-      - id
-      - uuid
       - filename_without_ext
-      - title
-      - name
-      - url
-      - path
       values: collections.expertises
     type: multiselect
   persons_places:
     label: Places
     options:
       value_key:
-      - id
-      - uuid
       - filename_without_ext
-      - title
-      - name
-      - url
-      - path
       values: collections.places
     type: multiselect
   persons_statutes:
     label: Statutes
     options:
       value_key:
-      - id
-      - uuid
-      - filename_without_ext
       - title
-      - name
-      - url
-      - path
       values: collections.persons_statutes
     type: select
   posts_expertises:
     label: Expertises
     options:
       value_key:
-      - id
-      - uuid
       - filename_without_ext
-      - title
-      - name
-      - url
-      - path
       values: collections.expertises
     type: multiselect
   press:
@@ -682,96 +681,59 @@ _inputs:
       required: false
       structures: _structures.press
       subtype: object
+    preview:
+      text:
+      - key: title
+      - key: name
+      - key: text
     type: object
   products_tags:
     label: Tags
     options:
       value_key:
-      - id
-      - uuid
-      - filename_without_ext
       - title
-      - name
-      - url
-      - path
       values: collections.products_tags
     type: multiselect
   projects_tags:
     label: Tags
     options:
       value_key:
-      - id
-      - uuid
-      - filename_without_ext
       - title
-      - name
-      - url
-      - path
       values: collections.projects_tags
     type: multiselect
   projects_types:
     label: Types
     options:
       value_key:
-      - id
-      - uuid
-      - filename_without_ext
       - title
-      - name
-      - url
-      - path
       values: collections.projects_types
     type: multiselect
   publications_categories:
     label: Categories
     options:
       value_key:
-      - id
-      - uuid
-      - filename_without_ext
       - title
-      - name
-      - url
-      - path
       values: collections.publications_categories
     type: select
   publications_expertises:
     label: Expertises
     options:
       value_key:
-      - id
-      - uuid
       - filename_without_ext
-      - title
-      - name
-      - url
-      - path
       values: collections.expertises
     type: multiselect
   publications_persons:
     label: Persons
     options:
       value_key:
-      - id
-      - uuid
       - filename_without_ext
-      - title
-      - name
-      - url
-      - path
       values: collections.persons
     type: multiselect
   services_categories:
     label: Categories
     options:
       value_key:
-      - id
-      - uuid
-      - filename_without_ext
       - title
-      - name
-      - url
-      - path
       values: collections.services_categories
     type: multiselect
   slug:
@@ -786,13 +748,7 @@ _inputs:
     label: Tags
     options:
       value_key:
-      - id
-      - uuid
-      - filename_without_ext
       - title
-      - name
-      - url
-      - path
       values: collections.tags
     type: multiselect
   title:
@@ -849,6 +805,11 @@ _structures:
             required: false
             structures: _structures.coordinates
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         country:
           label: Country
@@ -945,6 +906,11 @@ _structures:
             required: false
             structures: _structures.image_simple
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         text:
           label: Text
@@ -973,6 +939,11 @@ _structures:
             required: false
             structures: _structures.audio
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         background:
           label: With a background?
@@ -985,12 +956,18 @@ _structures:
             required: false
             structures: _structures.heading
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
       label: Audio
       preview:
         icon: audiotrack
         text:
-        - key: audio
+        - key: heading.title
+        - key: title
         - Audio
       value:
         audio: null
@@ -1026,7 +1003,7 @@ _structures:
             - name: Warning
               value: warning
           type: select
-        text_markdown:
+        text:
           label: Text
           options:
             allow_resize: true
@@ -1037,12 +1014,13 @@ _structures:
       preview:
         icon: warning_amber
         text:
-        - key: alert
+        - key: heading.title
+        - key: title
         - Alert
       value:
         background: null
         state: null
-        text_markdown: null
+        text: null
         type: alert
     - _inputs:
         background:
@@ -1056,6 +1034,11 @@ _structures:
             required: false
             structures: _structures.chart
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         grid:
           label: Grid
@@ -1080,12 +1063,18 @@ _structures:
             required: false
             structures: _structures.heading
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
       label: Chart
       preview:
         icon: pie_chart
         text:
-        - key: chart
+        - key: heading.title
+        - key: title
         - Chart
       value:
         background: null
@@ -1113,19 +1102,30 @@ _structures:
             required: false
             structures: _structures.heading
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         items:
           label: Items
           options:
             required: false
             structures: _structures.items_comparison
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           singular_name: Item
           type: array
       label: Comparison
       preview:
         icon: compare
         text:
-        - key: comparison
+        - key: heading.title
+        - key: title
         - Comparison
       value:
         background: null
@@ -1145,6 +1145,11 @@ _structures:
             max_items: 2
             required: false
             structures: _structures.ctas
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           singular_name: CTA
           type: array
         heading:
@@ -1153,12 +1158,18 @@ _structures:
             required: false
             structures: _structures.heading
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
       label: Call to action
       preview:
         icon: call_to_action
         text:
-        - key: cta
+        - key: heading.title
+        - key: title
         - Call to action
       value:
         background: null
@@ -1185,19 +1196,30 @@ _structures:
             required: false
             structures: _structures.heading
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         items:
           label: Items
           options:
             required: false
             structures: _structures.items_datas
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           singular_name: Item
           type: array
       label: Datas
       preview:
         icon: data_usage
         text:
-        - key: datas
+        - key: heading.title
+        - key: title
         - Datas
       value:
         background: null
@@ -1217,6 +1239,11 @@ _structures:
             max_items: 2
             required: false
             structures: _structures.ctas
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           singular_name: CTA
           type: array
         direction:
@@ -1236,13 +1263,18 @@ _structures:
             required: false
             structures: _structures.image
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         surtitle:
           label: Surtitle
           options:
             required: false
           type: text
-        text_markdown:
+        text:
           label: Text
           options:
             allow_resize: true
@@ -1258,7 +1290,8 @@ _structures:
       preview:
         icon: vertical_split
         text:
-        - key: editorial
+        - key: heading.title
+        - key: title
         - Editorial
       value:
         background: null
@@ -1266,7 +1299,7 @@ _structures:
         direction: null
         image: null
         surtitle: null
-        text_markdown: null
+        text: null
         title: null
         type: editorial
     - _inputs:
@@ -1286,12 +1319,18 @@ _structures:
             required: false
             structures: _structures.heading
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
       label: Embed
       preview:
         icon: code
         text:
-        - key: embed
+        - key: heading.title
+        - key: title
         - Embed
       value:
         background: null
@@ -1310,19 +1349,30 @@ _structures:
             required: false
             structures: _structures.heading
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         items:
           label: Items
           options:
             required: false
             structures: _structures.items_faq
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           singular_name: Item
           type: array
       label: FAQ
       preview:
         icon: quiz
         text:
-        - key: faq
+        - key: heading.title
+        - key: title
         - FAQ
       value:
         background: null
@@ -1341,6 +1391,11 @@ _structures:
             required: false
             structures: _structures.figure
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         grid:
           label: Grid
@@ -1365,6 +1420,11 @@ _structures:
             required: false
             structures: _structures.heading
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         offset:
           label: Offset
@@ -1383,7 +1443,8 @@ _structures:
       preview:
         icon: image
         text:
-        - key: figure
+        - key: heading.title
+        - key: title
         - Figure
       value:
         background: null
@@ -1421,12 +1482,22 @@ _structures:
             required: false
             structures: _structures.heading
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         items:
           label: Fields
           options:
             required: false
             structures: _structures.form_items
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           singular_name: Field
           type: array
         name:
@@ -1456,7 +1527,8 @@ _structures:
       preview:
         icon: send
         text:
-        - key: form
+        - key: heading.title
+        - key: title
         - Form
       value:
         background: null
@@ -1486,6 +1558,11 @@ _structures:
           options:
             required: false
             structures: _structures.gallery
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: array
         heading:
           label: Heading
@@ -1493,12 +1570,18 @@ _structures:
             required: false
             structures: _structures.heading
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
       label: Gallery
       preview:
         icon: view_module
         text:
-        - key: gallery
+        - key: heading.title
+        - key: title
         - Gallery
       value:
         background: null
@@ -1518,19 +1601,30 @@ _structures:
             required: false
             structures: _structures.heading
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         images:
           label: Images
           options:
             required: false
             structures: _structures.images
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           singular_name: Image
           type: array
       label: Images
       preview:
         icon: collections
         text:
-        - key: images
+        - key: heading.title
+        - key: title
         - Images
       value:
         background: null
@@ -1557,19 +1651,30 @@ _structures:
             required: false
             structures: _structures.heading
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         items:
           label: Items
           options:
             required: false
             structures: _structures.items_informations
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           singular_name: Item
           type: array
       label: Informations
       preview:
         icon: dashboard
         text:
-        - key: informations
+        - key: heading.title
+        - key: title
         - Informations
       value:
         background: null
@@ -1598,6 +1703,11 @@ _structures:
             max_items: 2
             required: false
             structures: _structures.ctas
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           singular_name: CTA
           type: array
         heading:
@@ -1606,6 +1716,11 @@ _structures:
             required: false
             structures: _structures.heading
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         limit:
           label: Limit
@@ -1619,7 +1734,8 @@ _structures:
       preview:
         icon: web_stories
         text:
-        - key: instagram
+        - key: heading.title
+        - key: title
         - Instagram
       value:
         background: null
@@ -1649,6 +1765,11 @@ _structures:
             required: false
             structures: _structures.heading
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         layout:
           label: Layout
@@ -1714,7 +1835,8 @@ _structures:
       preview:
         icon: view_timeline
         text:
-        - key: latest
+        - key: heading.title
+        - key: title
         - Latest items
       value:
         background: null
@@ -1737,6 +1859,11 @@ _structures:
             required: false
             structures: _structures.carousel
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         heading:
           label: Heading
@@ -1744,12 +1871,22 @@ _structures:
             required: false
             structures: _structures.heading
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         items:
           label: Items
           options:
             required: false
             structures: _structures.items_logos
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           singular_name: Item
           type: array
         layout:
@@ -1767,7 +1904,8 @@ _structures:
       preview:
         icon: grain
         text:
-        - key: logos
+        - key: heading.title
+        - key: title
         - Logos
       value:
         background: null
@@ -1789,6 +1927,11 @@ _structures:
             required: false
             structures: _structures.coordinates
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         grid:
           label: Grid
@@ -1813,6 +1956,11 @@ _structures:
             required: false
             structures: _structures.heading
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         show_places:
           comment: Only if you have places already saved (this will disable the marker below)
@@ -1832,7 +1980,8 @@ _structures:
       preview:
         icon: map
         text:
-        - key: map
+        - key: heading.title
+        - key: title
         - Map
       value:
         background: null
@@ -1854,6 +2003,11 @@ _structures:
             required: false
             structures: _structures.form
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         heading:
           label: Heading
@@ -1861,12 +2015,18 @@ _structures:
             required: false
             structures: _structures.heading
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
       label: Newsletter
       preview:
         icon: attach_email
         text:
-        - key: newsletter
+        - key: heading.title
+        - key: title
         - Newsletter
       value:
         background: null
@@ -1898,6 +2058,11 @@ _structures:
             max_items: 2
             required: false
             structures: _structures.ctas
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           singular_name: CTA
           type: array
         grid:
@@ -1935,7 +2100,7 @@ _structures:
           options:
             required: false
           type: text
-        text_markdown:
+        text:
           label: Text
           options:
             allow_resize: true
@@ -1951,7 +2116,8 @@ _structures:
       preview:
         icon: subject
         text:
-        - key: paragraph
+        - key: heading.title
+        - key: title
         - Paragraph
       value:
         align: null
@@ -1960,7 +2126,7 @@ _structures:
         grid: null
         offset: null
         surtitle: null
-        text_markdown: null
+        text: null
         title: null
         type: paragraph
     - _inputs:
@@ -1976,6 +2142,11 @@ _structures:
             required: false
             structures: _structures.carousel
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         column:
           label: Column
@@ -1991,12 +2162,22 @@ _structures:
             required: false
             structures: _structures.heading
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         items:
           label: Items
           options:
             required: false
             structures: _structures.items_pushes
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           singular_name: Item
           type: array
         layout:
@@ -2014,7 +2195,8 @@ _structures:
       preview:
         icon: panorama_wide_angle
         text:
-        - key: pushes
+        - key: heading.title
+        - key: title
         - Pushes
       value:
         background: null
@@ -2031,6 +2213,11 @@ _structures:
             required: false
             structures: _structures.author
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         background:
           label: With a background?
@@ -2048,7 +2235,8 @@ _structures:
       preview:
         icon: format_quote
         text:
-        - key: quote
+        - key: heading.title
+        - key: title
         - Quote
       value:
         author: null
@@ -2067,12 +2255,18 @@ _structures:
             required: false
             structures: _structures.heading
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
       label: Search
       preview:
         icon: search
         text:
-        - key: search
+        - key: heading.title
+        - key: title
         - Search
       value:
         background: null
@@ -2090,18 +2284,17 @@ _structures:
             required: false
             structures: _structures.heading
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         items:
           label: nolabel
           options:
             value_key:
-            - id
-            - uuid
             - filename_without_ext
-            - title
-            - name
-            - url
-            - path
             values: collections.selected
           type: multiselect
         layout:
@@ -2131,7 +2324,8 @@ _structures:
       preview:
         icon: checklist_rtl
         text:
-        - key: selected
+        - key: heading.title
+        - key: title
         - Selection <no value>
       value:
         background: null
@@ -2154,6 +2348,11 @@ _structures:
             required: false
             structures: _structures.carousel
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         heading:
           label: Heading
@@ -2161,12 +2360,22 @@ _structures:
             required: false
             structures: _structures.heading
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         items:
           label: Items
           options:
             required: false
             structures: _structures.items_testimonials
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           singular_name: Item
           type: array
         layout:
@@ -2184,7 +2393,8 @@ _structures:
       preview:
         icon: 3p
         text:
-        - key: testimonials
+        - key: heading.title
+        - key: title
         - Testimonials
       value:
         background: null
@@ -2205,19 +2415,30 @@ _structures:
             required: false
             structures: _structures.heading
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         items:
           label: Items
           options:
             required: false
             structures: _structures.items_timeline
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           singular_name: Item
           type: array
       label: Timeline
       preview:
         icon: timeline
         text:
-        - key: timeline
+        - key: heading.title
+        - key: title
         - Timeline
       value:
         background: null
@@ -2236,11 +2457,17 @@ _structures:
             required: false
             structures: _structures.heading
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
       label: Title
       preview:
         icon: format_h2
         text:
+        - key: heading.title
         - key: title
         - Title
       value:
@@ -2276,6 +2503,11 @@ _structures:
             required: false
             structures: _structures.heading
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         video:
           label: Video
@@ -2283,12 +2515,18 @@ _structures:
             required: false
             structures: _structures.video
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
       label: Video
       preview:
         icon: videocam
         text:
-        - key: video
+        - key: heading.title
+        - key: title
         - Video
       value:
         background: null
@@ -2307,12 +2545,22 @@ _structures:
             required: false
             structures: _structures.params
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         responsive:
           label: Responsive
           options:
             required: false
             structures: _structures.responsive
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: array
       value:
         params: null
@@ -2411,6 +2659,11 @@ _structures:
             required: false
             structures: _structures.params
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
       value:
         breakpoints: null
@@ -2432,6 +2685,11 @@ _structures:
           options:
             required: false
             structures: _structures.items_chart
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           singular_name: Item
           type: array
         title:
@@ -2481,6 +2739,11 @@ _structures:
           options:
             required: false
             structures: _structures.socials
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           singular_name: Social
           type: array
       value:
@@ -2727,6 +2990,11 @@ _structures:
           options:
             required: false
             structures: _structures.form_options
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           singular_name: Option
           type: array
         label:
@@ -2855,7 +3123,7 @@ _structures:
           options:
             required: false
           type: text
-        text_markdown:
+        text:
           label: Text
           options:
             allow_resize: true
@@ -2869,7 +3137,7 @@ _structures:
           type: text
       value:
         surtitle: null
-        text_markdown: null
+        text: null
         title: null
   hero:
     remove_empty_inputs: true
@@ -2895,6 +3163,11 @@ _structures:
             max_items: 2
             required: false
             structures: _structures.ctas
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           singular_name: CTA
           type: array
         image:
@@ -2903,13 +3176,18 @@ _structures:
             required: false
             structures: _structures.image
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         surtitle:
           label: Surtitle
           options:
             required: false
           type: text
-        text_markdown:
+        text:
           label: Text
           options:
             allow_resize: true
@@ -2927,12 +3205,17 @@ _structures:
             required: false
             structures: _structures.video
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
       value:
         align: null
         ctas: null
         surtitle: null
-        text_markdown: null
+        text: null
         title: null
   image:
     remove_empty_inputs: true
@@ -3060,6 +3343,11 @@ _structures:
           options:
             required: false
             structures: _structures.arguments
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           singular_name: Argument
           type: array
         badge:
@@ -3074,6 +3362,11 @@ _structures:
             required: false
             structures: _structures.cta
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         is_highlighted:
           label: Is highlighted?
@@ -3086,6 +3379,11 @@ _structures:
             required: false
             structures: _structures.offer
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         text:
           label: Text
@@ -3168,7 +3466,7 @@ _structures:
           options:
             required: false
           type: text
-        text_markdown:
+        text:
           label: Text
           options:
             allow_resize: true
@@ -3184,7 +3482,7 @@ _structures:
         name: null
         open: null
         summary: null
-        text_markdown: null
+        text: null
         title: null
   items_informations:
     remove_empty_inputs: true
@@ -3197,6 +3495,11 @@ _structures:
             required: false
             structures: _structures.cta
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         icon:
           comment: Icon name from https://icons.getbootstrap.com/
@@ -3210,6 +3513,11 @@ _structures:
             required: false
             structures: _structures.image_simple
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         text:
           label: Text
@@ -3283,6 +3591,11 @@ _structures:
             required: false
             structures: _structures.cta
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         darken:
           label: Darken?
@@ -3295,6 +3608,11 @@ _structures:
             required: false
             structures: _structures.image
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         offset:
           label: Offset
@@ -3339,6 +3657,11 @@ _structures:
             required: false
             structures: _structures.author
             subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: object
         quote:
           label: Quote
@@ -3360,7 +3683,7 @@ _structures:
           options:
             required: false
           type: text
-        text_markdown:
+        text:
           label: Text
           options:
             allow_resize: true
@@ -3374,7 +3697,7 @@ _structures:
           type: text
       value:
         surtitle: null
-        text_markdown: null
+        text: null
         title: null
   newsletter_form:
     remove_empty_inputs: true
@@ -3386,6 +3709,11 @@ _structures:
           options:
             required: false
             structures: _structures.hiddens
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
           type: array
         url:
           comment: Absolute URL (e.g https://www.example.com)
