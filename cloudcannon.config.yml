@@ -2591,11 +2591,11 @@ _structures:
             - key: text
           type: object
         items:
-          label: Cases studies
+          label: Expertises
           options:
             value_key:
             - filename_without_ext
-            values: collections.casestudies
+            values: collections.expertises
           type: multiselect
         layout:
           label: Layout
@@ -2614,7 +2614,7 @@ _structures:
           options:
             required: false
           type: text
-          value: casestudies
+          value: expertises
         show_more:
           comment: Shows a button to see more items
           label: Show more?
@@ -2634,7 +2634,7 @@ _structures:
         heading: null
         items: null
         layout: null
-        section: casestudies
+        section: expertises
         show_more: null
         type: selected-expertises
     - _inputs:
@@ -2657,11 +2657,11 @@ _structures:
             - key: text
           type: object
         items:
-          label: Cases studies
+          label: Pages
           options:
             value_key:
             - filename_without_ext
-            values: collections.casestudies
+            values: collections.pages
           type: multiselect
         layout:
           label: Layout
@@ -2680,7 +2680,7 @@ _structures:
           options:
             required: false
           type: text
-          value: casestudies
+          value: pages
         show_more:
           comment: Shows a button to see more items
           label: Show more?
@@ -2700,7 +2700,7 @@ _structures:
         heading: null
         items: null
         layout: null
-        section: casestudies
+        section: pages
         show_more: null
         type: selected-pages
     - _inputs:
@@ -2723,11 +2723,11 @@ _structures:
             - key: text
           type: object
         items:
-          label: Cases studies
+          label: Persons
           options:
             value_key:
             - filename_without_ext
-            values: collections.casestudies
+            values: collections.persons
           type: multiselect
         layout:
           label: Layout
@@ -2746,7 +2746,7 @@ _structures:
           options:
             required: false
           type: text
-          value: casestudies
+          value: persons
         show_more:
           comment: Shows a button to see more items
           label: Show more?
@@ -2766,7 +2766,7 @@ _structures:
         heading: null
         items: null
         layout: null
-        section: casestudies
+        section: persons
         show_more: null
         type: selected-persons
     - _inputs:
@@ -2789,11 +2789,11 @@ _structures:
             - key: text
           type: object
         items:
-          label: Cases studies
+          label: Statutes
           options:
             value_key:
-            - filename_without_ext
-            values: collections.casestudies
+            - title
+            values: collections.persons_statutes
           type: multiselect
         layout:
           label: Layout
@@ -2812,7 +2812,7 @@ _structures:
           options:
             required: false
           type: text
-          value: casestudies
+          value: persons_statutes
         show_more:
           comment: Shows a button to see more items
           label: Show more?
@@ -2832,7 +2832,7 @@ _structures:
         heading: null
         items: null
         layout: null
-        section: casestudies
+        section: persons_statutes
         show_more: null
         type: selected-persons_statutes
     - _inputs:
@@ -2855,11 +2855,11 @@ _structures:
             - key: text
           type: object
         items:
-          label: Cases studies
+          label: Places
           options:
             value_key:
             - filename_without_ext
-            values: collections.casestudies
+            values: collections.places
           type: multiselect
         layout:
           label: Layout
@@ -2878,7 +2878,7 @@ _structures:
           options:
             required: false
           type: text
-          value: casestudies
+          value: places
         show_more:
           comment: Shows a button to see more items
           label: Show more?
@@ -2898,7 +2898,7 @@ _structures:
         heading: null
         items: null
         layout: null
-        section: casestudies
+        section: places
         show_more: null
         type: selected-places
     - _inputs:
@@ -2921,11 +2921,11 @@ _structures:
             - key: text
           type: object
         items:
-          label: Cases studies
+          label: News
           options:
             value_key:
             - filename_without_ext
-            values: collections.casestudies
+            values: collections.posts
           type: multiselect
         layout:
           label: Layout
@@ -2944,7 +2944,7 @@ _structures:
           options:
             required: false
           type: text
-          value: casestudies
+          value: posts
         show_more:
           comment: Shows a button to see more items
           label: Show more?
@@ -2964,7 +2964,7 @@ _structures:
         heading: null
         items: null
         layout: null
-        section: casestudies
+        section: posts
         show_more: null
         type: selected-posts
     - _inputs:
@@ -2987,11 +2987,11 @@ _structures:
             - key: text
           type: object
         items:
-          label: Cases studies
+          label: Categories
           options:
             value_key:
-            - filename_without_ext
-            values: collections.casestudies
+            - title
+            values: collections.categories
           type: multiselect
         layout:
           label: Layout
@@ -3010,7 +3010,7 @@ _structures:
           options:
             required: false
           type: text
-          value: casestudies
+          value: categories
         show_more:
           comment: Shows a button to see more items
           label: Show more?
@@ -3030,7 +3030,7 @@ _structures:
         heading: null
         items: null
         layout: null
-        section: casestudies
+        section: categories
         show_more: null
         type: selected-posts_categories
     - _inputs:
@@ -3053,11 +3053,11 @@ _structures:
             - key: text
           type: object
         items:
-          label: Cases studies
+          label: Tags
           options:
             value_key:
-            - filename_without_ext
-            values: collections.casestudies
+            - title
+            values: collections.tags
           type: multiselect
         layout:
           label: Layout
@@ -3076,7 +3076,7 @@ _structures:
           options:
             required: false
           type: text
-          value: casestudies
+          value: tags
         show_more:
           comment: Shows a button to see more items
           label: Show more?
@@ -3096,7 +3096,7 @@ _structures:
         heading: null
         items: null
         layout: null
-        section: casestudies
+        section: tags
         show_more: null
         type: selected-posts_tags
     - _inputs:
@@ -3119,11 +3119,11 @@ _structures:
             - key: text
           type: object
         items:
-          label: Cases studies
+          label: Products
           options:
             value_key:
             - filename_without_ext
-            values: collections.casestudies
+            values: collections.products
           type: multiselect
         layout:
           label: Layout
@@ -3142,7 +3142,7 @@ _structures:
           options:
             required: false
           type: text
-          value: casestudies
+          value: products
         show_more:
           comment: Shows a button to see more items
           label: Show more?
@@ -3162,7 +3162,7 @@ _structures:
         heading: null
         items: null
         layout: null
-        section: casestudies
+        section: products
         show_more: null
         type: selected-products
     - _inputs:
@@ -3185,11 +3185,11 @@ _structures:
             - key: text
           type: object
         items:
-          label: Cases studies
+          label: Tags
           options:
             value_key:
-            - filename_without_ext
-            values: collections.casestudies
+            - title
+            values: collections.products_tags
           type: multiselect
         layout:
           label: Layout
@@ -3208,7 +3208,7 @@ _structures:
           options:
             required: false
           type: text
-          value: casestudies
+          value: products_tags
         show_more:
           comment: Shows a button to see more items
           label: Show more?
@@ -3228,7 +3228,7 @@ _structures:
         heading: null
         items: null
         layout: null
-        section: casestudies
+        section: products_tags
         show_more: null
         type: selected-products_tags
     - _inputs:
@@ -3251,11 +3251,11 @@ _structures:
             - key: text
           type: object
         items:
-          label: Cases studies
+          label: Projects
           options:
             value_key:
             - filename_without_ext
-            values: collections.casestudies
+            values: collections.projects
           type: multiselect
         layout:
           label: Layout
@@ -3274,7 +3274,7 @@ _structures:
           options:
             required: false
           type: text
-          value: casestudies
+          value: projects
         show_more:
           comment: Shows a button to see more items
           label: Show more?
@@ -3294,7 +3294,7 @@ _structures:
         heading: null
         items: null
         layout: null
-        section: casestudies
+        section: projects
         show_more: null
         type: selected-projects
     - _inputs:
@@ -3317,11 +3317,11 @@ _structures:
             - key: text
           type: object
         items:
-          label: Cases studies
+          label: Tags
           options:
             value_key:
-            - filename_without_ext
-            values: collections.casestudies
+            - title
+            values: collections.projects_tags
           type: multiselect
         layout:
           label: Layout
@@ -3340,7 +3340,7 @@ _structures:
           options:
             required: false
           type: text
-          value: casestudies
+          value: projects_tags
         show_more:
           comment: Shows a button to see more items
           label: Show more?
@@ -3360,7 +3360,7 @@ _structures:
         heading: null
         items: null
         layout: null
-        section: casestudies
+        section: projects_tags
         show_more: null
         type: selected-projects_tags
     - _inputs:
@@ -3383,11 +3383,11 @@ _structures:
             - key: text
           type: object
         items:
-          label: Cases studies
+          label: Types
           options:
             value_key:
-            - filename_without_ext
-            values: collections.casestudies
+            - title
+            values: collections.projects_types
           type: multiselect
         layout:
           label: Layout
@@ -3406,7 +3406,7 @@ _structures:
           options:
             required: false
           type: text
-          value: casestudies
+          value: projects_types
         show_more:
           comment: Shows a button to see more items
           label: Show more?
@@ -3426,7 +3426,7 @@ _structures:
         heading: null
         items: null
         layout: null
-        section: casestudies
+        section: projects_types
         show_more: null
         type: selected-projects_types
     - _inputs:
@@ -3449,11 +3449,11 @@ _structures:
             - key: text
           type: object
         items:
-          label: Cases studies
+          label: Publications
           options:
             value_key:
             - filename_without_ext
-            values: collections.casestudies
+            values: collections.publications
           type: multiselect
         layout:
           label: Layout
@@ -3472,7 +3472,7 @@ _structures:
           options:
             required: false
           type: text
-          value: casestudies
+          value: publications
         show_more:
           comment: Shows a button to see more items
           label: Show more?
@@ -3492,7 +3492,7 @@ _structures:
         heading: null
         items: null
         layout: null
-        section: casestudies
+        section: publications
         show_more: null
         type: selected-publications
     - _inputs:
@@ -3515,11 +3515,11 @@ _structures:
             - key: text
           type: object
         items:
-          label: Cases studies
+          label: Categories
           options:
             value_key:
-            - filename_without_ext
-            values: collections.casestudies
+            - title
+            values: collections.publications_categories
           type: multiselect
         layout:
           label: Layout
@@ -3538,7 +3538,7 @@ _structures:
           options:
             required: false
           type: text
-          value: casestudies
+          value: publications_categories
         show_more:
           comment: Shows a button to see more items
           label: Show more?
@@ -3558,7 +3558,7 @@ _structures:
         heading: null
         items: null
         layout: null
-        section: casestudies
+        section: publications_categories
         show_more: null
         type: selected-publications_categories
     - _inputs:
@@ -3581,11 +3581,11 @@ _structures:
             - key: text
           type: object
         items:
-          label: Cases studies
+          label: Services
           options:
             value_key:
             - filename_without_ext
-            values: collections.casestudies
+            values: collections.services
           type: multiselect
         layout:
           label: Layout
@@ -3604,7 +3604,7 @@ _structures:
           options:
             required: false
           type: text
-          value: casestudies
+          value: services
         show_more:
           comment: Shows a button to see more items
           label: Show more?
@@ -3624,7 +3624,7 @@ _structures:
         heading: null
         items: null
         layout: null
-        section: casestudies
+        section: services
         show_more: null
         type: selected-services
     - _inputs:
@@ -3647,11 +3647,11 @@ _structures:
             - key: text
           type: object
         items:
-          label: Cases studies
+          label: Categories
           options:
             value_key:
-            - filename_without_ext
-            values: collections.casestudies
+            - title
+            values: collections.services_categories
           type: multiselect
         layout:
           label: Layout
@@ -3670,7 +3670,7 @@ _structures:
           options:
             required: false
           type: text
-          value: casestudies
+          value: services_categories
         show_more:
           comment: Shows a button to see more items
           label: Show more?
@@ -3690,7 +3690,7 @@ _structures:
         heading: null
         items: null
         layout: null
-        section: casestudies
+        section: services_categories
         show_more: null
         type: selected-services_categories
   carousel:
