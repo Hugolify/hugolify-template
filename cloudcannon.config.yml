@@ -580,6 +580,7 @@ _inputs:
     options:
       required: false
     type: switch
+    value: true
   hero:
     label: Hero
     options:
@@ -629,12 +630,14 @@ _inputs:
     options:
       required: false
     type: switch
+    value: false
   isPage:
     hidden: true
     label: is page
     options:
       required: false
     type: switch
+    value: true
   offer:
     label: Offer
     options:
@@ -861,11 +864,13 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         loop:
           label: Loop
           options:
             required: false
           type: switch
+          value: false
         mp3:
           comment: MP3 audio file
           label: MP3
@@ -950,6 +955,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         heading:
           label: Heading
           options:
@@ -980,6 +986,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         state:
           label: State
           options:
@@ -1028,6 +1035,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         chart:
           label: Chart
           options:
@@ -1088,6 +1096,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         column:
           label: Column
           options:
@@ -1139,6 +1148,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         ctas:
           label: CTAs
           options:
@@ -1182,6 +1192,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         column:
           label: Column
           options:
@@ -1233,6 +1244,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         ctas:
           label: CTAs
           options:
@@ -1308,6 +1320,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         embed:
           label: Embed
           options:
@@ -1343,6 +1356,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         heading:
           label: Heading
           options:
@@ -1385,6 +1399,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         figure:
           label: Figure
           options:
@@ -1459,6 +1474,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         grid:
           label: Grid
           options:
@@ -1545,6 +1561,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         column:
           label: Column
           options:
@@ -1595,6 +1612,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         heading:
           label: Heading
           options:
@@ -1637,6 +1655,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         column:
           label: Column
           options:
@@ -1688,6 +1707,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         count:
           comment: Items to display
           label: Count
@@ -1750,6 +1770,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         count:
           comment: Items to display
           label: Count
@@ -1831,6 +1852,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: true
       label: Latest items
       preview:
         icon: view_timeline
@@ -1852,6 +1874,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         carousel:
           comment: Only for carousel display
           label: Carousel configuration
@@ -1920,6 +1943,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         coordinates:
           comment: 'Easily find contact details: https://www.latlong.net/convert-address-to-lat-long.html'
           label: Geographic coordinates
@@ -1968,6 +1992,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         zoom:
           label: Zoom
           options:
@@ -1997,6 +2022,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         form:
           label: Form
           options:
@@ -2052,6 +2078,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         ctas:
           label: CTAs
           options:
@@ -2135,6 +2162,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         carousel:
           comment: Only for carousel display
           label: Carousel configuration
@@ -2224,6 +2252,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         quote:
           label: Quote
           options:
@@ -2249,6 +2278,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         heading:
           label: Heading
           options:
@@ -2278,69 +2308,7 @@ _structures:
           options:
             required: false
           type: switch
-        heading:
-          label: Heading
-          options:
-            required: false
-            structures: _structures.heading
-            subtype: object
-          preview:
-            text:
-            - key: title
-            - key: name
-            - key: text
-          type: object
-        items:
-          label: nolabel
-          options:
-            value_key:
-            - filename_without_ext
-            values: collections.selected
-          type: multiselect
-        layout:
-          label: Layout
-          options:
-            required: false
-            value_key: value
-            values:
-            - name: Grid
-              value: grid
-            - name: List
-              value: list
-          type: select
-        section:
-          hidden: true
-          label: section
-          options:
-            required: false
-          type: text
-        show_more:
-          comment: Shows a button to see more items
-          label: Show more?
-          options:
-            required: false
-          type: switch
-      label: Selection <no value>
-      preview:
-        icon: checklist_rtl
-        text:
-        - key: heading.title
-        - key: title
-        - Selection <no value>
-      value:
-        background: null
-        heading: null
-        items: null
-        layout: null
-        section: null
-        show_more: null
-        type: selected
-    - _inputs:
-        background:
-          label: With a background?
-          options:
-            required: false
-          type: switch
+          value: false
         carousel:
           comment: Only for carousel display
           label: Carousel configuration
@@ -2409,6 +2377,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         heading:
           label: Heading
           options:
@@ -2451,6 +2420,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         heading:
           label: Heading
           options:
@@ -2480,6 +2450,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         grid:
           label: Grid
           options:
@@ -2534,6 +2505,1176 @@ _structures:
         heading: null
         type: video
         video: null
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+          value: false
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
+          type: object
+        items:
+          label: Cases studies
+          options:
+            value_key:
+            - filename_without_ext
+            values: collections.casestudies
+          type: multiselect
+        layout:
+          label: Layout
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Grid
+              value: grid
+            - name: List
+              value: list
+          type: select
+        section:
+          hidden: true
+          label: section
+          options:
+            required: false
+          type: text
+          value: casestudies
+        show_more:
+          comment: Shows a button to see more items
+          label: Show more?
+          options:
+            required: false
+          type: switch
+          value: true
+      label: Selection casestudies
+      preview:
+        text:
+        - key: heading.title
+        - key: title
+        - Selection casestudies
+      value:
+        background: null
+        heading: null
+        items: null
+        layout: null
+        section: casestudies
+        show_more: null
+        type: selected
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+          value: false
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
+          type: object
+        items:
+          label: Cases studies
+          options:
+            value_key:
+            - filename_without_ext
+            values: collections.casestudies
+          type: multiselect
+        layout:
+          label: Layout
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Grid
+              value: grid
+            - name: List
+              value: list
+          type: select
+        section:
+          hidden: true
+          label: section
+          options:
+            required: false
+          type: text
+          value: casestudies
+        show_more:
+          comment: Shows a button to see more items
+          label: Show more?
+          options:
+            required: false
+          type: switch
+          value: true
+      label: Selection expertises
+      preview:
+        text:
+        - key: heading.title
+        - key: title
+        - Selection expertises
+      value:
+        background: null
+        heading: null
+        items: null
+        layout: null
+        section: casestudies
+        show_more: null
+        type: selected
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+          value: false
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
+          type: object
+        items:
+          label: Cases studies
+          options:
+            value_key:
+            - filename_without_ext
+            values: collections.casestudies
+          type: multiselect
+        layout:
+          label: Layout
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Grid
+              value: grid
+            - name: List
+              value: list
+          type: select
+        section:
+          hidden: true
+          label: section
+          options:
+            required: false
+          type: text
+          value: casestudies
+        show_more:
+          comment: Shows a button to see more items
+          label: Show more?
+          options:
+            required: false
+          type: switch
+          value: true
+      label: Selection pages
+      preview:
+        text:
+        - key: heading.title
+        - key: title
+        - Selection pages
+      value:
+        background: null
+        heading: null
+        items: null
+        layout: null
+        section: casestudies
+        show_more: null
+        type: selected
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+          value: false
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
+          type: object
+        items:
+          label: Cases studies
+          options:
+            value_key:
+            - filename_without_ext
+            values: collections.casestudies
+          type: multiselect
+        layout:
+          label: Layout
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Grid
+              value: grid
+            - name: List
+              value: list
+          type: select
+        section:
+          hidden: true
+          label: section
+          options:
+            required: false
+          type: text
+          value: casestudies
+        show_more:
+          comment: Shows a button to see more items
+          label: Show more?
+          options:
+            required: false
+          type: switch
+          value: true
+      label: Selection persons
+      preview:
+        text:
+        - key: heading.title
+        - key: title
+        - Selection persons
+      value:
+        background: null
+        heading: null
+        items: null
+        layout: null
+        section: casestudies
+        show_more: null
+        type: selected
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+          value: false
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
+          type: object
+        items:
+          label: Cases studies
+          options:
+            value_key:
+            - filename_without_ext
+            values: collections.casestudies
+          type: multiselect
+        layout:
+          label: Layout
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Grid
+              value: grid
+            - name: List
+              value: list
+          type: select
+        section:
+          hidden: true
+          label: section
+          options:
+            required: false
+          type: text
+          value: casestudies
+        show_more:
+          comment: Shows a button to see more items
+          label: Show more?
+          options:
+            required: false
+          type: switch
+          value: true
+      label: Selection persons_statutes
+      preview:
+        text:
+        - key: heading.title
+        - key: title
+        - Selection persons_statutes
+      value:
+        background: null
+        heading: null
+        items: null
+        layout: null
+        section: casestudies
+        show_more: null
+        type: selected
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+          value: false
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
+          type: object
+        items:
+          label: Cases studies
+          options:
+            value_key:
+            - filename_without_ext
+            values: collections.casestudies
+          type: multiselect
+        layout:
+          label: Layout
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Grid
+              value: grid
+            - name: List
+              value: list
+          type: select
+        section:
+          hidden: true
+          label: section
+          options:
+            required: false
+          type: text
+          value: casestudies
+        show_more:
+          comment: Shows a button to see more items
+          label: Show more?
+          options:
+            required: false
+          type: switch
+          value: true
+      label: Selection places
+      preview:
+        text:
+        - key: heading.title
+        - key: title
+        - Selection places
+      value:
+        background: null
+        heading: null
+        items: null
+        layout: null
+        section: casestudies
+        show_more: null
+        type: selected
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+          value: false
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
+          type: object
+        items:
+          label: Cases studies
+          options:
+            value_key:
+            - filename_without_ext
+            values: collections.casestudies
+          type: multiselect
+        layout:
+          label: Layout
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Grid
+              value: grid
+            - name: List
+              value: list
+          type: select
+        section:
+          hidden: true
+          label: section
+          options:
+            required: false
+          type: text
+          value: casestudies
+        show_more:
+          comment: Shows a button to see more items
+          label: Show more?
+          options:
+            required: false
+          type: switch
+          value: true
+      label: Selection posts
+      preview:
+        text:
+        - key: heading.title
+        - key: title
+        - Selection posts
+      value:
+        background: null
+        heading: null
+        items: null
+        layout: null
+        section: casestudies
+        show_more: null
+        type: selected
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+          value: false
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
+          type: object
+        items:
+          label: Cases studies
+          options:
+            value_key:
+            - filename_without_ext
+            values: collections.casestudies
+          type: multiselect
+        layout:
+          label: Layout
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Grid
+              value: grid
+            - name: List
+              value: list
+          type: select
+        section:
+          hidden: true
+          label: section
+          options:
+            required: false
+          type: text
+          value: casestudies
+        show_more:
+          comment: Shows a button to see more items
+          label: Show more?
+          options:
+            required: false
+          type: switch
+          value: true
+      label: Selection posts_categories
+      preview:
+        text:
+        - key: heading.title
+        - key: title
+        - Selection posts_categories
+      value:
+        background: null
+        heading: null
+        items: null
+        layout: null
+        section: casestudies
+        show_more: null
+        type: selected
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+          value: false
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
+          type: object
+        items:
+          label: Cases studies
+          options:
+            value_key:
+            - filename_without_ext
+            values: collections.casestudies
+          type: multiselect
+        layout:
+          label: Layout
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Grid
+              value: grid
+            - name: List
+              value: list
+          type: select
+        section:
+          hidden: true
+          label: section
+          options:
+            required: false
+          type: text
+          value: casestudies
+        show_more:
+          comment: Shows a button to see more items
+          label: Show more?
+          options:
+            required: false
+          type: switch
+          value: true
+      label: Selection posts_tags
+      preview:
+        text:
+        - key: heading.title
+        - key: title
+        - Selection posts_tags
+      value:
+        background: null
+        heading: null
+        items: null
+        layout: null
+        section: casestudies
+        show_more: null
+        type: selected
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+          value: false
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
+          type: object
+        items:
+          label: Cases studies
+          options:
+            value_key:
+            - filename_without_ext
+            values: collections.casestudies
+          type: multiselect
+        layout:
+          label: Layout
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Grid
+              value: grid
+            - name: List
+              value: list
+          type: select
+        section:
+          hidden: true
+          label: section
+          options:
+            required: false
+          type: text
+          value: casestudies
+        show_more:
+          comment: Shows a button to see more items
+          label: Show more?
+          options:
+            required: false
+          type: switch
+          value: true
+      label: Selection products
+      preview:
+        text:
+        - key: heading.title
+        - key: title
+        - Selection products
+      value:
+        background: null
+        heading: null
+        items: null
+        layout: null
+        section: casestudies
+        show_more: null
+        type: selected
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+          value: false
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
+          type: object
+        items:
+          label: Cases studies
+          options:
+            value_key:
+            - filename_without_ext
+            values: collections.casestudies
+          type: multiselect
+        layout:
+          label: Layout
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Grid
+              value: grid
+            - name: List
+              value: list
+          type: select
+        section:
+          hidden: true
+          label: section
+          options:
+            required: false
+          type: text
+          value: casestudies
+        show_more:
+          comment: Shows a button to see more items
+          label: Show more?
+          options:
+            required: false
+          type: switch
+          value: true
+      label: Selection products_tags
+      preview:
+        text:
+        - key: heading.title
+        - key: title
+        - Selection products_tags
+      value:
+        background: null
+        heading: null
+        items: null
+        layout: null
+        section: casestudies
+        show_more: null
+        type: selected
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+          value: false
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
+          type: object
+        items:
+          label: Cases studies
+          options:
+            value_key:
+            - filename_without_ext
+            values: collections.casestudies
+          type: multiselect
+        layout:
+          label: Layout
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Grid
+              value: grid
+            - name: List
+              value: list
+          type: select
+        section:
+          hidden: true
+          label: section
+          options:
+            required: false
+          type: text
+          value: casestudies
+        show_more:
+          comment: Shows a button to see more items
+          label: Show more?
+          options:
+            required: false
+          type: switch
+          value: true
+      label: Selection projects
+      preview:
+        text:
+        - key: heading.title
+        - key: title
+        - Selection projects
+      value:
+        background: null
+        heading: null
+        items: null
+        layout: null
+        section: casestudies
+        show_more: null
+        type: selected
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+          value: false
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
+          type: object
+        items:
+          label: Cases studies
+          options:
+            value_key:
+            - filename_without_ext
+            values: collections.casestudies
+          type: multiselect
+        layout:
+          label: Layout
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Grid
+              value: grid
+            - name: List
+              value: list
+          type: select
+        section:
+          hidden: true
+          label: section
+          options:
+            required: false
+          type: text
+          value: casestudies
+        show_more:
+          comment: Shows a button to see more items
+          label: Show more?
+          options:
+            required: false
+          type: switch
+          value: true
+      label: Selection projects_tags
+      preview:
+        text:
+        - key: heading.title
+        - key: title
+        - Selection projects_tags
+      value:
+        background: null
+        heading: null
+        items: null
+        layout: null
+        section: casestudies
+        show_more: null
+        type: selected
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+          value: false
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
+          type: object
+        items:
+          label: Cases studies
+          options:
+            value_key:
+            - filename_without_ext
+            values: collections.casestudies
+          type: multiselect
+        layout:
+          label: Layout
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Grid
+              value: grid
+            - name: List
+              value: list
+          type: select
+        section:
+          hidden: true
+          label: section
+          options:
+            required: false
+          type: text
+          value: casestudies
+        show_more:
+          comment: Shows a button to see more items
+          label: Show more?
+          options:
+            required: false
+          type: switch
+          value: true
+      label: Selection projects_types
+      preview:
+        text:
+        - key: heading.title
+        - key: title
+        - Selection projects_types
+      value:
+        background: null
+        heading: null
+        items: null
+        layout: null
+        section: casestudies
+        show_more: null
+        type: selected
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+          value: false
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
+          type: object
+        items:
+          label: Cases studies
+          options:
+            value_key:
+            - filename_without_ext
+            values: collections.casestudies
+          type: multiselect
+        layout:
+          label: Layout
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Grid
+              value: grid
+            - name: List
+              value: list
+          type: select
+        section:
+          hidden: true
+          label: section
+          options:
+            required: false
+          type: text
+          value: casestudies
+        show_more:
+          comment: Shows a button to see more items
+          label: Show more?
+          options:
+            required: false
+          type: switch
+          value: true
+      label: Selection publications
+      preview:
+        text:
+        - key: heading.title
+        - key: title
+        - Selection publications
+      value:
+        background: null
+        heading: null
+        items: null
+        layout: null
+        section: casestudies
+        show_more: null
+        type: selected
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+          value: false
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
+          type: object
+        items:
+          label: Cases studies
+          options:
+            value_key:
+            - filename_without_ext
+            values: collections.casestudies
+          type: multiselect
+        layout:
+          label: Layout
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Grid
+              value: grid
+            - name: List
+              value: list
+          type: select
+        section:
+          hidden: true
+          label: section
+          options:
+            required: false
+          type: text
+          value: casestudies
+        show_more:
+          comment: Shows a button to see more items
+          label: Show more?
+          options:
+            required: false
+          type: switch
+          value: true
+      label: Selection publications_categories
+      preview:
+        text:
+        - key: heading.title
+        - key: title
+        - Selection publications_categories
+      value:
+        background: null
+        heading: null
+        items: null
+        layout: null
+        section: casestudies
+        show_more: null
+        type: selected
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+          value: false
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
+          type: object
+        items:
+          label: Cases studies
+          options:
+            value_key:
+            - filename_without_ext
+            values: collections.casestudies
+          type: multiselect
+        layout:
+          label: Layout
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Grid
+              value: grid
+            - name: List
+              value: list
+          type: select
+        section:
+          hidden: true
+          label: section
+          options:
+            required: false
+          type: text
+          value: casestudies
+        show_more:
+          comment: Shows a button to see more items
+          label: Show more?
+          options:
+            required: false
+          type: switch
+          value: true
+      label: Selection services
+      preview:
+        text:
+        - key: heading.title
+        - key: title
+        - Selection services
+      value:
+        background: null
+        heading: null
+        items: null
+        layout: null
+        section: casestudies
+        show_more: null
+        type: selected
+    - _inputs:
+        background:
+          label: With a background?
+          options:
+            required: false
+          type: switch
+          value: false
+        heading:
+          label: Heading
+          options:
+            required: false
+            structures: _structures.heading
+            subtype: object
+          preview:
+            text:
+            - key: title
+            - key: name
+            - key: text
+          type: object
+        items:
+          label: Cases studies
+          options:
+            value_key:
+            - filename_without_ext
+            values: collections.casestudies
+          type: multiselect
+        layout:
+          label: Layout
+          options:
+            required: false
+            value_key: value
+            values:
+            - name: Grid
+              value: grid
+            - name: List
+              value: list
+          type: select
+        section:
+          hidden: true
+          label: section
+          options:
+            required: false
+          type: text
+          value: casestudies
+        show_more:
+          comment: Shows a button to see more items
+          label: Show more?
+          options:
+            required: false
+          type: switch
+          value: true
+      label: Selection services_categories
+      preview:
+        text:
+        - key: heading.title
+        - key: title
+        - Selection services_categories
+      value:
+        background: null
+        heading: null
+        items: null
+        layout: null
+        section: casestudies
+        show_more: null
+        type: selected
   carousel:
     remove_empty_inputs: true
     reorder_inputs: false
@@ -2575,16 +3716,19 @@ _structures:
           options:
             required: false
           type: switch
+          value: true
         autoplay:
           label: Autoplay
           options:
             required: false
           type: switch
+          value: true
         focus:
           label: Focus
           options:
             required: false
           type: switch
+          value: true
         gap:
           comment: The gap between slides. Expressed in rem.
           label: Gap
@@ -2602,6 +3746,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         perPage:
           comment: Number of slides to display
           label: Per page
@@ -3832,11 +4977,13 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         controls:
           label: Controls
           options:
             required: false
           type: switch
+          value: true
         legend:
           label: Legend
           options:
@@ -3847,6 +4994,7 @@ _structures:
           options:
             required: false
           type: switch
+          value: false
         mp4:
           comment: MP4 video file
           label: MP4
