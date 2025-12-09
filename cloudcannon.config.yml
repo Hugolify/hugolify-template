@@ -2556,12 +2556,13 @@ _structures:
             required: false
           type: switch
           value: true
-      label: Selection casestudies
+      label: Selection Cases studies
       preview:
+        icon: checklist_rtl
         text:
         - key: heading.title
         - key: title
-        - Selection casestudies
+        - Selection Cases studies
       value:
         background: null
         heading: null
@@ -2569,7 +2570,7 @@ _structures:
         layout: null
         section: casestudies
         show_more: null
-        type: selected
+        type: selected-casestudies
     - _inputs:
         background:
           label: With a background?
@@ -2621,12 +2622,13 @@ _structures:
             required: false
           type: switch
           value: true
-      label: Selection expertises
+      label: Selection Expertises
       preview:
+        icon: checklist_rtl
         text:
         - key: heading.title
         - key: title
-        - Selection expertises
+        - Selection Expertises
       value:
         background: null
         heading: null
@@ -2634,7 +2636,7 @@ _structures:
         layout: null
         section: casestudies
         show_more: null
-        type: selected
+        type: selected-expertises
     - _inputs:
         background:
           label: With a background?
@@ -2686,12 +2688,13 @@ _structures:
             required: false
           type: switch
           value: true
-      label: Selection pages
+      label: Selection Pages
       preview:
+        icon: checklist_rtl
         text:
         - key: heading.title
         - key: title
-        - Selection pages
+        - Selection Pages
       value:
         background: null
         heading: null
@@ -2699,7 +2702,7 @@ _structures:
         layout: null
         section: casestudies
         show_more: null
-        type: selected
+        type: selected-pages
     - _inputs:
         background:
           label: With a background?
@@ -2751,12 +2754,13 @@ _structures:
             required: false
           type: switch
           value: true
-      label: Selection persons
+      label: Selection Persons
       preview:
+        icon: checklist_rtl
         text:
         - key: heading.title
         - key: title
-        - Selection persons
+        - Selection Persons
       value:
         background: null
         heading: null
@@ -2764,7 +2768,7 @@ _structures:
         layout: null
         section: casestudies
         show_more: null
-        type: selected
+        type: selected-persons
     - _inputs:
         background:
           label: With a background?
@@ -2816,12 +2820,13 @@ _structures:
             required: false
           type: switch
           value: true
-      label: Selection persons_statutes
+      label: Selection Statutes
       preview:
+        icon: checklist_rtl
         text:
         - key: heading.title
         - key: title
-        - Selection persons_statutes
+        - Selection Statutes
       value:
         background: null
         heading: null
@@ -2829,7 +2834,7 @@ _structures:
         layout: null
         section: casestudies
         show_more: null
-        type: selected
+        type: selected-persons_statutes
     - _inputs:
         background:
           label: With a background?
@@ -2881,12 +2886,13 @@ _structures:
             required: false
           type: switch
           value: true
-      label: Selection places
+      label: Selection Places
       preview:
+        icon: checklist_rtl
         text:
         - key: heading.title
         - key: title
-        - Selection places
+        - Selection Places
       value:
         background: null
         heading: null
@@ -2894,7 +2900,7 @@ _structures:
         layout: null
         section: casestudies
         show_more: null
-        type: selected
+        type: selected-places
     - _inputs:
         background:
           label: With a background?
@@ -2946,12 +2952,13 @@ _structures:
             required: false
           type: switch
           value: true
-      label: Selection posts
+      label: Selection News
       preview:
+        icon: checklist_rtl
         text:
         - key: heading.title
         - key: title
-        - Selection posts
+        - Selection News
       value:
         background: null
         heading: null
@@ -2959,7 +2966,7 @@ _structures:
         layout: null
         section: casestudies
         show_more: null
-        type: selected
+        type: selected-posts
     - _inputs:
         background:
           label: With a background?
@@ -3011,12 +3018,13 @@ _structures:
             required: false
           type: switch
           value: true
-      label: Selection posts_categories
+      label: Selection Categories
       preview:
+        icon: checklist_rtl
         text:
         - key: heading.title
         - key: title
-        - Selection posts_categories
+        - Selection Categories
       value:
         background: null
         heading: null
@@ -3024,7 +3032,7 @@ _structures:
         layout: null
         section: casestudies
         show_more: null
-        type: selected
+        type: selected-posts_categories
     - _inputs:
         background:
           label: With a background?
@@ -3076,12 +3084,13 @@ _structures:
             required: false
           type: switch
           value: true
-      label: Selection posts_tags
+      label: Selection Tags
       preview:
+        icon: checklist_rtl
         text:
         - key: heading.title
         - key: title
-        - Selection posts_tags
+        - Selection Tags
       value:
         background: null
         heading: null
@@ -3089,7 +3098,7 @@ _structures:
         layout: null
         section: casestudies
         show_more: null
-        type: selected
+        type: selected-posts_tags
     - _inputs:
         background:
           label: With a background?
@@ -3141,12 +3150,13 @@ _structures:
             required: false
           type: switch
           value: true
-      label: Selection products
+      label: Selection Products
       preview:
+        icon: checklist_rtl
         text:
         - key: heading.title
         - key: title
-        - Selection products
+        - Selection Products
       value:
         background: null
         heading: null
@@ -3154,7 +3164,7 @@ _structures:
         layout: null
         section: casestudies
         show_more: null
-        type: selected
+        type: selected-products
     - _inputs:
         background:
           label: With a background?
@@ -3206,12 +3216,13 @@ _structures:
             required: false
           type: switch
           value: true
-      label: Selection products_tags
+      label: Selection Tags
       preview:
+        icon: checklist_rtl
         text:
         - key: heading.title
         - key: title
-        - Selection products_tags
+        - Selection Tags
       value:
         background: null
         heading: null
@@ -3219,7 +3230,7 @@ _structures:
         layout: null
         section: casestudies
         show_more: null
-        type: selected
+        type: selected-products_tags
     - _inputs:
         background:
           label: With a background?
@@ -3271,12 +3282,13 @@ _structures:
             required: false
           type: switch
           value: true
-      label: Selection projects
+      label: Selection Projects
       preview:
+        icon: checklist_rtl
         text:
         - key: heading.title
         - key: title
-        - Selection projects
+        - Selection Projects
       value:
         background: null
         heading: null
@@ -3284,7 +3296,7 @@ _structures:
         layout: null
         section: casestudies
         show_more: null
-        type: selected
+        type: selected-projects
     - _inputs:
         background:
           label: With a background?
@@ -3336,12 +3348,13 @@ _structures:
             required: false
           type: switch
           value: true
-      label: Selection projects_tags
+      label: Selection Tags
       preview:
+        icon: checklist_rtl
         text:
         - key: heading.title
         - key: title
-        - Selection projects_tags
+        - Selection Tags
       value:
         background: null
         heading: null
@@ -3349,7 +3362,7 @@ _structures:
         layout: null
         section: casestudies
         show_more: null
-        type: selected
+        type: selected-projects_tags
     - _inputs:
         background:
           label: With a background?
@@ -3401,12 +3414,13 @@ _structures:
             required: false
           type: switch
           value: true
-      label: Selection projects_types
+      label: Selection Types
       preview:
+        icon: checklist_rtl
         text:
         - key: heading.title
         - key: title
-        - Selection projects_types
+        - Selection Types
       value:
         background: null
         heading: null
@@ -3414,7 +3428,7 @@ _structures:
         layout: null
         section: casestudies
         show_more: null
-        type: selected
+        type: selected-projects_types
     - _inputs:
         background:
           label: With a background?
@@ -3466,12 +3480,13 @@ _structures:
             required: false
           type: switch
           value: true
-      label: Selection publications
+      label: Selection Publications
       preview:
+        icon: checklist_rtl
         text:
         - key: heading.title
         - key: title
-        - Selection publications
+        - Selection Publications
       value:
         background: null
         heading: null
@@ -3479,7 +3494,7 @@ _structures:
         layout: null
         section: casestudies
         show_more: null
-        type: selected
+        type: selected-publications
     - _inputs:
         background:
           label: With a background?
@@ -3531,12 +3546,13 @@ _structures:
             required: false
           type: switch
           value: true
-      label: Selection publications_categories
+      label: Selection Categories
       preview:
+        icon: checklist_rtl
         text:
         - key: heading.title
         - key: title
-        - Selection publications_categories
+        - Selection Categories
       value:
         background: null
         heading: null
@@ -3544,7 +3560,7 @@ _structures:
         layout: null
         section: casestudies
         show_more: null
-        type: selected
+        type: selected-publications_categories
     - _inputs:
         background:
           label: With a background?
@@ -3596,12 +3612,13 @@ _structures:
             required: false
           type: switch
           value: true
-      label: Selection services
+      label: Selection Services
       preview:
+        icon: checklist_rtl
         text:
         - key: heading.title
         - key: title
-        - Selection services
+        - Selection Services
       value:
         background: null
         heading: null
@@ -3609,7 +3626,7 @@ _structures:
         layout: null
         section: casestudies
         show_more: null
-        type: selected
+        type: selected-services
     - _inputs:
         background:
           label: With a background?
@@ -3661,12 +3678,13 @@ _structures:
             required: false
           type: switch
           value: true
-      label: Selection services_categories
+      label: Selection Categories
       preview:
+        icon: checklist_rtl
         text:
         - key: heading.title
         - key: title
-        - Selection services_categories
+        - Selection Categories
       value:
         background: null
         heading: null
@@ -3674,7 +3692,7 @@ _structures:
         layout: null
         section: casestudies
         show_more: null
-        type: selected
+        type: selected-services_categories
   carousel:
     remove_empty_inputs: true
     reorder_inputs: false
