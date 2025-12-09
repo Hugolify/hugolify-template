@@ -15,7 +15,22 @@ image:
 draft: false
 blocks:
   - section: casestudies
-    type: selected
-  - section: casestudies
-    type: selected
+    type: selected-places
+    heading:
+      surtitle:
+      text:
+      title: Places
+    items:
+      - paris-office
+    layout: list
+  - heading:
+      surtitle:
+      text:
+      title: Statutes
+    items:
+      - CEO
+      - Manager
+    layout: list
+    section: persons_statutes
+    type: selected-persons_statutes
 ---
