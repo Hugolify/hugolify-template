@@ -14,7 +14,7 @@ image:
   src: /images/uploads/tom-crew-NLcLjLNUJbY-unsplash.jpg
 draft: false
 blocks:
-  - section: casestudies
+  - section: places
     type: selected-places
     heading:
       surtitle:
