@@ -1,16 +1,21 @@
 ---
 _schema: default
-is_page:
-draft:
-title_page: Test page
-description:
-featured_image:
 hero:
   align: center
   ctas:
   surtitle: surtitle
   text_markdown: Ipsum
   title: Lorem
+isPage: true
+title: Test
+image:
+  alt:
+  credit:
+  src: /images/uploads/tom-crew-NLcLjLNUJbY-unsplash.jpg
+draft: false
 blocks:
-slug:
+  - section: casestudies
+    type: selected
+  - section: casestudies
+    type: selected
 ---
