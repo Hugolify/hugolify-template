@@ -8,9 +8,7 @@ image:
   credit: Unsplash
   src: /images/uploads/jake-nackos-if9tk5uy-ki-unsplash.jpg
 persons_places:
-  - Paris office
+  - paris-office
 description: Description
 persons_statutes: CEO
-persons_expertises:
-  - Lorem expertise ipsum
 ---
