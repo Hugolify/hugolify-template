@@ -5,10 +5,10 @@ github.com/dixonandmoe/rellax v0.0.0-20240824005335-9ed6cb0aae03/go.mod h1:CJ8Ut
 github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400 h1:L6+F22i76xmeWWwrtijAhUbf3BiRLmpO5j34bgl1ggU=
 github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400/go.mod h1:uekq1D4ebeXgduLj8VIZy8TgfTjrLdSl6nPtVczso78=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
-github.com/hugolify/hugolify-admin v0.9.1 h1:8HPTBodME+MywUbFszNqubHNcGkFMKmy0yl2wO62nFY=
-github.com/hugolify/hugolify-admin v0.9.1/go.mod h1:qB7ndiuXR6XZu3r9UX3LtTHnrMF98U7vJHg6XXb6NvA=
-github.com/hugolify/hugolify-theme v1.26.22 h1:5EpRLoOYrdli4EHWLf4WcPEQPT1eD88qPVCREQOpnkY=
-github.com/hugolify/hugolify-theme v1.26.22/go.mod h1:Rc64eJSSIWGeU6eHfSzUISNfL9UrJmy3Xs3H05Gz9rQ=
+github.com/hugolify/hugolify-admin v1.0.0-rc.4 h1:OSwPpw2RSa+BP/5RuDXN20jzl9niWQdAbI63ui66NEg=
+github.com/hugolify/hugolify-admin v1.0.0-rc.4/go.mod h1:qB7ndiuXR6XZu3r9UX3LtTHnrMF98U7vJHg6XXb6NvA=
+github.com/hugolify/hugolify-theme v1.26.23 h1:6UrnN5lO3qKTPScwWe2hMb8fH8JwFc6wngiL+t27nAo=
+github.com/hugolify/hugolify-theme v1.26.23/go.mod h1:Rc64eJSSIWGeU6eHfSzUISNfL9UrJmy3Xs3H05Gz9rQ=
 github.com/hugolify/hugolify-theme-products v0.0.0-20250519114554-7688b7c7f46a h1:0Tl6O65wT//+qReIvPpJdSMbzUX1PJBO9ZFcjhbwl4Q=
 github.com/hugolify/hugolify-theme-products v0.0.0-20250519114554-7688b7c7f46a/go.mod h1:GIIZ807HsMNeEju9NJQNoXoyVXoRFvCGW3UwDK+8/pE=
 github.com/hugolify/hugolify-theme-products-tags v0.0.0-20250519114746-6fd016974c5e h1:dnGrC15CV7zhma/fGqjlOv/OrlHRNDx4bAfInz6i6tg=

@@ -65,4899 +65,10892 @@ match: {
 
 
 
+
 fields: [
-        {
+          
+            
+
+
+
+
+{
   label: 'is page',
-  name: 'isPage',
-  type: 'boolean', ui: { component: 'hidden' },
+  nameOverride: 'isPage',name: 'is_page',
+  type: 'boolean',
   default: true,
-  required: false,
-  i18n: 'duplicate'
-},
-        {
+  
+  ui: {
+    component: 'hidden'
+  },
+  required: false
+}
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Draft',
   name: 'draft',
   type: 'boolean',
   default: true,
-  required: false,
-  i18n: true
-},
-        {
-  label: 'Page title',
-  hint: 'Displayed in tabs, search results, and in SMS/Messages/Social networks preview',
-  name: 'title',
-  type: 'string',
-  required: true,
-  i18n: true,
-  isTitle: true
   
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Page title',
+  description: 'Displayed in tabs, search results, and in SMS/Messages/Social networks preview',
+  nameOverride: 'title',name: 'title_page',
+  type: 'string',
+  isTitle: true,
+  required: true
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Description',
-  hint: 'Displayed in tabs, search results, and in SMS/Messages/Social networks preview',
+  description: 'Displayed in tabs, search results, and in SMS/Messages/Social networks preview',
   name: 'description',
-  type: 'string', ui: { component: 'textarea' },
-  required: false,
-  i18n: true 
-},
-        {
+  type: 'string',
+  ui: {
+    component: "textarea"
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+
+
+
+
+{
   label: 'Image principale',
-  hint: 'Displayed in search results, and in SMS/Messages/Social networks preview',
-  name: 'image',
+  description: 'Displayed in search results, and in SMS/Messages/Social networks preview',
+  nameOverride: 'image',name: 'featured_image',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+
+{
   label: 'Image',
-  hint: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
-  name: 'src',
+  description: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
+  nameOverride: 'src',name: 'image_src',
   type: 'image',
-  required: false,
-  i18n: true,
-  choose_url: false,
-  media_library: {
-    config: {
-      max_file_size: '700000'
-    }
-  },
-  media_path: '/assets/images/uploads',
-  public_path: '/images/uploads'
-},
-        {
-  label: 'Text alternative',
-  hint: 'For an image that conveys information (leave blank if decorative image)',
-  name: 'alt',
-  type: 'string',
-  required: false,
-  i18n: true
+  required: false
 }
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text alternative',
+  description: 'For an image that conveys information (leave blank if decorative image)',
+  nameOverride: 'alt',name: 'image_alt',
+  type: 'string',
+  required: false
+}
+
+
+
+
 ,
 ]
-},
-        {
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Hero',
   name: 'hero',
   type: 'object',
   required: false,
-  collapsed: true,
-  i18n: true,
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
+  nameOverride: 'text',name: 'text_markdown',
   type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-        {
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'CTAs',
-  label_singular: 'CTA',
   name: 'ctas',
-  type: 'object', list: true,
-  collapsed: true,
-  i18n: true,
-  min: 0,
-  max: 2,
-  allow_add: true,
+  type: 'object',
+  list: true,
+  ui: {
+    max: 2
+  },
   required: false,
-  summary: '{{fields.text}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Text',
   name: 'text',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'URL',
+  description: 'Absolute URL (e.g https://www.example.com)',
   name: 'url',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Language',
-  hint: 'Enter code lang (e.g. fr) if different of the current page language',
+  description: 'Enter code lang (e.g. fr) if different of the current page language',
   name: 'lang',
   type: 'string',
-  required: false,
-  i18n: true
-},
-        {
-  label: 'Is blank?',
-  name: 'blank',
-  type: 'boolean',
-  required: false,
-  i18n: true
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Is blank?',
+  nameOverride: 'blank',name: 'is_blank',
+  type: 'boolean',
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Image',
   name: 'image',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+
+{
   label: 'Image',
-  hint: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
-  name: 'src',
+  description: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
+  nameOverride: 'src',name: 'image_src',
   type: 'image',
-  required: false,
-  i18n: true,
-  choose_url: false,
-  media_library: {
-    config: {
-      max_file_size: '700000'
-    }
-  },
-  media_path: '/assets/images/uploads',
-  public_path: '/images/uploads'
-},
-        {
-  label: 'Text alternative',
-  hint: 'For an image that conveys information (leave blank if decorative image)',
-  name: 'alt',
-  type: 'string',
-  required: false,
-  i18n: true
+  required: false
 }
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text alternative',
+  description: 'For an image that conveys information (leave blank if decorative image)',
+  nameOverride: 'alt',name: 'image_alt',
+  type: 'string',
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Credit',
   name: 'credit',
   type: 'rich-text',
-  minimal: true,
-  buttons: ['link'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-        {
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Is background?',
-  name: 'background',
+  nameOverride: 'background',name: 'is_background',
   type: 'boolean',
-  required: false,
-  i18n: 'duplicate' 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Darken?',
-  name: 'darken',
+  nameOverride: 'darken',name: 'is_darken',
   type: 'boolean',
-  required: false,
-  i18n: 'duplicate' 
-},
+  required: false
+}
+
+
+
+
+,
 ]
-},
-        {
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Video',
   name: 'video',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+  
+    
+  
+
+
+
+
+
+
+
+
+{
   label: 'MP4',
-  hint: 'Video (MP4)',
-  name: 'mp4', media: { accept: 'video/mp4' },
+  description: 'MP4 video file',
+  name: 'mp4',
   type: 'image',
-  required: false,
-  i18n: 'duplicate',
-  choose_url: true,
-  media_library: {
-    config: {
-      max_file_size: 5000000
-    }
+  media: {
+    accept: [
+      'video/mp4'
+    ]
   },
-  media_path: '/static/assets/videos',
-  public_path: '/assets/videos'
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+  
+    
+  
+
+
+
+
+
+
+
+
+{
   label: 'WEBM',
-  hint: 'Video (WEBM)',
-  name: 'webm', media: { accept: 'video/webm' },
+  description: 'WEBM video file',
+  name: 'webm',
   type: 'image',
-  required: false,
-  i18n: 'duplicate',
-  choose_url: true,
-  media_library: {
-    config: {
-      max_file_size: 5000000
-    }
+  media: {
+    accept: [
+      'video/webm'
+    ]
   },
-  media_path: '/static/assets/videos',
-  public_path: '/assets/videos'
+  required: false
 }
+
+
+
+
 ,
-        {
-  label: 'Mobile MP4',
-  hint: 'Video (MP4)',
+          
+            
+
+
+
+  
+    
+  
+
+
+
+
+
+
+
+
+{
+  label: 'MP4 (Mobile)',
+  description: 'MP4 video file for mobile',
   name: 'mp4_mobile',
   type: 'image',
-  required: false,
-  i18n: 'duplicate',
-  choose_url: true,
-  media_library: {
-    config: {
-      max_file_size: 5000000
-    }
+  media: {
+    accept: [
+      'video/mp4'
+    ]
   },
-  media_path: '/static/assets/videos',
-  public_path: '/assets/videos'
-},
-        {
-  label: 'Mobile WEBM',
-  hint: 'Video (WEBM)',
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+  
+    
+  
+
+
+
+
+
+
+
+
+{
+  label: 'WEBM (Mobile)',
+  description: 'WEBM video file for mobile',
   name: 'webm_mobile',
   type: 'image',
-  required: false,
-  i18n: 'duplicate',
-  choose_url: true,
-  media_library: {
-    config: {
-      max_file_size: 5000000
-    }
+  media: {
+    accept: [
+      'video/webm'
+    ]
   },
-  media_path: '/static/assets/videos',
-  public_path: '/assets/videos'
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Controls',
   name: 'controls',
   type: 'boolean',
   default: true,
-  required: false,
-  i18n: 'duplicate'
+  
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'Autoplay',
   name: 'autoplay',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate'
+  
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'Loop',
   name: 'loop',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate'
+  
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'Legend',
   name: 'legend',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Transcription',
   name: 'transcription',
-  type: 'string', ui: { component: 'textarea' },
-  required: false,
-  i18n: true
+  type: 'string',
+  ui: {
+    component: "textarea"
+  },
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
   label: 'Is background?',
-  name: 'background',
+  nameOverride: 'background',name: 'is_background',
   type: 'boolean',
-  required: false,
-  i18n: 'duplicate' 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Darken?',
-  name: 'darken',
+  nameOverride: 'darken',name: 'is_darken',
   type: 'boolean',
-  required: false,
-  i18n: 'duplicate' 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+{
   label: 'Poster',
-  hint: 'Placehoster image for video',
+  description: 'Placehoster image for video',
   name: 'poster',
   type: 'image',
-  required: false,
-  i18n: true,
-  choose_url: false,
-  media_library: {
-    config: {
-      max_file_size: '700000'
-    }
-  },
-  media_path: '/assets/images/uploads',
-  public_path: '/images/uploads'
-},
-]
+  required: false
 }
-,
-        
-{
-  label: 'Alignment',
-  hint: '',
-  name: 'align',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Start', value: 'start' },{ label: 'Center', value: 'center' },{ label: 'End', value: 'end' },
-    ],
-  required: false,
-  i18n: 'duplicate'
-}
+
+
 
 ,
 ]
-},
-        {
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
+  label: 'Alignment',
+  name: 'align',
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Start', 
+      value: 'start' 
+    },
+    { 
+      label: 'Center', 
+      value: 'center' 
+    },
+    { 
+      label: 'End', 
+      value: 'end' 
+    },
+  ],
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Body',
   name: 'body',
   type: 'rich-text',
-  required: false,
-  i18n: true,
-  isBody: true
-  
-},
-        {
+  isBody: true,
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Blocs',
-  label_singular: 'Bloc',
-  required: false,
   name: 'blocks',
-  i18n: true,collapsed: false,
-    type: 'object', list: true,
-    templateKey: 'type', templates: [{
+  list: true,
+  required: false,
+  type: 'object',
+  templateKey: 'type',
+  templates: [
+    
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Audio',
   name: 'audio',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{heading.title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Audios',
   name: 'audio',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+  
+    
+  
+
+
+
+
+
+
+
+
+{
   label: 'MP3',
-  hint: 'Audio (MP3)',
+  description: 'MP3 audio file',
   name: 'mp3',
   type: 'image',
-  required: false,
-  i18n: 'duplicate',
-  choose_url: true,
-  media_library: {
-    config: {
-      max_file_size: 700000
-    }
+  media: {
+    accept: [
+      'audio/mpeg'
+    ]
   },
-  media_path: '/static/assets/audios',
-  public_path: '/assets/audios'
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+  
+    
+  
+
+
+
+
+
+
+
+
+{
   label: 'OGG',
-  hint: 'Audio (OGG)',
+  description: 'OGG audio file',
   name: 'ogg',
   type: 'image',
-  required: false,
-  i18n: 'duplicate',
-  choose_url: true,
-  media_library: {
-    config: {
-      max_file_size: 700000
-    }
+  media: {
+    accept: [
+      'audio/ogg'
+    ]
   },
-  media_path: '/static/assets/audios',
-  public_path: '/assets/audios'
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'Autoplay',
   name: 'autoplay',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate'
+  
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'Loop',
   name: 'loop',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate'
+  
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'Transcription',
   name: 'transcription',
-  type: 'string', ui: { component: 'textarea' },
-  required: false,
-  i18n: true
+  type: 'string',
+  ui: {
+    component: "textarea"
+  },
+  required: false
 }
+
+
+
+
 ,
 ]
+
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
-]
+  
+  required: false
 }
-,{
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Alert',
   name: 'alert',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{text_markdown}}',
-  fields: [
   
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-        
+fields: [
+  
+          
+            
+
+
+
+
+
+
 {
-  label: 'State',
-  hint: '',
-  name: 'state',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Danger', value: 'danger' },{ label: 'Dark', value: 'dark' },{ label: 'Info', value: 'info' },{ label: 'Light', value: 'light' },{ label: 'Primary', value: 'primary' },{ label: 'Secondary', value: 'secondary' },{ label: 'Success', value: 'success' },{ label: 'Warning', value: 'warning' },
-    ],
-    default: 'light',
-  required: true,
-  i18n: 'duplicate'
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
+  },
+  required: false
 }
 
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
+  label: 'State',
+  name: 'state',
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Danger', 
+      value: 'danger' 
+    },
+    { 
+      label: 'Dark', 
+      value: 'dark' 
+    },
+    { 
+      label: 'Info', 
+      value: 'info' 
+    },
+    { 
+      label: 'Light', 
+      value: 'light' 
+    },
+    { 
+      label: 'Primary', 
+      value: 'primary' 
+    },
+    { 
+      label: 'Secondary', 
+      value: 'secondary' 
+    },
+    { 
+      label: 'Success', 
+      value: 'success' 
+    },
+    { 
+      label: 'Warning', 
+      value: 'warning' 
+    },
+  ],
+  required: true
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
-]
+  
+  required: false
 }
-,{
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Chart',
   name: 'chart',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{heading.title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Chart',
   name: 'chart',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        
-{
-  label: 'Chart type',
-  hint: '',
-  name: 'type',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Bar', value: 'bar' },{ label: 'Pie', value: 'pie' },{ label: 'Line', value: 'line' },{ label: 'Polar area', value: 'polarArea' },{ label: 'Radar', value: 'radar' },
-    ],
-    default: 'bar',
-  required: false,
-  i18n: 'duplicate'
+  required: false
 }
 
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Chart type',
+  nameOverride: 'type',name: 'chart_type',
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Bar', 
+      value: 'bar' 
+    },
+    { 
+      label: 'Pie', 
+      value: 'pie' 
+    },
+    { 
+      label: 'Line', 
+      value: 'line' 
+    },
+    { 
+      label: 'Polar area', 
+      value: 'polarArea' 
+    },
+    { 
+      label: 'Radar', 
+      value: 'radar' 
+    },
+  ],
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+
+
+{
   label: 'Items',
-  label_singular: 'Item',
-  name: 'items',
-  type: 'object', list: true,
+  nameOverride: 'items',name: 'items_chart',
+  type: 'object',
+  list: true,
   required: false,
-  i18n: true,
-  collapsed: true,fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Label',
   name: 'label',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Value',
   name: 'value',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Color',
-  name: 'color',
-  type: 'string',
-  allowInput: true,
-  enableAlpha: true,
-  required: false,
-  i18n: 'duplicate'
-}
-,
-]
-},
-]
-}
-,
-        
-{
-  label: 'Grid',
-  hint: '',
-  name: 'grid',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Small', value: 'small' },{ label: 'Medium', value: 'medium' },{ label: 'Large', value: 'large' },{ label: 'Container', value: 'container' },{ label: 'Full', value: 'full' },
-    ],
-    default: 'large',
-  required: true,
-  i18n: 'duplicate'
+  required: false
 }
 
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
+  label: 'Color',
+  
+  name: 'color',
+  type: 'string',
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Data (code)',
+  
+  description: 'Documentation: https://www.chartjs.org/docs/',
+  
+  nameOverride: 'data',name: 'chart_data',
+  type: 'string',
+  ui: {
+    component: 'textarea'
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
+  label: 'Grid',
+  name: 'grid',
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Small', 
+      value: 'small' 
+    },
+    { 
+      label: 'Medium', 
+      value: 'medium' 
+    },
+    { 
+      label: 'Large', 
+      value: 'large' 
+    },
+    { 
+      label: 'Container', 
+      value: 'container' 
+    },
+    { 
+      label: 'Full', 
+      value: 'full' 
+    },
+  ],
+  required: true
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
-]
+  
+  required: false
 }
-,{
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Comparison',
   name: 'comparison',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{heading.title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Column',
+  
   name: 'column',
   type: 'number',
-  min: 1,
-  max: 6,
-  value_type: 'int',
-  default: 3,
-  i18n: 'duplicate'
+  ui: {
+    
+    min: 1,
+    
+    
+    max: 6,
+    
+    
+    step: 1
+    
+  },
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+
+
+{
   label: 'Items',
-  label_singular: 'Item',
-  name: 'items',
-  type: 'object', list: true,
+  nameOverride: 'items',name: 'items_comparison',
+  type: 'object',
+  list: true,
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Text',
   name: 'text',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Badge',
-  hint: 'Show a badge',
+  description: 'Show a badge',
   name: 'badge',
   type: 'string',
-  required: false,
-  i18n: true
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
   label: 'Offer',
   name: 'offer',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Price',
-  hint: 'e.g: 300000 (for 300 000 €)',
+  
+  description: 'e.g: 300000 (for 300 000 €)',
+  
   name: 'price',
   type: 'number',
-  required: false,
-  i18n: 'duplicate'
+  ui: {
+    
+    
+    
+  },
+  required: false
 }
+
+
+
+
 ,
-        
+          
+            
+
+
+
+
 
 
 {
   label: 'Discount',
-  hint: 'Amount of the reduction, e.g: 30%',
+  description: 'Amount of the reduction, e.g: 30%',
   name: 'discount',
   type: 'string',
-  required: false,
-  i18n: 'duplicate',
-  
-
-
-  pattern: [
-    "^[0-9]*(%?)$",
-    "Value only (without currency)"
-  ]
-
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'Hide price',
   name: 'hide_price',
   type: 'boolean',
-  required: false,
-  i18n: 'duplicate'
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'Text',
   name: 'text',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Arguments',
-  label_singular: 'Argument',
   name: 'arguments',
-  type: 'object', list: true,
+  type: 'object',
+  list: true,
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{text}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Icon',
-  hint: 'Icon name from https://icons.getbootstrap.com/',
+  description: 'Icon name from https://icons.getbootstrap.com/',
   name: 'icon',
   type: 'string',
-  required: false,
-  i18n: 'duplicate'
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'Text',
   name: 'text',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Is highlighted?',
   name: 'is_highlighted',
   type: 'boolean',
-  required: false,
-  i18n: true
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'CTA',
   name: 'cta',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{text}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Text',
   name: 'text',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'URL',
+  description: 'Absolute URL (e.g https://www.example.com)',
   name: 'url',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Language',
-  hint: 'Enter code lang (e.g. fr) if different of the current page language',
+  description: 'Enter code lang (e.g. fr) if different of the current page language',
   name: 'lang',
   type: 'string',
-  required: false,
-  i18n: true
-},
-        {
-  label: 'Is blank?',
-  name: 'blank',
-  type: 'boolean',
-  required: false,
-  i18n: true
-},
-]
+  required: false
 }
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Is blank?',
+  nameOverride: 'blank',name: 'is_blank',
+  type: 'boolean',
+  required: false
+}
+
+
+
+
 ,
 ]
-},
-        {
+
+}
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
-]
+  
+  required: false
 }
-,{
+
+
+
+
+,
+]
+
+}
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Call to action',
   name: 'cta',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{cta.text}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'CTAs',
-  label_singular: 'CTA',
   name: 'ctas',
-  type: 'object', list: true,
-  collapsed: true,
-  i18n: true,
-  min: 0,
-  max: 2,
-  allow_add: true,
+  type: 'object',
+  list: true,
+  ui: {
+    max: 2
+  },
   required: false,
-  summary: '{{fields.text}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Text',
   name: 'text',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'URL',
+  description: 'Absolute URL (e.g https://www.example.com)',
   name: 'url',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Language',
-  hint: 'Enter code lang (e.g. fr) if different of the current page language',
+  description: 'Enter code lang (e.g. fr) if different of the current page language',
   name: 'lang',
   type: 'string',
-  required: false,
-  i18n: true
-},
-        {
-  label: 'Is blank?',
-  name: 'blank',
-  type: 'boolean',
-  required: false,
-  i18n: true
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Is blank?',
+  nameOverride: 'blank',name: 'is_blank',
+  type: 'boolean',
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
-]
+  
+  required: false
 }
-,{
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Datas',
   name: 'datas',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{heading.title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Column',
+  
   name: 'column',
   type: 'number',
-  min: 1,
-  max: 6,
-  value_type: 'int',
-  default: 3,
-  i18n: 'duplicate'
+  ui: {
+    
+    min: 1,
+    
+    
+    max: 6,
+    
+    
+    step: 1
+    
+  },
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+
+
+{
   label: 'Items',
-  label_singular: 'Item',
-  name: 'items',
-  type: 'object', list: true,
+  nameOverride: 'items',name: 'items_datas',
+  type: 'object',
+  list: true,
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Prefix',
   name: 'prefix',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Value',
-  name: 'value_number',
-  nameOverride: 'value',
+  
+  nameOverride: 'value',name: 'value_number',
   type: 'number',
-  required: false,
-  i18n: true 
-},
-        {
+  ui: {
+    
+    
+    
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Suffix',
-  hint: 'e.g: %',
+  description: 'e.g: %',
   name: 'suffix',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Limit',
-  hint: '',
+  
   name: 'limit',
   type: 'number',
-  required: true,
-  default: 100,
-  i18n: 'duplicate'
-},
-        {
+  ui: {
+    
+    
+    
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Text',
   name: 'text',
   type: 'string',
-  required: false,
-  i18n: true 
-},
+  required: false
+}
+
+
+
+
+,
 ]
-},
-        {
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
+  
+  required: false
+}
+
+
+
+
+,
 ]
-},{
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Editorial',
   name: 'editorial',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{title}}',
-  fields: [
   
-        
+fields: [
+  
+          
+            
+
+
+
+
 {
   label: 'Direction',
-  hint: '',
   name: 'direction',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Text on the left / image on the right', value: 'ltr' },{ label: 'Image on the left / text on the right', value: 'rtl' },
-    ],
-    default: 'ltr',
-  required: false,
-  i18n: 'duplicate'
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Text on the left / image on the right', 
+      value: 'ltr' 
+    },
+    { 
+      label: 'Image on the left / text on the right', 
+      value: 'rtl' 
+    },
+  ],
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
+  nameOverride: 'text',name: 'text_markdown',
   type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Notes',
-  label_singular: 'Note',
-  hint: 'To link a word in the text to a note, suffix it with "[*]". Notes and "[\\*]" are linked by their order.',
-  name: 'notes',
-  type: 'object', list: true,
-  required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
-  
-        {
-  label: 'Text',
-  name: 'text',
-  type: 'string',
-  required: false,
-  i18n: true 
-},
-]
-},
-        {
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'CTAs',
-  label_singular: 'CTA',
   name: 'ctas',
-  type: 'object', list: true,
-  collapsed: true,
-  i18n: true,
-  min: 0,
-  max: 2,
-  allow_add: true,
+  type: 'object',
+  list: true,
+  ui: {
+    max: 2
+  },
   required: false,
-  summary: '{{fields.text}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Text',
   name: 'text',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'URL',
+  description: 'Absolute URL (e.g https://www.example.com)',
   name: 'url',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Language',
-  hint: 'Enter code lang (e.g. fr) if different of the current page language',
+  description: 'Enter code lang (e.g. fr) if different of the current page language',
   name: 'lang',
   type: 'string',
-  required: false,
-  i18n: true
-},
-        {
-  label: 'Is blank?',
-  name: 'blank',
-  type: 'boolean',
-  required: false,
-  i18n: true
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Is blank?',
+  nameOverride: 'blank',name: 'is_blank',
+  type: 'boolean',
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Image',
   name: 'image',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+
+{
   label: 'Image',
-  hint: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
-  name: 'src',
+  description: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
+  nameOverride: 'src',name: 'image_src',
   type: 'image',
-  required: false,
-  i18n: true,
-  choose_url: false,
-  media_library: {
-    config: {
-      max_file_size: '700000'
-    }
-  },
-  media_path: '/assets/images/uploads',
-  public_path: '/images/uploads'
-},
-        {
-  label: 'Text alternative',
-  hint: 'For an image that conveys information (leave blank if decorative image)',
-  name: 'alt',
-  type: 'string',
-  required: false,
-  i18n: true
+  required: false
 }
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text alternative',
+  description: 'For an image that conveys information (leave blank if decorative image)',
+  nameOverride: 'alt',name: 'image_alt',
+  type: 'string',
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Credit',
   name: 'credit',
   type: 'rich-text',
-  minimal: true,
-  buttons: ['link'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
 ]
-},
-        {
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
-]
+  
+  required: false
 }
-,{
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Embed',
   name: 'embed',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{heading.title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Embed',
   name: 'embed',
-  type: 'string', ui: { component: 'textarea' },
-  required: false,
-  i18n: 'duplicate'
+  type: 'string',
+  ui: {
+    component: "textarea"
+  },
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
-]
+  
+  required: false
 }
-,{
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'FAQ',
   name: 'faq',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{heading.title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+
+
+{
   label: 'Items',
-  label_singular: 'Item',
-  name: 'items',
-  type: 'object', list: true,
+  nameOverride: 'items',name: 'items_faq',
+  type: 'object',
+  list: true,
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Summary',
   name: 'summary',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
+  nameOverride: 'text',name: 'text_markdown',
   type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-        {
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Name',
   name: 'name',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Open?',
-  name: 'open',
+  nameOverride: 'open',name: 'is_open',
   type: 'boolean',
-  required: false,
-  i18n: 'duplicate'
-},
+  required: false
+}
+
+
+
+
+,
 ]
-},
-        {
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
+  
+  required: false
+}
+
+
+
+
+,
 ]
-},{
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Figure',
   name: 'figure',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Figure',
   name: 'figure',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+
+{
   label: 'Image',
-  hint: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
-  name: 'src',
+  description: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
+  nameOverride: 'src',name: 'image_src',
   type: 'image',
-  required: false,
-  i18n: true,
-  choose_url: false,
-  media_library: {
-    config: {
-      max_file_size: '700000'
-    }
-  },
-  media_path: '/assets/images/uploads',
-  public_path: '/images/uploads'
-},
-        {
-  label: 'Text alternative',
-  hint: 'For an image that conveys information (leave blank if decorative image)',
-  name: 'alt',
-  type: 'string',
-  required: false,
-  i18n: true
+  required: false
 }
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text alternative',
+  description: 'For an image that conveys information (leave blank if decorative image)',
+  nameOverride: 'alt',name: 'image_alt',
+  type: 'string',
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Legend',
   name: 'legend',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Credit',
   name: 'credit',
   type: 'rich-text',
-  minimal: true,
-  buttons: ['link'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Is screenshot?',
-  hint: 'Add fake browser',
-  name: 'screenshot',
-  type: 'boolean',
-  default: false,
-  required: false,
-  i18n: 'duplicate'
+  options: {
+    media: false
+  },
+  required: false
 }
+
+
+
+
+,
+          
+            
+
+
+
+
+{
+  label: 'Is screenshot?',
+  description: 'Add fake browser',
+  nameOverride: 'screenshot',name: 'is_screenshot',
+  type: 'boolean',
+  required: false
+}
+
+
+
+
 ,
 ]
+
 }
+
+
+
 ,
-        
+          
+            
+
+
+
+
 {
   label: 'Grid',
-  hint: '',
   name: 'grid',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Small', value: 'small' },{ label: 'Medium', value: 'medium' },{ label: 'Large', value: 'large' },{ label: 'Container', value: 'container' },{ label: 'Full', value: 'full' },
-    ],
-    default: 'large',
-  required: true,
-  i18n: 'duplicate'
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Small', 
+      value: 'small' 
+    },
+    { 
+      label: 'Medium', 
+      value: 'medium' 
+    },
+    { 
+      label: 'Large', 
+      value: 'large' 
+    },
+    { 
+      label: 'Container', 
+      value: 'container' 
+    },
+    { 
+      label: 'Full', 
+      value: 'full' 
+    },
+  ],
+  required: true
 }
 
+
+
+
 ,
-        
+          
+            
+
+
+
+
 {
   label: 'Offset',
-  hint: '',
   name: 'offset',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Start', value: 'start' },{ label: 'Center', value: 'center' },{ label: 'End', value: 'end' },
-    ],
-  required: false,
-  i18n: 'duplicate'
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Start', 
+      value: 'start' 
+    },
+    { 
+      label: 'Center', 
+      value: 'center' 
+    },
+    { 
+      label: 'End', 
+      value: 'end' 
+    },
+  ],
+  required: false
 }
 
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
-]
+  
+  required: false
 }
-,{
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Form',
   name: 'form',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{heading.title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
 {
   label: 'Grid',
-  hint: '',
   name: 'grid',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Small', value: 'small' },{ label: 'Medium', value: 'medium' },{ label: 'Large', value: 'large' },{ label: 'Container', value: 'container' },{ label: 'Full', value: 'full' },
-    ],
-    default: 'large',
-  required: true,
-  i18n: 'duplicate'
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Small', 
+      value: 'small' 
+    },
+    { 
+      label: 'Medium', 
+      value: 'medium' 
+    },
+    { 
+      label: 'Large', 
+      value: 'large' 
+    },
+    { 
+      label: 'Container', 
+      value: 'container' 
+    },
+    { 
+      label: 'Full', 
+      value: 'full' 
+    },
+  ],
+  required: true
 }
 
+
+
+
 ,
-        
+          
+            
+
+
+
+
 {
   label: 'Offset',
-  hint: '',
   name: 'offset',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Start', value: 'start' },{ label: 'Center', value: 'center' },{ label: 'End', value: 'end' },
-    ],
-  required: false,
-  i18n: 'duplicate'
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Start', 
+      value: 'start' 
+    },
+    { 
+      label: 'Center', 
+      value: 'center' 
+    },
+    { 
+      label: 'End', 
+      value: 'end' 
+    },
+  ],
+  required: false
 }
 
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'Name',
   name: 'name',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Send button text',
   name: 'submit',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+             
+
+
+
+
+
+
+
+
+{
   label: 'Fields',
-  label_singular: 'Field',
-  name: 'items',
-  type: 'object', list: true,
+  nameOverride: 'items',name: 'form_items',
+  type: 'object',
+  list: true,
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{label}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Label',
   name: 'label',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Name',
   name: 'name',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        
-{
-  label: 'Type',
-  hint: 'Choose type field',
-  name: 'type',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Email', value: 'email' },{ label: 'Checkbox', value: 'checkbox' },{ label: 'Radio', value: 'radio' },{ label: 'Select', value: 'select' },{ label: 'Tel', value: 'tel' },{ label: 'Text', value: 'text' },{ label: 'Textarea', value: 'textarea' },
-    ],
-    default: 'text',
-  required: false,
-  i18n: 'duplicate'
+  required: false
 }
 
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
+  label: 'Type',
+  nameOverride: 'type',name: 'form_type',
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Email', 
+      value: 'email' 
+    },
+    { 
+      label: 'Checkbox', 
+      value: 'checkbox' 
+    },
+    { 
+      label: 'Radio', 
+      value: 'radio' 
+    },
+    { 
+      label: 'Select', 
+      value: 'select' 
+    },
+    { 
+      label: 'Tel', 
+      value: 'tel' 
+    },
+    { 
+      label: 'Text', 
+      value: 'text' 
+    },
+    { 
+      label: 'Textarea', 
+      value: 'textarea' 
+    },
+  ],
+  required: true
+}
+
+
+
+
+,
+          
+             
+
+
+
+
+
+
+
+
+{
   label: 'Options',
-  label_singular: 'Option',
-  hint: 'Only for select fields',
-  name: 'options',
-  type: 'object', list: true,
+  description: 'Only for select fields',
+  nameOverride: 'items',name: 'form_options',
+  type: 'object',
+  list: true,
   required: false,
-  i18n: true,
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Value',
   name: 'value',
   type: 'string',
-  required: false,
-  i18n: true 
-},
+  required: false
+}
+
+
+
+
+,
 ]
-},
-        {
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Value',
-  hint: 'Only for checkbox and radio fields',
-  name: 'value',
+  description: 'Only for checkbox and radio fields',
+  nameOverride: 'value',name: 'form_value',
   type: 'string',
-  required: false,
-  i18n: true
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Required',
-  name: 'required',
+  nameOverride: 'required',name: 'is_required',
   type: 'boolean',
-  required: false,
-  i18n: 'duplicate' 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Full width field?',
-  name: 'full',
+  nameOverride: 'full',name: 'is_form_full',
   type: 'boolean',
-  required: false,
-  i18n: 'duplicate' 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Placeholder',
   name: 'placeholder',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
 {
   label: 'Autocomplete',
-  hint: '',
-  name: 'autocomplete',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Email', value: 'email' },{ label: 'Tel', value: 'tel' },{ label: 'Title', value: 'honorific-prefix' },{ label: 'Firstname', value: 'given-name' },{ label: 'Lastname', value: 'family-name' },{ label: 'Name', value: 'name' },{ label: 'Street', value: 'street-address' },{ label: 'Address level1', value: 'address-level1' },{ label: 'Address level2', value: 'address-level2' },{ label: 'Postal code', value: 'postal-code' },{ label: 'Country name', value: 'country-name' },{ label: 'Organization', value: 'organization' },
-    ],
-  required: false,
-  i18n: 'duplicate'
+  nameOverride: 'autocomplete',name: 'form_autocomplete',
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Email', 
+      value: 'email' 
+    },
+    { 
+      label: 'Tel', 
+      value: 'tel' 
+    },
+    { 
+      label: 'Title', 
+      value: 'honorific-prefix' 
+    },
+    { 
+      label: 'Firstname', 
+      value: 'given-name' 
+    },
+    { 
+      label: 'Lastname', 
+      value: 'family-name' 
+    },
+    { 
+      label: 'Name', 
+      value: 'name' 
+    },
+    { 
+      label: 'Street', 
+      value: 'street-address' 
+    },
+    { 
+      label: 'Address level1', 
+      value: 'address-level1' 
+    },
+    { 
+      label: 'Address level2', 
+      value: 'address-level2' 
+    },
+    { 
+      label: 'Postal code', 
+      value: 'postal-code' 
+    },
+    { 
+      label: 'Country name', 
+      value: 'country-name' 
+    },
+    { 
+      label: 'Organization', 
+      value: 'organization' 
+    },
+  ],
+  required: false
 }
+
+
+
 
 ,
 ]
-},
-        {
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
-]
+  
+  required: false
 }
-,{
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Gallery',
   name: 'gallery',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{heading.title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Column',
+  
   name: 'column',
   type: 'number',
-  min: 1,
-  max: 6,
-  value_type: 'int',
-  default: 3,
-  i18n: 'duplicate'
+  ui: {
+    
+    min: 1,
+    
+    
+    max: 6,
+    
+    
+    step: 1
+    
+  },
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
   label: 'Gallery',
   name: 'gallery',
-  type: 'object', list: true,
+  type: 'object',
+  list: true,
   required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+
+{
   label: 'Image',
-  hint: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
-  name: 'src',
+  description: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
+  nameOverride: 'src',name: 'image_src',
   type: 'image',
-  required: false,
-  i18n: true,
-  choose_url: false,
-  media_library: {
-    config: {
-      max_file_size: '700000'
-    }
-  },
-  media_path: '/assets/images/uploads',
-  public_path: '/images/uploads'
-},
-        {
-  label: 'Text alternative',
-  hint: 'For an image that conveys information (leave blank if decorative image)',
-  name: 'alt',
-  type: 'string',
-  required: false,
-  i18n: true
+  required: false
 }
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text alternative',
+  description: 'For an image that conveys information (leave blank if decorative image)',
+  nameOverride: 'alt',name: 'image_alt',
+  type: 'string',
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Credit',
   name: 'credit',
   type: 'rich-text',
-  minimal: true,
-  buttons: ['link'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-        {
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Legend',
   name: 'legend',
   type: 'string',
-  required: false,
-  i18n: true 
-},
+  required: false
+}
+
+
+
+
+,
 ]
-},
-        {
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
+  
+  required: false
+}
+
+
+
+
+,
 ]
-},{
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Images',
   name: 'images',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{heading.title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Images',
   name: 'images',
-  type: 'object', list: true,
+  type: 'object',
+  list: true,
   required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+
+{
   label: 'Image',
-  hint: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
-  name: 'src',
+  description: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
+  nameOverride: 'src',name: 'image_src',
   type: 'image',
-  required: false,
-  i18n: true,
-  choose_url: false,
-  media_library: {
-    config: {
-      max_file_size: '700000'
-    }
-  },
-  media_path: '/assets/images/uploads',
-  public_path: '/images/uploads'
-},
-        {
-  label: 'Text alternative',
-  hint: 'For an image that conveys information (leave blank if decorative image)',
-  name: 'alt',
-  type: 'string',
-  required: false,
-  i18n: true
+  required: false
 }
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text alternative',
+  description: 'For an image that conveys information (leave blank if decorative image)',
+  nameOverride: 'alt',name: 'image_alt',
+  type: 'string',
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Credit',
   name: 'credit',
   type: 'rich-text',
-  minimal: true,
-  buttons: ['link'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-        {
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Legend',
   name: 'legend',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Half size?',
-  name: 'half',
+  nameOverride: 'half',name: 'is_half',
   type: 'boolean',
-  required: false,
-  i18n: 'duplicate' 
-},
+  required: false
+}
+
+
+
+
+,
 ]
-},
-        {
+
+}
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
+  
+  required: false
+}
+
+
+
+
+,
 ]
-},{
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Informations',
   name: 'informations',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{heading.title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Column',
+  
   name: 'column',
   type: 'number',
-  min: 1,
-  max: 6,
-  value_type: 'int',
-  default: 3,
-  i18n: 'duplicate'
+  ui: {
+    
+    min: 1,
+    
+    
+    max: 6,
+    
+    
+    step: 1
+    
+  },
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+
+
+{
   label: 'Items',
-  label_singular: 'Item',
-  name: 'items',
-  type: 'object', list: true,
+  nameOverride: 'items',name: 'items_informations',
+  type: 'object',
+  list: true,
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Icon',
-  hint: 'Icon name from https://icons.getbootstrap.com/',
+  description: 'Icon name from https://icons.getbootstrap.com/',
   name: 'icon',
   type: 'string',
-  required: false,
-  i18n: 'duplicate'
+  required: false
 }
+
+
+
+
 ,
-        {
-  label: 'Images',
-  name: 'image',
+          
+            
+
+
+
+
+
+
+
+
+{
+  label: 'Image',
+  nameOverride: 'image',name: 'image_simple',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+
+{
   label: 'Image',
-  hint: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
-  name: 'src',
+  description: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
+  nameOverride: 'src',name: 'image_src',
   type: 'image',
-  required: false,
-  i18n: true,
-  choose_url: false,
-  media_library: {
-    config: {
-      max_file_size: '700000'
-    }
-  },
-  media_path: '/assets/images/uploads',
-  public_path: '/images/uploads'
-},
-        {
-  label: 'Text alternative',
-  hint: 'For an image that conveys information (leave blank if decorative image)',
-  name: 'alt',
-  type: 'string',
-  required: false,
-  i18n: true
+  required: false
 }
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text alternative',
+  description: 'For an image that conveys information (leave blank if decorative image)',
+  nameOverride: 'alt',name: 'image_alt',
+  type: 'string',
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Is logo?',
-  hint: 'Positioned in the center and not cropped',
-  name: 'isLogo',
+  description: 'Positioned in the center and not cropped',
+  nameOverride: 'isLogo',name: 'is_logo',
   type: 'boolean',
-  required: false,
-  i18n: 'duplicate' 
-},
+  required: false
+}
+
+
+
+
+,
 ]
-},
-        {
+
+}
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Text',
   name: 'text',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'CTA',
   name: 'cta',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{text}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Text',
   name: 'text',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'URL',
+  description: 'Absolute URL (e.g https://www.example.com)',
   name: 'url',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Language',
-  hint: 'Enter code lang (e.g. fr) if different of the current page language',
+  description: 'Enter code lang (e.g. fr) if different of the current page language',
   name: 'lang',
   type: 'string',
-  required: false,
-  i18n: true
-},
-        {
-  label: 'Is blank?',
-  name: 'blank',
-  type: 'boolean',
-  required: false,
-  i18n: true
-},
-]
+  required: false
 }
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Is blank?',
+  nameOverride: 'blank',name: 'is_blank',
+  type: 'boolean',
+  required: false
+}
+
+
+
+
 ,
 ]
-},
-        {
+
+}
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
-]
+  
+  required: false
 }
-,{
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Instagram',
   name: 'instagram',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{heading.title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Count',
-  hint: 'Items to display',
+  
+  description: 'Items to display',
+  
   name: 'count',
   type: 'number',
-  required: true,
-  default: 4,
-  min: 1,
-  max: 10,
-  step: 1,
-  i18n: 'duplicate'
+  ui: {
+    
+    min: 1,
+    
+    
+    max: 10,
+    
+    
+    step: 1
+    
+  },
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
   label: 'Limit',
-  hint: '',
-  name: 'limit',
-  type: 'number',
-  required: true,
-  default: 5,
-  min: 1,
-  max: 10,
-  step: 1,
-  i18n: 'duplicate'
-}
-,
-        {
-  label: 'CTAs',
-  label_singular: 'CTA',
-  name: 'ctas',
-  type: 'object', list: true,
-  collapsed: true,
-  i18n: true,
-  min: 0,
-  max: 2,
-  allow_add: true,
-  required: false,
-  summary: '{{fields.text}}',
-  fields: [
   
-        {
+  nameOverride: 'limit',name: 'limit_simple',
+  type: 'number',
+  ui: {
+    
+    min: 1,
+    
+    
+    max: 10,
+    
+    
+    step: 1
+    
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'CTAs',
+  name: 'ctas',
+  type: 'object',
+  list: true,
+  ui: {
+    max: 2
+  },
+  required: false,
+  
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Text',
   name: 'text',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'URL',
+  description: 'Absolute URL (e.g https://www.example.com)',
   name: 'url',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Language',
-  hint: 'Enter code lang (e.g. fr) if different of the current page language',
+  description: 'Enter code lang (e.g. fr) if different of the current page language',
   name: 'lang',
   type: 'string',
-  required: false,
-  i18n: true
-},
-        {
-  label: 'Is blank?',
-  name: 'blank',
-  type: 'boolean',
-  required: false,
-  i18n: true
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Is blank?',
+  nameOverride: 'blank',name: 'is_blank',
+  type: 'boolean',
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
-]
+  
+  required: false
 }
-,{
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Latest items',
   name: 'latest',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{heading.title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
-}
-,
-        
-{
-  label: 'Section',
-  hint: 'Select the section to display',
-  name: 'section',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Pages', value: 'pages' },{ label: 'Products', value: 'products' },{ label: 'Products tags', value: 'products_tags' },
-    ],
-  required: false,
-  i18n: 'duplicate'
-}
-,
-        
-{
-  label: 'Layout',
-  hint: '',
-  name: 'layout',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Grid', value: 'grid' },{ label: 'List', value: 'list' },
-    ],
-  required: false,
-  i18n: 'duplicate'
+  required: false
 }
 
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
+  label: 'Section',
+  name: 'section',
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Pages', 
+      value: 'pages' 
+    },
+    { 
+      label: 'Products', 
+      value: 'products' 
+    },
+    { 
+      label: 'Products tags', 
+      value: 'products_tags' 
+    },
+  ],
+  required: false
+}
+
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Layout',
+  nameOverride: 'layout',name: 'layout_grid_list',
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Grid', 
+      value: 'grid' 
+    },
+    { 
+      label: 'List', 
+      value: 'list' 
+    },
+  ],
+  required: false
+}
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Count',
-  hint: 'Items to display',
+  
+  description: 'Items to display',
+  
   name: 'count',
   type: 'number',
-  required: true,
-  default: 4,
-  min: 1,
-  max: 10,
-  step: 1,
-  i18n: 'duplicate'
+  ui: {
+    
+    min: 1,
+    
+    
+    max: 10,
+    
+    
+    step: 1
+    
+  },
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'Show more?',
+  description: 'Shows a button to see more items',
   name: 'show_more',
   type: 'boolean',
   default: true,
-  required: false,
-  i18n: 'duplicate'
+  
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
+  
+  required: false
+}
+
+
+
+
+,
 ]
-},{
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Logos',
   name: 'logos',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{heading.title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Title',
-  name: 'title',
-  type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
-}
-,
-        {
-  label: 'Items',
-  label_singular: 'Item',
-  name: 'items',
-  type: 'object', list: true,
-  required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
-  
-        {
-  label: 'Title',
-  name: 'title',
-  type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'URL',
-  name: 'url',
-  type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Image',
-  hint: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
-  name: 'src',
-  type: 'image',
-  required: false,
-  i18n: true,
-  choose_url: false,
-  media_library: {
-    config: {
-      max_file_size: '700000'
-    }
-  },
-  media_path: '/assets/images/uploads',
-  public_path: '/images/uploads'
-},
-]
-},
-        
-{
-  label: 'Layout',
-  hint: '',
-  name: 'layout',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Grid', value: 'grid' },{ label: 'Carousel', value: 'carousel' },
-    ],
-  required: false,
-  i18n: 'duplicate'
+  required: false
 }
 
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
+  label: 'Title',
+  name: 'title',
+  type: 'string',
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+
+
+{
+  label: 'Items',
+  nameOverride: 'items',name: 'items_logos',
+  type: 'object',
+  list: true,
+  required: false,
+  
+fields: [
+  
+          
+            
+
+
+
+
+{
+  label: 'Title',
+  name: 'title',
+  type: 'string',
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
+  label: 'URL',
+  description: 'Absolute URL (e.g https://www.example.com)',
+  name: 'url',
+  type: 'string',
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+
+{
+  label: 'Image',
+  description: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
+  nameOverride: 'src',name: 'image_src',
+  type: 'image',
+  required: false
+}
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Layout',
+  nameOverride: 'layout',name: 'layout_grid_carousel',
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Grid', 
+      value: 'grid' 
+    },
+    { 
+      label: 'Carousel', 
+      value: 'carousel' 
+    },
+  ],
+  required: false
+}
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Carousel configuration',
-  hint: 'Only for carousel display',
+  description: 'Only for carousel display',
   name: 'carousel',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
   
-        
+fields: [
+  
+          
+            
+
+
+
+
+
+
+
+
 {
   label: 'Params',
-  name: 'params',
+  nameOverride: 'params',name: 'carousel_params',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  fields: [
-    {
-      label: 'Focus',
-      hint: 'Position active slide in center?',
-      name: 'focus',
-      type: 'boolean',
-      required: false,
-      i18n: 'duplicate'
-    },
-    {
-      label: 'Autoplay',
-      name: 'autoplay',
-      type: 'boolean',
-      default: true,
-      required: false,
-      i18n: 'duplicate'
-    },
-    {
-      label: 'Arrows',
-      name: 'arrows',
-      type: 'boolean',
-      default: true,
-      required: false,
-      i18n: 'duplicate'
-    },
-    {
-      label: 'Pagination',
-      name: 'pagination',
-      type: 'boolean',
-      default: false,
-      required: false,
-      i18n: 'duplicate'
-    },
+  
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
+  label: 'Focus',
+  nameOverride: 'focus',name: 'carousel_focus',
+  type: 'boolean',
+  default: true,
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Autoplay',
+  nameOverride: 'autoplay',name: 'carousel_autoplay',
+  type: 'boolean',
+  default: true,
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Arrows',
+  nameOverride: 'arrows',name: 'carousel_arrows',
+  type: 'boolean',
+  default: true,
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Pagination',
+  nameOverride: 'pagination',name: 'carousel_pagination',
+  type: 'boolean',
+  default: false,
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
 {
   label: 'Carousel type',
-  hint: '',
-  name: 'type',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Slide', value: 'slide' },{ label: 'Loop', value: 'loop' },{ label: 'Fade', value: 'fade' },
-    ],
-  required: false,
-  i18n: 'duplicate'
-}
-,
-    {
-      label: 'Per page',
-      hint: 'Number of slides to display',
-      name: 'perPage',
-      type: 'number',
-      min: 1,
-      required: false,
-      i18n: 'duplicate'
+  nameOverride: 'type',name: 'carousel_type',
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Slide', 
+      value: 'slide' 
     },
-    {
-      label: 'Padding',
-      hint: 'Padding left/right of the carousel. In rem value',
-      name: 'padding',
-      type: 'number',
-      min: 0,
-      required: false,
-      i18n: 'duplicate'
+    { 
+      label: 'Loop', 
+      value: 'loop' 
     },
-    {
-      label: 'Gap',
-      hint: 'The gap between slides. Expressed in rem.',
-      name: 'gap',
-      type: 'number',
-      min: 0,
-      required: false,
-      i18n: 'duplicate'
-    }
-  ]
+    { 
+      label: 'Fade', 
+      value: 'fade' 
+    },
+  ],
+  required: false
 }
+
+
+
+
 ,
-        {
-  label: 'Responsive',
-  name: 'responsive',
-  type: 'object', list: true,
-  required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
+          
+            
+
+
+
+
+
+
+{
+  label: 'Per page',
   
-        
+  description: 'Number of slides to display',
+  
+  nameOverride: 'perPage',name: 'carousel_perpage',
+  type: 'number',
+  ui: {
+    
+    min: 1,
+    
+    
+    
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Padding',
+  
+  description: 'Padding left/right of the carousel. In rem value',
+  
+  nameOverride: 'padding',name: 'carousel_padding',
+  type: 'number',
+  ui: {
+    
+    
+    
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Gap',
+  
+  description: 'The gap between slides. Expressed in rem.',
+  
+  nameOverride: 'gap',name: 'carousel_gap',
+  type: 'number',
+  ui: {
+    
+    
+    
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+
+
+{
+  label: 'Responsive',
+  nameOverride: 'responsive',name: 'carousel_responsive',
+  type: 'object',
+  list: true,
+  required: false,
+  
+fields: [
+  
+          
+            
+
+
+
+
 {
   label: 'Breakpoints',
-  hint: 'Screen size',
   name: 'breakpoints',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: '1440th', value: '1440' },{ label: '1280th', value: '1280' },{ label: '640th', value: '640' },{ label: '768th', value: '768' },{ label: '1024th', value: '1024' },
-    ],
-    default: '640',
-  required: false,
-  i18n: 'duplicate'
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Desktop', 
+      value: '1440' 
+    },
+    { 
+      label: 'Laptop', 
+      value: '1280' 
+    },
+    { 
+      label: 'Mobile', 
+      value: '640' 
+    },
+    { 
+      label: 'Tablet', 
+      value: '768' 
+    },
+    { 
+      label: 'Wide tablet', 
+      value: '1024' 
+    },
+  ],
+  required: false
 }
 
 
+
+
 ,
-        
+          
+            
+
+
+
+
+
+
+
+
 {
   label: 'Params',
-  name: 'params',
+  nameOverride: 'params',name: 'carousel_params',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  fields: [
-    {
-      label: 'Focus',
-      hint: 'Position active slide in center?',
-      name: 'focus',
-      type: 'boolean',
-      required: false,
-      i18n: 'duplicate'
-    },
-    {
-      label: 'Autoplay',
-      name: 'autoplay',
-      type: 'boolean',
-      default: true,
-      required: false,
-      i18n: 'duplicate'
-    },
-    {
-      label: 'Arrows',
-      name: 'arrows',
-      type: 'boolean',
-      default: true,
-      required: false,
-      i18n: 'duplicate'
-    },
-    {
-      label: 'Pagination',
-      name: 'pagination',
-      type: 'boolean',
-      default: false,
-      required: false,
-      i18n: 'duplicate'
-    },
+  
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
+  label: 'Focus',
+  nameOverride: 'focus',name: 'carousel_focus',
+  type: 'boolean',
+  default: true,
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Autoplay',
+  nameOverride: 'autoplay',name: 'carousel_autoplay',
+  type: 'boolean',
+  default: true,
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Arrows',
+  nameOverride: 'arrows',name: 'carousel_arrows',
+  type: 'boolean',
+  default: true,
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Pagination',
+  nameOverride: 'pagination',name: 'carousel_pagination',
+  type: 'boolean',
+  default: false,
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
 {
   label: 'Carousel type',
-  hint: '',
-  name: 'type',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Slide', value: 'slide' },{ label: 'Loop', value: 'loop' },{ label: 'Fade', value: 'fade' },
-    ],
-  required: false,
-  i18n: 'duplicate'
+  nameOverride: 'type',name: 'carousel_type',
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Slide', 
+      value: 'slide' 
+    },
+    { 
+      label: 'Loop', 
+      value: 'loop' 
+    },
+    { 
+      label: 'Fade', 
+      value: 'fade' 
+    },
+  ],
+  required: false
 }
+
+
+
+
 ,
-    {
-      label: 'Per page',
-      hint: 'Number of slides to display',
-      name: 'perPage',
-      type: 'number',
-      min: 1,
-      required: false,
-      i18n: 'duplicate'
-    },
-    {
-      label: 'Padding',
-      hint: 'Padding left/right of the carousel. In rem value',
-      name: 'padding',
-      type: 'number',
-      min: 0,
-      required: false,
-      i18n: 'duplicate'
-    },
-    {
-      label: 'Gap',
-      hint: 'The gap between slides. Expressed in rem.',
-      name: 'gap',
-      type: 'number',
-      min: 0,
-      required: false,
-      i18n: 'duplicate'
-    }
-  ]
+          
+            
+
+
+
+
+
+
+{
+  label: 'Per page',
+  
+  description: 'Number of slides to display',
+  
+  nameOverride: 'perPage',name: 'carousel_perpage',
+  type: 'number',
+  ui: {
+    
+    min: 1,
+    
+    
+    
+  },
+  required: false
 }
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Padding',
+  
+  description: 'Padding left/right of the carousel. In rem value',
+  
+  nameOverride: 'padding',name: 'carousel_padding',
+  type: 'number',
+  ui: {
+    
+    
+    
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Gap',
+  
+  description: 'The gap between slides. Expressed in rem.',
+  
+  nameOverride: 'gap',name: 'carousel_gap',
+  type: 'number',
+  ui: {
+    
+    
+    
+  },
+  required: false
+}
+
+
+
+
 ,
 ]
+
 }
+
+
+
+
 ,
 ]
+
 }
+
+
+
 ,
-        {
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
+  
+  required: false
+}
+
+
+
+
+,
 ]
-},{
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Map',
   name: 'map',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{heading.title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Show all registered places?',
-  hint: 'Only if you have places already saved (this will disable the marker below)',
+  description: 'Only if you have places already saved (this will disable the marker below)',
   name: 'show_places',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate'
+  
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
   label: 'Geographic coordinates',
-  hint: 'Easily find contact details: https://www.latlong.net/convert-address-to-lat-long.html',
+  description: 'Easily find contact details: https://www.latlong.net/convert-address-to-lat-long.html',
   name: 'coordinates',
   type: 'object',
   required: false,
-  collapsed: true,
-  fields: [
-    {
-      label: 'Latitude',
-      name: 'lat',
-      type: 'number',
-      value_type: 'float',
-      required: false
-    },
-    {
-      label: 'Longitude',
-      name: 'lng',
-      type: 'number',
-      value_type: 'float',
-      required: false
-    }
-  ]
-},
-        {
-  label: 'Zoom',
-  name: 'zoom',
-  type: 'number',
-  min: 1,
-  default: 13,
-  max: 20,
-  required: true,
-  i18n: 'duplicate'
-},
-        
+  
+fields: [
+  
+          
+            
+
+
+
+
+
+
 {
-  label: 'Grid',
-  hint: '',
-  name: 'grid',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Small', value: 'small' },{ label: 'Medium', value: 'medium' },{ label: 'Large', value: 'large' },{ label: 'Container', value: 'container' },{ label: 'Full', value: 'full' },
-    ],
-    default: 'large',
-  required: true,
-  i18n: 'duplicate'
+  label: 'Latitude',
+  
+  nameOverride: 'lat',name: 'coordinates_lat',
+  type: 'number',
+  ui: {
+    
+    
+    
+  },
+  required: false
 }
 
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Longitude',
+  
+  nameOverride: 'lng',name: 'coordinates_lng',
+  type: 'number',
+  ui: {
+    
+    
+    
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
+  label: 'Zoom',
+  
+  name: 'zoom',
+  type: 'number',
+  ui: {
+    
+    min: 1,
+    
+    
+    max: 20,
+    
+    
+    step: 1
+    
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
+  label: 'Grid',
+  name: 'grid',
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Small', 
+      value: 'small' 
+    },
+    { 
+      label: 'Medium', 
+      value: 'medium' 
+    },
+    { 
+      label: 'Large', 
+      value: 'large' 
+    },
+    { 
+      label: 'Container', 
+      value: 'container' 
+    },
+    { 
+      label: 'Full', 
+      value: 'full' 
+    },
+  ],
+  required: true
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
-]
+  
+  required: false
 }
-,{
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Newsletter',
   name: 'newsletter',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{heading.title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+
+
+{
   label: 'Form',
-  name: 'form',
+  nameOverride: 'form',name: 'newsletter_form',
   type: 'object',
-  required: true,
-  i18n: true,
-  collapsed: false,
-  fields: [
+  required: false,
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'URL',
+  description: 'Absolute URL (e.g https://www.example.com)',
   name: 'url',
   type: 'string',
+  required: false
+}
+
+
+
+
+,
+          
+             
+
+
+
+
+
+
+
+
+{
+  label: 'nolabel',
+  nameOverride: 'hiddens',name: 'form_hiddens',
+  type: 'object',
+  list: true,
   required: false,
-  i18n: true 
-},
-        {
-  label: 'Hidden fields',
-  label_singular: 'Hidden field',
-  name: 'hiddens',
-  type: 'object', list: true,
-  i18n: true,
-  collapsed: true,
-  required: false,
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Name',
   name: 'name',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Value',
   name: 'value',
   type: 'string',
-  required: false,
-  i18n: true 
-},
+  required: false
+}
+
+
+
+
+,
 ]
-},
+
+}
+
+
+
+,
 ]
-},
-        {
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
-]
+  
+  required: false
 }
-,{
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Paragraph',
   name: 'paragraph',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
+  nameOverride: 'text',name: 'text_markdown',
   type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Notes',
-  label_singular: 'Note',
-  hint: 'To link a word in the text to a note, suffix it with "[*]". Notes and "[\\*]" are linked by their order.',
-  name: 'notes',
-  type: 'object', list: true,
-  required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
-  
-        {
-  label: 'Text',
-  name: 'text',
-  type: 'string',
-  required: false,
-  i18n: true 
-},
-]
-},
-        {
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'CTAs',
-  label_singular: 'CTA',
   name: 'ctas',
-  type: 'object', list: true,
-  collapsed: true,
-  i18n: true,
-  min: 0,
-  max: 2,
-  allow_add: true,
+  type: 'object',
+  list: true,
+  ui: {
+    max: 2
+  },
   required: false,
-  summary: '{{fields.text}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Text',
   name: 'text',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'URL',
+  description: 'Absolute URL (e.g https://www.example.com)',
   name: 'url',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Language',
-  hint: 'Enter code lang (e.g. fr) if different of the current page language',
+  description: 'Enter code lang (e.g. fr) if different of the current page language',
   name: 'lang',
   type: 'string',
-  required: false,
-  i18n: true
-},
-        {
-  label: 'Is blank?',
-  name: 'blank',
-  type: 'boolean',
-  required: false,
-  i18n: true
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        
+          
+            
+
+
+
+
+
+
+{
+  label: 'Is blank?',
+  nameOverride: 'blank',name: 'is_blank',
+  type: 'boolean',
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+,
+          
+            
+
+
+
+
 {
   label: 'Grid',
-  hint: '',
   name: 'grid',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Small', value: 'small' },{ label: 'Medium', value: 'medium' },{ label: 'Large', value: 'large' },{ label: 'Container', value: 'container' },{ label: 'Full', value: 'full' },
-    ],
-    default: 'large',
-  required: true,
-  i18n: 'duplicate'
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Small', 
+      value: 'small' 
+    },
+    { 
+      label: 'Medium', 
+      value: 'medium' 
+    },
+    { 
+      label: 'Large', 
+      value: 'large' 
+    },
+    { 
+      label: 'Container', 
+      value: 'container' 
+    },
+    { 
+      label: 'Full', 
+      value: 'full' 
+    },
+  ],
+  required: true
 }
 
+
+
+
 ,
-        
+          
+            
+
+
+
+
 {
   label: 'Offset',
-  hint: '',
   name: 'offset',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Start', value: 'start' },{ label: 'Center', value: 'center' },{ label: 'End', value: 'end' },
-    ],
-  required: false,
-  i18n: 'duplicate'
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Start', 
+      value: 'start' 
+    },
+    { 
+      label: 'Center', 
+      value: 'center' 
+    },
+    { 
+      label: 'End', 
+      value: 'end' 
+    },
+  ],
+  required: false
 }
 
+
+
 ,
-        
+          
+            
+
+
+
+
 {
   label: 'Alignment',
-  hint: '',
   name: 'align',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Start', value: 'start' },{ label: 'Center', value: 'center' },{ label: 'End', value: 'end' },
-    ],
-  required: false,
-  i18n: 'duplicate'
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Start', 
+      value: 'start' 
+    },
+    { 
+      label: 'Center', 
+      value: 'center' 
+    },
+    { 
+      label: 'End', 
+      value: 'end' 
+    },
+  ],
+  required: false
 }
 
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
-]
+  
+  required: false
 }
-,{
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Pushes',
   name: 'pushes',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{heading.title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
+  nameOverride: 'text',name: 'text_markdown',
   type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
 ]
+
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
   label: 'Column',
-  name: 'column',
-  type: 'number',
-  min: 1,
-  max: 2,
-  value_type: 'int',
-  default: 1,
-  i18n: 'duplicate'
-}
-,
-        {
-  label: 'Items',
-  label_singular: 'Item',
-  name: 'items',
-  type: 'object', list: true,
-  required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+  nameOverride: 'column',name: 'column_simple',
+  type: 'number',
+  ui: {
+    
+    min: 1,
+    
+    
+    max: 2,
+    
+    
+    step: 1
+    
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+
+
+{
+  label: 'Items',
+  nameOverride: 'items',name: 'items_pushes',
+  type: 'object',
+  list: true,
+  required: false,
+  
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Text',
   name: 'text',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'CTA',
   name: 'cta',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{text}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Text',
   name: 'text',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'URL',
-  name: 'url',
-  type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Language',
-  hint: 'Enter code lang (e.g. fr) if different of the current page language',
-  name: 'lang',
-  type: 'string',
-  required: false,
-  i18n: true
-},
-        {
-  label: 'Is blank?',
-  name: 'blank',
-  type: 'boolean',
-  required: false,
-  i18n: true
-},
-]
-}
-,
-        
-{
-  label: 'Offset',
-  hint: '',
-  name: 'offset',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Start', value: 'start' },{ label: 'Center', value: 'center' },{ label: 'End', value: 'end' },
-    ],
-  required: false,
-  i18n: 'duplicate'
+  required: false
 }
 
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
+  label: 'URL',
+  description: 'Absolute URL (e.g https://www.example.com)',
+  name: 'url',
+  type: 'string',
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
+  label: 'Language',
+  description: 'Enter code lang (e.g. fr) if different of the current page language',
+  name: 'lang',
+  type: 'string',
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Is blank?',
+  nameOverride: 'blank',name: 'is_blank',
+  type: 'boolean',
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+,
+          
+            
+
+
+
+
+{
+  label: 'Offset',
+  name: 'offset',
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Start', 
+      value: 'start' 
+    },
+    { 
+      label: 'Center', 
+      value: 'center' 
+    },
+    { 
+      label: 'End', 
+      value: 'end' 
+    },
+  ],
+  required: false
+}
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Darken?',
-  name: 'darken',
+  nameOverride: 'darken',name: 'is_darken',
   type: 'boolean',
-  required: false,
-  i18n: 'duplicate' 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Is card?',
-  hint: 'Adds a background behind the text',
-  name: 'card',
+  description: 'Adds a background behind the text',
+  nameOverride: 'card',name: 'is_card',
   type: 'boolean',
-  required: false,
-  i18n: 'duplicate' 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Color',
+  
   name: 'color',
   type: 'string',
-  allowInput: true,
-  enableAlpha: true,
-  required: false,
-  i18n: 'duplicate'
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
   label: 'Image',
   name: 'image',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+
+{
   label: 'Image',
-  hint: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
-  name: 'src',
+  description: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
+  nameOverride: 'src',name: 'image_src',
   type: 'image',
-  required: false,
-  i18n: true,
-  choose_url: false,
-  media_library: {
-    config: {
-      max_file_size: '700000'
-    }
-  },
-  media_path: '/assets/images/uploads',
-  public_path: '/images/uploads'
-},
-        {
-  label: 'Text alternative',
-  hint: 'For an image that conveys information (leave blank if decorative image)',
-  name: 'alt',
-  type: 'string',
-  required: false,
-  i18n: true
+  required: false
 }
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text alternative',
+  description: 'For an image that conveys information (leave blank if decorative image)',
+  nameOverride: 'alt',name: 'image_alt',
+  type: 'string',
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Credit',
   name: 'credit',
   type: 'rich-text',
-  minimal: true,
-  buttons: ['link'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
-},
-]
-},
-        
-{
-  label: 'Layout',
-  hint: '',
-  name: 'layout',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Grid', value: 'grid' },{ label: 'Carousel', value: 'carousel' },
-    ],
-  required: false,
-  i18n: 'duplicate'
+  options: {
+    media: false
+  },
+  required: false
 }
 
+
+
+
 ,
-        {
+]
+
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Layout',
+  nameOverride: 'layout',name: 'layout_grid_carousel',
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Grid', 
+      value: 'grid' 
+    },
+    { 
+      label: 'Carousel', 
+      value: 'carousel' 
+    },
+  ],
+  required: false
+}
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Carousel configuration',
-  hint: 'Only for carousel display',
+  description: 'Only for carousel display',
   name: 'carousel',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
   
-        
+fields: [
+  
+          
+            
+
+
+
+
+
+
+
+
 {
   label: 'Params',
-  name: 'params',
+  nameOverride: 'params',name: 'carousel_params',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  fields: [
-    {
-      label: 'Focus',
-      hint: 'Position active slide in center?',
-      name: 'focus',
-      type: 'boolean',
-      required: false,
-      i18n: 'duplicate'
-    },
-    {
-      label: 'Autoplay',
-      name: 'autoplay',
-      type: 'boolean',
-      default: true,
-      required: false,
-      i18n: 'duplicate'
-    },
-    {
-      label: 'Arrows',
-      name: 'arrows',
-      type: 'boolean',
-      default: true,
-      required: false,
-      i18n: 'duplicate'
-    },
-    {
-      label: 'Pagination',
-      name: 'pagination',
-      type: 'boolean',
-      default: false,
-      required: false,
-      i18n: 'duplicate'
-    },
+  
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
+  label: 'Focus',
+  nameOverride: 'focus',name: 'carousel_focus',
+  type: 'boolean',
+  default: true,
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Autoplay',
+  nameOverride: 'autoplay',name: 'carousel_autoplay',
+  type: 'boolean',
+  default: true,
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Arrows',
+  nameOverride: 'arrows',name: 'carousel_arrows',
+  type: 'boolean',
+  default: true,
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Pagination',
+  nameOverride: 'pagination',name: 'carousel_pagination',
+  type: 'boolean',
+  default: false,
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
 {
   label: 'Carousel type',
-  hint: '',
-  name: 'type',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Slide', value: 'slide' },{ label: 'Loop', value: 'loop' },{ label: 'Fade', value: 'fade' },
-    ],
-  required: false,
-  i18n: 'duplicate'
-}
-,
-    {
-      label: 'Per page',
-      hint: 'Number of slides to display',
-      name: 'perPage',
-      type: 'number',
-      min: 1,
-      required: false,
-      i18n: 'duplicate'
+  nameOverride: 'type',name: 'carousel_type',
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Slide', 
+      value: 'slide' 
     },
-    {
-      label: 'Padding',
-      hint: 'Padding left/right of the carousel. In rem value',
-      name: 'padding',
-      type: 'number',
-      min: 0,
-      required: false,
-      i18n: 'duplicate'
+    { 
+      label: 'Loop', 
+      value: 'loop' 
     },
-    {
-      label: 'Gap',
-      hint: 'The gap between slides. Expressed in rem.',
-      name: 'gap',
-      type: 'number',
-      min: 0,
-      required: false,
-      i18n: 'duplicate'
-    }
-  ]
+    { 
+      label: 'Fade', 
+      value: 'fade' 
+    },
+  ],
+  required: false
 }
+
+
+
+
 ,
-        {
-  label: 'Responsive',
-  name: 'responsive',
-  type: 'object', list: true,
-  required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
+          
+            
+
+
+
+
+
+
+{
+  label: 'Per page',
   
-        
+  description: 'Number of slides to display',
+  
+  nameOverride: 'perPage',name: 'carousel_perpage',
+  type: 'number',
+  ui: {
+    
+    min: 1,
+    
+    
+    
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Padding',
+  
+  description: 'Padding left/right of the carousel. In rem value',
+  
+  nameOverride: 'padding',name: 'carousel_padding',
+  type: 'number',
+  ui: {
+    
+    
+    
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Gap',
+  
+  description: 'The gap between slides. Expressed in rem.',
+  
+  nameOverride: 'gap',name: 'carousel_gap',
+  type: 'number',
+  ui: {
+    
+    
+    
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+
+
+{
+  label: 'Responsive',
+  nameOverride: 'responsive',name: 'carousel_responsive',
+  type: 'object',
+  list: true,
+  required: false,
+  
+fields: [
+  
+          
+            
+
+
+
+
 {
   label: 'Breakpoints',
-  hint: 'Screen size',
   name: 'breakpoints',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: '1440th', value: '1440' },{ label: '1280th', value: '1280' },{ label: '640th', value: '640' },{ label: '768th', value: '768' },{ label: '1024th', value: '1024' },
-    ],
-    default: '640',
-  required: false,
-  i18n: 'duplicate'
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Desktop', 
+      value: '1440' 
+    },
+    { 
+      label: 'Laptop', 
+      value: '1280' 
+    },
+    { 
+      label: 'Mobile', 
+      value: '640' 
+    },
+    { 
+      label: 'Tablet', 
+      value: '768' 
+    },
+    { 
+      label: 'Wide tablet', 
+      value: '1024' 
+    },
+  ],
+  required: false
 }
 
 
+
+
 ,
-        
+          
+            
+
+
+
+
+
+
+
+
 {
   label: 'Params',
-  name: 'params',
+  nameOverride: 'params',name: 'carousel_params',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  fields: [
-    {
-      label: 'Focus',
-      hint: 'Position active slide in center?',
-      name: 'focus',
-      type: 'boolean',
-      required: false,
-      i18n: 'duplicate'
-    },
-    {
-      label: 'Autoplay',
-      name: 'autoplay',
-      type: 'boolean',
-      default: true,
-      required: false,
-      i18n: 'duplicate'
-    },
-    {
-      label: 'Arrows',
-      name: 'arrows',
-      type: 'boolean',
-      default: true,
-      required: false,
-      i18n: 'duplicate'
-    },
-    {
-      label: 'Pagination',
-      name: 'pagination',
-      type: 'boolean',
-      default: false,
-      required: false,
-      i18n: 'duplicate'
-    },
+  
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
+  label: 'Focus',
+  nameOverride: 'focus',name: 'carousel_focus',
+  type: 'boolean',
+  default: true,
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Autoplay',
+  nameOverride: 'autoplay',name: 'carousel_autoplay',
+  type: 'boolean',
+  default: true,
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Arrows',
+  nameOverride: 'arrows',name: 'carousel_arrows',
+  type: 'boolean',
+  default: true,
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Pagination',
+  nameOverride: 'pagination',name: 'carousel_pagination',
+  type: 'boolean',
+  default: false,
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
 {
   label: 'Carousel type',
-  hint: '',
-  name: 'type',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Slide', value: 'slide' },{ label: 'Loop', value: 'loop' },{ label: 'Fade', value: 'fade' },
-    ],
-  required: false,
-  i18n: 'duplicate'
+  nameOverride: 'type',name: 'carousel_type',
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Slide', 
+      value: 'slide' 
+    },
+    { 
+      label: 'Loop', 
+      value: 'loop' 
+    },
+    { 
+      label: 'Fade', 
+      value: 'fade' 
+    },
+  ],
+  required: false
 }
+
+
+
+
 ,
-    {
-      label: 'Per page',
-      hint: 'Number of slides to display',
-      name: 'perPage',
-      type: 'number',
-      min: 1,
-      required: false,
-      i18n: 'duplicate'
-    },
-    {
-      label: 'Padding',
-      hint: 'Padding left/right of the carousel. In rem value',
-      name: 'padding',
-      type: 'number',
-      min: 0,
-      required: false,
-      i18n: 'duplicate'
-    },
-    {
-      label: 'Gap',
-      hint: 'The gap between slides. Expressed in rem.',
-      name: 'gap',
-      type: 'number',
-      min: 0,
-      required: false,
-      i18n: 'duplicate'
-    }
-  ]
+          
+            
+
+
+
+
+
+
+{
+  label: 'Per page',
+  
+  description: 'Number of slides to display',
+  
+  nameOverride: 'perPage',name: 'carousel_perpage',
+  type: 'number',
+  ui: {
+    
+    min: 1,
+    
+    
+    
+  },
+  required: false
 }
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Padding',
+  
+  description: 'Padding left/right of the carousel. In rem value',
+  
+  nameOverride: 'padding',name: 'carousel_padding',
+  type: 'number',
+  ui: {
+    
+    
+    
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Gap',
+  
+  description: 'The gap between slides. Expressed in rem.',
+  
+  nameOverride: 'gap',name: 'carousel_gap',
+  type: 'number',
+  ui: {
+    
+    
+    
+  },
+  required: false
+}
+
+
+
+
 ,
 ]
+
 }
+
+
+
+
 ,
 ]
+
 }
+
+
+
 ,
-        {
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
-]
+  
+  required: false
 }
-,{
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Quote',
   name: 'quote',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{quote}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Quote',
   name: 'quote',
   type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true
+  options: {
+    media: false
+  },
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
   label: 'Author',
   name: 'author',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Text',
   name: 'text',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Images',
-  name: 'image',
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+
+
+{
+  label: 'Image',
+  nameOverride: 'image',name: 'image_simple',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+
+{
   label: 'Image',
-  hint: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
-  name: 'src',
+  description: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
+  nameOverride: 'src',name: 'image_src',
   type: 'image',
-  required: false,
-  i18n: true,
-  choose_url: false,
-  media_library: {
-    config: {
-      max_file_size: '700000'
-    }
-  },
-  media_path: '/assets/images/uploads',
-  public_path: '/images/uploads'
-},
-        {
+  required: false
+}
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Text alternative',
-  hint: 'For an image that conveys information (leave blank if decorative image)',
-  name: 'alt',
+  description: 'For an image that conveys information (leave blank if decorative image)',
+  nameOverride: 'alt',name: 'image_alt',
   type: 'string',
-  required: false,
-  i18n: true
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'Is logo?',
-  hint: 'Positioned in the center and not cropped',
-  name: 'isLogo',
+  description: 'Positioned in the center and not cropped',
+  nameOverride: 'isLogo',name: 'is_logo',
   type: 'boolean',
-  required: false,
-  i18n: 'duplicate' 
-},
-]
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+]
+
+}
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
-]
+  
+  required: false
 }
-,{
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Search',
   name: 'search',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{heading.title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
+  
+  required: false
+}
+
+
+
+
+,
 ]
-},{
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Selection Pages',
-  name: 'selected_pages',
-  nameOverride: 'selected-pages',
+  nameOverride: 'selected-pages',name: 'selected_pages',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{heading.title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
-  name: 'section',
-  type: 'string',
-  ui: {
-    component: 'hidden',
-    defaultValue: 'pages'
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
   },
-},
-        {
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'section',
+  nameOverride: 'section',name: 'section_hidden',
+  type: 'string',
+  default: 'pages',
+  ui: {
+    component: 'hidden'
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Pages',
-  label_singular: 'Page',
-  hint: '',
-  name: 'items_pages',
+  name: 'items_items',
   nameOverride: 'items',
-  type: 'reference',
-  collection: 'pages',
-  display_fields: ["title"],
-  search_fields: ["title"],
-  value_field: '{{slug}}',
-  multiple: true,
-  required: true,
-  i18n: 'duplicate'
-},
-        
-{
-  label: 'Layout',
-  hint: '',
-  name: 'layout',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Grid', value: 'grid' },{ label: 'List', value: 'list' },
-    ],
-  required: false,
-  i18n: 'duplicate'
+  type: 'object',
+  list: true,
+  ui: {
+    itemProps: (item) => {
+      return { label: item?.item }
+    }
+  },
+  fields: [
+    {
+      name: 'item',
+      label: 'Page',
+      type: 'reference',
+      collections: ['pages'],
+      required: true
+    }
+  ],
 }
 
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Layout',
+  nameOverride: 'layout',name: 'layout_grid_list',
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Grid', 
+      value: 'grid' 
+    },
+    { 
+      label: 'List', 
+      value: 'list' 
+    },
+  ],
+  required: false
+}
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Show more?',
+  description: 'Shows a button to see more items',
   name: 'show_more',
   type: 'boolean',
   default: true,
-  required: false,
-  i18n: 'duplicate'
+  
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
+  
+  required: false
+}
+
+
+
+
+,
 ]
-},{
+
+}
+
+
+
+,
+
+
+
+
+
+
+{
   label: 'Selection Products',
-  name: 'selected_products',
-  nameOverride: 'selected-products',
+  nameOverride: 'selected-products',name: 'selected_products',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{heading.title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
-  name: 'section',
-  type: 'string',
-  ui: {
-    component: 'hidden',
-    defaultValue: 'products'
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
   },
-},
-        {
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'section',
+  nameOverride: 'section',name: 'section_hidden',
+  type: 'string',
+  default: 'products',
+  ui: {
+    component: 'hidden'
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Products',
-  label_singular: 'Product',
-  hint: '',
-  name: 'items_products',
+  name: 'items_items',
   nameOverride: 'items',
-  type: 'reference',
-  collection: 'products',
-  display_fields: ["title"],
-  search_fields: ["title"],
-  value_field: '{{slug}}',
-  multiple: true,
-  required: true,
-  i18n: 'duplicate'
-},
-        
-{
-  label: 'Layout',
-  hint: '',
-  name: 'layout',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Grid', value: 'grid' },{ label: 'List', value: 'list' },
-    ],
-  required: false,
-  i18n: 'duplicate'
+  type: 'object',
+  list: true,
+  ui: {
+    itemProps: (item) => {
+      return { label: item?.item }
+    }
+  },
+  fields: [
+    {
+      name: 'item',
+      label: 'Product',
+      type: 'reference',
+      collections: ['products'],
+      required: true
+    }
+  ],
 }
 
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Layout',
+  nameOverride: 'layout',name: 'layout_grid_list',
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Grid', 
+      value: 'grid' 
+    },
+    { 
+      label: 'List', 
+      value: 'list' 
+    },
+  ],
+  required: false
+}
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Show more?',
+  description: 'Shows a button to see more items',
   name: 'show_more',
   type: 'boolean',
   default: true,
-  required: false,
-  i18n: 'duplicate'
+  
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
+  
+  required: false
+}
+
+
+
+
+,
 ]
-},{
+
+}
+
+
+
+,
+
+
+
+
+
+
+{
   label: 'Selection Tags',
-  name: 'selected_products_tags',
-  nameOverride: 'selected-products_tags',
+  nameOverride: 'selected-products_tags',name: 'selected_products_tags',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{heading.title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
-}
-,
-        {
-  name: 'section',
-  type: 'string',
-  ui: {
-    component: 'hidden',
-    defaultValue: 'products_tags'
-  },
-},
-        {
-  label: 'Tags',
-  label_singular: 'Tag',
-  hint: '',
-  name: 'items_products_tags',
-  nameOverride: 'items',
-  type: 'reference',
-  collection: 'products_tags',
-  display_fields: ["title"],
-  search_fields: ["title"],
-  value_field: '{{slug}}',
-  multiple: true,
-  required: true,
-  i18n: 'duplicate'
-},
-        
-{
-  label: 'Layout',
-  hint: '',
-  name: 'layout',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Grid', value: 'grid' },{ label: 'List', value: 'list' },
-    ],
-  required: false,
-  i18n: 'duplicate'
+  required: false
 }
 
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'section',
+  nameOverride: 'section',name: 'section_hidden',
+  type: 'string',
+  default: 'products_tags',
+  ui: {
+    component: 'hidden'
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
+  label: 'Tags',
+  name: 'items_items',
+  nameOverride: 'items',
+  type: 'object',
+  list: true,
+  ui: {
+    itemProps: (item) => {
+      return { label: item?.item }
+    }
+  },
+  fields: [
+    {
+      name: 'item',
+      label: 'Tag',
+      type: 'reference',
+      collections: ['products_tags'],
+      required: true
+    }
+  ],
+}
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Layout',
+  nameOverride: 'layout',name: 'layout_grid_list',
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Grid', 
+      value: 'grid' 
+    },
+    { 
+      label: 'List', 
+      value: 'list' 
+    },
+  ],
+  required: false
+}
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Show more?',
+  description: 'Shows a button to see more items',
   name: 'show_more',
   type: 'boolean',
   default: true,
-  required: false,
-  i18n: 'duplicate'
+  
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
+  
+  required: false
+}
+
+
+
+
+,
 ]
-},{
+
+}
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Testimonials',
   name: 'testimonials',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{heading.title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+
+
+{
   label: 'Items',
-  label_singular: 'Item',
-  name: 'items',
-  type: 'object', list: true,
+  nameOverride: 'items',name: 'items_testimonials',
+  type: 'object',
+  list: true,
   required: false,
-  i18n: true,
-  collapsed: true,fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Quote',
   name: 'quote',
   type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true
+  options: {
+    media: false
+  },
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
   label: 'Author',
   name: 'author',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Text',
   name: 'text',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Images',
-  name: 'image',
-  type: 'object',
-  required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
-  
-        {
-  label: 'Image',
-  hint: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
-  name: 'src',
-  type: 'image',
-  required: false,
-  i18n: true,
-  choose_url: false,
-  media_library: {
-    config: {
-      max_file_size: '700000'
-    }
-  },
-  media_path: '/assets/images/uploads',
-  public_path: '/images/uploads'
-},
-        {
-  label: 'Text alternative',
-  hint: 'For an image that conveys information (leave blank if decorative image)',
-  name: 'alt',
-  type: 'string',
-  required: false,
-  i18n: true
-}
-,
-        {
-  label: 'Is logo?',
-  hint: 'Positioned in the center and not cropped',
-  name: 'isLogo',
-  type: 'boolean',
-  required: false,
-  i18n: 'duplicate' 
-},
-]
-},
-]
-}
-,
-]
-},
-        
-{
-  label: 'Layout',
-  hint: '',
-  name: 'layout',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Grid', value: 'grid' },{ label: 'Carousel', value: 'carousel' },
-    ],
-  required: false,
-  i18n: 'duplicate'
+  required: false
 }
 
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+
+
+{
+  label: 'Image',
+  nameOverride: 'image',name: 'image_simple',
+  type: 'object',
+  required: false,
+  
+fields: [
+  
+          
+            
+
+
+
+
+
+
+
+{
+  label: 'Image',
+  description: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
+  nameOverride: 'src',name: 'image_src',
+  type: 'image',
+  required: false
+}
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text alternative',
+  description: 'For an image that conveys information (leave blank if decorative image)',
+  nameOverride: 'alt',name: 'image_alt',
+  type: 'string',
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
+  label: 'Is logo?',
+  description: 'Positioned in the center and not cropped',
+  nameOverride: 'isLogo',name: 'is_logo',
+  type: 'boolean',
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Layout',
+  nameOverride: 'layout',name: 'layout_grid_carousel',
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Grid', 
+      value: 'grid' 
+    },
+    { 
+      label: 'Carousel', 
+      value: 'carousel' 
+    },
+  ],
+  required: false
+}
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Carousel configuration',
-  hint: 'Only for carousel display',
+  description: 'Only for carousel display',
   name: 'carousel',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
   
-        
+fields: [
+  
+          
+            
+
+
+
+
+
+
+
+
 {
   label: 'Params',
-  name: 'params',
+  nameOverride: 'params',name: 'carousel_params',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  fields: [
-    {
-      label: 'Focus',
-      hint: 'Position active slide in center?',
-      name: 'focus',
-      type: 'boolean',
-      required: false,
-      i18n: 'duplicate'
-    },
-    {
-      label: 'Autoplay',
-      name: 'autoplay',
-      type: 'boolean',
-      default: true,
-      required: false,
-      i18n: 'duplicate'
-    },
-    {
-      label: 'Arrows',
-      name: 'arrows',
-      type: 'boolean',
-      default: true,
-      required: false,
-      i18n: 'duplicate'
-    },
-    {
-      label: 'Pagination',
-      name: 'pagination',
-      type: 'boolean',
-      default: false,
-      required: false,
-      i18n: 'duplicate'
-    },
+  
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
+  label: 'Focus',
+  nameOverride: 'focus',name: 'carousel_focus',
+  type: 'boolean',
+  default: true,
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Autoplay',
+  nameOverride: 'autoplay',name: 'carousel_autoplay',
+  type: 'boolean',
+  default: true,
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Arrows',
+  nameOverride: 'arrows',name: 'carousel_arrows',
+  type: 'boolean',
+  default: true,
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Pagination',
+  nameOverride: 'pagination',name: 'carousel_pagination',
+  type: 'boolean',
+  default: false,
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
 {
   label: 'Carousel type',
-  hint: '',
-  name: 'type',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Slide', value: 'slide' },{ label: 'Loop', value: 'loop' },{ label: 'Fade', value: 'fade' },
-    ],
-  required: false,
-  i18n: 'duplicate'
-}
-,
-    {
-      label: 'Per page',
-      hint: 'Number of slides to display',
-      name: 'perPage',
-      type: 'number',
-      min: 1,
-      required: false,
-      i18n: 'duplicate'
+  nameOverride: 'type',name: 'carousel_type',
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Slide', 
+      value: 'slide' 
     },
-    {
-      label: 'Padding',
-      hint: 'Padding left/right of the carousel. In rem value',
-      name: 'padding',
-      type: 'number',
-      min: 0,
-      required: false,
-      i18n: 'duplicate'
+    { 
+      label: 'Loop', 
+      value: 'loop' 
     },
-    {
-      label: 'Gap',
-      hint: 'The gap between slides. Expressed in rem.',
-      name: 'gap',
-      type: 'number',
-      min: 0,
-      required: false,
-      i18n: 'duplicate'
-    }
-  ]
+    { 
+      label: 'Fade', 
+      value: 'fade' 
+    },
+  ],
+  required: false
 }
+
+
+
+
 ,
-        {
-  label: 'Responsive',
-  name: 'responsive',
-  type: 'object', list: true,
-  required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
+          
+            
+
+
+
+
+
+
+{
+  label: 'Per page',
   
-        
+  description: 'Number of slides to display',
+  
+  nameOverride: 'perPage',name: 'carousel_perpage',
+  type: 'number',
+  ui: {
+    
+    min: 1,
+    
+    
+    
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Padding',
+  
+  description: 'Padding left/right of the carousel. In rem value',
+  
+  nameOverride: 'padding',name: 'carousel_padding',
+  type: 'number',
+  ui: {
+    
+    
+    
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Gap',
+  
+  description: 'The gap between slides. Expressed in rem.',
+  
+  nameOverride: 'gap',name: 'carousel_gap',
+  type: 'number',
+  ui: {
+    
+    
+    
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+
+
+{
+  label: 'Responsive',
+  nameOverride: 'responsive',name: 'carousel_responsive',
+  type: 'object',
+  list: true,
+  required: false,
+  
+fields: [
+  
+          
+            
+
+
+
+
 {
   label: 'Breakpoints',
-  hint: 'Screen size',
   name: 'breakpoints',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: '1440th', value: '1440' },{ label: '1280th', value: '1280' },{ label: '640th', value: '640' },{ label: '768th', value: '768' },{ label: '1024th', value: '1024' },
-    ],
-    default: '640',
-  required: false,
-  i18n: 'duplicate'
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Desktop', 
+      value: '1440' 
+    },
+    { 
+      label: 'Laptop', 
+      value: '1280' 
+    },
+    { 
+      label: 'Mobile', 
+      value: '640' 
+    },
+    { 
+      label: 'Tablet', 
+      value: '768' 
+    },
+    { 
+      label: 'Wide tablet', 
+      value: '1024' 
+    },
+  ],
+  required: false
 }
 
 
+
+
 ,
-        
+          
+            
+
+
+
+
+
+
+
+
 {
   label: 'Params',
-  name: 'params',
+  nameOverride: 'params',name: 'carousel_params',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  fields: [
-    {
-      label: 'Focus',
-      hint: 'Position active slide in center?',
-      name: 'focus',
-      type: 'boolean',
-      required: false,
-      i18n: 'duplicate'
-    },
-    {
-      label: 'Autoplay',
-      name: 'autoplay',
-      type: 'boolean',
-      default: true,
-      required: false,
-      i18n: 'duplicate'
-    },
-    {
-      label: 'Arrows',
-      name: 'arrows',
-      type: 'boolean',
-      default: true,
-      required: false,
-      i18n: 'duplicate'
-    },
-    {
-      label: 'Pagination',
-      name: 'pagination',
-      type: 'boolean',
-      default: false,
-      required: false,
-      i18n: 'duplicate'
-    },
+  
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
+  label: 'Focus',
+  nameOverride: 'focus',name: 'carousel_focus',
+  type: 'boolean',
+  default: true,
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Autoplay',
+  nameOverride: 'autoplay',name: 'carousel_autoplay',
+  type: 'boolean',
+  default: true,
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Arrows',
+  nameOverride: 'arrows',name: 'carousel_arrows',
+  type: 'boolean',
+  default: true,
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Pagination',
+  nameOverride: 'pagination',name: 'carousel_pagination',
+  type: 'boolean',
+  default: false,
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
 {
   label: 'Carousel type',
-  hint: '',
-  name: 'type',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Slide', value: 'slide' },{ label: 'Loop', value: 'loop' },{ label: 'Fade', value: 'fade' },
-    ],
-  required: false,
-  i18n: 'duplicate'
+  nameOverride: 'type',name: 'carousel_type',
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Slide', 
+      value: 'slide' 
+    },
+    { 
+      label: 'Loop', 
+      value: 'loop' 
+    },
+    { 
+      label: 'Fade', 
+      value: 'fade' 
+    },
+  ],
+  required: false
 }
+
+
+
+
 ,
-    {
-      label: 'Per page',
-      hint: 'Number of slides to display',
-      name: 'perPage',
-      type: 'number',
-      min: 1,
-      required: false,
-      i18n: 'duplicate'
-    },
-    {
-      label: 'Padding',
-      hint: 'Padding left/right of the carousel. In rem value',
-      name: 'padding',
-      type: 'number',
-      min: 0,
-      required: false,
-      i18n: 'duplicate'
-    },
-    {
-      label: 'Gap',
-      hint: 'The gap between slides. Expressed in rem.',
-      name: 'gap',
-      type: 'number',
-      min: 0,
-      required: false,
-      i18n: 'duplicate'
-    }
-  ]
+          
+            
+
+
+
+
+
+
+{
+  label: 'Per page',
+  
+  description: 'Number of slides to display',
+  
+  nameOverride: 'perPage',name: 'carousel_perpage',
+  type: 'number',
+  ui: {
+    
+    min: 1,
+    
+    
+    
+  },
+  required: false
 }
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Padding',
+  
+  description: 'Padding left/right of the carousel. In rem value',
+  
+  nameOverride: 'padding',name: 'carousel_padding',
+  type: 'number',
+  ui: {
+    
+    
+    
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Gap',
+  
+  description: 'The gap between slides. Expressed in rem.',
+  
+  nameOverride: 'gap',name: 'carousel_gap',
+  type: 'number',
+  ui: {
+    
+    
+    
+  },
+  required: false
+}
+
+
+
+
 ,
 ]
+
 }
+
+
+
+
 ,
 ]
+
 }
+
+
+
 ,
-        {
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
+  
+  required: false
+}
+
+
+
+
+,
 ]
-},{
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Timeline',
   name: 'timeline',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{heading.title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+
+
+{
   label: 'Items',
-  label_singular: 'Item',
-  name: 'items',
-  type: 'object', list: true,
+  nameOverride: 'items',name: 'items_timeline',
+  type: 'object',
+  list: true,
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
+  nameOverride: 'text',name: 'text_markdown',
   type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
 ]
-},
-        {
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
+  
+  required: false
+}
+
+
+
+
+,
 ]
-},{
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{heading.title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
+  
+  required: false
+}
+
+
+
+
+,
 ]
-},{
+
+}
+
+
+
+
+,
+    
+  
+    
+    
+      
+
+
+
+
+
+
+{
   label: 'Video',
   name: 'video',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  summary: '{{heading.title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+{
   label: 'Heading',
   name: 'heading',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  summary: '{{title}}',
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Surtitle',
   name: 'surtitle',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Title',
   name: 'title',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Text',
-  name: 'text_markdown',
-  nameOverride: 'text',
-  type: 'rich-text',
-  minimal: true,
-  buttons: ['bold', 'italic', 'link', 'bulleted-list'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text',
+  nameOverride: 'text',name: 'text_markdown',
+  type: 'rich-text',
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Video',
   name: 'video',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+  
+    
+  
+
+
+
+
+
+
+
+
+{
   label: 'MP4',
-  hint: 'Video (MP4)',
-  name: 'mp4', media: { accept: 'video/mp4' },
+  description: 'MP4 video file',
+  name: 'mp4',
   type: 'image',
-  required: false,
-  i18n: 'duplicate',
-  choose_url: true,
-  media_library: {
-    config: {
-      max_file_size: 5000000
-    }
+  media: {
+    accept: [
+      'video/mp4'
+    ]
   },
-  media_path: '/static/assets/videos',
-  public_path: '/assets/videos'
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+  
+    
+  
+
+
+
+
+
+
+
+
+{
   label: 'WEBM',
-  hint: 'Video (WEBM)',
-  name: 'webm', media: { accept: 'video/webm' },
+  description: 'WEBM video file',
+  name: 'webm',
   type: 'image',
-  required: false,
-  i18n: 'duplicate',
-  choose_url: true,
-  media_library: {
-    config: {
-      max_file_size: 5000000
-    }
+  media: {
+    accept: [
+      'video/webm'
+    ]
   },
-  media_path: '/static/assets/videos',
-  public_path: '/assets/videos'
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'Controls',
   name: 'controls',
   type: 'boolean',
   default: true,
-  required: false,
-  i18n: 'duplicate'
+  
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'Autoplay',
   name: 'autoplay',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate'
+  
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'Loop',
   name: 'loop',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate'
+  
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'Legend',
   name: 'legend',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
-  label: 'Transcription',
-  name: 'transcription',
-  type: 'string', ui: { component: 'textarea' },
-  required: false,
-  i18n: true
-}
-,
-        {
-  label: 'Poster',
-  hint: 'Placehoster image for video',
-  name: 'poster',
-  type: 'image',
-  required: false,
-  i18n: true,
-  choose_url: false,
-  media_library: {
-    config: {
-      max_file_size: '700000'
-    }
-  },
-  media_path: '/assets/images/uploads',
-  public_path: '/images/uploads'
-},
-]
-}
-,
-        
-{
-  label: 'Grid',
-  hint: '',
-  name: 'grid',
-  type: 'string', ui: { component: 'select' },
-    options: [{ label: 'Small', value: 'small' },{ label: 'Medium', value: 'medium' },{ label: 'Large', value: 'large' },{ label: 'Container', value: 'container' },{ label: 'Full', value: 'full' },
-    ],
-    default: 'large',
-  required: true,
-  i18n: 'duplicate'
+  required: false
 }
 
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
+  label: 'Transcription',
+  name: 'transcription',
+  type: 'string',
+  ui: {
+    component: "textarea"
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+{
+  label: 'Poster',
+  description: 'Placehoster image for video',
+  name: 'poster',
+  type: 'image',
+  required: false
+}
+
+
+
+,
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
+  label: 'Grid',
+  name: 'grid',
+  type: 'string',
+  component: 'select',
+  options: [
+    { 
+      label: 'Small', 
+      value: 'small' 
+    },
+    { 
+      label: 'Medium', 
+      value: 'medium' 
+    },
+    { 
+      label: 'Large', 
+      value: 'large' 
+    },
+    { 
+      label: 'Container', 
+      value: 'container' 
+    },
+    { 
+      label: 'Full', 
+      value: 'full' 
+    },
+  ],
+  required: true
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'With a background?',
   name: 'background',
   type: 'boolean',
   default: false,
-  required: false,
-  i18n: 'duplicate' 
-},
-]
+  
+  required: false
 }
-,]}
+
+
+
+
 ,
-        
+]
+
+}
+
+
+
+
+,
+    
+  
+  ]
+}
+
+
+
+
+,
+          
+            
+
+
+
+
 
 
 
 {
   label: 'Slug',
-  hint: 'Leave empty to automate with the title. **Be careful to SEO impact.**',
+  description: 'Leave empty to automate with the title. **Be careful to SEO impact.**',
   name: 'slug',
   type: 'string',
-  required: false,
-  i18n: true,
-  
+  required: false
+}
 
 
-  pattern: [
-    "^(|[a-z0-9-]&#43;)$",
-    "Contain only lowercase letters, numbers, and hyphens, with no spaces, accents, or special characters"
-  ]
 
-},
-  ],
+
+,],
+
 
 },
         {
@@ -5008,248 +11001,475 @@ match: {
 
 
 
+
 fields: [
-        {
+          
+            
+
+
+
+
+{
   label: 'is not index',
-  name: 'isIndex',
-  type: 'boolean', ui: { component: 'hidden' },
+  nameOverride: 'isIndex',name: 'is_not_index',
+  type: 'boolean',
   default: false,
-  required: false,
-  i18n: false 
-},
-        {
+  
+  ui: {
+    component: 'hidden'
+  },
+  required: false
+}
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Draft',
   name: 'draft',
   type: 'boolean',
   default: true,
-  required: false,
-  i18n: true
-},
-        {
+  
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Date',
+  
   name: 'date',
   type: 'datetime',
-  default: '{{now}}',
-  required: true,
-  i18n: 'duplicate' 
-},
-        {
+  ui: {
+    dateFormat: "YYYY-MM-DD'T'HH:mm:ssZ"
+  },
+  required: true
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Page title',
-  hint: 'Displayed in tabs, search results, and in SMS/Messages/Social networks preview',
-  name: 'title',
+  description: 'Displayed in tabs, search results, and in SMS/Messages/Social networks preview',
+  nameOverride: 'title',name: 'title_page',
   type: 'string',
-  required: true,
-  i18n: true,
-  isTitle: true
-  
-},
-        {
+  isTitle: true,
+  required: true
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Description',
-  hint: 'Displayed in tabs, search results, and in SMS/Messages/Social networks preview',
+  description: 'Displayed in tabs, search results, and in SMS/Messages/Social networks preview',
   name: 'description',
-  type: 'string', ui: { component: 'textarea' },
-  required: false,
-  i18n: true 
-},
-        {
+  type: 'string',
+  ui: {
+    component: "textarea"
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Offer',
   name: 'offer',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: false,
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+{
   label: 'Price',
-  hint: 'e.g: 300000 (for 300 000 €)',
+  
+  description: 'e.g: 300000 (for 300 000 €)',
+  
   name: 'price',
   type: 'number',
-  required: false,
-  i18n: 'duplicate'
+  ui: {
+    
+    
+    
+  },
+  required: false
 }
+
+
+
+
 ,
-        
+          
+            
+
+
+
+
 
 
 {
   label: 'Discount',
-  hint: 'Amount of the reduction, e.g: 30%',
+  description: 'Amount of the reduction, e.g: 30%',
   name: 'discount',
   type: 'string',
-  required: false,
-  i18n: 'duplicate',
-  
-
-
-  pattern: [
-    "^[0-9]*(%?)$",
-    "Value only (without currency)"
-  ]
-
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'Hide price',
   name: 'hide_price',
   type: 'boolean',
-  required: false,
-  i18n: 'duplicate'
+  required: false
 }
+
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+{
   label: 'Text',
   name: 'text',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-]
+  required: false
 }
+
+
+
+
 ,
-        {
+]
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Tags',
-  label_singular: 'Tag',
-  hint: '',
   name: 'items_products_tags',
   nameOverride: 'products_tags',
-  type: 'reference',
-  collection: 'products_tags',
-  display_fields: ["title"],
-  search_fields: ["title"],
-  value_field: '{{slug}}',
-  multiple: true,
-  required: false,
-  i18n: 'duplicate'
-},
-        {
+  type: 'object',
+  list: true,
+  ui: {
+    itemProps: (item) => {
+      return { label: item?.item }
+    }
+  },
+  fields: [
+    {
+      name: 'item',
+      label: 'Tag',
+      type: 'reference',
+      collections: ['products_tags'],
+      required: false
+    }
+  ],
+}
+
+
+
+,
+          
+            
+
+
+
+
+
+
+
+
+
+
+{
   label: 'Image principale',
-  hint: 'Displayed in search results, and in SMS/Messages/Social networks preview',
-  name: 'image',
+  description: 'Displayed in search results, and in SMS/Messages/Social networks preview',
+  nameOverride: 'image',name: 'featured_image',
   type: 'object',
   required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+
+{
   label: 'Image',
-  hint: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
-  name: 'src',
+  description: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
+  nameOverride: 'src',name: 'image_src',
   type: 'image',
-  required: false,
-  i18n: true,
-  choose_url: false,
-  media_library: {
-    config: {
-      max_file_size: '700000'
-    }
-  },
-  media_path: '/assets/images/uploads',
-  public_path: '/images/uploads'
-},
-        {
-  label: 'Text alternative',
-  hint: 'For an image that conveys information (leave blank if decorative image)',
-  name: 'alt',
-  type: 'string',
-  required: false,
-  i18n: true
+  required: false
 }
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text alternative',
+  description: 'For an image that conveys information (leave blank if decorative image)',
+  nameOverride: 'alt',name: 'image_alt',
+  type: 'string',
+  required: false
+}
+
+
+
+
 ,
 ]
-},
-        {
+
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
   label: 'Images',
   name: 'images',
-  type: 'object', list: true,
+  type: 'object',
+  list: true,
   required: false,
-  i18n: true,
-  collapsed: true,
-  fields: [
   
-        {
+fields: [
+  
+          
+            
+
+
+
+
+
+
+
+{
   label: 'Image',
-  hint: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
-  name: 'src',
+  description: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600',
+  nameOverride: 'src',name: 'image_src',
   type: 'image',
-  required: false,
-  i18n: true,
-  choose_url: false,
-  media_library: {
-    config: {
-      max_file_size: '700000'
-    }
-  },
-  media_path: '/assets/images/uploads',
-  public_path: '/images/uploads'
-},
-        {
-  label: 'Text alternative',
-  hint: 'For an image that conveys information (leave blank if decorative image)',
-  name: 'alt',
-  type: 'string',
-  required: false,
-  i18n: true
+  required: false
 }
+
+
+
 ,
-        {
+          
+            
+
+
+
+
+
+
+{
+  label: 'Text alternative',
+  description: 'For an image that conveys information (leave blank if decorative image)',
+  nameOverride: 'alt',name: 'image_alt',
+  type: 'string',
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Credit',
   name: 'credit',
   type: 'rich-text',
-  minimal: true,
-  buttons: ['link'],
-  editor_components: [],
-  modes: ['rich_text'],
-  required: false,
-  i18n: true 
-},
-        {
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Legend',
   name: 'legend',
   type: 'string',
-  required: false,
-  i18n: true 
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Half size?',
-  name: 'half',
+  nameOverride: 'half',name: 'is_half',
   type: 'boolean',
-  required: false,
-  i18n: 'duplicate' 
-},
+  required: false
+}
+
+
+
+
+,
 ]
-},
-        {
+
+}
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Body',
   name: 'body',
   type: 'rich-text',
-  required: false,
-  i18n: true,
-  isBody: true
-  
-},
-        
+  isBody: true,
+  options: {
+    media: false
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
 
 
 
 {
   label: 'Slug',
-  hint: 'Leave empty to automate with the title. **Be careful to SEO impact.**',
+  description: 'Leave empty to automate with the title. **Be careful to SEO impact.**',
   name: 'slug',
   type: 'string',
-  required: false,
-  i18n: true,
-  
+  required: false
+}
 
 
-  pattern: [
-    "^(|[a-z0-9-]&#43;)$",
-    "Contain only lowercase letters, numbers, and hyphens, with no spaces, accents, or special characters"
-  ]
 
-},
-  ],
+
+,],
+
 
 },
         {
@@ -5300,62 +11520,112 @@ match: {
 
 
 
+
 fields: [
-        {
+          
+            
+
+
+
+
+{
   label: 'is not index',
-  name: 'isIndex',
-  type: 'boolean', ui: { component: 'hidden' },
+  nameOverride: 'isIndex',name: 'is_not_index',
+  type: 'boolean',
   default: false,
-  required: false,
-  i18n: false 
-},
-        {
+  
+  ui: {
+    component: 'hidden'
+  },
+  required: false
+}
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Draft',
   name: 'draft',
   type: 'boolean',
   default: true,
-  required: false,
-  i18n: true
-},
-        {
-  label: 'Page title',
-  hint: 'Displayed in tabs, search results, and in SMS/Messages/Social networks preview',
-  name: 'title',
-  type: 'string',
-  required: true,
-  i18n: true,
-  isTitle: true
   
-},
-        {
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+
+
+{
+  label: 'Page title',
+  description: 'Displayed in tabs, search results, and in SMS/Messages/Social networks preview',
+  nameOverride: 'title',name: 'title_page',
+  type: 'string',
+  isTitle: true,
+  required: true
+}
+
+
+
+
+,
+          
+            
+
+
+
+
+{
   label: 'Description',
-  hint: 'Displayed in tabs, search results, and in SMS/Messages/Social networks preview',
+  description: 'Displayed in tabs, search results, and in SMS/Messages/Social networks preview',
   name: 'description',
-  type: 'string', ui: { component: 'textarea' },
-  required: false,
-  i18n: true 
-},
-        
+  type: 'string',
+  ui: {
+    component: "textarea"
+  },
+  required: false
+}
+
+
+
+
+,
+          
+            
+
+
+
+
 
 
 
 {
   label: 'Slug',
-  hint: 'Leave empty to automate with the title. **Be careful to SEO impact.**',
+  description: 'Leave empty to automate with the title. **Be careful to SEO impact.**',
   name: 'slug',
   type: 'string',
-  required: false,
-  i18n: true,
-  
+  required: false
+}
 
 
-  pattern: [
-    "^(|[a-z0-9-]&#43;)$",
-    "Contain only lowercase letters, numbers, and hyphens, with no spaces, accents, or special characters"
-  ]
 
-},
-  ],
+
+,],
+
 
 },
 ]
