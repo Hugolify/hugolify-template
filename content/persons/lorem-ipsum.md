@@ -7,7 +7,7 @@ image:
   alt:
   credit:
   src:
-persons_statutes: _index
+persons_statutes: CEO
 persons_expertises:
   - lorem-expertise-ipsum
 persons_places:
