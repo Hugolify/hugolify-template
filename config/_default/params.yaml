@@ -5,6 +5,7 @@ docs:
   sidebarmenu: false
 search:
   enable: false
+  layout: modal
 
 # Admin
 admin:
