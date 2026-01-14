@@ -17,6 +17,9 @@ imaging:
 markup:
   tableOfContents:
     ordered: true
+  goldmark:
+    renderer:
+      unsafe: true
 pagination:
   pagerSize: 9
 removePathAccents: true

@@ -6,10 +6,10 @@ github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400 h1:L6+F22i76xmeWWw
 github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400/go.mod h1:uekq1D4ebeXgduLj8VIZy8TgfTjrLdSl6nPtVczso78=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+yb0/t3/rau1j8XlAxLE4CyXns2fqQbyqWfs=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
-github.com/hugolify/hugolify-example-site v1.3.1 h1:6mzZwA8ydmr3cgQ4DT0b7Q73PCHzTfBCv798w2RgxXs=
-github.com/hugolify/hugolify-example-site v1.3.1/go.mod h1:e21yIPVorsgtbEDK2zovJb3Am8k2Sncu0Gu83EfnjNA=
-github.com/hugolify/hugolify-theme v1.26.27 h1:1lnyQ6q17aaKeswzKy4gIH0IHh9bpNqUWpI8pDAWul0=
-github.com/hugolify/hugolify-theme v1.26.27/go.mod h1:Rc64eJSSIWGeU6eHfSzUISNfL9UrJmy3Xs3H05Gz9rQ=
+github.com/hugolify/hugolify-example-site v1.3.2 h1:0bW7/J0dkAhOUVVbmj0WW3e8YLjcNKwaz6680WKwBOM=
+github.com/hugolify/hugolify-example-site v1.3.2/go.mod h1:e21yIPVorsgtbEDK2zovJb3Am8k2Sncu0Gu83EfnjNA=
+github.com/hugolify/hugolify-theme v1.26.31 h1:ojyi6j87GMhUyJRilat5jGhNnItaUyOWg6qzxwuUYTg=
+github.com/hugolify/hugolify-theme v1.26.31/go.mod h1:Rc64eJSSIWGeU6eHfSzUISNfL9UrJmy3Xs3H05Gz9rQ=
 github.com/hugolify/hugolify-theme-casestudies v1.0.18 h1:PAcQU32MgpemEny5o3X87p+QeGiFosE+Dn9RvZ36ZvA=
 github.com/hugolify/hugolify-theme-casestudies v1.0.18/go.mod h1:onu4oRPTkQh3Up05X3V0urIaN0JyAx9NFijp6G3gs+M=
 github.com/hugolify/hugolify-theme-docs v0.0.0-20260108152441-bbe3bb5cff0d h1:0vsWxUqidi30KaEKE7VAakivMNvFTjNdGp2WGYLT3a4=
@@ -62,7 +62,6 @@ github.com/midzer/tobii v3.1.1+incompatible h1:L5/7+mmfUgIMU3Bs0nVBNdqwwVUZ5M2CA
 github.com/midzer/tobii v3.1.1+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
 github.com/orestbida/cookieconsent v3.1.0+incompatible h1:L2uj16SEL1bICkn6pJde9uc1qAPmTcEiFZO93zZKdQI=
 github.com/orestbida/cookieconsent v3.1.0+incompatible/go.mod h1:8N46VI/40AwvzASJDpiwfbu6zylSzKSDZRUVNmVXLxw=
-github.com/twbs/bootstrap v5.3.3+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/bootstrap v5.3.8+incompatible h1:eK1fsXP7R/FWFt+sSNmmvUH9usPocf240nWVw7Dh02o=
 github.com/twbs/bootstrap v5.3.8+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/icons v1.13.1 h1:6bmNXvoeIbvjFWjfbjXg5JGbelLD1haIsMaEIzE9UZI=
