@@ -1,3 +1,19 @@
+/**
+ * PagesCMS Configuration Build Script
+ * 
+ * This script automates the generation of PagesCMS configuration for Hugolify.
+ * It performs the following operations:
+ * 
+ * 1. Executes the Hugo build command (yarn build)
+ * 2. Copies the generated configuration file to .pages.yml
+ * 
+ * Usage: node scripts/build-config-pagescms.js
+ * 
+ * @requires child_process
+ * @requires fs
+ * @requires path
+ */
+
 const { exec } = require('child_process');
 const fs = require('fs');
 const path = require('path');

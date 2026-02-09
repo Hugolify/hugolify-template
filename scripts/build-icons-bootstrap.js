@@ -1,5 +1,27 @@
 #!/usr/bin/env node
 
+/**
+ * Bootstrap Icons Subset Build Script
+ * 
+ * This script optimizes the delivery of Bootstrap Icons by creating a custom font subset
+ * containing only the icons actually used in the project.
+ * 
+ * It performs the following operations:
+ * 
+ * 1. Runs 'hugo mod vendor' to ensure all modules are available
+ * 2. Checks and installs required dependencies (bootstrap-icons, subset-font, js-yaml)
+ * 3. Scans multiple sources to extract used icon names:
+ *    - Markdown and HTML files in /content
+ *    - SASS files in /assets/sass and Hugo modules
+ *    - HTML template files in /layouts
+ *    - Social menu data in /data/menu/social.yml
+ * 4. Extracts unicode mappings from the official Bootstrap Icons CSS
+ * 5. Generates optimized WOFF2 and WOFF font subsets in /static/assets/fonts
+ * 6. Generates a SASS map in /assets/scss/bootstrap-icons/bootstrap-icons.scss
+ * 
+ * Usage: node scripts/build-icons-bootstrap.js
+ */
+ 
 import fs from "fs";
 import path from "path";
 import glob from "glob";
@@ -246,7 +268,7 @@ async function extractIconsFromSocialData() {
   const icons = new Set();
 
   if (!fs.existsSync(socialFilePath)) {
-    log("⚠️", "Aucun fichier social.yml trouvé");
+    log("⚠️", "social.yml not found");
     return icons;
   }
 
@@ -255,15 +277,15 @@ async function extractIconsFromSocialData() {
     const data = yaml.load(content);
 
     if (!data || typeof data !== "object") {
-      log("⚠️", "Fichier social.yml mal formé");
+      log("⚠️", "Malformed social.yml file");
       return icons;
     }
 
-    // Parcours de toutes les clés racine
+    // Tracing all root keys
     Object.keys(data).forEach((key) => {
       const node = data[key];
 
-      // Cas simple : key = "links"
+      // Simple case : key = "links"
       if (key === "links" && Array.isArray(node)) {
         node.forEach((link) => {
           if (link.title && typeof link.title === "string") {
@@ -273,7 +295,7 @@ async function extractIconsFromSocialData() {
         });
       }
 
-      // Cas multilingue : key = "fr", "en", etc.
+      // Multilingue case : key = "fr", "en", …
       else if (node && typeof node === "object" && Array.isArray(node.links)) {
         node.links.forEach((link) => {
           if (link.title && typeof link.title === "string") {
@@ -284,9 +306,9 @@ async function extractIconsFromSocialData() {
       }
     });
 
-    log("📱", `Trouvé ${icons.size} icônes dans social.yml`);
+    log("📱", `Found ${icons.size} icons in social.yml`);
   } catch (err) {
-    console.warn(`⚠️ Erreur de lecture du fichier social.yml : ${err.message}`);
+    console.warn(`⚠️ Error reading file social.yml: ${err.message}`);
   }
 
   return icons;
