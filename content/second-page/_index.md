@@ -45,3 +45,5 @@ Button
 Span lang
 
 {{< span_lang text="Bonjour" lang="fr" >}}
+
+{{< details summary="Summary of details" name="lorem" title="iprum" >}}Lorem{{< /details >}}
