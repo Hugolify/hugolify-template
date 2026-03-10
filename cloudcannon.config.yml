@@ -354,10 +354,8 @@ _snippets:
     definitions:
       named_args:
       - editor_key: text
-        source_key: text
         type: string
       - editor_key: lang
-        source_key: lang
         type: string
       shortcode_name: span_lang
     inline: true
@@ -411,31 +409,24 @@ _snippets:
     definitions:
       named_args:
       - editor_key: mp4
-        source_key: mp4
         type: string
       - editor_key: webm
         optional: true
-        source_key: webm
         type: string
       - editor_key: controls
         optional: true
-        source_key: controls
         type: boolean
       - editor_key: loop
         optional: true
-        source_key: loop
         type: boolean
       - editor_key: legend
         optional: true
-        source_key: legend
         type: string
       - editor_key: credit
         optional: true
-        source_key: credit
         type: string
       - editor_key: screenshot
         optional: true
-        source_key: screenshot
         type: boolean
       shortcode_name: video
     inline: false
