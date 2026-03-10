@@ -167,7 +167,7 @@ _snippets:
     inline: false
     preview:
       text: Blockquote
-    template: hugo_shortcode_named_args
+    template: hugo_paired_shortcode_named_args
   hugolify_button:
     _inputs:
       blank:
@@ -234,6 +234,15 @@ _snippets:
         type: text
     definitions:
       content_key: contents
+      named_args:
+      - editor_key: summary
+        type: string
+      - editor_key: name
+        optional: true
+        type: string
+      - editor_key: title
+        optional: true
+        type: string
       shortcode_name: details
     inline: false
     preview:
@@ -254,7 +263,18 @@ _snippets:
           initial_height: 150
           required: false
         type: markdown
-      image:
+      legend:
+        label: Legend
+        options:
+          required: false
+        type: text
+      screenshot:
+        comment: Add fake browser
+        label: Is screenshot?
+        options:
+          required: false
+        type: switch
+      src:
         comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
         label: Image
         options:
@@ -268,17 +288,6 @@ _snippets:
           max_file_size: '700000'
           required: false
         type: image
-      legend:
-        label: Legend
-        options:
-          required: false
-        type: text
-      screenshot:
-        comment: Add fake browser
-        label: Is screenshot?
-        options:
-          required: false
-        type: switch
     definitions:
       named_args:
       - editor_key: image
