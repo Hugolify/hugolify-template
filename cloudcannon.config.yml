@@ -258,8 +258,8 @@ _snippets:
           required: false
         type: text
     definitions:
-      named_args:
-      - editor_key: id
+      positional_args:
+      - editor_key: dailymotion_id
         type: string
       shortcode_name: dailymotion
     inline: false
