@@ -22,8 +22,20 @@ image:
   src:
 draft: false
 ---
+Alert
+
 {{< alert text="This is a danger alert" state="danger" >}}
 
-Lorem ipsum
+Badge
 
 {{< badge text="badge primary" state="primary" >}}
+
+Blank link
+
+{{< blank_link text="blank link" link="/case-studies/case-study-example/" >}}
+
+Blockquote
+
+{{< blockquote quote="This is a quote" title="titre" text="texte" image="" >}}
+
+Button
