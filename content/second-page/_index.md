@@ -46,4 +46,6 @@ Span lang
 
 {{< span_lang text="Bonjour" lang="fr" >}}
 
+Details
+
 {{< details summary="Summary of details" name="lorem" title="iprum" >}}Lorem{{< /details >}}
