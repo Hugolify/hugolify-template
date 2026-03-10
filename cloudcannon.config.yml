@@ -7,7 +7,9 @@ paths:
 
 
 _snippets_imports:
-  hugo: true
+  hugo:
+    exclude:
+      - hugo_figure
 
 
 _snippets:
@@ -159,6 +161,7 @@ _snippets:
       shortcode_name: blank_link
     inline: true
     preview:
+      icon: link
       text: Blank link
     template: hugo_shortcode_named_args
   hugolify_blockquote:
@@ -266,6 +269,7 @@ _snippets:
       shortcode_name: dailymotion
     inline: false
     preview:
+      icon: videocam
       text: Dailymotion
     template: hugo_shortcode_named_args
   hugolify_details:
@@ -306,6 +310,7 @@ _snippets:
       shortcode_name: details
     inline: false
     preview:
+      icon: quiz
       text: Details
     template: hugo_paired_shortcode_named_args
   hugolify_figure:
@@ -367,6 +372,7 @@ _snippets:
       shortcode_name: figure
     inline: false
     preview:
+      icon: image
       text: Figure
     template: hugo_shortcode_named_args
   hugolify_map:
@@ -408,6 +414,23 @@ _snippets:
     inline: true
     preview:
       text: Span lang
+    template: hugo_shortcode_named_args
+  hugolify_twitch:
+    _inputs:
+      id:
+        label: ID
+        options:
+          required: false
+        type: text
+    definitions:
+      positional_args:
+      - editor_key: id
+        type: string
+      shortcode_name: twitch
+    inline: false
+    preview:
+      icon: videocam
+      text: Twitch
     template: hugo_shortcode_named_args
   hugolify_video:
     _inputs:
@@ -478,6 +501,7 @@ _snippets:
       shortcode_name: video
     inline: false
     preview:
+      icon: videocam
       text: Video
     template: hugo_shortcode_named_args
 
