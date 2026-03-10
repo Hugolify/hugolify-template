@@ -42,6 +42,14 @@ _snippets:
           required: false
         type: text
     definitions:
+      named_args:
+      - editor_key: text
+        source_key: text
+        type: string
+      - editor_key: state
+        optional: true
+        source_key: state
+        type: string
       shortcode_name: alert
     inline: false
     preview:
@@ -78,6 +86,14 @@ _snippets:
           required: false
         type: text
     definitions:
+      named_args:
+      - editor_key: text
+        source_key: text
+        type: string
+      - editor_key: state
+        optional: true
+        source_key: state
+        type: string
       shortcode_name: badge
     inline: true
     preview:
@@ -97,6 +113,13 @@ _snippets:
           required: false
         type: text
     definitions:
+      named_args:
+      - editor_key: text
+        source_key: text
+        type: string
+      - editor_key: link
+        source_key: link
+        type: string
       shortcode_name: blank_link
     inline: true
     preview:
@@ -136,6 +159,22 @@ _snippets:
           required: false
         type: text
     definitions:
+      named_args:
+      - editor_key: quote
+        source_key: quote
+        type: string
+      - editor_key: title
+        optional: true
+        source_key: title
+        type: string
+      - editor_key: text
+        optional: true
+        source_key: text
+        type: string
+      - editor_key: image
+        optional: true
+        source_key: image
+        type: string
       shortcode_name: blockquote
     inline: false
     preview:
@@ -165,6 +204,21 @@ _snippets:
           required: false
         type: url
     definitions:
+      named_args:
+      - editor_key: text
+        source_key: text
+        type: string
+      - editor_key: url
+        source_key: url
+        type: string
+      - editor_key: class
+        optional: true
+        source_key: class
+        type: string
+      - editor_key: blank
+        optional: true
+        source_key: blank
+        type: boolean
       shortcode_name: button
     inline: true
     preview:
@@ -242,6 +296,26 @@ _snippets:
           required: false
         type: image
     definitions:
+      named_args:
+      - editor_key: src
+        source_key: src
+        type: string
+      - editor_key: alt
+        optional: true
+        source_key: alt
+        type: string
+      - editor_key: legend
+        optional: true
+        source_key: legend
+        type: string
+      - editor_key: credit
+        optional: true
+        source_key: credit
+        type: string
+      - editor_key: screenshot
+        optional: true
+        source_key: screenshot
+        type: boolean
       shortcode_name: figure
     inline: false
     preview:
@@ -255,6 +329,10 @@ _snippets:
           required: false
         type: text
     definitions:
+      named_args:
+      - editor_key: markers
+        source_key: markers
+        type: string
       shortcode_name: map
     inline: false
     preview:
@@ -274,6 +352,13 @@ _snippets:
           required: false
         type: text
     definitions:
+      named_args:
+      - editor_key: text
+        source_key: text
+        type: string
+      - editor_key: lang
+        source_key: lang
+        type: string
       shortcode_name: span_lang
     inline: true
     preview:
@@ -324,6 +409,34 @@ _snippets:
           required: false
         type: file
     definitions:
+      named_args:
+      - editor_key: mp4
+        source_key: mp4
+        type: string
+      - editor_key: webm
+        optional: true
+        source_key: webm
+        type: string
+      - editor_key: controls
+        optional: true
+        source_key: controls
+        type: boolean
+      - editor_key: loop
+        optional: true
+        source_key: loop
+        type: boolean
+      - editor_key: legend
+        optional: true
+        source_key: legend
+        type: string
+      - editor_key: credit
+        optional: true
+        source_key: credit
+        type: string
+      - editor_key: screenshot
+        optional: true
+        source_key: screenshot
+        type: boolean
       shortcode_name: video
     inline: false
     preview:
