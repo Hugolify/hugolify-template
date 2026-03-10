@@ -36,8 +36,6 @@ Blank link
 
 Blockquote
 
-{{< blockquote quote="This is a quote" title="titre" text="texte" image="" >}}
-
 Button
 
 {{< button text="text button" url="https://www.example.com" class="lorem" blank=false >}}
@@ -49,3 +47,7 @@ Span lang
 Details
 
 {{< details summary="Summary of details" name="lorem" title="iprum" >}}Lorem{{< /details >}}
+
+Map
+
+{{< map markers=`{"coordinates":[44.8425666,-0.5737107]}` >}}
