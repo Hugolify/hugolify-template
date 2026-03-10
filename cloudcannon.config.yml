@@ -98,7 +98,7 @@ _snippets:
     preview:
       icon: warning
       text: Alert
-    template: hugo_shortcode_named_args
+    template: hugo_paired_shortcode_named_args
   hugolify_badge:
     _inputs:
       state:
@@ -276,7 +276,7 @@ _snippets:
     preview:
       icon: videocam
       text: Dailymotion
-    template: hugo_shortcode_named_args
+    template: hugo_shortcode_positional_args
   hugolify_details:
     _inputs:
       contents:
@@ -438,7 +438,7 @@ _snippets:
     preview:
       icon: videocam
       text: Twitch
-    template: hugo_shortcode_named_args
+    template: hugo_shortcode_positional_args
   hugolify_video:
     _inputs:
       controls:
@@ -510,7 +510,7 @@ _snippets:
     preview:
       icon: videocam
       text: Video
-    template: hugo_shortcode_named_args
+    template: hugo_shortcode_positional_args
 
 
 
