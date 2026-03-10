@@ -52,6 +52,48 @@ _snippets:
     preview:
       text: Alert
     template: hugo_shortcode_named_args
+  hugolify_alert_block:
+    _inputs:
+      contents:
+        label: Contents
+        options:
+          allow_resize: true
+          initial_height: 150
+          required: false
+        type: markdown
+      state:
+        label: State
+        options:
+          required: true
+          value_key: value
+          values:
+          - name: Danger
+            value: danger
+          - name: Dark
+            value: dark
+          - name: Info
+            value: info
+          - name: Light
+            value: light
+          - name: Primary
+            value: primary
+          - name: Secondary
+            value: secondary
+          - name: Success
+            value: success
+          - name: Warning
+            value: warning
+        type: select
+    definitions:
+      content_key: contents
+      named_args:
+      - editor_key: state
+        type: string
+      shortcode_name: alert-block
+    inline: false
+    preview:
+      text: Alert
+    template: hugo_shortcode_named_args
   hugolify_badge:
     _inputs:
       state:
@@ -207,6 +249,22 @@ _snippets:
     inline: true
     preview:
       text: Button
+    template: hugo_shortcode_named_args
+  hugolify_dailymotion:
+    _inputs:
+      id:
+        label: ID
+        options:
+          required: false
+        type: text
+    definitions:
+      named_args:
+      - editor_key: id
+        type: string
+      shortcode_name: dailymotion
+    inline: false
+    preview:
+      text: Dailymotion
     template: hugo_shortcode_named_args
   hugolify_details:
     _inputs:
