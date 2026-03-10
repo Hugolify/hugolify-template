@@ -46,6 +46,7 @@ _snippets:
       - editor_key: text
         type: string
       - editor_key: state
+        optional: true
         type: string
       shortcode_name: alert
     inline: false
@@ -129,6 +130,7 @@ _snippets:
       - editor_key: text
         type: string
       - editor_key: state
+        optional: true
         type: string
       shortcode_name: badge
     inline: true
@@ -259,7 +261,7 @@ _snippets:
         type: text
     definitions:
       positional_args:
-      - editor_key: dailymotion_id
+      - editor_key: id
         type: string
       shortcode_name: dailymotion
     inline: false
