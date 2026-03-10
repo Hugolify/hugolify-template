@@ -218,7 +218,7 @@ _snippets:
     preview:
       icon: format_quote
       text: Blockquote
-    template: hugo_paired_shortcode_named_args
+    template: hugo_shortcode_named_args
   hugolify_button:
     _inputs:
       blank:
@@ -360,7 +360,7 @@ _snippets:
         type: image
     definitions:
       named_args:
-      - editor_key: image
+      - editor_key: src
         type: string
       - editor_key: alt
         optional: true
@@ -510,7 +510,7 @@ _snippets:
     preview:
       icon: videocam
       text: Video
-    template: hugo_shortcode_positional_args
+    template: hugo_shortcode_named_args
 
 
 
