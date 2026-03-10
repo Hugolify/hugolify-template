@@ -53,6 +53,7 @@ _snippets:
       shortcode_name: alert
     inline: false
     preview:
+      icon: warning
       text: Alert
     template: hugo_shortcode_named_args
   hugolify_alert_block:
@@ -95,6 +96,7 @@ _snippets:
       shortcode_name: alert-block
     inline: false
     preview:
+      icon: warning
       text: Alert
     template: hugo_shortcode_named_args
   hugolify_badge:
@@ -137,6 +139,7 @@ _snippets:
       shortcode_name: badge
     inline: true
     preview:
+      icon: label
       text: Badge
     template: hugo_shortcode_named_args
   hugolify_blank_link:
@@ -161,7 +164,7 @@ _snippets:
       shortcode_name: blank_link
     inline: true
     preview:
-      icon: link
+      icon: open_in_new
       text: Blank link
     template: hugo_shortcode_named_args
   hugolify_blockquote:
@@ -213,6 +216,7 @@ _snippets:
       shortcode_name: blockquote
     inline: false
     preview:
+      icon: format_quote
       text: Blockquote
     template: hugo_paired_shortcode_named_args
   hugolify_button:
@@ -253,6 +257,7 @@ _snippets:
       shortcode_name: button
     inline: true
     preview:
+      icon: link
       text: Button
     template: hugo_shortcode_named_args
   hugolify_dailymotion:
@@ -383,6 +388,7 @@ _snippets:
           required: false
         type: text
     definitions:
+      icon: map
       named_args:
       - editor_key: markers
         type: string
@@ -405,6 +411,7 @@ _snippets:
           required: false
         type: text
     definitions:
+      icon: language
       named_args:
       - editor_key: text
         type: string
