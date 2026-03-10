@@ -39,3 +39,9 @@ Blockquote
 {{< blockquote quote="This is a quote" title="titre" text="texte" image="" >}}
 
 Button
+
+{{< button text="text button" url="https://www.example.com" class="lorem" blank=false >}}
+
+Span lang
+
+{{< span_lang text="Bonjour" lang="fr" >}}
