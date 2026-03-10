@@ -44,11 +44,8 @@ _snippets:
     definitions:
       named_args:
       - editor_key: text
-        source_key: text
         type: string
       - editor_key: state
-        optional: true
-        source_key: state
         type: string
       shortcode_name: alert
     inline: false
@@ -88,11 +85,8 @@ _snippets:
     definitions:
       named_args:
       - editor_key: text
-        source_key: text
         type: string
       - editor_key: state
-        optional: true
-        source_key: state
         type: string
       shortcode_name: badge
     inline: true
@@ -115,10 +109,8 @@ _snippets:
     definitions:
       named_args:
       - editor_key: text
-        source_key: text
         type: string
       - editor_key: link
-        source_key: link
         type: string
       shortcode_name: blank_link
     inline: true
@@ -127,14 +119,7 @@ _snippets:
     template: hugo_shortcode_named_args
   hugolify_blockquote:
     _inputs:
-      quote:
-        label: Quote
-        options:
-          allow_resize: true
-          initial_height: 150
-          required: false
-        type: markdown
-      src:
+      image:
         comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
         label: Image
         options:
@@ -148,6 +133,13 @@ _snippets:
           max_file_size: '700000'
           required: false
         type: image
+      quote:
+        label: Quote
+        options:
+          allow_resize: true
+          initial_height: 150
+          required: false
+        type: markdown
       text:
         label: Text
         options:
@@ -161,19 +153,15 @@ _snippets:
     definitions:
       named_args:
       - editor_key: quote
-        source_key: quote
         type: string
       - editor_key: title
         optional: true
-        source_key: title
         type: string
       - editor_key: text
         optional: true
-        source_key: text
         type: string
       - editor_key: image
         optional: true
-        source_key: image
         type: string
       shortcode_name: blockquote
     inline: false
@@ -206,18 +194,14 @@ _snippets:
     definitions:
       named_args:
       - editor_key: text
-        source_key: text
         type: string
       - editor_key: url
-        source_key: url
         type: string
       - editor_key: class
         optional: true
-        source_key: class
         type: string
       - editor_key: blank
         optional: true
-        source_key: blank
         type: boolean
       shortcode_name: button
     inline: true
@@ -270,18 +254,7 @@ _snippets:
           initial_height: 150
           required: false
         type: markdown
-      legend:
-        label: Legend
-        options:
-          required: false
-        type: text
-      screenshot:
-        comment: Add fake browser
-        label: Is screenshot?
-        options:
-          required: false
-        type: switch
-      src:
+      image:
         comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
         label: Image
         options:
@@ -295,26 +268,32 @@ _snippets:
           max_file_size: '700000'
           required: false
         type: image
+      legend:
+        label: Legend
+        options:
+          required: false
+        type: text
+      screenshot:
+        comment: Add fake browser
+        label: Is screenshot?
+        options:
+          required: false
+        type: switch
     definitions:
       named_args:
-      - editor_key: src
-        source_key: src
+      - editor_key: image
         type: string
       - editor_key: alt
         optional: true
-        source_key: alt
         type: string
       - editor_key: legend
         optional: true
-        source_key: legend
         type: string
       - editor_key: credit
         optional: true
-        source_key: credit
         type: string
       - editor_key: screenshot
         optional: true
-        source_key: screenshot
         type: boolean
       shortcode_name: figure
     inline: false
@@ -331,7 +310,6 @@ _snippets:
     definitions:
       named_args:
       - editor_key: markers
-        source_key: markers
         type: string
       shortcode_name: map
     inline: false
