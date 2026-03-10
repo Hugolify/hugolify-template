@@ -10,7 +10,8 @@ _snippets_imports:
   hugo: true
 
 
-_snippets:hugolify_alert:
+_snippets:
+  hugolify_alert:
     template: hugo_shortcode_named_args
     inline: false
     preview:
@@ -40,7 +41,7 @@ _snippets:hugolify_alert:
             - secondary
             - success
             - warning
-hugolify_badge:
+  hugolify_badge:
     template: hugo_shortcode_named_args
     inline: true
     preview:
