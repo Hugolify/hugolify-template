@@ -20,4 +20,10 @@ image:
   alt:
   credit: ''
   src:
+draft: false
 ---
+{{< alert text="This is a danger alert" state="danger" >}}
+
+Lorem ipsum
+
+{{< badge text="badge primary" state="primary" >}}
