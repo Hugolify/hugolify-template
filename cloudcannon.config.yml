@@ -12,348 +12,452 @@ _snippets_imports:
 
 _snippets:
   hugolify_alert:
-    template: hugo_shortcode_named_args
+    _inputs:
+      state:
+        label: State
+        options:
+          required: true
+          value_key: value
+          values:
+          - name: Danger
+            value: danger
+          - name: Dark
+            value: dark
+          - name: Info
+            value: info
+          - name: Light
+            value: light
+          - name: Primary
+            value: primary
+          - name: Secondary
+            value: secondary
+          - name: Success
+            value: success
+          - name: Warning
+            value: warning
+        type: select
+      text:
+        label: Text
+        options:
+          required: false
+        type: text
+    definitions:
+      named_args:
+      - editor_key: text
+        source_key: text
+        type: string
+      - editor_key: state
+        optional: true
+        source_key: state
+        type: string
+      shortcode_name: alert
     inline: false
     preview:
       text: Alert
-    definitions:
-      shortcode_name: alert
-      named_args:
-        - source_key: text
-          editor_key: text
-          type: string
-        - source_key: state
-          editor_key: state
-          type: string
-          optional: true
-    _inputs:
-      text:
-        type: text
-      state:
-        type: select
-        options:
-          values:
-            - danger
-            - dark
-            - info
-            - light
-            - primary
-            - secondary
-            - success
-            - warning
-  hugolify_badge:
     template: hugo_shortcode_named_args
+  hugolify_badge:
+    _inputs:
+      state:
+        label: State
+        options:
+          required: true
+          value_key: value
+          values:
+          - name: Danger
+            value: danger
+          - name: Dark
+            value: dark
+          - name: Info
+            value: info
+          - name: Light
+            value: light
+          - name: Primary
+            value: primary
+          - name: Secondary
+            value: secondary
+          - name: Success
+            value: success
+          - name: Warning
+            value: warning
+        type: select
+      text:
+        label: Text
+        options:
+          required: false
+        type: text
+    definitions:
+      named_args:
+      - editor_key: text
+        source_key: text
+        type: string
+      - editor_key: state
+        optional: true
+        source_key: state
+        type: string
+      shortcode_name: badge
     inline: true
     preview:
       text: Badge
-    definitions:
-      shortcode_name: badge
-      named_args:
-        - source_key: text
-          editor_key: text
-          type: string
-        - source_key: state
-          editor_key: state
-          type: string
-          optional: true
-    _inputs:
-      text:
-        type: text
-      state:
-        type: select
-        options:
-          values:
-            - danger
-            - dark
-            - info
-            - light
-            - primary
-            - secondary
-            - success
-            - warning
-  hugolify_blank_link:
     template: hugo_shortcode_named_args
+  hugolify_blank_link:
+    _inputs:
+      link:
+        comment: Absolute URL (e.g https://www.example.com)
+        label: URL
+        options:
+          required: false
+        type: text
+      text:
+        label: Text
+        options:
+          required: false
+        type: text
+    definitions:
+      named_args:
+      - editor_key: text
+        source_key: text
+        type: string
+      - editor_key: link
+        source_key: link
+        type: string
+      shortcode_name: blank_link
     inline: true
     preview:
       text: Blank link
-    definitions:
-      shortcode_name: blank_link
-      named_args:
-        - source_key: text
-          editor_key: text
-          type: string
-        - source_key: link
-          editor_key: link
-          type: string
-    _inputs:
-      text:
-        type: text
-      link:
-        type: url
-  hugolify_blockquote:
     template: hugo_shortcode_named_args
+  hugolify_blockquote:
+    _inputs:
+      quote:
+        label: Quote
+        options:
+          allow_resize: true
+          initial_height: 150
+          required: false
+        type: markdown
+      src:
+        comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
+        label: Image
+        options:
+          accepts_mime_types:
+          - image/avif
+          - image/gif
+          - image/jpeg
+          - image/png
+          - image/webp
+          - image/svg+xml
+          max_file_size: '700000'
+          required: false
+        type: image
+      text:
+        label: Text
+        options:
+          required: false
+        type: text
+      title:
+        label: Title
+        options:
+          required: false
+        type: text
+    definitions:
+      named_args:
+      - editor_key: quote
+        source_key: quote
+        type: string
+      - editor_key: title
+        optional: true
+        source_key: title
+        type: string
+      - editor_key: text
+        optional: true
+        source_key: text
+        type: string
+      - editor_key: image
+        optional: true
+        source_key: image
+        type: string
+      shortcode_name: blockquote
     inline: false
     preview:
       text: Blockquote
-    definitions:
-      shortcode_name: blockquote
-      named_args:
-        - source_key: quote
-          editor_key: quote
-          type: string
-        - source_key: title
-          editor_key: title
-          type: string
-          optional: true
-        - source_key: text
-          editor_key: text
-          type: string
-          optional: true
-        - source_key: image
-          editor_key: image
-          type: string
-          optional: true
+    template: hugo_shortcode_named_args
+  hugolify_button:
     _inputs:
-      quote:
-        type: textarea
-      title:
+      blank:
+        label: New window?
+        options:
+          required: false
+        type: switch
+      class:
+        label: Class
+        options:
+          required: false
         type: text
       text:
+        label: Text
+        options:
+          required: false
         type: text
-      image:
-        type: image
-  hugolify_button:
-    template: hugo_shortcode_named_args
+      url:
+        comment: Absolute URL (e.g https://www.example.com)
+        label: URL
+        options:
+          required: false
+        type: url
+    definitions:
+      named_args:
+      - editor_key: text
+        source_key: text
+        type: string
+      - editor_key: url
+        source_key: url
+        type: string
+      - editor_key: class
+        optional: true
+        source_key: class
+        type: string
+      - editor_key: blank
+        optional: true
+        source_key: blank
+        type: boolean
+      shortcode_name: button
     inline: true
     preview:
       text: Button
-    definitions:
-      shortcode_name: button
-      named_args:
-        - source_key: text
-          editor_key: text
-          type: string
-        - source_key: url
-          editor_key: url
-          type: string
-        - source_key: class
-          editor_key: class
-          type: string
-          optional: true
-        - source_key: blank
-          editor_key: blank
-          type: boolean
-          optional: true
-    _inputs:
-      text:
-        type: text
-      url:
-        type: url
-      class:
-        type: text
-      blank:
-        type: checkbox
+    template: hugo_shortcode_named_args
   hugolify_details:
-    template: hugo_paired_shortcode_named_args
+    _inputs:
+      contents:
+        label: nolabel
+        options:
+          allow_resize: true
+          initial_height: 150
+          required: false
+        type: markdown
+      name:
+        label: Name
+        options:
+          required: false
+        type: text
+      summary:
+        label: Summary
+        options:
+          required: false
+        type: text
+      title:
+        label: Title
+        options:
+          required: false
+        type: text
+    definitions:
+      content_key: content
+      named_args:
+      - editor_key: summary
+        source_key: summary
+        type: string
+      - editor_key: name
+        optional: true
+        source_key: name
+        type: string
+      - editor_key: title
+        optional: true
+        source_key: title
+        type: string
+      shortcode_name: details
     inline: false
     preview:
       text: Details
-    definitions:
-      shortcode_name: details
-      content_key: content
-      named_args:
-        - source_key: summary
-          editor_key: summary
-          type: string
-        - source_key: name
-          editor_key: name
-          type: string
-          optional: true
-        - source_key: title
-          editor_key: title
-          type: string
-          optional: true
-    _inputs:
-      summary:
-        type: text
-      name:
-        type: text
-      title:
-        type: text
-      content:
-        type: markdown
+    template: hugo_paired_shortcode_named_args
   hugolify_figure:
-    template: hugo_shortcode_named_args
+    _inputs:
+      alt:
+        comment: For an image that conveys information (leave blank if decorative image)
+        label: Text alternative
+        options:
+          required: false
+        type: text
+      credit:
+        label: Credit
+        options:
+          allow_resize: true
+          initial_height: 150
+          required: false
+        type: markdown
+      legend:
+        label: Legend
+        options:
+          required: false
+        type: text
+      screenshot:
+        comment: Add fake browser
+        label: Is screenshot?
+        options:
+          required: false
+        type: switch
+      src:
+        comment: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
+        label: Image
+        options:
+          accepts_mime_types:
+          - image/avif
+          - image/gif
+          - image/jpeg
+          - image/png
+          - image/webp
+          - image/svg+xml
+          max_file_size: '700000'
+          required: false
+        type: image
+    definitions:
+      named_args:
+      - editor_key: src
+        source_key: src
+        type: string
+      - editor_key: alt
+        optional: true
+        source_key: alt
+        type: string
+      - editor_key: legend
+        optional: true
+        source_key: legend
+        type: string
+      - editor_key: credit
+        optional: true
+        source_key: credit
+        type: string
+      - editor_key: screenshot
+        optional: true
+        source_key: screenshot
+        type: boolean
+      shortcode_name: figure
     inline: false
     preview:
       text: Figure
-    definitions:
-      shortcode_name: figure
-      named_args:
-        - source_key: src
-          editor_key: src
-          type: string
-        - source_key: alt
-          editor_key: alt
-          type: string
-          optional: true
-        - source_key: legend
-          editor_key: legend
-          type: string
-          optional: true
-        - source_key: credit
-          editor_key: credit
-          type: string
-          optional: true
-        - source_key: screenshot
-          editor_key: screenshot
-          type: boolean
-          optional: true
-    _inputs:
-      src:
-        type: image
-      alt:
-        type: text
-      legend:
-        type: text
-      credit:
-        type: text
-      screenshot:
-        type: checkbox
-  hugolify_map:
     template: hugo_shortcode_named_args
+  hugolify_map:
+    _inputs:
+      markers:
+        label: Markers
+        options:
+          required: false
+        type: text
+    definitions:
+      named_args:
+      - editor_key: markers
+        source_key: markers
+        type: string
+      shortcode_name: map
     inline: false
     preview:
       text: Map
-    definitions:
-      shortcode_name: map
-      named_args:
-        - source_key: markers
-          editor_key: markers
-          type: string
-    _inputs:
-      markers:
-        type: text
-  hugolify_span_lang:
     template: hugo_shortcode_named_args
+  hugolify_span_lang:
+    _inputs:
+      lang:
+        comment: Enter code lang (e.g. fr) if different of the current page language
+        label: Language
+        options:
+          required: false
+        type: text
+      text:
+        label: Text
+        options:
+          required: false
+        type: text
+    definitions:
+      named_args:
+      - editor_key: text
+        source_key: text
+        type: string
+      - editor_key: lang
+        source_key: lang
+        type: string
+      shortcode_name: span_lang
     inline: true
     preview:
       text: Span lang
-    definitions:
-      shortcode_name: span_lang
-      named_args:
-        - source_key: text
-          editor_key: text
-          type: string
-        - source_key: lang
-          editor_key: lang
-          type: string
-    _inputs:
-      text:
-        type: text
-      lang:
-        type: text
-  hugolify_twitter:
     template: hugo_shortcode_named_args
-    inline: false
-    preview:
-      text: Twitter / X
-    definitions:
-      shortcode_name: tweet
-      named_args:
-        - source_key: user
-          editor_key: user
-          type: string
-        - source_key: id
-          editor_key: id
-          type: string
-    _inputs:
-      user:
-        type: text
-      id:
-        type: text
   hugolify_video:
-    template: hugo_shortcode_named_args
+    _inputs:
+      controls:
+        label: Controls
+        options:
+          required: false
+        type: switch
+        value: true
+      credit:
+        label: Credit
+        options:
+          allow_resize: true
+          initial_height: 150
+          required: false
+        type: markdown
+      legend:
+        label: Legend
+        options:
+          required: false
+        type: text
+      mp4:
+        comment: MP4 video file
+        label: MP4
+        options:
+          accepts_mime_types:
+          - video/mp4
+          max_file_size: '5000000'
+          required: false
+        type: file
+      screenshot:
+        comment: Add fake browser
+        label: Is screenshot?
+        options:
+          required: false
+        type: switch
+      webm:
+        comment: WEBM video file
+        label: WEBM
+        options:
+          accepts_mime_types:
+          - video/webm
+          max_file_size: '5000000'
+          required: false
+        type: file
+    definitions:
+      named_args:
+      - editor_key: mp4
+        source_key: mp4
+        type: string
+      - editor_key: webm
+        optional: true
+        source_key: webm
+        type: string
+      - editor_key: autoplay
+        optional: true
+        source_key: autoplay
+        type: boolean
+      - editor_key: controls
+        optional: true
+        source_key: controls
+        type: boolean
+      - editor_key: loop
+        optional: true
+        source_key: loop
+        type: boolean
+      - editor_key: legend
+        optional: true
+        source_key: legend
+        type: string
+      - editor_key: credit
+        optional: true
+        source_key: credit
+        type: string
+      - editor_key: screenshot
+        optional: true
+        source_key: screenshot
+        type: boolean
+      shortcode_name: video
     inline: false
     preview:
       text: Video
-    definitions:
-      shortcode_name: video
-      named_args:
-        - source_key: mp4
-          editor_key: mp4
-          type: string
-        - source_key: webm
-          editor_key: webm
-          type: string
-          optional: true
-        - source_key: autoplay
-          editor_key: autoplay
-          type: boolean
-          optional: true
-        - source_key: controls
-          editor_key: controls
-          type: boolean
-          optional: true
-        - source_key: loop
-          editor_key: loop
-          type: boolean
-          optional: true
-        - source_key: legend
-          editor_key: legend
-          type: string
-          optional: true
-        - source_key: credit
-          editor_key: credit
-          type: string
-          optional: true
-        - source_key: screenshot
-          editor_key: screenshot
-          type: boolean
-          optional: true
-    _inputs:
-      mp4:
-        type: file
-        options:
-          accepts_mime_types:
-            - video/mp4
-      webm:
-        type: file
-        options:
-          accepts_mime_types:
-            - video/webm
-      autoplay:
-        type: checkbox
-      controls:
-        type: checkbox
-      loop:
-        type: checkbox
-      legend:
-        type: text
-      credit:
-        type: text
-      screenshot:
-        type: checkbox
-  hugolify_youtube:
     template: hugo_shortcode_named_args
-    inline: false
-    preview:
-      text: Youtube
-    definitions:
-      shortcode_name: youtube
-      named_args:
-        - source_key: id
-          editor_key: id
-          type: string
-        - source_key: title
-          editor_key: title
-          type: string
-          optional: true
-    _inputs:
-      id:
-        type: text
-      title:
-        type: text
 
 
 
