@@ -10,6 +10,352 @@ _snippets_imports:
   hugo: true
 
 
+_snippets:hugolify_alert:
+    template: hugo_shortcode_named_args
+    inline: false
+    preview:
+      text: Alert
+    definitions:
+      shortcode_name: alert
+      named_args:
+        - source_key: text
+          editor_key: text
+          type: string
+        - source_key: state
+          editor_key: state
+          type: string
+          optional: true
+    _inputs:
+      text:
+        type: text
+      state:
+        type: select
+        options:
+          values:
+            - danger
+            - dark
+            - info
+            - light
+            - primary
+            - secondary
+            - success
+            - warning
+hugolify_badge:
+    template: hugo_shortcode_named_args
+    inline: true
+    preview:
+      text: Badge
+    definitions:
+      shortcode_name: badge
+      named_args:
+        - source_key: text
+          editor_key: text
+          type: string
+        - source_key: state
+          editor_key: state
+          type: string
+          optional: true
+    _inputs:
+      text:
+        type: text
+      state:
+        type: select
+        options:
+          values:
+            - danger
+            - dark
+            - info
+            - light
+            - primary
+            - secondary
+            - success
+            - warning
+  hugolify_blank_link:
+    template: hugo_shortcode_named_args
+    inline: true
+    preview:
+      text: Blank link
+    definitions:
+      shortcode_name: blank_link
+      named_args:
+        - source_key: text
+          editor_key: text
+          type: string
+        - source_key: link
+          editor_key: link
+          type: string
+    _inputs:
+      text:
+        type: text
+      link:
+        type: url
+  hugolify_blockquote:
+    template: hugo_shortcode_named_args
+    inline: false
+    preview:
+      text: Blockquote
+    definitions:
+      shortcode_name: blockquote
+      named_args:
+        - source_key: quote
+          editor_key: quote
+          type: string
+        - source_key: title
+          editor_key: title
+          type: string
+          optional: true
+        - source_key: text
+          editor_key: text
+          type: string
+          optional: true
+        - source_key: image
+          editor_key: image
+          type: string
+          optional: true
+    _inputs:
+      quote:
+        type: textarea
+      title:
+        type: text
+      text:
+        type: text
+      image:
+        type: image
+  hugolify_button:
+    template: hugo_shortcode_named_args
+    inline: true
+    preview:
+      text: Button
+    definitions:
+      shortcode_name: button
+      named_args:
+        - source_key: text
+          editor_key: text
+          type: string
+        - source_key: url
+          editor_key: url
+          type: string
+        - source_key: class
+          editor_key: class
+          type: string
+          optional: true
+        - source_key: blank
+          editor_key: blank
+          type: boolean
+          optional: true
+    _inputs:
+      text:
+        type: text
+      url:
+        type: url
+      class:
+        type: text
+      blank:
+        type: checkbox
+  hugolify_details:
+    template: hugo_paired_shortcode_named_args
+    inline: false
+    preview:
+      text: Details
+    definitions:
+      shortcode_name: details
+      content_key: content
+      named_args:
+        - source_key: summary
+          editor_key: summary
+          type: string
+        - source_key: name
+          editor_key: name
+          type: string
+          optional: true
+        - source_key: title
+          editor_key: title
+          type: string
+          optional: true
+    _inputs:
+      summary:
+        type: text
+      name:
+        type: text
+      title:
+        type: text
+      content:
+        type: markdown
+  hugolify_figure:
+    template: hugo_shortcode_named_args
+    inline: false
+    preview:
+      text: Figure
+    definitions:
+      shortcode_name: figure
+      named_args:
+        - source_key: src
+          editor_key: src
+          type: string
+        - source_key: alt
+          editor_key: alt
+          type: string
+          optional: true
+        - source_key: legend
+          editor_key: legend
+          type: string
+          optional: true
+        - source_key: credit
+          editor_key: credit
+          type: string
+          optional: true
+        - source_key: screenshot
+          editor_key: screenshot
+          type: boolean
+          optional: true
+    _inputs:
+      src:
+        type: image
+      alt:
+        type: text
+      legend:
+        type: text
+      credit:
+        type: text
+      screenshot:
+        type: checkbox
+  hugolify_map:
+    template: hugo_shortcode_named_args
+    inline: false
+    preview:
+      text: Map
+    definitions:
+      shortcode_name: map
+      named_args:
+        - source_key: markers
+          editor_key: markers
+          type: string
+    _inputs:
+      markers:
+        type: text
+  hugolify_span_lang:
+    template: hugo_shortcode_named_args
+    inline: true
+    preview:
+      text: Span lang
+    definitions:
+      shortcode_name: span_lang
+      named_args:
+        - source_key: text
+          editor_key: text
+          type: string
+        - source_key: lang
+          editor_key: lang
+          type: string
+    _inputs:
+      text:
+        type: text
+      lang:
+        type: text
+  hugolify_twitter:
+    template: hugo_shortcode_named_args
+    inline: false
+    preview:
+      text: Twitter / X
+    definitions:
+      shortcode_name: tweet
+      named_args:
+        - source_key: user
+          editor_key: user
+          type: string
+        - source_key: id
+          editor_key: id
+          type: string
+    _inputs:
+      user:
+        type: text
+      id:
+        type: text
+  hugolify_video:
+    template: hugo_shortcode_named_args
+    inline: false
+    preview:
+      text: Video
+    definitions:
+      shortcode_name: video
+      named_args:
+        - source_key: mp4
+          editor_key: mp4
+          type: string
+        - source_key: webm
+          editor_key: webm
+          type: string
+          optional: true
+        - source_key: autoplay
+          editor_key: autoplay
+          type: boolean
+          optional: true
+        - source_key: controls
+          editor_key: controls
+          type: boolean
+          optional: true
+        - source_key: loop
+          editor_key: loop
+          type: boolean
+          optional: true
+        - source_key: legend
+          editor_key: legend
+          type: string
+          optional: true
+        - source_key: credit
+          editor_key: credit
+          type: string
+          optional: true
+        - source_key: screenshot
+          editor_key: screenshot
+          type: boolean
+          optional: true
+    _inputs:
+      mp4:
+        type: file
+        options:
+          accepts_mime_types:
+            - video/mp4
+      webm:
+        type: file
+        options:
+          accepts_mime_types:
+            - video/webm
+      autoplay:
+        type: checkbox
+      controls:
+        type: checkbox
+      loop:
+        type: checkbox
+      legend:
+        type: text
+      credit:
+        type: text
+      screenshot:
+        type: checkbox
+  hugolify_youtube:
+    template: hugo_shortcode_named_args
+    inline: false
+    preview:
+      text: Youtube
+    definitions:
+      shortcode_name: youtube
+      named_args:
+        - source_key: id
+          editor_key: id
+          type: string
+        - source_key: title
+          editor_key: title
+          type: string
+          optional: true
+    _inputs:
+      id:
+        type: text
+      title:
+        type: text
+
+
+
 collections_config:
   casestudies:
     _enabled_editors:
@@ -763,28 +1109,28 @@ _inputs:
   weight:
     label: Position (importance)
     options:
-      required: true
+      required: false
       value_key: value
       values:
-      - name: 10th
+      - name: The first
         value: 10
-      - name: 20th
+      - name: The second
         value: 20
-      - name: 30th
+      - name: The third
         value: 30
-      - name: 40th
+      - name: The fourth
         value: 40
-      - name: 50th
+      - name: The fifth
         value: 50
-      - name: 60th
+      - name: The sixth
         value: 60
-      - name: 70th
+      - name: The seventh
         value: 70
-      - name: 80th
+      - name: The eighth
         value: 80
-      - name: 90th
+      - name: The ninth
         value: 90
-      - name: 100th
+      - name: The last
         value: 100
     type: select
 
@@ -877,7 +1223,7 @@ _structures:
           options:
             accepts_mime_types:
             - audio/mpeg
-            max_file_size: '700000'
+            max_file_size: '1000000'
             required: false
           type: file
         ogg:
@@ -886,7 +1232,7 @@ _structures:
           options:
             accepts_mime_types:
             - audio/ogg
-            max_file_size: '700000'
+            max_file_size: '1000000'
             required: false
           type: file
         transcription:
@@ -964,9 +1310,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
       label: Audio
       preview:
@@ -1073,9 +1418,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
       label: Chart
       preview:
@@ -1098,6 +1442,7 @@ _structures:
           type: switch
           value: false
         column:
+          comment: Number of columns displayed on desktop
           label: Column
           options:
             max: 6
@@ -1113,9 +1458,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Items
@@ -1152,7 +1496,6 @@ _structures:
         ctas:
           label: CTAs
           options:
-            max_items: 2
             required: false
             structures: _structures.ctas
           preview:
@@ -1170,9 +1513,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
       label: Call to action
       preview:
@@ -1194,6 +1536,7 @@ _structures:
           type: switch
           value: false
         column:
+          comment: Number of columns displayed on desktop
           label: Column
           options:
             max: 6
@@ -1209,9 +1552,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Items
@@ -1248,7 +1590,6 @@ _structures:
         ctas:
           label: CTAs
           options:
-            max_items: 2
             required: false
             structures: _structures.ctas
           preview:
@@ -1334,9 +1675,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
       label: Embed
       preview:
@@ -1365,9 +1705,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Items
@@ -1437,9 +1776,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         offset:
           label: Offset
@@ -1500,9 +1838,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Fields
@@ -1563,6 +1900,7 @@ _structures:
           type: switch
           value: false
         column:
+          comment: Number of columns displayed on desktop
           label: Column
           options:
             max: 6
@@ -1589,9 +1927,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
       label: Gallery
       preview:
@@ -1621,9 +1958,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         images:
           label: Images
@@ -1657,6 +1993,7 @@ _structures:
           type: switch
           value: false
         column:
+          comment: Number of columns displayed on desktop
           label: Column
           options:
             max: 6
@@ -1672,9 +2009,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Items
@@ -1720,7 +2056,6 @@ _structures:
         ctas:
           label: CTAs
           options:
-            max_items: 2
             required: false
             structures: _structures.ctas
           preview:
@@ -1738,9 +2073,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         limit:
           label: Limit
@@ -1788,9 +2122,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         layout:
           label: Layout
@@ -1896,9 +2229,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Items
@@ -1982,9 +2314,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         show_places:
           comment: Only if you have places already saved (this will disable the marker below)
@@ -2043,9 +2374,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
       label: Newsletter
       preview:
@@ -2082,7 +2412,6 @@ _structures:
         ctas:
           label: CTAs
           options:
-            max_items: 2
             required: false
             structures: _structures.ctas
           preview:
@@ -2192,9 +2521,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Items
@@ -2287,9 +2615,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
       label: Search
       preview:
@@ -2330,9 +2657,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Items
@@ -2386,9 +2712,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Items
@@ -2429,9 +2754,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
       label: Title
       preview:
@@ -2476,9 +2800,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         video:
           label: Video
@@ -2520,9 +2843,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Cases studies
@@ -2586,9 +2908,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Expertises
@@ -2652,9 +2973,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Pages
@@ -2718,9 +3038,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Persons
@@ -2784,9 +3103,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Statutes
@@ -2850,9 +3168,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Places
@@ -2916,9 +3233,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: News
@@ -2982,9 +3298,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Categories
@@ -3048,9 +3363,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Tags
@@ -3114,9 +3428,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Products
@@ -3180,9 +3493,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Tags
@@ -3246,9 +3558,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Projects
@@ -3312,9 +3623,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Tags
@@ -3378,9 +3688,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Types
@@ -3444,9 +3753,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Publications
@@ -3510,9 +3818,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Categories
@@ -3576,9 +3883,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Services
@@ -3642,9 +3948,8 @@ _structures:
             subtype: object
           preview:
             text:
-            - key: title
-            - key: name
-            - key: text
+            - key:
+                title: null
           type: object
         items:
           label: Categories
@@ -3753,6 +4058,13 @@ _structures:
           options:
             required: false
           type: number
+        interval:
+          comment: Time between each slide. Expressed in ms.
+          label: Interval
+          options:
+            min: 1
+            required: false
+          type: number
         padding:
           comment: Padding left/right of the carousel. In rem value
           label: Padding
@@ -3765,6 +4077,13 @@ _structures:
             required: false
           type: switch
           value: false
+        perMove:
+          comment: Number of slides to move at once
+          label: Per move
+          options:
+            min: 1
+            required: false
+          type: number
         perPage:
           comment: Number of slides to display
           label: Per page
@@ -3790,8 +4109,10 @@ _structures:
         autoplay: null
         focus: null
         gap: null
+        interval: null
         padding: null
         pagination: null
+        perMove: null
         perPage: null
         type: null
   carousel_responsive:
@@ -3937,7 +4258,7 @@ _structures:
     values:
     - _inputs:
         blank:
-          label: Is blank?
+          label: New window?
           options:
             required: false
           type: switch
@@ -3969,7 +4290,7 @@ _structures:
     values:
     - _inputs:
         blank:
-          label: Is blank?
+          label: New window?
           options:
             required: false
           type: switch
@@ -4029,6 +4350,7 @@ _structures:
           label: Image
           options:
             accepts_mime_types:
+            - image/avif
             - image/gif
             - image/jpeg
             - image/png
@@ -4074,6 +4396,7 @@ _structures:
           label: Image
           options:
             accepts_mime_types:
+            - image/avif
             - image/gif
             - image/jpeg
             - image/png
@@ -4263,6 +4586,7 @@ _structures:
           label: Image
           options:
             accepts_mime_types:
+            - image/avif
             - image/gif
             - image/jpeg
             - image/png
@@ -4323,7 +4647,6 @@ _structures:
         ctas:
           label: CTAs
           options:
-            max_items: 2
             required: false
             structures: _structures.ctas
           preview:
@@ -4403,6 +4726,7 @@ _structures:
           label: Image
           options:
             accepts_mime_types:
+            - image/avif
             - image/gif
             - image/jpeg
             - image/png
@@ -4437,6 +4761,7 @@ _structures:
           label: Image
           options:
             accepts_mime_types:
+            - image/avif
             - image/gif
             - image/jpeg
             - image/png
@@ -4482,6 +4807,7 @@ _structures:
           label: Image
           options:
             accepts_mime_types:
+            - image/avif
             - image/gif
             - image/jpeg
             - image/png
@@ -4708,6 +5034,7 @@ _structures:
           label: Image
           options:
             accepts_mime_types:
+            - image/avif
             - image/gif
             - image/jpeg
             - image/png
@@ -4945,7 +5272,7 @@ _structures:
     reorder_inputs: false
     values:
     - _inputs:
-        plateform:
+        platform:
           label: Platform
           options:
             required: true
@@ -4983,7 +5310,7 @@ _structures:
             required: false
           type: url
       value:
-        plateform: null
+        platform: null
         url: null
   video:
     remove_empty_inputs: true
@@ -5027,6 +5354,7 @@ _structures:
           label: Poster
           options:
             accepts_mime_types:
+            - image/avif
             - image/gif
             - image/jpeg
             - image/png

@@ -1,10 +1,10 @@
 ---
 isIndex: false
 draft: false
-date:
 title:
 description:
 services_categories:
 image:
+weight:
 slug:
 ---
