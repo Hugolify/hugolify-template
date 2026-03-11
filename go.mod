@@ -7,7 +7,7 @@ require (
 	github.com/dixonandmoe/rellax v0.0.0-20240824005335-9ed6cb0aae03 // indirect
 	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20800 // indirect
 	github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 // indirect
-	github.com/hugolify/hugolify-admin v1.0.0-rc.20 // indirect
+	github.com/hugolify/hugolify-admin v1.0.0-rc.21 // indirect
 	github.com/hugolify/hugolify-theme v1.27.8 // indirect
 	github.com/hugolify/hugolify-theme-casestudies v1.0.18 // indirect
 	github.com/hugolify/hugolify-theme-expertises v1.1.3 // indirect
