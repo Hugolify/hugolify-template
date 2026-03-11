@@ -165,7 +165,7 @@ _snippets:
     inline: true
     preview:
       icon: open_in_new
-      text: Blank link
+      text: Link (new window)
     template: hugo_shortcode_named_args
   hugolify_blockquote:
     _inputs:
@@ -263,7 +263,7 @@ _snippets:
   hugolify_dailymotion:
     _inputs:
       id:
-        label: ID
+        label: Dailymotion ID
         options:
           required: false
         type: text
@@ -378,11 +378,12 @@ _snippets:
     inline: false
     preview:
       icon: image
-      text: Figure
+      text: Image block
     template: hugo_shortcode_named_args
   hugolify_map:
     _inputs:
       markers:
+        comment: 'JSON coordinates. e.g.: {"coordinates":[44.8425666,-0.5737107]},{"coordinates":[45.8425666,1.5937107]},{"coordinates":[46.8425666,-0.5737107]}'
         label: Markers
         options:
           required: false
@@ -420,12 +421,12 @@ _snippets:
       shortcode_name: span_lang
     inline: true
     preview:
-      text: Span lang
+      text: Language (span)
     template: hugo_shortcode_named_args
   hugolify_twitch:
     _inputs:
       id:
-        label: ID
+        label: Twitch ID
         options:
           required: false
         type: text
