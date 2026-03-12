@@ -2,5 +2,5 @@ _merge: deep
 admin:
   cms: sveltiacms
   repo: Hugolify/hugolify-template
-  shortcodes:
-    enable: false
+  auth:
+    netlify_identity: false
