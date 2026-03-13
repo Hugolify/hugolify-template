@@ -1,3 +1,5 @@
+github.com/Hugolify/hugolify-theme-bootstrap v0.0.0-20260312150156-5209cce1a32a h1:TBhrqqf1KOda8RQU8Gx5d0dh2X5krP11L98OHHdl/5A=
+github.com/Hugolify/hugolify-theme-bootstrap v0.0.0-20260312150156-5209cce1a32a/go.mod h1:cUjMyryJdGe2RfSgtMhsyYVTPWefLYg6/l8kU/Jbk4Q=
 github.com/Splidejs/splide v4.1.3+incompatible h1:ms0c3Tem9Bq7qcr88nLspZi2SW14mYnj4CVuHGqJbzA=
 github.com/Splidejs/splide v4.1.3+incompatible/go.mod h1:N10tHuOP81a5HGua3PmZVrpMiBmf/KhId8jZt0oShNk=
 github.com/dixonandmoe/rellax v0.0.0-20240824005335-9ed6cb0aae03 h1:TyZM0MK9+09/vGdnH8N9xVFix5f1vzU90V5WCyL16oE=
@@ -8,8 +10,12 @@ github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+y
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
 github.com/hugolify/hugolify-admin v1.0.0-rc.22 h1:si2E2mUAKqXelC+VFRDe+DKRPbB+Jd56GVrLKFYT51E=
 github.com/hugolify/hugolify-admin v1.0.0-rc.22/go.mod h1:qB7ndiuXR6XZu3r9UX3LtTHnrMF98U7vJHg6XXb6NvA=
+github.com/hugolify/hugolify-example-site v1.3.2 h1:0bW7/J0dkAhOUVVbmj0WW3e8YLjcNKwaz6680WKwBOM=
+github.com/hugolify/hugolify-example-site v1.3.2/go.mod h1:e21yIPVorsgtbEDK2zovJb3Am8k2Sncu0Gu83EfnjNA=
 github.com/hugolify/hugolify-theme v1.27.8 h1:QUaQHDWA8xVKMOkix0SpjNAQ5DMB9eMVxrIBFhZ3bLo=
 github.com/hugolify/hugolify-theme v1.27.8/go.mod h1:Rc64eJSSIWGeU6eHfSzUISNfL9UrJmy3Xs3H05Gz9rQ=
+github.com/hugolify/hugolify-theme-bootstrap v0.0.0-20260312150156-5209cce1a32a h1:4H1HRpAOOEi1vVf1oZHfjPnmCt6FVAFZGLJnWNz9K94=
+github.com/hugolify/hugolify-theme-bootstrap v0.0.0-20260312150156-5209cce1a32a/go.mod h1:OhGqzSyfnjNN/7WgvdDaToYLPBJMrTpt3bP0GwYzkm8=
 github.com/midzer/tobii v3.1.3+incompatible h1:3h2eGycwcHuTWeBLg5bqCLx3EcPSV1rHT1btiu4A3k0=
 github.com/midzer/tobii v3.1.3+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
 github.com/orestbida/cookieconsent v3.1.0+incompatible h1:L2uj16SEL1bICkn6pJde9uc1qAPmTcEiFZO93zZKdQI=

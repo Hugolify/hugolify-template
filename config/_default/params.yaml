@@ -1,6 +1,1 @@
 _merge: deep
-admin:
-  cms: sveltiacms
-  repo: Hugolify/hugolify-template
-  auth:
-    netlify_identity: false
