@@ -4,6 +4,7 @@ imports:
   - path: github.com/hugolify/hugolify-example-site
 
   # Core theme
+  - path: github.com/hugolify/hugolify-theme-bootstrap # CSS and JS
   - path: github.com/hugolify/hugolify-theme
 
   # CMS
