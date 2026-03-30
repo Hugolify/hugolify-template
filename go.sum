@@ -10,10 +10,12 @@ github.com/hugolify/hugolify-admin v1.0.0-rc.22 h1:si2E2mUAKqXelC+VFRDe+DKRPbB+J
 github.com/hugolify/hugolify-admin v1.0.0-rc.22/go.mod h1:qB7ndiuXR6XZu3r9UX3LtTHnrMF98U7vJHg6XXb6NvA=
 github.com/hugolify/hugolify-example-site v1.3.3 h1:shNdU1zVzBOurQqz+WsGwXr1ZMeR5sIfmIFy5UQvd+U=
 github.com/hugolify/hugolify-example-site v1.3.3/go.mod h1:e21yIPVorsgtbEDK2zovJb3Am8k2Sncu0Gu83EfnjNA=
-github.com/hugolify/hugolify-theme v1.27.14 h1:Anx5iO6IG1ierj0qbc9LJU0RgvGIqY7a1BHr8rl2Oxo=
-github.com/hugolify/hugolify-theme v1.27.14/go.mod h1:Rc64eJSSIWGeU6eHfSzUISNfL9UrJmy3Xs3H05Gz9rQ=
 github.com/hugolify/hugolify-theme-bootstrap v1.28.0 h1:0Fq18jdKbOaD6Dq1tx/1lOsfKiozVXzRXAVbwQoiZv8=
 github.com/hugolify/hugolify-theme-bootstrap v1.28.0/go.mod h1:pkYnlkc5bsrtzdw96AGILn9pfVvyNpw6jhQEbEHEAsM=
+github.com/hugolify/hugolify-theme-docs v0.0.0-20260327132058-3b3316ee9df1 h1:C+N8bfYUIHYvV6y7ZJAmlPK39rmSNgI1WLnUlq9X6rY=
+github.com/hugolify/hugolify-theme-docs v0.0.0-20260327132058-3b3316ee9df1/go.mod h1:zl20+CCoKsQ523IRk2eZHgmjtL0YMtKBu2m5mzlGoJE=
+github.com/hugolify/hugolify-theme/v2 v2.0.0 h1:wxgiqWExxCGi5VwI2hDH/DyHeyL2bNQRS60Fa+AusOE=
+github.com/hugolify/hugolify-theme/v2 v2.0.0/go.mod h1:49bO1E1dltejQfsaP5EYB4dv7oOUDhyWWio9OWK9FAw=
 github.com/midzer/tobii v3.1.3+incompatible h1:3h2eGycwcHuTWeBLg5bqCLx3EcPSV1rHT1btiu4A3k0=
 github.com/midzer/tobii v3.1.3+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
 github.com/orestbida/cookieconsent v3.1.0+incompatible h1:L2uj16SEL1bICkn6pJde9uc1qAPmTcEiFZO93zZKdQI=

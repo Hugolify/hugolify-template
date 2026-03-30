@@ -1,26 +1,17 @@
 {
+  "name": "hugolify-template",
+  "version": "1.16.0",
+  "homepage": "https://www.hugolify.io",
+  "repository": "https://github.com/hugolify/hugolify-template",
+  "bugs": {
+    "url": "https://github.com/hugolify/hugolify-template/issues"
+  },
   "author": {
     "email": "sebousan@gmail.com",
     "name": "Sébastien Moulène",
     "url": "https://www.sebastienmoulene.com/"
   },
-  "bugs": {
-    "url": "https://github.com/hugolify/hugolify-template/issues"
-  },
-  "comments": {
-    "dependencies": {},
-    "devDependencies": {
-      "@fullhuman/postcss-purgecss": "project",
-      "@hugolify/prettier-config": "project",
-      "autoprefixer": "project",
-      "cssnano": "project",
-      "netlify-plugin-hugo-cache-resources": "project",
-      "postcss": "project",
-      "postcss-cli": "project",
-      "postcss-sass": "project"
-    }
-  },
-  "dependencies": {},
+  "license": "MIT",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "@hugolify/prettier-config": "^0.3.1",
@@ -31,11 +22,7 @@
     "postcss-cli": "^10.1.0",
     "postcss-sass": "^0.5.0"
   },
-  "homepage": "https://www.hugolify.io",
-  "license": "MIT",
-  "name": "hugolify-template",
   "packageManager": "yarn@1.22.22",
-  "repository": "https://github.com/hugolify/hugolify-template",
   "scripts": {
     "build": "hugo --noChmod --gc --minify",
     "build:config:cloudcannon": "node scripts/build-config-cloudcannon.js",
@@ -53,6 +40,5 @@
     "update": "hugo mod get -u",
     "update:all": "yarn update && yarn tidy && yarn upgrade",
     "watch": "hugo server"
-  },
-  "version": "1.16.0"
+  }
 }
