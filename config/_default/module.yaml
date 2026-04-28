@@ -3,7 +3,11 @@ imports:
   # -> Hugolify content types and taxonomies available https://www.hugolify.io/docs/sections/
   - path: github.com/hugolify/hugolify-example-site
  
+  # Modules
   - path: github.com/hugolify/hugolify-theme-docs
+  - path: github.com/hugolify/hugolify-theme-posts-categories
+  - path: github.com/hugolify/hugolify-theme-posts-tags
+  - path: github.com/hugolify/hugolify-theme-posts
 
   # Core theme
   - path: github.com/hugolify/hugolify-theme/v2

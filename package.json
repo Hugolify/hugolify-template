@@ -10,29 +10,32 @@
   "comments": {
     "dependencies": {},
     "devDependencies": {
-      "@hugolify/prettier-config": "project",
-      "autoprefixer": "project",
-      "netlify-plugin-hugo-cache-resources": "project",
-      "postcss": "project",
-      "postcss-cli": "project",
-      "postcss-custom-media": "project",
-      "postcss-import": "project"
+      "@uncinq/component-tokens": "github.com/hugolify/hugolify-theme-design-system",
+      "@uncinq/css-base": "github.com/hugolify/hugolify-theme-design-system",
+      "@uncinq/css-components": "github.com/hugolify/hugolify-theme-design-system",
+      "@uncinq/design-tokens": "github.com/hugolify/hugolify-theme-design-system",
+      "autoprefixer": "github.com/hugolify/hugolify-theme-design-system",
+      "postcss": "github.com/hugolify/hugolify-theme-design-system",
+      "postcss-cli": "github.com/hugolify/hugolify-theme-design-system",
+      "postcss-custom-media": "github.com/hugolify/hugolify-theme-design-system",
+      "postcss-import": "github.com/hugolify/hugolify-theme-design-system"
     }
   },
   "dependencies": {},
   "devDependencies": {
-    "@hugolify/prettier-config": "^0.3.1",
-    "autoprefixer": "^10.4.13",
-    "netlify-plugin-hugo-cache-resources": "^0.2.1",
+    "@uncinq/component-tokens": "^0.3.0",
+    "@uncinq/css-base": "^0.2.0",
+    "@uncinq/css-components": "^0.3.0",
+    "@uncinq/design-tokens": "^0.3.0",
+    "autoprefixer": "^10",
     "postcss": "^8",
     "postcss-cli": "^11",
     "postcss-custom-media": "^10",
-    "postcss-import": "^16"
+    "postcss-import": "^16.0.0"
   },
   "homepage": "https://www.hugolify.io",
   "license": "MIT",
   "name": "hugolify-template",
-  "packageManager": "yarn@1.22.22",
   "repository": "https://github.com/hugolify/hugolify-template",
   "scripts": {
     "build": "hugo --noChmod --gc --minify",
@@ -46,7 +49,7 @@
     "cms": "yarn cms:decapcms",
     "cms:decapcms": "npx decap-server",
     "cms:netlifycms": "npx netlify-cms-proxy-server",
-    "install:hugolify": "hugo mod get && hugo mod npm pack && yarn install",
+    "install:hugolify": "hugo mod get && hugo mod npm pack",
     "tidy": "hugo mod tidy",
     "update": "hugo mod get -u",
     "update:all": "yarn update && yarn tidy && yarn upgrade",

@@ -16,6 +16,25 @@ Is a Github template for build easily a fast, accessible friendly and low carbon
 * Theme 5 https://theme-5--hugolify-demo.netlify.app/
 * Products https://demo-products--hugolify-demo.netlify.app
 
+## Installation
+
+After cloning or updating Hugo modules, run:
+
+```bash
+yarn install:hugolify && yarn install
+# or: npm run install:hugolify && npm install
+# or: pnpm run install:hugolify && pnpm install
+```
+
+The `install:hugolify` script chains two steps:
+
+1. `hugo mod get` — downloads Hugo modules declared in `config/_default/module.yaml`
+2. `hugo mod npm pack` — merges the `package.hugo.json` of each module into the project's `package.json`, pulling in their npm dependencies (PostCSS plugins, etc.)
+
+Then the final install step installs the resulting npm packages.
+
+> Run these commands whenever you add, remove, or update a Hugo module — the npm dependencies of each module are declared in their `package.hugo.json` and are only available after this step.
+
 ## Styling
 
 By default the template uses `hugolify-theme` + `hugolify-theme-bootstrap`. Both are declared as explicit imports in `config/_default/module.yaml`:
