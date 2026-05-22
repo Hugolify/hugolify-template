@@ -6,13 +6,13 @@ require (
 	github.com/Splidejs/splide v4.1.3+incompatible // indirect
 	github.com/dixonandmoe/rellax v0.0.0-20240824005335-9ed6cb0aae03 // indirect
 	github.com/hugolify/hugolify-admin v0.9.2 // indirect
-	github.com/hugolify/hugolify-example-site v1.4.0 // indirect
+	github.com/hugolify/hugolify-example-site v1.4.1 // indirect
 	github.com/hugolify/hugolify-theme-design-system v0.0.0-20260519142252-22b22b964ef2 // indirect
 	github.com/hugolify/hugolify-theme-docs v0.0.0-20260428151206-a1cc00861442 // indirect
 	github.com/hugolify/hugolify-theme-posts-categories v1.0.15 // indirect
 	github.com/hugolify/hugolify-theme-posts-tags v1.1.3 // indirect
 	github.com/hugolify/hugolify-theme-posts/v2 v2.0.0 // indirect
-	github.com/hugolify/hugolify-theme/v2 v2.1.0 // indirect
+	github.com/hugolify/hugolify-theme/v2 v2.1.1 // indirect
 	github.com/midzer/tobii v3.2.0+incompatible // indirect
 	github.com/orestbida/cookieconsent v3.1.0+incompatible // indirect
 )
