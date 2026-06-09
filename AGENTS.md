@@ -23,8 +23,8 @@ A **Hugolify** site — a Hugo static site built on the [Hugolify](https://hugol
 3. **Never edit** files inside `node_modules/`, Hugo module caches, or `@uncinq/*` package files.
 
 ```css
-/* ✓ Correct — override tokens in @layer config */
-@layer config {
+/* ✓ Correct — override tokens in @layer tokens */
+@layer tokens {
   :root {
     --color-brand:       var(--color-violet-600);
     --color-brand-muted: var(--color-violet-100);
@@ -78,7 +78,7 @@ imports:
 → Full design system reference (tokens, components, layout, agent prompts):
   [`hugolify-theme-design-system/DESIGN.md`](https://github.com/hugolify/hugolify-theme-design-system/blob/main/DESIGN.md)
 
-→ Customise by overriding semantic tokens in `@layer config`:
+→ Customise by overriding semantic tokens in `@layer tokens`:
 
 ```text
 Colors:    --color-brand, --color-bg, --color-text, --color-border, --color-*
@@ -107,7 +107,7 @@ Buttons:   --btn-border-radius, --btn-font-weight, --btn-padding-x, --btn-paddin
 | `config/_default/languages.yaml` | Language config for i18n sites |
 | `package.json` | npm scripts and dependencies (generated in part by `hugo mod npm pack`) |
 | `package.hugo.json` | Module-level npm dependencies — merged into `package.json` at install time |
-| `assets/css/tokens/` | Project token overrides (`@layer config`) |
+| `assets/css/tokens/` | Project token overrides (`@layer tokens`) |
 | `assets/css/components/` | Project-specific component styles |
 
 ---
