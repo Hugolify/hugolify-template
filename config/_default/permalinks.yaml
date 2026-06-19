@@ -1,1 +1,3 @@
 _merge: deep
+page:
+  places: /cabinets/:slug/

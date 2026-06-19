@@ -1,7 +1,9 @@
 imports:
   # Content
   # -> Hugolify content types and taxonomies available https://www.hugolify.io/docs/sections/
-  - path: github.com/hugolify/hugolify-example-site
+  # - path: github.com/hugolify/hugolify-example-site/v2
+  - path: github.com/uncinq/lawyerify-theme/v2
+  - path: github.com/uncinq/lawyerify-example-site
  
   # Modules
   # - path: github.com/hugolify/hugolify-theme-docs/v2
@@ -10,17 +12,31 @@ imports:
   - path: github.com/hugolify/hugolify-theme-posts-expertises/v2
   - path: github.com/hugolify/hugolify-theme-posts-tags/v2
   - path: github.com/hugolify/hugolify-theme-posts/v2
+
+  - path: github.com/hugolify/hugolify-theme-persons-expertises/v2
   - path: github.com/hugolify/hugolify-theme-persons-places/v2
+  - path: github.com/hugolify/hugolify-theme-persons-statutes/v2
   - path: github.com/hugolify/hugolify-theme-persons/v2
-  - path: github.com/hugolify/hugolify-theme-publications/v2
+
+  - path: github.com/hugolify/hugolify-theme-publications-persons/v2
   - path: github.com/hugolify/hugolify-theme-publications-categories
   - path: github.com/hugolify/hugolify-theme-publications-expertises
-  - path: github.com/hugolify/hugolify-theme-publications-persons
+  - path: github.com/hugolify/hugolify-theme-publications/v2
+
   - path: github.com/hugolify/hugolify-theme-places/v2
+
   - path: github.com/hugolify/hugolify-theme-expertises/v2
+
+  - path: github.com/hugolify/hugolify-theme-realestates-persons/v2
+  - path: github.com/hugolify/hugolify-theme-realestates/v2
+  
+  # v1
+  - path: github.com/hugolify/hugolify-theme-realestates-categories
+  - path: github.com/hugolify/hugolify-theme-realestates-sellers
 
   # Core theme
   - path: github.com/hugolify/hugolify-theme/v2
+  - path: github.com/hugolify/hugolify-theme-icons # Lucide and Simple Icons
   - path: github.com/hugolify/hugolify-theme-design-system # CSS and JS
 
   # CMS
