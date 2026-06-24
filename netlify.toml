@@ -17,7 +17,7 @@
   command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy.environment]
-  HUGO_ENV = "staging"
+  HUGO_ENV = "production"
 
 [[plugins]]
   package = "netlify-plugin-hugo-cache-resources"
