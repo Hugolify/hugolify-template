@@ -1,3 +1,12 @@
 _merge: deep
 
+# Map tile
 tile: 1
+
+# Cloudinary image optimization
+image:
+  quality: "auto:eco"
+
+# Remove sidebar from docs
+docs:
+  sidebarmenu: false
