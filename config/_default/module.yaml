@@ -38,4 +38,4 @@ imports:
   - path: github.com/hugolify/hugolify-theme-design-system # CSS and JS
 
   # CMS
-  - path: github.com/hugolify/hugolify-admin
+  - path: github.com/hugolify/hugolify-admin/v2
