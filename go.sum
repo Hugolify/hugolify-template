@@ -58,7 +58,7 @@ github.com/orestbida/cookieconsent v3.1.0+incompatible h1:L2uj16SEL1bICkn6pJde9u
 github.com/orestbida/cookieconsent v3.1.0+incompatible/go.mod h1:8N46VI/40AwvzASJDpiwfbu6zylSzKSDZRUVNmVXLxw=
 github.com/simple-icons/simple-icons v0.0.0-20260607021030-c3777a7e48a5 h1:KMtcHeiD7TpsH/GQhibbHc1Nd8SB3p2VW6S3lCYk4Vs=
 github.com/simple-icons/simple-icons v0.0.0-20260607021030-c3777a7e48a5/go.mod h1:oOgUUt8yVYOso/wEBi2ojfZP2MU/xxiNccIpaE+jCvE=
-github.com/uncinq/lawyerify-example-site/v2 v2.3.0 h1:iKnKw0azd5URvNExIPL4Cw33x+YIu6ryDrQlhJmtlG4=
-github.com/uncinq/lawyerify-example-site/v2 v2.3.0/go.mod h1:Do91q8I9L/FPGe8W49j6llUeTK1klcmEeAi81Yf1SgM=
+github.com/uncinq/lawyerify-example-site/v2 v2.3.1 h1:dRXAmdsN8AxDpDpcyj+2WJCtgO8x2QT2Qfn8AxmW1ZA=
+github.com/uncinq/lawyerify-example-site/v2 v2.3.1/go.mod h1:Do91q8I9L/FPGe8W49j6llUeTK1klcmEeAi81Yf1SgM=
 github.com/uncinq/lawyerify-theme/v2 v2.1.0 h1:EErhIhWmyki6LACwLJcGSf/wmVQt+GSUwfaXwERzJIA=
 github.com/uncinq/lawyerify-theme/v2 v2.1.0/go.mod h1:0MaC1a2iiNOw5ans4lBEj3OWdqzH8+5eS3w0vv3LXPU=

@@ -33,6 +33,6 @@ require (
 	github.com/midzer/tobii v3.2.0+incompatible // indirect
 	github.com/orestbida/cookieconsent v3.1.0+incompatible // indirect
 	github.com/simple-icons/simple-icons v0.0.0-20260607021030-c3777a7e48a5 // indirect
-	github.com/uncinq/lawyerify-example-site/v2 v2.3.0 // indirect
+	github.com/uncinq/lawyerify-example-site/v2 v2.3.1 // indirect
 	github.com/uncinq/lawyerify-theme/v2 v2.1.0 // indirect
 )
