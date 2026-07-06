@@ -10,7 +10,7 @@ Donec maximus a nulla ut feugiat. Duis a enim et ex commodo cursus. Pellentesque
 
 Cras iaculis libero velit, eu eleifend risus interdum eu. Aliquam a scelerisque dolor. Proin maximus, eros et pellentesque rhoncus, nisl massa iaculis diam, ut congue libero nulla at erat. Mauris commodo aliquam dolor et finibus. Integer et sem ac dolor molestie sagittis. Morbi iaculis felis a arcu condimentum, eu volutpat nunc finibus. Quisque viverra lobortis pellentesque. Maecenas euismod at lacus non venenatis. Nullam vel justo nisl.
 
-{{< figure src="/images/uploads/sebastien-jermer-ty9wjiijyj0-unsplash.jpg" legend="Legend" >}}
+{{< figure src="https://res.cloudinary.com/uncinq/image/upload/v1783352603/sebastien-jermer-ty9wjiijyj0-unsplash_eggykg.jpg" legend="Legend" >}}
 
 ## Audience measurement
 
