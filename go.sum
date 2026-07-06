@@ -6,6 +6,8 @@ github.com/hugolify/hugolify-admin/v2 v2.0.0-2 h1:LSN9t3tLkl9EeW8pwck6wsJfIEV8ym
 github.com/hugolify/hugolify-admin/v2 v2.0.0-2/go.mod h1:lPDkZn5SuJ2zB96xU/kKH3gNWOovqgxutjgnBOin48M=
 github.com/hugolify/hugolify-theme-design-system v0.0.0-20260704154534-6d491afbf1fc h1:obssnRuqtb/DQ8y2dfikMoCYrWMsza8+ebvObUYeILU=
 github.com/hugolify/hugolify-theme-design-system v0.0.0-20260704154534-6d491afbf1fc/go.mod h1:pmx1M5Ej9OhNx59jVsqRWhWHSv0JVx6U9txsqTWauTQ=
+github.com/hugolify/hugolify-theme-design-system v0.0.0-20260706152122-7daa19cab008 h1:uo803I98HYvgZUR+8GCJazMLj5kzcOyBKssg55tyuvk=
+github.com/hugolify/hugolify-theme-design-system v0.0.0-20260706152122-7daa19cab008/go.mod h1:pmx1M5Ej9OhNx59jVsqRWhWHSv0JVx6U9txsqTWauTQ=
 github.com/hugolify/hugolify-theme-docs/v2 v2.0.0-20260624130833-e9f40571c241 h1:MU+OtC5si939McIqG8LMfjqbwtVK0R7+KD0lZKpNxj0=
 github.com/hugolify/hugolify-theme-docs/v2 v2.0.0-20260624130833-e9f40571c241/go.mod h1:L+idmDTe/Y+zi2lxe7BakjDgywPvNJ5NISKvEb/DwrU=
 github.com/hugolify/hugolify-theme-expertises/v2 v2.0.0 h1:lcn3NcyCIf747o3sg8XiTkjrFxbZVRl6QsRH82/NeMw=
@@ -40,6 +42,8 @@ github.com/hugolify/hugolify-theme-publications-persons/v2 v2.0.0 h1:ntTBFzi1KWb
 github.com/hugolify/hugolify-theme-publications-persons/v2 v2.0.0/go.mod h1:mpiWALp1H9syS0fiOXUu9IF/BGtq7mdnXtIKP7Met74=
 github.com/hugolify/hugolify-theme-publications/v2 v2.0.0 h1:cAP+w5AyhvWtLt2ubbUUqwG5wnCfKCjldqHVz5V6rq4=
 github.com/hugolify/hugolify-theme-publications/v2 v2.0.0/go.mod h1:t+crYpkK1B3U3Amz+Auy0CxPA0rq0dEWGGh/EPeVxQk=
+github.com/hugolify/hugolify-theme-publications/v2 v2.1.0 h1:2urxs2hoGKPxKxlNGOoIpB3HwK9FOWXwy3fzaqa8c8o=
+github.com/hugolify/hugolify-theme-publications/v2 v2.1.0/go.mod h1:t+crYpkK1B3U3Amz+Auy0CxPA0rq0dEWGGh/EPeVxQk=
 github.com/hugolify/hugolify-theme-realestates-categories/v2 v2.0.0 h1:/J0ZhpBkZU0YUJ4gqj+zGc0QBiywTnlFUEmoevlyDBQ=
 github.com/hugolify/hugolify-theme-realestates-categories/v2 v2.0.0/go.mod h1:lqS4KJkbE8ATGDNMs5LeN58p2jEoHl0j4tLKD9fmhuo=
 github.com/hugolify/hugolify-theme-realestates-persons/v2 v2.0.0 h1:Y4os7ONv4phqPA/rADY2hg4fxiiAMpH4isSwCc+9WFE=
@@ -50,8 +54,12 @@ github.com/hugolify/hugolify-theme-realestates/v2 v2.0.0 h1:6k0ZEOrli5PKTEnMlYH2
 github.com/hugolify/hugolify-theme-realestates/v2 v2.0.0/go.mod h1:sPw8JpOaARr+0BW4Q5QikDNV9iX+NK8y3y3M8l9MyE4=
 github.com/hugolify/hugolify-theme/v2 v2.6.0 h1:xosJUbqE3U6UiJZagf60p/LB7b0ezyo/W+QrKW/XaOI=
 github.com/hugolify/hugolify-theme/v2 v2.6.0/go.mod h1:49bO1E1dltejQfsaP5EYB4dv7oOUDhyWWio9OWK9FAw=
+github.com/hugolify/hugolify-theme/v2 v2.7.1 h1:6REjJxKxRXnSBjRvunv5pPelDRdhizqaVLctJVxXv6I=
+github.com/hugolify/hugolify-theme/v2 v2.7.1/go.mod h1:49bO1E1dltejQfsaP5EYB4dv7oOUDhyWWio9OWK9FAw=
 github.com/lucide-icons/lucide v0.265.1-0.20260702103423-35d535a47720 h1:xIlvCrl26YVBtsHyUYLw88k/7c+6WwxwrRb8jnAfSys=
 github.com/lucide-icons/lucide v0.265.1-0.20260702103423-35d535a47720/go.mod h1:0HX/9u6n25zuV2HgBIuqfMfDktGNXmsvYqL1cOK4aWc=
+github.com/lucide-icons/lucide v0.265.1-0.20260706101652-5828ecb38f07 h1:ls4GZ5UHeS6CbR8u/SSCWSN/ggllW+3XIbOOcUoLm78=
+github.com/lucide-icons/lucide v0.265.1-0.20260706101652-5828ecb38f07/go.mod h1:0HX/9u6n25zuV2HgBIuqfMfDktGNXmsvYqL1cOK4aWc=
 github.com/midzer/tobii v3.2.0+incompatible h1:+08xCdrQ8dlXrkBIOJFsIUsfgme4Ou1CUfbqDmeX/Hc=
 github.com/midzer/tobii v3.2.0+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
 github.com/orestbida/cookieconsent v3.1.0+incompatible h1:L2uj16SEL1bICkn6pJde9uc1qAPmTcEiFZO93zZKdQI=
@@ -60,5 +68,7 @@ github.com/simple-icons/simple-icons v0.0.0-20260607021030-c3777a7e48a5 h1:KMtcH
 github.com/simple-icons/simple-icons v0.0.0-20260607021030-c3777a7e48a5/go.mod h1:oOgUUt8yVYOso/wEBi2ojfZP2MU/xxiNccIpaE+jCvE=
 github.com/uncinq/lawyerify-example-site/v2 v2.3.1 h1:dRXAmdsN8AxDpDpcyj+2WJCtgO8x2QT2Qfn8AxmW1ZA=
 github.com/uncinq/lawyerify-example-site/v2 v2.3.1/go.mod h1:Do91q8I9L/FPGe8W49j6llUeTK1klcmEeAi81Yf1SgM=
+github.com/uncinq/lawyerify-example-site/v2 v2.3.2 h1:ohqgoabaHez037iy9ur53kg3lpB2UcrIS/kB10+yBYo=
+github.com/uncinq/lawyerify-example-site/v2 v2.3.2/go.mod h1:Do91q8I9L/FPGe8W49j6llUeTK1klcmEeAi81Yf1SgM=
 github.com/uncinq/lawyerify-theme/v2 v2.1.0 h1:EErhIhWmyki6LACwLJcGSf/wmVQt+GSUwfaXwERzJIA=
 github.com/uncinq/lawyerify-theme/v2 v2.1.0/go.mod h1:0MaC1a2iiNOw5ans4lBEj3OWdqzH8+5eS3w0vv3LXPU=
