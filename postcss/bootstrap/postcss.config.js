@@ -43,9 +43,15 @@ module.exports = {
         ]
       },
       defaultExtractor: (content) => {
-        let els = JSON.parse(content).htmlElements;
-        els = els.tags.concat(els.classes);
-        return els;
+        // hugo_stats.json holds null tags/classes/ids until Hugo finishes
+        // collecting stats (first build, or after a crashed build), so guard
+        // against null to avoid "Cannot read properties of null (reading 'concat')".
+        const els = JSON.parse(content).htmlElements;
+        return [
+          ...(els.tags || []),
+          ...(els.classes || []),
+          ...(els.ids || [])
+        ];
       }
     }
   }
