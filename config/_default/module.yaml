@@ -9,4 +9,4 @@ imports:
   - path: github.com/hugolify/hugolify-theme-bootstrap # CSS and JS
 
   # CMS
-  # - path: github.com/hugolify/hugolify-admin
+  - path: github.com/hugolify/hugolify-admin
