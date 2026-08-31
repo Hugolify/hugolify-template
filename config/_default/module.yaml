@@ -1,6 +1,10 @@
 imports:
   # Content
   # -> Hugolify content types and taxonomies available https://www.hugolify.io/docs/sections/
+  - path: github.com/hugolify/hugolify-theme-events-categories
+  - path: github.com/hugolify/hugolify-theme-events-persons
+  - path: github.com/hugolify/hugolify-theme-events
+  - path: github.com/hugolify/hugolify-theme-persons
 
   # Core theme
   - path: github.com/hugolify/hugolify-theme
