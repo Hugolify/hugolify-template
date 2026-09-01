@@ -23,24 +23,24 @@
   integrity sha512-XaHr+16KRU9Gf8XLi3q8kDlI18d5vzKSKCY510Vrtc9iNR0NJzbY9hhTmwhzYZj/ZwGL4VmB3TA9hJW0Um2qFA==
 
 "@uncinq/component-tokens@^1.0.0":
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/@uncinq/component-tokens/-/component-tokens-1.6.1.tgz#5c53b789a0821bc6573be48d9b1046d8b2b5b0c7"
-  integrity sha512-/Ly80M5eMAJsR29PRWbu2rw48g2fvtM64BRjMNx1Fp2uSkWDGG6mT2nfcA3/Tn/hmfYRzmq7Vo6ebH6/436emA==
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@uncinq/component-tokens/-/component-tokens-1.7.1.tgz#7cfb03ac79d35a1a0c95ed14e666ab723d6162c1"
+  integrity sha512-gCJjaF59189+pv7fh3EOv1Shzh9p9W44xQ2SgOJ+BED/B19hRObehUk7AirZLpRACDc7YYfwbi7LNh7hdsjQFg==
 
 "@uncinq/css-base@^1.0.0":
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/@uncinq/css-base/-/css-base-1.6.2.tgz#45fb6672ea34b8bbff7225bd8e4415c13c07f52e"
-  integrity sha512-6RPs6t6eI1jHz/VGugAYwqRvKgS1SY2lQd1sNgRnnl0H1dEKzcAwcDpO22d7RzrCG8TRQhmkO5D4fhbfCTJEkw==
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@uncinq/css-base/-/css-base-1.7.1.tgz#7b49d4940826a1b3369d999304478c2b6d4ba773"
+  integrity sha512-Z0VU1EWdx6asBe+eztMWs5zSAlQE/LVYCDztw/xkXHbxUJXcFXkIvnrMNXemnuyr46SNK2dBer9/Kdwbei8CNA==
 
 "@uncinq/css-components@^1.0.0":
-  version "1.7.8"
-  resolved "https://registry.yarnpkg.com/@uncinq/css-components/-/css-components-1.7.8.tgz#ec255d949ee825cc8b0378defae54c1b19622e01"
-  integrity sha512-76y553E1ZzsOBKPkfREfcBJT3IcSa1XjNmAwhTLiYENqh0ZclVVVlZmGpXP4KDVzMGW2PWSMh8aHiwV0qdH2VA==
+  version "1.11.3"
+  resolved "https://registry.yarnpkg.com/@uncinq/css-components/-/css-components-1.11.3.tgz#e087941f1f9bdb7342e546388b9d3e435daa59ee"
+  integrity sha512-QZp1mgklmvnnUPJtCi6yl4M23XekE23v7fVt2j/iIi0avR9mJpwEeY6tvNjyLj9OTxHwbc1P5s1f4f3A0zc6Vg==
 
 "@uncinq/design-tokens@^1.0.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@uncinq/design-tokens/-/design-tokens-1.5.0.tgz#82efb5407d68ecb1d56a618ab7ed0ed30bf88d84"
-  integrity sha512-/iudwT/8rXX4/1Yyh21pSk5pTf6nE6v1WPTpicC3Gu32Iui1GH57W8RdAA0NXd25Re8yLlg4H+rIBtA/0DppOA==
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@uncinq/design-tokens/-/design-tokens-1.6.1.tgz#8803f9a8282f4bdac2a0ec148e848aa08b706d70"
+  integrity sha512-CkmURGwFAwug3UnfH38yu7zcisNRwj3/ZdV3muP+TIe/05OuazTIAy3mU94wy/zQ5U79zVyh2klLZv38fVc74A==
 
 ansi-regex@^5.0.1:
   version "5.0.1"
