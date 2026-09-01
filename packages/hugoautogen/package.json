@@ -1,0 +1,10 @@
+{
+  "dependencies": {},
+  "devDependencies": {
+    "@uncinq/component-tokens": "^1.0.0",
+    "@uncinq/design-tokens": "^1.0.0",
+    "style-dictionary": "^5.0.0"
+  },
+  "name": "hugolify-template",
+  "version": "0.1.0"
+}

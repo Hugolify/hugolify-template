@@ -1,0 +1,11 @@
+{
+  "sum": "c430204e3cc23ee5",
+  "dependencySources": {
+    "dependencies": {},
+    "devDependencies": {
+      "@uncinq/component-tokens": "github.com/hugolify/hugolify-theme-docs/v2",
+      "@uncinq/design-tokens": "github.com/hugolify/hugolify-theme-docs/v2",
+      "style-dictionary": "github.com/hugolify/hugolify-theme-docs/v2"
+    }
+  }
+}

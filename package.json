@@ -7,20 +7,6 @@
   "bugs": {
     "url": "https://github.com/hugolify/hugolify-template/issues"
   },
-  "comments": {
-    "dependencies": {},
-    "devDependencies": {
-      "@fullhuman/postcss-purgecss": "project",
-      "@hugolify/prettier-config": "project",
-      "autoprefixer": "project",
-      "cssnano": "project",
-      "netlify-plugin-hugo-cache-resources": "project",
-      "postcss": "project",
-      "postcss-cli": "project",
-      "postcss-sass": "project"
-    }
-  },
-  "dependencies": {},
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "@hugolify/prettier-config": "^0.3.1",
@@ -54,5 +40,9 @@
     "update:all": "yarn update && yarn tidy && yarn upgrade",
     "watch": "hugo server"
   },
-  "version": "1.16.0"
+  "version": "1.16.0",
+  "private": true,
+  "workspaces": [
+    "packages/hugoautogen"
+  ]
 }
