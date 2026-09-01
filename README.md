@@ -6,15 +6,7 @@ Is a Github template for build easily a fast, accessible friendly and low carbon
 
 ## Live demos
 
-* Neutral theme
-  * Netlify https://demo.hugolify.io/
-  * Cloudflare Pages https://hugolify.pages.dev/
-* Theme 1 https://theme-1--hugolify-demo.netlify.app/
-* Theme 2 https://theme-2--hugolify-demo.netlify.app/
-* Theme 3 https://theme-3--hugolify-demo.netlify.app/
-* Theme 4 https://theme-4--hugolify-demo.netlify.app/
-* Theme 5 https://theme-5--hugolify-demo.netlify.app/
-* Products https://demo-products--hugolify-demo.netlify.app
+- https://hugolify-theme-design-system--hugolify-demo.netlify.app/
 
 ## Installation
 
