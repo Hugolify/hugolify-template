@@ -4,10 +4,14 @@ github.com/dixonandmoe/rellax v0.0.0-20240824005335-9ed6cb0aae03 h1:TyZM0MK9+09/
 github.com/dixonandmoe/rellax v0.0.0-20240824005335-9ed6cb0aae03/go.mod h1:CJ8UtS8LPLOSmpvwRkQJkwqOwwXaDfH5S7iG83GKAlY=
 github.com/hugolify/hugolify-admin/v2 v2.0.0-12 h1:dpj/qgYcbfcIlbL2FLNtsmFlAffD3KOVsHLnvektxRk=
 github.com/hugolify/hugolify-admin/v2 v2.0.0-12/go.mod h1:lPDkZn5SuJ2zB96xU/kKH3gNWOovqgxutjgnBOin48M=
+github.com/hugolify/hugolify-admin/v2 v2.0.0-13 h1:bXmnCNLoV4hywQjJo4s25UhKNsSaJfP4UE3fG9rLZR0=
+github.com/hugolify/hugolify-admin/v2 v2.0.0-13/go.mod h1:lPDkZn5SuJ2zB96xU/kKH3gNWOovqgxutjgnBOin48M=
 github.com/hugolify/hugolify-example-site/v2 v2.1.0 h1:/U6G4ulZs6YGkD/sDKWEeKD+PqFval70RbgU20RAdes=
 github.com/hugolify/hugolify-example-site/v2 v2.1.0/go.mod h1:nT68VCH72KgipiP2kq7vlqH9jLkRmGm1xO5CYau5GhA=
 github.com/hugolify/hugolify-theme-design-system v0.0.0-20260903082931-b6bb330ef2cc h1:ECFZMDsFEOS8Uz6aFDRl0/MSN8jznHwmhwbZrSN5OzU=
 github.com/hugolify/hugolify-theme-design-system v0.0.0-20260903082931-b6bb330ef2cc/go.mod h1:pmx1M5Ej9OhNx59jVsqRWhWHSv0JVx6U9txsqTWauTQ=
+github.com/hugolify/hugolify-theme-design-system v0.0.0-20260903145650-625957891b71 h1:bK4+HU+Jj9JrGd6bwN/GdsFDqtIvj5vneFYkvedRQDc=
+github.com/hugolify/hugolify-theme-design-system v0.0.0-20260903145650-625957891b71/go.mod h1:pmx1M5Ej9OhNx59jVsqRWhWHSv0JVx6U9txsqTWauTQ=
 github.com/hugolify/hugolify-theme-docs/v2 v2.0.0-20260624130833-e9f40571c241 h1:MU+OtC5si939McIqG8LMfjqbwtVK0R7+KD0lZKpNxj0=
 github.com/hugolify/hugolify-theme-docs/v2 v2.0.0-20260624130833-e9f40571c241/go.mod h1:L+idmDTe/Y+zi2lxe7BakjDgywPvNJ5NISKvEb/DwrU=
 github.com/hugolify/hugolify-theme-expertises/v2 v2.0.2 h1:I800LfDMjQMD7BExBl6q9FT/p5/MG2UT0m2Y6NYOEPA=
@@ -38,6 +42,8 @@ github.com/hugolify/hugolify-theme-publications/v2 v2.1.0 h1:2urxs2hoGKPxKxlNGOo
 github.com/hugolify/hugolify-theme-publications/v2 v2.1.0/go.mod h1:t+crYpkK1B3U3Amz+Auy0CxPA0rq0dEWGGh/EPeVxQk=
 github.com/hugolify/hugolify-theme/v2 v2.16.2 h1:7PXA+nsqWqfCDqEklr2lYK+BNJGMBBzLrnqPw8/urVc=
 github.com/hugolify/hugolify-theme/v2 v2.16.2/go.mod h1:49bO1E1dltejQfsaP5EYB4dv7oOUDhyWWio9OWK9FAw=
+github.com/hugolify/hugolify-theme/v2 v2.16.3 h1:s+qC35tTODsIWFd++cViFsq9FP+1rCzZ99ztrWINcgk=
+github.com/hugolify/hugolify-theme/v2 v2.16.3/go.mod h1:49bO1E1dltejQfsaP5EYB4dv7oOUDhyWWio9OWK9FAw=
 github.com/midzer/tobii v3.2.0+incompatible h1:+08xCdrQ8dlXrkBIOJFsIUsfgme4Ou1CUfbqDmeX/Hc=
 github.com/midzer/tobii v3.2.0+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
 github.com/orestbida/cookieconsent v3.1.0+incompatible h1:L2uj16SEL1bICkn6pJde9uc1qAPmTcEiFZO93zZKdQI=
