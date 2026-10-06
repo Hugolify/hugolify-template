@@ -27,6 +27,7 @@
     "@uncinq/css-base": "^1.0.0",
     "@uncinq/css-components": "^1.0.0",
     "@uncinq/design-tokens": "^1.0.0",
+    "@hugolify/prettier-config": "^0.3.1",
     "autoprefixer": "^10",
     "postcss": "^8",
     "postcss-cli": "^11",
