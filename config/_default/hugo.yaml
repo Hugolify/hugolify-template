@@ -12,6 +12,9 @@ enableRobotsTXT: true
 imaging:
   quality: 75
 markup:
+  goldmark:
+    renderer:
+      hardWraps: true
   tableOfContents:
     ordered: true
 pagination:
