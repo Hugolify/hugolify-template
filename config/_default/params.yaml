@@ -1,1 +1,3 @@
 _merge: deep
+docs:
+  sidebarmenu: true

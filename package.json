@@ -23,11 +23,11 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@hugolify/prettier-config": "^0.3.1",
     "@uncinq/component-tokens": "^1.0.0",
     "@uncinq/css-base": "^1.0.0",
     "@uncinq/css-components": "^1.0.0",
     "@uncinq/design-tokens": "^1.0.0",
-    "@hugolify/prettier-config": "^0.3.1",
     "autoprefixer": "^10",
     "postcss": "^8",
     "postcss-cli": "^11",
@@ -37,6 +37,7 @@
   "homepage": "https://www.hugolify.io",
   "license": "MIT",
   "name": "hugolify-template",
+  "private": true,
   "repository": "https://github.com/hugolify/hugolify-template",
   "scripts": {
     "build": "hugo --noChmod --gc --minify",
@@ -56,5 +57,8 @@
     "update:all": "yarn update && yarn tidy && yarn upgrade",
     "watch": "hugo server"
   },
-  "version": "1.16.0"
+  "version": "1.16.0",
+  "workspaces": [
+    "packages/hugoautogen"
+  ]
 }

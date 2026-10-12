@@ -1,1 +1,6 @@
 _merge: deep
+
+page:
+  docs: /blocks/:sections[1:]/:slug/
+section:
+  docs: /blocks/:sections[1:]/
