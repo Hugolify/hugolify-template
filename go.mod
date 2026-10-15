@@ -2,12 +2,19 @@ module github.com/hugolify/hugolify-template/v2
 
 go 1.21
 
+replace (
+	github.com/hugolify/hugolify-theme-5/v2 => ../hugolify-theme-5
+	github.com/hugolify/hugolify-theme-design-system => ../hugolify-theme-design-system
+	github.com/hugolify/hugolify-example-blocks => ../hugolify-example-blocks
+)
+
 require (
 	github.com/Splidejs/splide v4.1.3+incompatible // indirect
 	github.com/dixonandmoe/rellax v0.0.0-20240824005335-9ed6cb0aae03 // indirect
 	github.com/hugolify/hugolify-admin/v2 v2.0.0-30 // indirect
 	github.com/hugolify/hugolify-example-blocks v0.0.0-20261005190925-92d64548a6d6 // indirect
 	github.com/hugolify/hugolify-example-site/v2 v2.3.0 // indirect
+	github.com/hugolify/hugolify-theme-5/v2 v2.0.0-00010101000000-000000000000 // indirect
 	github.com/hugolify/hugolify-theme-design-system v0.0.0-20261013183705-09232dae6e52 // indirect
 	github.com/hugolify/hugolify-theme-docs/v2 v2.0.0-20261009094139-a5b427476ff4 // indirect
 	github.com/hugolify/hugolify-theme-expertises/v2 v2.4.0 // indirect

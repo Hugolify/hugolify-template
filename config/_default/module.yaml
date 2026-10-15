@@ -2,7 +2,9 @@ imports:
   # Content
   # -> Hugolify content types and taxonomies available https://www.hugolify.io/docs/sections/
   - path: github.com/hugolify/hugolify-example-site/v2
- 
+
+  - path: github.com/hugolify/hugolify-theme-5/v2
+
   # Modules
   - path: github.com/hugolify/hugolify-theme-docs/v2
   - path: github.com/hugolify/hugolify-theme-posts-authors/v2
