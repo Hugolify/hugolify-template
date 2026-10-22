@@ -12,18 +12,14 @@
     "url": "https://www.sebastienmoulene.com/"
   },
   "license": "MIT",
+  "private": true,
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^5.0.0",
     "@hugolify/prettier-config": "^0.3.1",
-    "autoprefixer": "^10.4.13",
-    "cssnano": "^5.1.14",
-    "netlify-plugin-hugo-cache-resources": "^0.2.1",
-    "postcss": "^8.4.21",
-    "postcss-cli": "^10.1.0",
-    "postcss-sass": "^0.5.0"
+    "netlify-plugin-hugo-cache-resources": "^0.2.1"
   },
   "packageManager": "yarn@1.22.22",
   "scripts": {
+    "install:hugolify": "hugo mod get && hugo mod npm pack",
     "watch": "hugo server",
     "build": "hugo --noChmod --gc --minify",
     "build:config:cloudcannon": "node scripts/build-config-cloudcannon.js",
@@ -39,5 +35,8 @@
     "cms": "yarn cms:decapcms",
     "cms:decapcms": "npx decap-server",
     "cms:netlifycms": "npx netlify-cms-proxy-server"
-  }
+  },
+  "workspaces": [
+    "packages/hugoautogen"
+  ]
 }

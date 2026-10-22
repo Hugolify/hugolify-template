@@ -1,47 +1,71 @@
-![Twitter banner](https://user-images.githubusercontent.com/4457294/208064328-5bbf40e4-5520-41f4-8024-30c898c1a0e8.png)
-
 # Hugolify template
 
-Is a Github template for build easily a fast, accessible friendly and low carbon website!
+> Is a Github template for build easily a fast, accessible friendly and low carbon website!
+
+[![Hugolify](https://github.com/user-attachments/assets/e74a4e70-7bfd-4f07-8a41-6feb040a013b)](https://www.hugolify.io)
 
 ## Live demos
 
-### Base
+Each demo is a branch of this repository, deployed on Netlify.
 
-**Netlify**
+| Demo | Styling module | Theme | Content | Branch |
+| --- | --- | --- | --- | --- |
+| [Design System](https://hugolify-theme-design-system--hugolify-demo.netlify.app/) | `hugolify-theme-design-system` | | Example site, docs, posts, persons, publications, places, expertises | [`hugolify-theme-design-system`](https://github.com/hugolify/hugolify-template/tree/hugolify-theme-design-system) |
+| [Theme 5](https://theme-5-design-system--hugolify-demo.netlify.app/) | `hugolify-theme-design-system` | `hugolify-theme-5` | Example site, docs, posts, persons, publications, places, expertises | [`theme-5-design-system`](https://github.com/hugolify/hugolify-template/tree/theme-5-design-system) |
+| [Bootstrap](https://hugolify-theme-bootstrap--hugolify-demo.netlify.app/) | `hugolify-theme-bootstrap` | | Example site, docs | [`hugolify-theme-bootstrap`](https://github.com/hugolify/hugolify-template/tree/hugolify-theme-bootstrap) |
 
-https://demo.hugolify.io/
+## Requirements
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5a4fa061-e7a5-4e66-9612-4fae713bda09/deploy-status)](https://app.netlify.com/sites/hugolify-demo/deploys)
+- [Hugo extended](https://gohugo.io/installation/) >= 0.158.0
+- [Go](https://go.dev/doc/install)
+- Node.js with yarn, npm or pnpm
 
-**Cloudflare Pages**
+## Installation
 
-https://hugolify.pages.dev/
+After cloning or updating Hugo modules, run:
 
+```bash
+yarn install:hugolify && yarn install
+# or: npm run install:hugolify && npm install
+# or: pnpm run install:hugolify && pnpm install
+```
 
-### Theme 1
+The `install:hugolify` script chains two steps:
 
-https://theme-1--hugolify-demo.netlify.app/
+1. `hugo mod get` downloads the Hugo modules declared in `config/_default/module.yaml`
+2. `hugo mod npm pack` collects the npm dependencies of each module (PostCSS plugins, design tokens…) into the `packages/hugoautogen` workspace
 
-### Theme 2
+The final install step installs the resulting npm packages.
 
-https://theme-2--hugolify-demo.netlify.app/
+> Run these commands whenever you add, remove, or update a Hugo module: the npm dependencies of a module are only available after this step.
 
-### Theme 3
+## Styling
 
-https://theme-3--hugolify-demo.netlify.app/
+The template uses `hugolify-theme` with the `hugolify-theme-design-system` styling module, declared in `config/_default/module.yaml`:
 
-### Theme 4
+```yaml
+imports:
+  - path: github.com/hugolify/hugolify-theme/v2
+  - path: github.com/hugolify/hugolify-theme-design-system
+```
 
-https://theme-4--hugolify-demo.netlify.app/
+To use Bootstrap instead, replace the styling module:
 
-### Theme 5
+```yaml
+imports:
+  - path: github.com/hugolify/hugolify-theme/v2
+  - path: github.com/hugolify/hugolify-theme-bootstrap
+```
 
-https://theme-5--hugolify-demo.netlify.app/
+Each styling module reads its PostCSS config from its own directory (`postcss/design-system/` or `postcss/bootstrap/`), both are shipped with the template.
 
-### Products
+See [hugolify-theme](https://github.com/Hugolify/hugolify-theme) for the full architecture and how to build your own module.
 
-https://demo-products--hugolify-demo.netlify.app
+## Hugolify v1
+
+The v1 template (Bootstrap bundled in `hugolify-theme`) lives on the [`v1` branch](https://github.com/hugolify/hugolify-template/tree/v1).
+
+To move an existing v1 project to v2, follow the [migration guide](https://www.hugolify.io/docs/getting-started/migration/).
 
 ## Documentation
 
