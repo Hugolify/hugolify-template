@@ -49,12 +49,12 @@ imports:
   - path: github.com/hugolify/hugolify-theme-design-system
 ```
 
-To use Bootstrap instead, replace the styling module:
+To use Bootstrap instead, replace the styling module and import it **before** the theme, so that its legacy overrides of the theme's partials apply (the first import wins):
 
 ```yaml
 imports:
-  - path: github.com/hugolify/hugolify-theme/v2
   - path: github.com/hugolify/hugolify-theme-bootstrap
+  - path: github.com/hugolify/hugolify-theme/v2
 ```
 
 Each styling module reads its PostCSS config from its own directory (`postcss/design-system/` or `postcss/bootstrap/`), both are shipped with the template.
