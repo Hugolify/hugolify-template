@@ -1,0 +1,33 @@
+name: Notify Discord on Release
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Discord of Release
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          REPO: ${{ github.event.repository.name }}
+          TITLE: ${{ github.event.release.name || github.event.release.tag_name }}
+          URL: ${{ github.event.release.html_url }}
+          NOTES: ${{ github.event.release.body }}
+        run: |
+          payload=$(jq -n \
+            --arg title "$REPO — $TITLE" \
+            --arg url "$URL" \
+            --arg desc "$NOTES" \
+            '{
+              embeds: [{
+                title: $title,
+                url: $url,
+                description: ($desc | if length > 4000 then .[0:3997] + "…" else . end),
+                color: 5814783
+              }]
+            }')
+          curl -sf -X POST -H "Content-Type: application/json" \
+            -d "$payload" "$DISCORD_WEBHOOK_URL"

@@ -1,0 +1,16 @@
+{
+  "dependencies": {},
+  "devDependencies": {
+    "@uncinq/component-tokens": "^1.11.0",
+    "@uncinq/css-base": "^1.0.0",
+    "@uncinq/css-components": "^1.18.0",
+    "@uncinq/design-tokens": "^1.0.0",
+    "autoprefixer": "^10",
+    "postcss": "^8",
+    "postcss-cli": "^11",
+    "postcss-custom-media": "^10",
+    "postcss-import": "^16.0.0"
+  },
+  "name": "hugolify-template",
+  "version": "0.1.0"
+}
