@@ -1,6 +1,11 @@
 _merge: deep
+
+# Admin configuration for the site
 admin:
+
   cms: sveltiacms
   repo: Hugolify/hugolify-template
+
+  # Disable netlify identity
   auth:
     netlify_identity: false
