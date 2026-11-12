@@ -8,11 +8,7 @@
 
 Each demo is a branch of this repository, deployed on Netlify.
 
-| Demo | Styling module | Theme | Content | Branch |
-| --- | --- | --- | --- | --- |
-| [Design System](https://hugolify-theme-design-system--hugolify-demo.netlify.app/) | `hugolify-theme-design-system` | | Example site, docs, posts, persons, publications, places, expertises | [`hugolify-theme-design-system`](https://github.com/hugolify/hugolify-template/tree/hugolify-theme-design-system) |
-| [Theme 5](https://theme-5-design-system--hugolify-demo.netlify.app/) | `hugolify-theme-design-system` | `hugolify-theme-5` | Example site, docs, posts, persons, publications, places, expertises | [`theme-5-design-system`](https://github.com/hugolify/hugolify-template/tree/theme-5-design-system) |
-| [Bootstrap](https://hugolify-theme-bootstrap--hugolify-demo.netlify.app/) | `hugolify-theme-bootstrap` | | Example site, docs | [`hugolify-theme-bootstrap`](https://github.com/hugolify/hugolify-template/tree/hugolify-theme-bootstrap) |
+https://www.hugolify.io/docs/showcase/
 
 ## Requirements
 
