@@ -67,6 +67,10 @@ To move an existing v1 project to v2, follow the [migration guide](https://www.h
 
 https://www.hugolify.io/docs/
 
+## Sponsors
+
+Hugolify is free and open source. If it saves you time or runs your sites, you can support its development on [GitHub Sponsors](https://github.com/sponsors/sebousan).
+
 ## License
 
 Hugolify is free for personal or commercial projects (MIT license)
