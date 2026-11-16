@@ -2,7 +2,7 @@
 
 > Is a Github template for build easily a fast, accessible friendly and low carbon website!
 
-[![Hugolify](https://github.com/user-attachments/assets/e74a4e70-7bfd-4f07-8a41-6feb040a013b)](https://www.hugolify.io)
+[![Hugolify](https://github.com/user-attachments/assets/1c96381d-9bf3-43a1-b1db-a6f5745042ae)](https://www.hugolify.io)
 
 ## Live demos
 
