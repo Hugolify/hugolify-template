@@ -28,3 +28,5 @@
     X-Frame-Options = "SAMEORIGIN"
     X-XSS-Protection = "0"
     X-Content-Type-Options = "nosniff"
+    # Demo site: keep it out of search engines
+    X-Robots-Tag = "noindex"
