@@ -3,7 +3,7 @@
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.158.0"
+  HUGO_VERSION = "0.170.0"
   GO_VERSION = "1.24.2"
   NODE_VERSION = "24"
 
