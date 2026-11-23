@@ -53,7 +53,7 @@ imports:
   - path: github.com/hugolify/hugolify-theme/v2
 ```
 
-Each styling module reads its PostCSS config from its own directory (`postcss/design-system/` or `postcss/bootstrap/`), both are shipped with the template.
+Each styling module ships its own PostCSS config (`postcss.config.cjs`), the project needs no copy. To override it, add a `postcss.config.cjs` at the project root.
 
 See [hugolify-theme](https://github.com/Hugolify/hugolify-theme) for the full architecture and how to build your own module.
 
