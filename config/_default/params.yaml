@@ -1,3 +1,11 @@
 _merge: deep
 admin:
   cms: pagescms
+
+  i18n:
+    default_locale: fr
+    locales: "[fr,en]"
+
+  collections: 
+    indexes:
+      enable: false

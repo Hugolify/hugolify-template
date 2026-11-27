@@ -1,7 +1,17 @@
 imports:
+
   # Content
   # -> Hugolify content types and taxonomies available https://www.hugolify.io/docs/sections/
+  - path: github.com/hugolify/hugolify-theme-posts-authors/v2
+  - path: github.com/hugolify/hugolify-theme-posts-categories/v2
+  - path: github.com/hugolify/hugolify-theme-posts-tags/v2
   - path: github.com/hugolify/hugolify-theme-posts/v2
+  - path: github.com/hugolify/hugolify-theme-persons-statutes/v2
+  - path: github.com/hugolify/hugolify-theme-persons/v2
+  - path: github.com/hugolify/hugolify-theme-projects/v2
+  - path: github.com/hugolify/hugolify-theme-services/v2
+  - path: github.com/hugolify/hugolify-theme-publications/v2
+  - path: github.com/hugolify/hugolify-theme-expertises/v2
 
   # Core theme
   - path: github.com/hugolify/hugolify-theme/v2
