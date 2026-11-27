@@ -1,6 +1,6 @@
 ---
 isIndex: false
-draft: true
+draft: false
 title: John Doe
 firstname: John
 lastname: Doe
