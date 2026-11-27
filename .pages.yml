@@ -17018,7 +17018,7 @@ content:
     name: noIndex
     required: false
     type: boolean
-  filename: '{year}/{month}/{primary}.md'
+  filename: '{year}/{month}/{year}-{month}-{day}-{primary}.md'
   i18n:
     path:
       default: explicit
@@ -33984,7 +33984,7 @@ content:
     name: noIndex
     required: false
     type: boolean
-  filename: '{year}/{month}/{primary}.md'
+  filename: '{year}/{month}/{year}-{month}-{day}-{primary}.md'
   i18n:
     path:
       default: explicit
