@@ -8215,6 +8215,7 @@ content:
       separator: .
       type: filename
     scheme: files
+  icon: File01
   label: Pages
   name: pages
   path: content
@@ -8302,6 +8303,7 @@ content:
       separator: .
       type: filename
     scheme: files
+  icon: Mortarboard01
   label: Expertises
   name: expertises
   path: content/expertises
@@ -16790,6 +16792,7 @@ content:
       separator: .
       type: filename
     scheme: files
+  icon: User
   label: Persons
   name: persons
   path: content/persons
@@ -16871,6 +16874,7 @@ content:
       separator: .
       type: filename
     scheme: files
+  icon: InformationCircle
   label: Statutes
   name: persons_statutes
   path: content/persons_statutes
@@ -17022,6 +17026,7 @@ content:
       separator: .
       type: filename
     scheme: files
+  icon: News01
   label: News
   name: posts
   path: content/posts
@@ -25225,6 +25230,7 @@ content:
       separator: .
       type: filename
     scheme: files
+  icon: Bookmark01
   label: Categories
   name: categories
   path: content/categories
@@ -33430,6 +33436,7 @@ content:
       separator: .
       type: filename
     scheme: files
+  icon: Bookmark01
   label: Tags
   name: tags
   path: content/tags
@@ -33808,6 +33815,7 @@ content:
       separator: .
       type: filename
     scheme: files
+  icon: DashboardSquare01
   label: Projects
   name: projects
   path: content/projects
@@ -33984,6 +33992,7 @@ content:
       separator: .
       type: filename
     scheme: files
+  icon: Newspaper
   label: Publications
   name: publications
   path: content/publications
@@ -34096,6 +34105,7 @@ content:
       separator: .
       type: filename
     scheme: files
+  icon: Handshake
   label: Services
   name: services
   path: content/services
