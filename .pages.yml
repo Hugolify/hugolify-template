@@ -16875,6 +16875,11 @@ content:
   name: persons_statutes
   path: content/persons_statutes
   type: collection
+  view:
+    layout: tree
+    node:
+      filename: _index.md
+      hideDirs: nodes
 - description: All news
   fields:
   - default: false
@@ -25224,6 +25229,11 @@ content:
   name: categories
   path: content/categories
   type: collection
+  view:
+    layout: tree
+    node:
+      filename: _index.md
+      hideDirs: nodes
 - description: All news tags
   fields:
   - default: false
@@ -33424,6 +33434,11 @@ content:
   name: tags
   path: content/tags
   type: collection
+  view:
+    layout: tree
+    node:
+      filename: _index.md
+      hideDirs: nodes
 - description: All projects
   fields:
   - default: false
@@ -34086,6 +34101,10 @@ content:
   path: content/services
   type: collection
   view:
+    layout: tree
+    node:
+      filename: _index.md
+      hideDirs: nodes
     sort:
     - weight
     - title
@@ -43533,44 +43552,6 @@ content:
         media: false
       required: false
       type: rich-text
-    - description: The pages of these sections are added after the text, as Markdown.
-      label: Sections
-      name: sections
-      options:
-        multiple: true
-        values:
-        - label: Events
-          value: events
-        - label: Jobs
-          value: jobs
-        - label: Projects
-          value: projects
-        - label: Publications
-          value: publications
-        - label: Casestudies
-          value: casestudies
-        - label: Expertises
-          value: expertises
-        - label: Services
-          value: services
-        - label: News
-          value: posts
-        - label: Blocks
-          value: docs
-        - label: Places
-          value: places
-        - label: Projects_tags
-          value: projects_tags
-        - label: Projects_types
-          value: projects_types
-        - label: Publications_categories
-          value: publications_categories
-        - label: Services_categories
-          value: services_categories
-        - label: Team
-          value: persons
-      required: false
-      type: select
     label: GEO – Full text of the site for language models (llms-full.txt)
     name: llms-full
     path: data/llms-full.yml
