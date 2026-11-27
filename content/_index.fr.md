@@ -1,5 +1,5 @@
 ---
 isIndex: true
 draft: false
-title: Actualités
+title: Accueil
 ---
