@@ -1,1 +1,4 @@
 _merge: deep
+
+headings:
+  anchor: true
