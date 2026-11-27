@@ -16900,7 +16900,7 @@ content:
   - label: Date
     name: date
     options:
-      format: yyyy-MM-dd’T’HH:mm:ssX
+      format: yyyy-MM-dd'T'HH:mm:ssX
       time: true
     required: true
     type: date
@@ -33462,7 +33462,7 @@ content:
   - label: Date
     name: date
     options:
-      format: yyyy-MM-dd’T’HH:mm:ssX
+      format: yyyy-MM-dd'T'HH:mm:ssX
       time: true
     required: true
     type: date
@@ -33840,7 +33840,7 @@ content:
   - label: Date
     name: date
     options:
-      format: yyyy-MM-dd’T’HH:mm:ssX
+      format: yyyy-MM-dd'T'HH:mm:ssX
       time: true
     required: true
     type: date
@@ -43562,6 +43562,16 @@ content:
         media: false
       required: false
       type: rich-text
+    - description: The pages of these sections are added after the text, as Markdown.
+      label: Sections
+      name: sections
+      options:
+        multiple: true
+        values:
+        - label: News
+          value: posts
+      required: false
+      type: select
     label: GEO – Full text of the site for language models (llms-full.txt)
     name: llms-full
     path: data/llms-full.yml
