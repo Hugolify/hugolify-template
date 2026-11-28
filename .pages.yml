@@ -8307,6 +8307,7 @@ content:
   label: Expertises
   name: expertises
   path: content/expertises
+  subfolders: false
   type: collection
 - description: All persons
   fields:
@@ -16796,6 +16797,7 @@ content:
   label: Persons
   name: persons
   path: content/persons
+  subfolders: false
   type: collection
   view:
     sort:
@@ -34109,6 +34111,7 @@ content:
   label: Services
   name: services
   path: content/services
+  subfolders: false
   type: collection
   view:
     layout: tree
